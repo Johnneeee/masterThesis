@@ -1,8 +1,1 @@
-iteration = 4995	len(H) = 101	runtime = 3.5406518999952823
-iteration = 4995	len(H) = 160	runtime = 23.80174080003053
-iteration = 5000	len(H) = 160	runtime = 13.29838649998419
-iteration = 4995	len(H) = 130	runtime = 2.705304800067097
-iteration = 5000	len(H) = 203	runtime = 5.383959600003436
-iteration = 5000	len(H) = 102	runtime = 1.9138733001891524
-iteration = 5000	len(H) = 101	runtime = 3.285462200175971
-iteration = 5000	len(H) = 102	runtime = 1.4769196000415832
+iteration = 5, len(H) = 102, rt = [2.761905699968338]

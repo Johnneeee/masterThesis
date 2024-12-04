@@ -28,7 +28,7 @@ attributes = ['age', 'occupation', "city", "ethnicity"]
 # add 2 dimensions for the gender variables (last variables in the vector)
 dim = sum(binarizer.lengths.values()) + 2
 V = define_variables(dim)
-# print(V)
+# print(len(V))
 models = ['bert-base-multilingual-cased'] #more models 4/5? all occs
 # models = ['roberta-base', 'roberta-large', 'bert-base-cased', 'bert-large-cased']
 eq_amounts = [50, 100, 150, 200]

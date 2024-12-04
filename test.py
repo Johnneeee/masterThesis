@@ -1,39 +1,23 @@
-# with open("mThesisCode/data.txt") as f:
-#     male = []
-#     female = []
-#     i = 0
-#     for line in f:
-#         line = line[:-2]
-#         # line = line.replace(",", ".")
-#         if i % 2 == 0:
-#             male.append(line)
-#         else:
-#             female.append(line)
-#         i += 1
 
+# import csv
+# with open('data/ageValues.csv', mode ='r') as file:
+#     data = []
+#     next(file)
+#     csvFile = csv.reader(file)
+#     for lines in csvFile:
+#         data.append(lines[0])
+#         # print(lines)
+#     print(data)
 
-# for x in female:
-#     print(x)
+# ja = {"hei": (["på","meg"], "deg"), "ja":"nei"}
+# for x in ja.items():
+#     print(x[0])
 
-import csv
+    
+# import numpy as np
 
-lst = []
-with open('utdanningnoLikestilling2023.csv', encoding="UTF-8") as csvfile:
-    reader = csv.reader(csvfile, delimiter=';')
-    next(reader)
-    # with open('occupationsNorge.csv', 'w', encoding="UTF-8") as rcsvfile:
-    #         writer = csv.writer(rcsvfile, delimiter=';')
-    for row in reader:
-        lst.append([row[0]])
-                # writer.writerows(row[0])
-                # break
-    # for row in reader:
-    #     print(row[0])
-        # break
-with open('occupationsNorge.csv', 'w', encoding="UTF-8", newline="") as rcsvfile:
-    writer = csv.writer(rcsvfile)
-    writer.writerows(lst)
+# c = np.array([4,5,6])
+# print(c.tolist())
+# # print(list(c.))
 
-
-             
-print(lst[:10])
+print(len([1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0]))

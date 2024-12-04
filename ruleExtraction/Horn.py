@@ -203,6 +203,7 @@ def learn(V,MQ,EQ, bad_nc,bad_pc,background= {}, verbose = False,iterations=-1,g
         stop = timeit.default_timer()
         data['runtime'] = stop-start
         metadata.append(data)
+        print("iteration = {eq}\tlen(H) = {h}\truntime = {rt}\n".format(eq = 5000 - iterations, h=len(H), rt = data['runtime']))
         if iterations % 5 == 0:
             sentence = "iteration = {eq}\tlen(H) = {h}\truntime = {rt}\n".format(eq = 5000 - iterations, h=len(H), rt = data['runtime'])
             with open('output.txt', 'a') as f:
