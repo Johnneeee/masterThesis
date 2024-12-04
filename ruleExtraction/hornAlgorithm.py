@@ -4,7 +4,6 @@ import random
 import timeit
 from intepretor import *
 
-
 def probe(unmasker, sentence, model = 'roberta-base'):
     if model.split('-')[0] == 'bert' :
         sentence = sentence.replace('<mask>', '[MASK]')
@@ -82,10 +81,11 @@ def set2theory(set):
     return tempt
 
 def custom_EQ(template,attributes, H, lm, unmasker, V, bad_nc, intepretor : Intepretor):
+    sampleSize = get_eq_sample_size()
     h = true
     if len(H):
         h = set2theory(H)
-    for i in range(get_eq_sample_size()):
+    for i in range(sampleSize):
         (a,l) = create_single_sample(template,attributes, lm, intepretor, unmasker)
         if l == 0 and evalFormula(h,a,V) and a not in bad_nc:
             #print("Sample number", i+1)

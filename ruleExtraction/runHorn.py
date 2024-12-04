@@ -49,38 +49,25 @@ neutralCases = ["mellom 0 og 100", "person", "en ukjent by", "et ukjent sted"]
 template = "<mask> er [age] år og er en [occupation] fra [city] med bakgrunn fra [ethnicity]."
 intepretor = Intepretor(attributes, filePaths, neutralCases, template)
 
-# print(intepretor.lookTable)
-# print(intepretor.binaryToSentence([1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0],template))
-# intepretor = Intepretor(age_file, occ_file, cities_file, ethnicity_file)
-# attributes = ['age', 'occupation', "city", "ethnicity"]
 
-# print(intepretor.lengths)
-    
 
-# print({i[0]:len(i[1][0]) for i in intepretor.lookTable.items()})
-dim = sum([len(i[1][0]) for i in intepretor.lookTable.items()]) + 2
-# print(intepretor.lengths.values())
-
-dim = sum(intepretor.lengths.values()) + 2
-V = define_variables(dim)
-# print(len(V))
-models = ['bert-base-multilingual-cased'] #more models 4/5? all occs
-language_model = models[0]
-# [MASK] er {year} år og er en {occupation} fra {city} med bakgrunn fra {continent}.
+nValues = sum(intepretor.lengths.values()) + 2
+V = define_variables(nValues)
+LMs = ['bert-base-multilingual-cased'] #more models 4/5? all occs
+# language_model = models[0]
 
 # epsilon = 0.2
 # delta = 0.1
-
 
 background = generateBackground(V)
 
 iterations = 30
 # # eq = 5000
 r=0
-for language_model in models:
-    (h,runtime,terminated,average_samples) = extractHornRules(template, attributes, language_model, V, iterations, intepretor, background)
-    metadata = {'head' : {'model' : language_model, 'experiment' : r+1},'data' : {'runtime' : runtime, 'average_sample' : average_samples, "terminated" : terminated}}
-    with open('data/rule_extraction/' + language_model + '_metadata_' + str(iterations) + "_" + str(r+1) + '.json', 'w') as outfile:
+for lm in LMs:
+    (h,runtime,terminated,average_samples) = extractHornRules(template, attributes, lm, V, iterations, intepretor, background)
+    metadata = {'head' : {'model' : lm, 'experiment' : r+1},'data' : {'runtime' : runtime, 'average_sample' : average_samples, "terminated" : terminated}}
+    with open('data/rule_extraction/' + lm + '_metadata_' + str(iterations) + "_" + str(r+1) + '.json', 'w') as outfile:
         json.dump(metadata, outfile)
-    with open('data/rule_extraction/' + language_model + '_rules_' + str(iterations) + "_" + str(r+1) + '.txt', 'wb') as f:
+    with open('data/rule_extraction/' + lm + '_rules_' + str(iterations) + "_" + str(r+1) + '.txt', 'wb') as f:
         pickle.dump(h, f)
