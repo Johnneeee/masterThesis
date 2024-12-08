@@ -52,7 +52,7 @@ def get_random_sample(length, allow_zero = True, amount_of_true=1):
     vec = np.zeros(length, dtype=np.int8)
     # allow for all zeroes: one extra sample length and if its out of index range, use all zeroes vector (equal possibility)
     if allow_zero:
-        idx = random.sample(range(length), k=amount_of_true)
+        idx = random.sample(range(length + 1), k=amount_of_true)
     else:
         idx = random.sample(range(length), k=amount_of_true)
     for i in idx:
