@@ -65,6 +65,17 @@ c = probingPPBS("../censusData/utdanningnoLikestilling2023.csv") ## you may need
 occs = ["kokk", "advokat", "geolog", "flymekaniker"]
 templateExamples = ["[MASK] er en [OCCUPATION].","[MASK] jobber som en [OCCUPATION]."]
 
+# [MASK] jobber som en advokat.
+# Stian jobber som en [MASK].
+                     # ^^
+# bruke som occupations i horn rules
+
+# Female names
+# [NAME] jobber som en [MASK].
+
+# Male names
+# [NAME] jobber som en [MASK].
+
 gold = []
 for x in occs:
     gold.append([x ,c.goldPPBSs[x]])

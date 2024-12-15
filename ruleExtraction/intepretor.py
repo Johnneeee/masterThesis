@@ -53,6 +53,7 @@ class Intepretor:
 
         # [['age', 'yngre enn 20'], ['occupation', 'mekaniker'], ['city', 'Bodø'], ['ethnicity', 'Europa']]
         values = list(map(lambda val: [val[0], self.binaryToAttribute(val[0],val[1])],values))
+
         template = self.template
         for attribute, value in values:
             template = template.replace(f"[{attribute}]", value)

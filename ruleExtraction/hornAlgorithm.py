@@ -6,9 +6,44 @@ import math
 from intepretor import *
 from transformers import pipeline
 
+# pqr 
+
+# [1,1,0] 
+# [1,0,1]
+# instersect = [1,0,0]
+
+# VVclosure under intersectionVV property of Horn logic
+# if [1,1,0] is pos example and [1,0,1] is pos example then [1,0,0] is pos example
+
+# bad_nc = [1,0,0]
+
+
+# Helper functions for the Horn algorithm
+def getRandomValue(length, allow_zero):
+    vec = list(np.zeros(length, dtype=np.int8))
+    # allow for all zeroes: one extra sample length and if its out of index range, use all zeroes vector (equal possibility)
+    if allow_zero:
+        i = random.randrange(length+1)
+    else:
+        i = random.randrange(length)
+    if i < length:
+        vec[i] = 1
+    return vec
+
+def get_label(gender, classification):
+    if (gender[0] == 1 and classification == 0) or (gender[1] == 1 and classification == 1):
+        return True
+    else:
+        return False
+    
+def set2theory(set):
+    tempt = True
+    for e in set:
+        tempt = tempt & e
+    return tempt
 
 class HornAlgorithm():
-    def __init__(self, epsilon, delta, lm, intepretor : Intepretor, V):
+    def __init__(self, epsilon : int, delta : int, lm : str, intepretor : Intepretor, V):
         # static
         self.epsilon = epsilon
         self.delta = delta
@@ -23,11 +58,10 @@ class HornAlgorithm():
         self.bad_nc = []
         self.bad_pc = []
 
-
-    def probe(self, sentence):
+    def probe(self, sentence : str):
         # genderPred: 0 = female, 1 = male
-        if self.lm.split('-')[0] == 'bert' :
-            sentence = sentence.replace('<mask>', '[MASK]')
+        # if self.lm.split('-')[0] == 'bert' :
+        #     sentence = sentence.replace('<mask>', '[MASK]')
         result = self.unmasker(sentence)
 
         for reply in result: # for the replies returned by the language model
@@ -38,46 +72,23 @@ class HornAlgorithm():
             if (reply["token_str"]).lower() == "han": # i should add more cases
                 return 1
             else:
-
                 continue
+
         return result[0]['token_str']
-
-    def getRandomValue(self, length, allow_zero):
-        vec = list(np.zeros(length, dtype=np.int8))
-        # allow for all zeroes: one extra sample length and if its out of index range, use all zeroes vector (equal possibility)
-        if allow_zero:
-            i = random.randrange(length+1)
-        else:
-            i = random.randrange(length)
-        if i < length:
-            vec[i] = 1
-        return vec
-
-    def get_label(self, gender, classification):
-        """
-            Does handling no 1 in vector work as a diverse attribute (neither he or she) to include they?
-            -> never gets predicted so what rules result from that? Influences other attributes?
-        """
-        if (gender[0] == 1 and classification == 0) or (gender[1] == 1 and classification == 1):
-            return True
-        else:
-            return False
 
     def create_single_sample(self):
         randomVec = []
         for att in self.intepretor.attributes:
-            randomVec += self.getRandomValue(self.intepretor.lengths[att], True)
+            randomVec += getRandomValue(self.intepretor.lengths[att], True) #why true
         
-        randomGenderVec = self.getRandomValue(2, allow_zero=False)
+        randomGenderVec = getRandomValue(2, allow_zero=False)
         randomVec += randomGenderVec
 
         sentence = self.intepretor.binaryToSentence(randomVec)
         # genderPred: 0 = female, 1 = male
         genderLMPred = self.probe(sentence)
-        # if the sampled gender is equal the classification (correctly classified) then we return 1 as 'is valid sentence' 
-        # if sampled gender and classification don't match, the sample is not valid and we return 0 as a label
-        # label = self.get_label(genderPred, randomGenderVec)
-        label = self.get_label(randomGenderVec,genderLMPred)
+
+        label = get_label(randomGenderVec,genderLMPred)
 
         return (randomVec,label)
     
@@ -92,16 +103,10 @@ class HornAlgorithm():
                             else False)
         return True if formula.subs(a) == True else False
     
-    def set2theory(self, set):
-        tempt = True
-        for e in set:
-            tempt = tempt & e
-        return tempt
-    
     def EQ(self,H):
         h = true
         if len(H):
-            h = self.set2theory(H)
+            h = set2theory(H)
         for i in range(self.sampleSize):
             (a,label) = self.create_single_sample()
 
@@ -112,8 +117,8 @@ class HornAlgorithm():
             # pos counter example
             if label == True and not self.evalFormula(h,a):
                 # print("pos counterex")
-
                 return (a, i+1)
+
         return True
     
     def MQ(self, assignment):
@@ -121,10 +126,10 @@ class HornAlgorithm():
         genderVec = assignment[-2:]
         sentence = self.intepretor.binaryToSentence(vec)
         genderLMPred = self.probe(sentence)
-        label = self.get_label(genderVec, genderLMPred)
+        label = get_label(genderVec, genderLMPred)
         return label
     
-    def get_hypothesis(self, S,background):
+    def get_hypothesis(self, S, background):
         H = set()
         for a in [a for a in S if a not in self.bad_nc]:
             L = [self.V[index] for index,value in enumerate(a) if a[index] == 1] + [true]
@@ -136,7 +141,7 @@ class HornAlgorithm():
         H = H.union(background)
         return H
     
-    def refineHyp(self, H,S,Pos):
+    def refineHyp(self, H, S, Pos):
         #small optimisation. Refine hypo. with known positive counterexamples.
         for pos in Pos:
             for clause in H.copy():
@@ -146,20 +151,20 @@ class HornAlgorithm():
         self.identify_problematic_nc(H,S)
         return H
 
-    def identify_problematic_nc(self, H, S):
+    def identify_problematic_nc(self, H, S): 
         #check if a nc in S does not falsify a clause in H
-        h=self.set2theory(H)
+        h = set2theory(H)
         for a in [a for a in S if a not in self.bad_nc]:
             if (self.evalFormula(h, a) == True):
                 self.bad_nc.append(a)
 
-    def checkDup(self, list,a):
+    def checkDup(self, list, a):
         if a in list:
             self.bad_nc.append(a)
             return True
         return False
     
-    def learn(self,background= {},iterations=-1):
+    def learn(self,background,iterations=-1):
         terminated = False
         metadata = []
         H = set()

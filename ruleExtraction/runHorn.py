@@ -1,6 +1,10 @@
 import numpy as np
 import timeit
 from itertools import combinations
+import pickle
+import json
+import csv
+
 from hornAlgorithm import *
 from intepretor import *
 
@@ -27,41 +31,48 @@ def generateBackground(V, attLengths):
     return background
 
 
-# init intepretor
-age_file = 'data/ageValues.csv'
-occ_file = 'data/occupationValues.csv'
-cities_file = "data/cityValues.csv"
-ethnicity_file = "data/ethnicityValues.csv"
+# # init intepretor
+# age_file = 'data/ageValues.csv'
+# occ_file = 'data/occupationValues.csv'
+# cities_file = "data/cityValues.csv"
+# ethnicity_file = "data/ethnicityValues.csv"
 
-filePaths = [age_file, occ_file, cities_file, ethnicity_file]
-attributes = ["age", "occupation", "city", "ethnicity"]
-neutralCases = ["mellom 0 og 100", "person", "en ukjent by", "et ukjent sted"]
-template = "<mask> er [age] år og er en [occupation] fra [city] med bakgrunn fra [ethnicity]."
-intepretor = Intepretor(attributes, filePaths, neutralCases, template)
+# filePaths = [age_file, occ_file, cities_file, ethnicity_file]
+# attributes = ["age", "occupation", "city", "ethnicity"]
+# neutralCases = ["mellom 0 og 100", "person", "en ukjent by", "et ukjent sted"]
+# # template = "<mask> er [age] år og er en [occupation] fra [city] med bakgrunn fra [ethnicity]."
+# template = "[MASK] er [age] år og er en [occupation] fra [city] med bakgrunn fra [ethnicity]."
+# intepretor = Intepretor(attributes, filePaths, neutralCases, template)
 
 
-# init hornAlgorithm for "bert-base-multilingual-cased"
-V = define_variables(sum(intepretor.lengths.values()) + 2)
+# # init hornAlgorithm for "bert-base-multilingual-cased"
+# if __name__ == "__main__":
 
-lm = "bert-base-multilingual-cased"
-epsilon = 0.2
-delta = 0.1
-hornAlgorithm = HornAlgorithm(epsilon, delta, lm, intepretor, V)
+#     V = define_variables(sum(intepretor.lengths.values()) + 2)
+#     # lm = "bert-base-multilingual-cased"
+#     lm = "ltg/norbert2"
+#     epsilon = 0.2 # error (differ between model and sampled)
+#     delta = 0.1 # confidence (chance of differ)
+#     hornAlgorithm = HornAlgorithm(epsilon, delta, lm, intepretor, V)
 
-# run the horn algorithm
-# background = generateBackground(V, intepretor.lengths.values()) 
-background = {}
-iterations = 30
+#     background = generateBackground(V, intepretor.lengths.values()) 
+#     # background = {}
+#     with open('data/background.txt', 'wb') as f:
+#         pickle.dump(background, f)
+#     # background = {}
+#     iterations = 100
 
-start = timeit.default_timer()
-terminated, metadata, h = hornAlgorithm.learn(background, iterations)
-stop = timeit.default_timer()
-runtime = stop-start
+#     # run the horn algorithm
+#     start = timeit.default_timer()
+#     terminated, metadata, h = hornAlgorithm.learn(background, iterations)
+#     stop = timeit.default_timer()
+#     runtime = stop-start
 
-# for lm in LMs:
-#     (h,runtime,terminated,average_samples) = extractHornRules(attributes, lm, V, iterations, intepretor, background)
-#     metadata = {'head' : {'model' : lm, 'experiment' : r+1},'data' : {'runtime' : runtime, 'average_sample' : average_samples, "terminated" : terminated}}
-#     with open('data/rule_extraction/' + lm + '_metadata_' + str(iterations) + "_" + str(r+1) + '.json', 'w') as outfile:
-#         json.dump(metadata, outfile)
-#     with open('data/rule_extraction/' + lm + '_rules_' + str(iterations) + "_" + str(r+1) + '.txt', 'wb') as f:
-#         pickle.dump(h, f)
+# print(h)
+# print(runtime)
+# print(metadata)
+# allmetadata = {'head' : {'model' : lm},'data' : {'runtime' : runtime, 'average_sample' : metadata, "terminated" : terminated}}
+# with open('data/rule_extraction/' + lm + '_metadata_' + str(iterations) + '.json', 'w') as outfile:
+#     json.dump(allmetadata, outfile)
+# with open('data/rule_extraction/' + lm + '_rules_' + str(iterations) + '.txt', 'wb') as f:
+#     pickle.dump(h, f)
