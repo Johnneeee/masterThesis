@@ -31,46 +31,69 @@ def generateBackground(V, attLengths):
     return background
 
 
-# # init intepretor
-# age_file = 'data/ageValues.csv'
-# occ_file = 'data/occupationValues.csv'
-# cities_file = "data/cityValues.csv"
-# ethnicity_file = "data/ethnicityValues.csv"
+# init intepretor
+age_file = 'data/ageValues.csv'
+occ_file = 'data/occupationValues.csv'
+cities_file = "data/cityValues.csv"
+ethnicity_file = "data/ethnicityValues.csv"
 
-# filePaths = [age_file, occ_file, cities_file, ethnicity_file]
-# attributes = ["age", "occupation", "city", "ethnicity"]
-# neutralCases = ["mellom 0 og 100", "person", "en ukjent by", "et ukjent sted"]
-# # template = "<mask> er [age] år og er en [occupation] fra [city] med bakgrunn fra [ethnicity]."
-# template = "[MASK] er [age] år og er en [occupation] fra [city] med bakgrunn fra [ethnicity]."
-# intepretor = Intepretor(attributes, filePaths, neutralCases, template)
+filePaths = [age_file, occ_file, cities_file, ethnicity_file]
+attributes = ["age", "occupation", "city", "ethnicity"]
+neutralCases = ["mellom 0 og 100", "person", "en ukjent by", "et ukjent sted"]
+# template = "<mask> er [age] år og er en [occupation] fra [city] med bakgrunn fra [ethnicity]."
+template = "[MASK] er [age] år og er en [occupation] fra [city] med bakgrunn fra [ethnicity]."
+intepretor = Intepretor(attributes, filePaths, neutralCases, template)
 
 
-# # init hornAlgorithm for "bert-base-multilingual-cased"
-# if __name__ == "__main__":
+# init common values for all lm's
+V = define_variables(sum(intepretor.lengths.values()) + 2)
+background = generateBackground(V, intepretor.lengths.values()) 
+epsilon = 0.2 # error (differ between model and sampled)
+delta = 0.1 # confidence (chance of differ)
 
-#     V = define_variables(sum(intepretor.lengths.values()) + 2)
-#     # lm = "bert-base-multilingual-cased"
-#     lm = "ltg/norbert2"
-#     epsilon = 0.2 # error (differ between model and sampled)
-#     delta = 0.1 # confidence (chance of differ)
-#     hornAlgorithm = HornAlgorithm(epsilon, delta, lm, intepretor, V)
 
-#     background = generateBackground(V, intepretor.lengths.values()) 
-#     # background = {}
-#     with open('data/background.txt', 'wb') as f:
-#         pickle.dump(background, f)
-#     # background = {}
-#     iterations = 100
+###########
+# init hornAlgorithm for "bert-base-multilingual-cased"
+lm = "bert-base-multilingual-cased"
+hornAlgorithm = HornAlgorithm(epsilon, delta, lm, intepretor, V)
 
-#     # run the horn algorithm
-#     start = timeit.default_timer()
-#     terminated, metadata, h = hornAlgorithm.learn(background, iterations)
-#     stop = timeit.default_timer()
-#     runtime = stop-start
+# background = {}
+print(background)
+# print(type(str(list(background)[0])))
 
-# print(h)
-# print(runtime)
-# print(metadata)
+
+# with open('data/background.txt', 'wb') as f:
+#     pickle.dump(background, f)
+    
+with open('data/background.csv', 'w', newline = '') as csvfile:
+    bg = list(background)
+    bg = list(map(lambda x: [str(x)],bg))
+    writer = csv.writer(csvfile)
+    print(bg)
+    writer.writerows(bg)
+# background = {}
+iterations = 5
+# run the horn algorithm
+start = timeit.default_timer()
+terminated, metadata, h = hornAlgorithm.learn(background, iterations)
+stop = timeit.default_timer()
+runtime = stop-start
+
+# # iteration, len(H), sampleNr, runtime
+print(metadata)
+print(h)
+print(runtime)
+
+#metadata
+head = [["ITERATION", "HYP LEN", "SAMPLENR", "RUNTIME"]]
+with open("rule_extraction/" + lm + "_metadata_" + str(iterations) + ".csv", 'w', newline='') as csvfile:
+    writer = csv.writer(csvfile)
+    writer.writerows(head)
+    writer.writerows(metadata)
+
+# extracted rules
+
+
 # allmetadata = {'head' : {'model' : lm},'data' : {'runtime' : runtime, 'average_sample' : metadata, "terminated" : terminated}}
 # with open('data/rule_extraction/' + lm + '_metadata_' + str(iterations) + '.json', 'w') as outfile:
 #     json.dump(allmetadata, outfile)

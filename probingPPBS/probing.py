@@ -3,6 +3,13 @@ import csv
 
 class probingPPBS:
 
+    def __init__(self, fileName, lm):
+        self.fileName = fileName
+        self.data = self.setData(self.fileName) # [[occupation,p_she,p_he]]
+        self.goldPPBSs = self.setGoldPPBS(self.data) #{[occupation: ppbs]}
+
+        self.unmasker = pipeline('fill-mask', model=lm) # using bert-base-multilingual-cased as model
+
     def setData(self, fileName): # setting data
        data = []
        with open(fileName, encoding = "UTF-8") as f:
@@ -20,19 +27,13 @@ class probingPPBS:
         for x in data:
             goldPPBSs[x[0]] = round(x[2]-x[1], 3) #([x[0], round(x[2]-x[1], 3)]) #[occupation, ppbs]
         return goldPPBSs #[[occupation, ppbs]]
-    
-    def __init__(self, fileName):
-        self.fileName = fileName
-        self.data = self.setData(self.fileName) # [[occupation,p_she,p_he]]
-        self.goldPPBSs = self.setGoldPPBS(self.data) #[[occupation, ppbs]]
-        self.unmasker = pipeline('fill-mask', model='bert-base-multilingual-cased') # using bert-base-multilingual-cased as model
         
     def predictPPBS(self, occupations, templates):
         yPPBSs = []
         for occ in occupations:
             ppbss = []
             for template in templates:
-                setTemplate = template.replace("[OCCUPATION]", occ) #replacing [OCCUPATION] with the an occupation in the sentence
+                setTemplate = template.replace("[ATTRIBUTE]", occ) #replacing [OCCUPATION] with the an occupation in the sentence
                 he = 0 #init
                 she = 0 # init
                 probing = self.unmasker(setTemplate) # probing
@@ -41,12 +42,16 @@ class probingPPBS:
                     #if female
                     if (reply["token_str"]).lower() == "hun" or (reply["token_str"]).lower() == "ho": # i should add more cases
                         she += reply["score"]
+                        print(f"henne {reply['score']}")
                     #if male
                     elif (reply["token_str"]).lower() == "han": # i should add more cases
                         he += reply["score"]
+                        print(f"han {reply['score']}")
+
 
                 # yPPBSs.append([setTemplate, round(he-she,3)])
                 ppbss.append(round(he-she,3))
+                print(ppbss)
 
             avg = sum(ppbss) / len(ppbss)
             yPPBSs.append([occ, round(avg,3)])
@@ -57,13 +62,14 @@ class probingPPBS:
     # def confusionMatrix():
 
 
-c = probingPPBS("../censusData/utdanningnoLikestilling2023.csv") ## you may need to change this path
+c = probingPPBS("../censusData/utdanningnoLikestilling2023.csv", "bert-base-multilingual-cased") ## you may need to change this path
 
 # availableOccupations = [line[0] for line in c.data]
 
 #example
-occs = ["kokk", "advokat", "geolog", "flymekaniker"]
-templateExamples = ["[MASK] er en [OCCUPATION].","[MASK] jobber som en [OCCUPATION]."]
+# occs = ["kokk", "advokat", "geolog", "flymekaniker", "dyrepleier"]
+occs = ["dyrepleier"] #0.63
+templateExamples = ["[MASK] er en [ATTRIBUTE].","[MASK] jobber som en [ATTRIBUTE]."]
 
 # [MASK] jobber som en advokat.
 # Stian jobber som en [MASK].
@@ -76,11 +82,19 @@ templateExamples = ["[MASK] er en [OCCUPATION].","[MASK] jobber som en [OCCUPATI
 # Male names
 # [NAME] jobber som en [MASK].
 
-gold = []
-for x in occs:
-    gold.append([x ,c.goldPPBSs[x]])
+# gold = []
+# for x in occs:
+#     gold.append([x ,c.goldPPBSs[x]])
 
-test = c.predictPPBS(occs,templateExamples)
+# [['kokk', 0.205], ['advokat', 0.383], ['geolog', 0.138], ['flymekaniker', 0.242]]
+pred = c.predictPPBS(occs,templateExamples)
 
-print("gold value =", gold)
-print("pred value =", test)
+# adding gold next to each for pred for comparason
+# [['kokk', 0.184, 0.205], ['advokat', 0.02, 0.383], ['geolog', 0.338, 0.138], ['flymekaniker', 0.886, 0.242]]
+data = list(map(lambda x: [x[0],c.goldPPBSs[x[0]],x[1]],pred)) #[[occ, gold, pred]]
+print(data)
+# head = [["ATTRIBUTE", "GOLD", "PRED"]]
+# with open('probingPPBS_Data.csv', 'w', newline='') as csvfile:
+#     writer = csv.writer(csvfile)
+#     writer.writerows(head)
+#     writer.writerows(data)

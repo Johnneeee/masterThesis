@@ -6,18 +6,6 @@ import math
 from intepretor import *
 from transformers import pipeline
 
-# pqr 
-
-# [1,1,0] 
-# [1,0,1]
-# instersect = [1,0,0]
-
-# VVclosure under intersectionVV property of Horn logic
-# if [1,1,0] is pos example and [1,0,1] is pos example then [1,0,0] is pos example
-
-# bad_nc = [1,0,0]
-
-
 # Helper functions for the Horn algorithm
 def getRandomValue(length, allow_zero):
     vec = list(np.zeros(length, dtype=np.int8))
@@ -164,34 +152,33 @@ class HornAlgorithm():
             return True
         return False
     
-    def learn(self,background,iterations=-1):
+    def learn(self,background,iterationCap=-1):
         terminated = False
-        metadata = []
+        metadata = [] #[[iteration, len(H), sampleNr, runtime]]
         H = set()
         H = H.union(background)
         S = []
-        i = 0
+        i = 1
         #remember positive counterexamples
         Pos = []
         #list of negative counterexamples that cannot produce a rule (according to positive counterexamples)
         #bad_nc =[]
-        while True and iterations!=0:
-            data = {}
+        while True and i!=(iterationCap+1):
             start = timeit.default_timer()
             #Ask for H
             eq_res = self.EQ(H)
             if eq_res == True:
-                terminated = True
+                # logging metadata
                 stop = timeit.default_timer()
-                data['runtime'] = stop-start
+                timer = stop-start
+                data = [i, len(H), 0, round(timer, 3)]
                 metadata.append(data)
                 print("terminated")
-                # with open('output.txt', 'a') as f:
-                #     f.write("=== TERMINATED ===\n")
+
+                terminated = True
                 return (terminated, metadata, H)
 
             (counterEx,sampleNr) = eq_res
-            data['sample'] = sampleNr
             pos_ex=False
 
             # if EQ() returns a positive counterexample
@@ -225,16 +212,12 @@ class HornAlgorithm():
                 H = self.get_hypothesis(S,background)
                 H = self.refineHyp(H,S,Pos)
 
-            # logging
-            iterations-=1
+            # logging metadata
             stop = timeit.default_timer()
-            data['runtime'] = stop-start
+            timer = stop-start
+            data = [i, len(H), sampleNr, round(timer, 3)]
             metadata.append(data)
+            print(data)
             i += 1
-            print(f"iteration = {i}, len(H) = {len(H)}, runTime = {[data['runtime']]}")
 
-            # if iterations % 5 == 0:
-            #     log = f"iteration = {i}, len(H) = {len(H)}, rt = {[data['runtime']]}"
-            #     with open('output.txt', 'a') as f:
-            #         f.write(log)
         return (terminated, metadata, H)

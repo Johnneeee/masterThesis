@@ -5,7 +5,6 @@ import numpy as np
 import json
 import pandas as pd
 # from intepretor import *
-# from runHorn import intepretor
 
 # data/rule_extraction/' + lm + '_rules_' + str(iterations) + '.txt'
 with open('data/rule_extraction/' + "bert-base-multilingual-cased" + '_rules_' + "22" + '.txt', 'rb') as f:
@@ -59,29 +58,6 @@ def make_rule_lists(all_rules): # &ant -> con
             implications.append({'con' : con_idx, 'ant' : ant_idx})
     return (rules, negations, implications)
 
-# # init intepretor
-# age_file = 'data/ageValues.csv'
-# occ_file = 'data/occupationValues.csv'
-# cities_file = "data/cityValues.csv"
-# ethnicity_file = "data/ethnicityValues.csv"
-
-# filePaths = [age_file, occ_file, cities_file, ethnicity_file]
-# attributes = ["age", "occupation", "city", "ethnicity"]
-# neutralCases = ["mellom 0 og 100", "person", "en ukjent by", "et ukjent sted"]
-# template = "<mask> er [age] år og er en [occupation] fra [city] med bakgrunn fra [ethnicity]."
-# intepretor = Intepretor(attributes, filePaths, neutralCases, template)
-
-# (rules, negations, implications) = make_rule_lists(allRules)
-# # print(implications)
-
-# lookup = intepretor.lookTable
-
-# lookupTable = []
-# for x in lookup.values():
-#     lookupTable += x[0]
-# lookupTable.append("kvinne")
-# lookupTable.append("mann")
-# # print(lookupTable)
 
 def negation_to_string(rule, total_lookup): # [1,2] -> not (ja & nei)
     s = "not ("

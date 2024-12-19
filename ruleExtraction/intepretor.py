@@ -3,9 +3,9 @@ import csv
 
 class Intepretor:
     def __init__(self, attributes, filePaths, neutralCases, template):
-        self.lookTable = self.formatLookupTable(attributes, filePaths, neutralCases)
+        self.lookupTable = self.formatLookupTable(attributes, filePaths, neutralCases)
         self.template = template
-        self.lengths = {i[0]:len(i[1][0]) for i in self.lookTable.items()}
+        self.lengths = {i[0]:len(i[1][0]) for i in self.lookupTable.items()}
         self.attributes = attributes
 
     def formatLookupTable(self, attributes, filePaths, neutralCases):
@@ -24,7 +24,7 @@ class Intepretor:
         return lookup
 
     def binaryToAttribute(self, type, bin):
-        attributeLookup = self.lookTable[type]
+        attributeLookup = self.lookupTable[type]
         nonzero = np.nonzero(bin)[0]
         if len(nonzero) > 0:
             index = nonzero[0]
@@ -40,7 +40,7 @@ class Intepretor:
         attributes = []
         splitIndexes = []
         i = 0
-        for x in self.lookTable.items():
+        for x in self.lookupTable.items():
             attributes.append(x[0])
             splitIndexes.append(len(x[1][0]) + i)
             i += len(x[1][0])
