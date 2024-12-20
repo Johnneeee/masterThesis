@@ -1,9 +1,10 @@
-from sympy import *
 import functools
 import random
 import timeit
-import math
-from intepretor import *
+from math import prod
+import numpy as np
+from sympy import true, false, Pow, log #using sympy's log and pow to avoid overflow
+from intepretor import Intepretor # just for pretty syntax
 from transformers import pipeline
 
 # Helper functions for the Horn algorithm
@@ -36,7 +37,7 @@ class HornAlgorithm():
         self.epsilon = epsilon
         self.delta = delta
         self.intepretor = intepretor
-        self.hypSpace = math.prod(self.intepretor.lengths.values())*2
+        self.hypSpace = prod(self.intepretor.lengths.values())*2
         self.sampleSize = int ( (1/epsilon) * log( (Pow(2,self.hypSpace) / delta), 2))
         self.lm = lm
         self.unmasker = pipeline('fill-mask', model=lm)
@@ -153,7 +154,6 @@ class HornAlgorithm():
         return False
     
     def learn(self,background,iterationCap=-1):
-        terminated = False
         metadata = [] #[[iteration, len(H), sampleNr, runtime]]
         H = set()
         H = H.union(background)
@@ -176,7 +176,7 @@ class HornAlgorithm():
                 print("terminated")
 
                 terminated = True
-                return (terminated, metadata, H)
+                return (metadata, H)
 
             (counterEx,sampleNr) = eq_res
             pos_ex=False
@@ -220,4 +220,4 @@ class HornAlgorithm():
             print(data)
             i += 1
 
-        return (terminated, metadata, H)
+        return (metadata, H)

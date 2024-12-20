@@ -7,6 +7,7 @@ class Intepretor:
         self.template = template
         self.lengths = {i[0]:len(i[1][0]) for i in self.lookupTable.items()}
         self.attributes = attributes
+        self.lookupTableValues = sum([x[0] for x in self.lookupTable.values()],[]) #the lookuptable flattened
 
     def formatLookupTable(self, attributes, filePaths, neutralCases):
         # {attribute: ([attributes], neutralCase)}
