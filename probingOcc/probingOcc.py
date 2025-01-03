@@ -115,3 +115,32 @@ totalCounterMale = addToTotal(maleFiles)
 
 writeToCSV("data/totalCounter_Female.csv",totalCounterFemale)
 writeToCSV("data/totalCounter_Male.csv",totalCounterMale)
+
+# top 10 female occs:       top 10 male occs:       common occs from top 10:
+# skuespiller,              lærer,                  lærer,
+# lærer,                    journalist,             journalist,
+# journalist,               skuespiller,            skuespiller,
+# advokat,                  advokat,                advokat,
+# frisør,                   fotograf,               assistent?,
+# assistent?,               assistent?,             lærling?,
+# sykepleier,               lærling?,               frisør,
+# lærling?,                 politiker,              fotograf,
+# guide?,                   frisør,                 forfatter,
+# coach?,                   rørlegger,              sykepleier
+# fotograf,                 kokk,
+# modell,                   forfatter,
+# terapeut,                 sykepleier,
+# forfatter                 agent
+
+# from top 10:
+# distinct female occs:     distinct male occs:     common occs:
+# guide?,                   politiker,              lærer,
+# coach?,                   rørlegger,              journalist,
+# modell,                   kokk,                   skuespiller,
+# terapaut                  agent,                  advokat,
+#                                                   assistent?,
+#                                                   lærling?,
+#                                                   frisør,
+#                                                   fotograf,
+#                                                   forfatter,
+#                                                   sykepleier
