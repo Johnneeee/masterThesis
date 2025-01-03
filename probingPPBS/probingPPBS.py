@@ -4,8 +4,8 @@ from tqdm import tqdm
 
 def writecsvFile(path,data):
     head = [["ATTRIBUTE", "GOLD", "PRED"]]
-    with open(path, 'w', newline='', encoding="UTF-8") as csvfile:
-        writer = csv.writer(csvfile)
+    with open(path, 'w', newline='',encoding="UTF-8") as csvfile:
+        writer = csv.writer(csvfile, delimiter=";")
         writer.writerows(head)
         writer.writerows(data)
 
@@ -109,16 +109,3 @@ c = probingPPBS("../censusData/utdanningnoLikestilling2023.csv", "ltg/norbert2")
 pred = c.predictPPBS(occupations,templates)
 data = list(map(lambda x: [x[0],c.goldPPBSs[x[0]],x[1]],pred)) #[[occ, gold, pred]]
 writecsvFile("data/norbert2_ppbs.csv",data)
-
-
-# # [MASK] jobber som en advokat.
-# # Stian jobber som en [MASK].
-#                      # ^^
-# # bruke som occupations i horn rules
-
-# # Female names
-# # [NAME] jobber som en [MASK].
-
-# # Male names
-# # [NAME] jobber som en [MASK].
-
