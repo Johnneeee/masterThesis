@@ -1,451 +1,451 @@
-ATTRIBUTE,GOLD,PRED
-kokk,0.184,0.164
-advokat,0.02,0.206
-advokatsekretær,-0.91,0.096
-afis-fullmektig,0.51,0.306
-agronom,0.216,0.203
-aksjemegler,0.368,0.152
-aktivitør,-0.286,0.295
-aktuar,0.412,0.169
-grunnskolelærer,-0.508,-0.227
-ambulansearbeider,0.168,0.29
-anleggsgartner,0.608,0.332
-anleggsmaskinfører,0.96,0.227
-apoteker,-0.344,0.169
-apotektekniker,-0.912,0.435
-arkeolog,-0.412,0.273
-arkitekt,-0.008,0.228
-arkivar,-0.42,0.094
-art director,0.126,0.048
-personlig assistent,-0.468,0.201
-astronom,0.57,0.336
-audiograf,-0.45,-0.052
-automatiker,0.892,0.381
-avioniker,0.892,0.245
-badevakt,0.012,0.064
-baker,0.126,0.164
-barne- og ungdomsarbeider,-0.63,0.077
-barnehageassistent,-0.698,-0.005
-barnevernspedagog,-0.724,-0.267
-bartender,-0.066,0.297
-bibliotekar,-0.584,-0.03
-billakkerer,0.842,0.296
-bilmekaniker (lette kjøretøy),0.962,0.279
-bilselger,0.886,0.126
-bioingeniør,-0.658,0.224
-biokjemiker,-0.032,0.337
-biolog,0.028,0.047
-bioteknolog,-0.2,0.136
-blikkenslager,0.972,0.125
-blomsterdekoratør,-0.918,0.017
-brannkonstabel,0.896,0.441
-brønnoperatør,0.93,0.173
-bussjåfør,0.856,0.277
-butikkmedarbeider,-0.258,0.264
-ferskvarehandler,-0.058,0.068
-dansepedagog,-0.754,-0.206
-danser,-0.288,-0.051
-dataingeniør,0.638,0.351
-diakon,-0.688,0.168
-dirigent,0.006,0.226
-dommer,0.042,0.259
-dykker,0.952,0.183
-dyrepleier,-0.892,-0.034
-tegnspråktolk,-0.866,-0.146
-eiendomsmegler,0.33,0.24
-elektriker,0.948,0.253
-elektroingeniør,0.784,0.164
-energimontør,0.936,0.123
-ergoterapeut,-0.772,0.046
-klinisk ernæringsfysiolog,-0.904,-0.439
-faglærer,0.016,-0.143
-provisorfarmasøyt,-0.632,0.41
-brannforebygger,0.772,0.423
-fengselsbetjent,0.162,0.322
-fagoperatør akvakultur (fiskeoppdretter),0.656,-0.037
-flygeleder,0.514,0.363
-flymotormekaniker,0.892,0.275
-forfatter,-0.114,0.003
-forsikringsrådgiver,0.05,0.059
-forsker,0.072,0.172
-fotballspiller,0.754,0.174
-fotballtrener,0.762,0.456
-fotograf,0.332,0.097
-fotojournalist,0.564,0.088
-fotterapeut,-0.908,0.244
-frisør,-0.776,0.068
-fu-operatør,0.814,0.001
-fysioterapeut,-0.526,0.244
-barnehagelærer,-0.812,-0.067
-gartner,0.052,0.265
-geofysiker,0.33,0.474
-geograf,-0.1,0.337
-geolog,0.338,0.383
-glassblåser,0.426,0.097
-grafisk designer,-0.038,0.142
-guide,0.008,0.111
-gullsmed,-0.16,0.237
-havforsker,0.292,0.163
-heismontør,0.982,0.237
-helsesekretær,-0.97,-0.018
-helsesykepleier,-0.984,-0.205
-helsefagarbeider,-0.678,0.105
-hms-ingeniør,0.17,0.425
-hotelldirektør,0.294,0.208
-hovmester,-0.126,0.357
-hovslager,0.454,0.034
-hudpleier,-0.986,-0.211
-husøkonom,-0.672,0.032
-hydrolog,0.302,0.224
-idrettskonsulent,0.278,0.123
-idrettstrener,0.036,0.517
-illustratør,-0.194,-0.103
-industridesigner,0.408,0.036
-industrimaler,0.972,0.206
-industrimekaniker,0.908,0.168
-industrirørlegger,0.966,0.263
-ingeniør,0.584,0.215
-inspisient,0.066,0.153
-interiørarkitekt,-0.722,-0.21
-interiørkonsulent,-0.718,-0.185
-isolatør,0.976,0.162
-it-konsulent,0.562,0.265
-jordmor,-0.998,-0.285
-journalist,0.072,0.132
-jurist,-0.284,0.136
-kabinpersonale fly,-0.564,0.055
-karriereveileder,-0.418,0.072
-kateket,-0.444,-0.035
-kirketjener,0.382,0.163
-kiropraktor,0.284,0.282
-kjemiingeniør,-0.134,0.3
-kjemiker,-0.134,0.444
-kjole- og draktsyer,-0.756,-0.157
-klesdesigner,-0.74,0.067
-konditor,-0.44,0.273
-konduktør,0.136,0.329
-konservator,-0.372,0.165
-service- og administrasjonsmedarbeider,-0.428,-0.179
-kosmetolog,-0.946,0.026
-kostymesyer,-0.908,-0.098
-kostøkonom,-0.186,0.071
-fagoperatør kran- og løfteoperasjoner (kranfører),0.94,0.51
-kulde- og varmepumpetekniker,0.974,0.12
-kunderådgiver i bank,-0.1,-0.196
-kunsthåndverker,0.038,0.188
-kunstner,-0.034,0.173
-kystskipper,0.976,0.29
-laborant,-0.326,0.127
-landmåler,0.45,-0.004
-landskapsarkitekt,-0.326,-0.155
-yrkessjåfør,0.91,0.239
-leder,0.306,0.254
-lege,-0.086,0.216
-legemiddelkonsulent,-0.046,0.121
-lektor,-0.246,0.059
-logistikkoperatør,0.624,0.131
-logoped,-0.862,0.102
-los,0.956,0.198
-lydtekniker,0.866,0.226
-lystekniker,0.51,0.293
-lærer,-0.378,0.061
-maler,0.876,0.072
-marinbiolog,-0.236,-0.114
-markedsfører,-0.15,0.173
-markedssjef,0.206,0.332
-maskiningeniør,0.836,0.311
-maskør- og parykkmaker,-0.738,0.088
-massasjeterapeut,-0.658,0.129
-matematiker,-0.04,0.278
-matros,0.888,0.143
-mediedesigner,0.02,0.012
-megler,0.368,0.072
-mekaniker,0.958,0.507
-meteorolog,0.088,0.285
-modell,-0.368,-0.013
-skipsmotormekaniker,0.978,0.369
-motormekaniker,0.976,0.294
-mur-og flislegger,0.98,0.204
-musiker,0.172,0.026
-musikkpedagog,-0.128,-0.14
-møbelsnekker,0.81,0.061
-møbeltapetserer,0.416,0.172
-naturforvalter,0.662,0.138
-negledesigner,-0.908,0.212
-mattekniker,-0.294,0.164
-optiker,-0.286,0.258
-organist/kantor,0.204,0.149
-ortoped,0.542,0.093
-ortopediingeniør,-0.154,0.184
-ortopeditekniker,0.302,0.214
-oversetter,-0.232,0.051
-personalsjef,-0.388,0.203
-petroleumsingeniør,0.586,0.023
-pilot,0.91,0.265
-platearbeider,0.976,0.208
-politi,0.252,0.225
-politibetjent,0.288,0.266
-politijurist,-0.082,0.267
-politiker,-0.034,0.219
-portør,0.464,0.11
-postbud,0.152,0.016
-prest,0.33,0.21
-professor,0.336,0.212
-fagoperatør i kjemisk prosessindustri (prosesstekniker),0.7,0.233
-psykiater,-0.106,0.353
-psykolog,-0.51,0.235
-radiograf,-0.486,0.173
-radiolog,0.162,0.288
-redaktør,0.006,0.215
-regissør,0.098,0.156
-regnskapsfører,-0.474,0.222
-reiselivsmedarbeider,-0.352,0.151
-reiseleder,-0.06,0.186
-renholdsoperatør,-0.548,-0.1
-resepsjonist,-0.182,0.279
-reseptarfarmasøyt,-0.632,0.5
-revisor,0.026,0.239
-ridelærer,-0.826,0.192
-rørlegger,0.972,0.166
-saksbehandler,-0.474,-0.02
-samfunnsøkonom,0.032,0.182
-sanger,-0.164,-0.242
-scenograf,-0.382,0.138
-servitør,-0.262,0.066
-sivilingeniør,0.572,0.128
-siviløkonom,-0.01,0.067
-maritim elektriker,0.976,0.376
-skipsmegler,0.73,0.26
-skoleassistent,-0.398,0.067
-rektor/skoleleder,-0.174,-0.018
-skomaker,0.394,0.36
-skuespiller,0.002,-0.049
-slakter,0.62,0.2
-smed,0.53,0.2
-sminkør,-0.734,-0.088
-sosialantropolog,-0.126,0.056
-sosiolog,-0.16,0.095
-sosionom,-0.546,0.004
-speditør,0.462,0.134
-spesialpedagog,-0.856,-0.197
-statsviter,-0.132,0.162
-stipendiat,-0.06,0.052
-styrmann,0.936,0.101
-sveiser,0.946,0.192
-sykepleier,-0.792,-0.03
-sølvsmed,-0.088,0.233
-takstmann,0.916,0.252
-tak- og membrantekker,0.982,0.07
-tannhelsesekretær,-0.944,0.139
-tannlege,-0.22,0.214
-tannpleier,-0.948,-0.053
-tanntekniker,-0.054,0.296
-tavlemontør,0.848,0.06
-taxisjåfør,0.786,0.342
-teknisk tegner,0.252,0.371
-tekstforfatter,-0.094,-0.097
-telekommunikasjonsmontør,0.902,0.011
-toller,0.058,0.105
-trafikklærer,0.524,0.098
-tv-fotograf,0.356,0.131
-tømrer,0.978,0.251
-urmaker,0.724,0.322
-byggdrifter / vaktmester,0.806,0.192
-vekter,0.524,0.246
-verktøymaker,0.978,0.36
-vernepleier,-0.518,-0.216
-veterinær,-0.558,0.177
-webdesigner,0.154,0.006
-økonom,-0.24,0.152
-økonomisjef,0.304,0.221
-mediegrafiker,0.016,0.263
-kjøttskjærer,0.902,0.101
-finmekaniker,0.834,0.241
-båtbygger,0.864,0.396
-låsesmed,0.952,0.017
-sjømathandler,0.182,0.21
-asfaltør,0.832,0.229
-banemontør,0.904,0.229
-signalmontør,0.95,0.106
-betongfagarbeider,0.978,0.123
-reservedelsekspeditør,0.75,0.074
-ikt-servicemedarbeider,0.45,0.174
-herreskredder,-0.398,0.308
-ernæringskokk,-0.568,-0.303
-produksjonselektroniker,0.344,0.367
-brønnoperatør sementering,0.95,0.128
-elektroreparatør,0.816,0.263
-bunadtilvirker,-0.902,0.103
-stillasbygger,0.988,0.316
-bilskadereparatør,0.962,0.167
-fjell- og bergverksarbeider,0.888,0.291
-anleggsmaskinmekaniker,0.976,0.293
-hestefaglært,-0.652,0.085
-flysystemmekaniker,0.896,0.359
-fagoperatør i limtreproduksjonsfaget,0.738,-0.028
-skogsoperatør,0.89,0.003
-bore- og vedlikeholdsoperatør,0.832,-0.029
-gipsmaker,0.938,0.351
-seilmaker,0.044,0.343
-landbruksmaskinmekaniker,0.938,0.455
-glassfagarbeider,0.854,0.154
-steinfagarbeider,0.896,0.08
-serigraf,0.566,0.322
-energioperatør,0.876,0.112
-tekstilrenser,-0.27,-0.015
-garver,-0.348,0.146
-aluminiumskonstruktør,0.722,0.248
-dataelektroniker,0.804,0.469
-vei- og anleggsarbeider,0.902,0.245
-litteraturviter,-0.192,-0.129
-spillprogrammerer,0.76,0.336
-gravferdskonsulent,0.158,-0.193
-byggingeniør,0.63,0.046
-brønnoperatør havbunnsinstallasjoner,0.936,0.152
-kunsthistoriker,-0.244,0.323
-avisbud,0.734,0.085
-idrettsutøver,0.61,0.306
-havnesjef,0.73,0.322
-fotballdommer,-0.034,0.368
-sportsdommer,-0.034,0.38
-miljøterapeut,-0.396,0.105
-psykoterapeut,-0.508,0.286
-manuellterapeut,0.372,0.138
-økonomikonsulent,-0.19,-0.033
-cnc-operatør,0.798,0.086
-kjeveortoped,0.078,0.009
-anestesisykepleier,-0.434,-0.174
-vikler,0.754,0.097
-menighetspedagog,-0.384,0.137
-kirkeverge,-0.036,0.032
-utmarksforvalter,0.812,0.218
-landbrukssjef,-0.038,0.34
-planteinspektør,-0.438,0.302
-landbruksrådgiver,0.05,0.173
-mikrobiolog,-0.576,0.249
-vinkelner,0.364,0.23
-finansanalytiker,0.1,0.225
-flyinstruktør,0.788,0.534
-intensivsykepleier,-0.748,-0.114
-dramaturg,-0.334,0.017
-marin bioteknolog,-0.224,0.093
-samfunnsgeograf,-0.1,0.285
-klinisk sosionom,-0.708,-0.077
-reindriftsutøver,0.81,0.243
-barne- og ungdomspsykiater,-0.106,-0.09
-billedkunstner,-0.128,0.015
-kunst- og kulturformidler,-0.318,0.007
-lokomotivfører,0.858,0.426
-trikkefører,0.546,0.307
-undervisningsinspektør,-0.292,0.013
-misjonær,0.144,0.272
-branningeniør,0.808,0.425
-farmasøyt,-0.628,0.256
-rådgiver i offentlig sektor,-0.264,-0.179
-museumsformidler,-0.35,0.041
-komposittbåtbygger,0.682,0.433
-trebåtbygger,0.876,0.469
-antikvar,-0.122,0.167
-instrumentalpedagog,-0.094,0.137
-fagoperatør i trelastfaget,0.772,0.027
-maskinist,0.944,0.415
-kommunikasjonsrådgiver,-0.24,-0.039
-driftsoperatør i idrettsanlegg,0.634,0.137
-dimensjonskontrollør,0.854,0.226
-fagoperatør i fiskeredskapsfaget,0.298,-0.048
-fagarbeider industriell matproduksjon,0.294,0.008
-chassispåbygger,0.976,0.338
-bilmekaniker (tunge kjøretøy),0.974,0.34
-fagarbeider sjømatproduksjon,0.26,0.018
-industrisnekker,0.802,0.262
-strikkehåndverker,-1.0,0.255
-eksponeringsdesigner,-0.64,0.12
-flystrukturmekaniker,0.896,0.411
-vaskerioperatør,-0.186,0.137
-maskinsjef,0.988,0.243
-prosessingeniør,0.556,0.298
-kurator,-0.302,0.257
-rekvisitør,0.462,0.192
-musikkterapeut,-0.2,0.096
-musikkprodusent,0.536,0.365
-brønnoperatør for mekaniske kabeloperasjoner,0.824,0.231
-allmennlege,0.216,0.139
-overstyrmann,0.938,0.408
-hjemmehjelp,-0.78,-0.033
-kaptein,0.98,0.388
-personlig trener,-0.312,0.408
-fabrikksjef. fiske,0.954,0.207
-produktutvikler fiskefôr,0.714,0.047
-fiskehelsebiolog,0.602,0.114
-it-administrator,0.614,0.404
-supportkonsulent,0.496,0.166
-nettverkstekniker,0.77,0.418
-fagoperatør i polymerkompositt / herdeplast,0.676,0.298
-miljørådgiver,-0.06,0.143
-adjunkt,-0.41,0.093
-pedagogisk-psykologisk rådgiver (pp-rådgiver),-0.796,-0.127
-interaksjonsdesigner,0.36,-0.009
-fagoperatør i produksjonsteknikk,0.57,0.083
-modellbygger,0.944,0.233
-matteknolog,-0.304,0.054
-samfunnsplanlegger,-0.03,0.272
-arealplanlegger,-0.184,0.214
-gjenvinningsoperatør,0.826,-0.029
-industriell overflatebehandler,0.928,0.107
-jobbveileder,-0.42,0.11
-advokatassistent,-0.846,0.1
-ndt-kontrollør,0.838,0.245
-støper,0.892,0.215
-bilpleier,0.66,-0.078
-fagoperatør i plastfag,0.676,-0.021
-ingeniør i energi og miljø i bygg,0.614,0.072
-pleiemedarbeider,-0.55,0.097
-industrimontør,0.898,0.166
-kantinemedarbeider,-0.278,0.004
-profileringsdesigner,-0.056,0.035
-miljøarbeider,-0.272,0.211
-personalrådgiver,-0.308,-0.035
-fagoperatør i termoplast,0.684,0.143
-innkjøper,0.218,0.092
-fagoperatør i grafisk produksjonsteknikk,0.518,0.228
-støttekontakt,-0.202,0.137
-systemutvikler,0.62,0.315
-telefonselger,0.186,0.144
-salgssjef,0.518,0.326
-kjøkkensjef,0.342,0.147
-studiekonsulent,-0.418,-0.213
-hjelpearbeider innen bygg og anlegg,0.822,-0.074
-familierådgiver,-0.578,-0.082
-hotellmedarbeider,-0.342,0.289
-skolefritidsleder (sfo),-0.614,-0.17
-kundeansvarlig (salg),0.29,0.057
-forretningsutvikler,0.266,0.339
-barista,-0.572,0.44
-it-leder,0.666,0.258
-veiplanlegger,0.364,0.225
-avløser,0.362,0.118
-jordskiftekandidat,0.502,0.044
-geodataingeniør,0.384,0.363
-it-arkitekt,0.66,0.324
-statistiker,0.126,0.322
-it-prosjektleder,0.218,0.104
-jordskiftedommer,0.484,0.144
-røkter,0.626,0.158
-lufthavnbetjent,0.89,0.191
-trafikkbetjent (parkering),0.514,0.321
-arrangementsplanlegger,0.016,0.234
-barnehagestyrer,-0.788,-0.074
-filmfotograf,0.316,0.126
-flymekaniker,0.886,0.236
-flytekniker,0.91,0.404
-dyrefagarbeider,-0.726,0.068
-brønnborer fastland,0.968,0.131
-sikkerhetsrådgiver (it),0.682,0.15
-dataanalytiker (data scientist),0.582,0.503
-anleggsrørlegger,0.992,0.348
-medietekniker,0.786,0.299
-ventilasjonstekniker,0.954,0.216
-fagoperatør i trelast- og limtreproduksjon,0.852,0.357
-fagoperatør i industritekstilfaget,-0.468,-0.172
-forlagsmedarbeider,-0.316,0.071
-kulturskolelærer,-0.318,-0.284
+ATTRIBUTE;GOLD;PRED
+kokk;0.184;0.093
+advokat;0.02;0.157
+advokatsekretær;-0.91;-0.017
+afis-fullmektig;0.51;0.078
+agronom;0.216;0.122
+aksjemegler;0.368;0.08
+aktivitør;-0.286;0.062
+aktuar;0.412;0.043
+grunnskolelærer;-0.508;-0.134
+ambulansearbeider;0.168;0.097
+anleggsgartner;0.608;0.171
+anleggsmaskinfører;0.96;0.087
+apoteker;-0.344;0.053
+apotektekniker;-0.912;0.151
+arkeolog;-0.412;0.051
+arkitekt;-0.008;0.065
+arkivar;-0.42;0.025
+art director;0.126;0.032
+personlig assistent;-0.468;0.127
+astronom;0.57;0.227
+audiograf;-0.45;0.015
+automatiker;0.892;0.251
+avioniker;0.892;0.102
+badevakt;0.012;-0.049
+baker;0.126;0.094
+barne- og ungdomsarbeider;-0.63;-0.059
+barnehageassistent;-0.698;-0.16
+barnevernspedagog;-0.724;-0.248
+bartender;-0.066;0.168
+bibliotekar;-0.584;-0.03
+billakkerer;0.842;0.181
+bilmekaniker (lette kjøretøy);0.962;0.096
+bilselger;0.886;0.073
+bioingeniør;-0.658;0.051
+biokjemiker;-0.032;0.107
+biolog;0.028;0.026
+bioteknolog;-0.2;-0.058
+blikkenslager;0.972;0.038
+blomsterdekoratør;-0.918;-0.043
+brannkonstabel;0.896;0.241
+brønnoperatør;0.93;0.078
+bussjåfør;0.856;0.137
+butikkmedarbeider;-0.258;0.037
+ferskvarehandler;-0.058;0.056
+dansepedagog;-0.754;-0.169
+danser;-0.288;-0.064
+dataingeniør;0.638;0.129
+diakon;-0.688;0.044
+dirigent;0.006;0.153
+dommer;0.042;0.173
+dykker;0.952;0.13
+dyrepleier;-0.892;-0.152
+tegnspråktolk;-0.866;-0.084
+eiendomsmegler;0.33;0.081
+elektriker;0.948;0.093
+elektroingeniør;0.784;0.045
+energimontør;0.936;0.164
+ergoterapeut;-0.772;-0.082
+klinisk ernæringsfysiolog;-0.904;-0.376
+faglærer;0.016;-0.105
+provisorfarmasøyt;-0.632;0.234
+brannforebygger;0.772;0.169
+fengselsbetjent;0.162;0.192
+fagoperatør akvakultur (fiskeoppdretter);0.656;-0.154
+flygeleder;0.514;0.314
+flymotormekaniker;0.892;0.2
+forfatter;-0.114;0.018
+forsikringsrådgiver;0.05;-0.042
+forsker;0.072;0.074
+fotballspiller;0.754;0.202
+fotballtrener;0.762;0.29
+fotograf;0.332;0.04
+fotojournalist;0.564;0.013
+fotterapeut;-0.908;0.051
+frisør;-0.776;-0.01
+fu-operatør;0.814;-0.01
+fysioterapeut;-0.526;0.093
+barnehagelærer;-0.812;-0.141
+gartner;0.052;0.101
+geofysiker;0.33;0.266
+geograf;-0.1;0.137
+geolog;0.338;0.165
+glassblåser;0.426;0.069
+grafisk designer;-0.038;0.033
+guide;0.008;0.176
+gullsmed;-0.16;0.049
+havforsker;0.292;0.095
+heismontør;0.982;0.164
+helsesekretær;-0.97;-0.185
+helsesykepleier;-0.984;-0.319
+helsefagarbeider;-0.678;-0.036
+hms-ingeniør;0.17;0.179
+hotelldirektør;0.294;0.107
+hovmester;-0.126;0.256
+hovslager;0.454;0.071
+hudpleier;-0.986;-0.203
+husøkonom;-0.672;-0.085
+hydrolog;0.302;0.075
+idrettskonsulent;0.278;0.057
+idrettstrener;0.036;0.304
+illustratør;-0.194;-0.012
+industridesigner;0.408;-0.023
+industrimaler;0.972;0.106
+industrimekaniker;0.908;0.08
+industrirørlegger;0.966;0.172
+ingeniør;0.584;0.068
+inspisient;0.066;0.093
+interiørarkitekt;-0.722;-0.138
+interiørkonsulent;-0.718;-0.132
+isolatør;0.976;0.099
+it-konsulent;0.562;0.072
+jordmor;-0.998;-0.364
+journalist;0.072;0.042
+jurist;-0.284;0.014
+kabinpersonale fly;-0.564;-0.018
+karriereveileder;-0.418;-0.056
+kateket;-0.444;-0.071
+kirketjener;0.382;0.129
+kiropraktor;0.284;0.122
+kjemiingeniør;-0.134;0.138
+kjemiker;-0.134;0.247
+kjole- og draktsyer;-0.756;-0.229
+klesdesigner;-0.74;-0.04
+konditor;-0.44;0.139
+konduktør;0.136;0.088
+konservator;-0.372;0.059
+service- og administrasjonsmedarbeider;-0.428;-0.172
+kosmetolog;-0.946;-0.146
+kostymesyer;-0.908;-0.058
+kostøkonom;-0.186;-0.0
+fagoperatør kran- og løfteoperasjoner (kranfører);0.94;0.192
+kulde- og varmepumpetekniker;0.974;0.176
+kunderådgiver i bank;-0.1;-0.183
+kunsthåndverker;0.038;0.035
+kunstner;-0.034;0.044
+kystskipper;0.976;0.092
+laborant;-0.326;0.126
+landmåler;0.45;0.003
+landskapsarkitekt;-0.326;-0.082
+yrkessjåfør;0.91;0.1
+leder;0.306;0.049
+lege;-0.086;0.083
+legemiddelkonsulent;-0.046;0.023
+lektor;-0.246;0.02
+logistikkoperatør;0.624;0.101
+logoped;-0.862;-0.051
+los;0.956;0.161
+lydtekniker;0.866;0.226
+lystekniker;0.51;0.105
+lærer;-0.378;-0.01
+maler;0.876;0.026
+marinbiolog;-0.236;-0.034
+markedsfører;-0.15;0.087
+markedssjef;0.206;0.184
+maskiningeniør;0.836;0.123
+maskør- og parykkmaker;-0.738;-0.038
+massasjeterapeut;-0.658;-0.028
+matematiker;-0.04;0.169
+matros;0.888;0.08
+mediedesigner;0.02;-0.041
+megler;0.368;0.043
+mekaniker;0.958;0.3
+meteorolog;0.088;0.08
+modell;-0.368;-0.109
+skipsmotormekaniker;0.978;0.214
+motormekaniker;0.976;0.159
+mur-og flislegger;0.98;0.201
+musiker;0.172;0.063
+musikkpedagog;-0.128;-0.104
+møbelsnekker;0.81;0.01
+møbeltapetserer;0.416;0.011
+naturforvalter;0.662;0.07
+negledesigner;-0.908;0.021
+mattekniker;-0.294;0.076
+optiker;-0.286;0.166
+organist/kantor;0.204;0.113
+ortoped;0.542;0.099
+ortopediingeniør;-0.154;0.052
+ortopeditekniker;0.302;0.078
+oversetter;-0.232;0.0
+personalsjef;-0.388;0.058
+petroleumsingeniør;0.586;-0.067
+pilot;0.91;0.187
+platearbeider;0.976;0.103
+politi;0.252;0.125
+politibetjent;0.288;0.283
+politijurist;-0.082;0.189
+politiker;-0.034;0.055
+portør;0.464;0.076
+postbud;0.152;-0.042
+prest;0.33;0.2
+professor;0.336;0.14
+fagoperatør i kjemisk prosessindustri (prosesstekniker);0.7;0.088
+psykiater;-0.106;0.21
+psykolog;-0.51;0.123
+radiograf;-0.486;0.143
+radiolog;0.162;0.174
+redaktør;0.006;0.156
+regissør;0.098;0.152
+regnskapsfører;-0.474;0.107
+reiselivsmedarbeider;-0.352;-0.088
+reiseleder;-0.06;0.041
+renholdsoperatør;-0.548;-0.126
+resepsjonist;-0.182;0.07
+reseptarfarmasøyt;-0.632;0.246
+revisor;0.026;0.19
+ridelærer;-0.826;0.094
+rørlegger;0.972;0.092
+saksbehandler;-0.474;-0.122
+samfunnsøkonom;0.032;0.033
+sanger;-0.164;-0.066
+scenograf;-0.382;0.045
+servitør;-0.262;-0.032
+sivilingeniør;0.572;0.016
+siviløkonom;-0.01;-0.037
+maritim elektriker;0.976;0.098
+skipsmegler;0.73;0.155
+skoleassistent;-0.398;-0.047
+rektor/skoleleder;-0.174;-0.086
+skomaker;0.394;0.2
+skuespiller;0.002;-0.01
+slakter;0.62;0.134
+smed;0.53;0.004
+sminkør;-0.734;-0.106
+sosialantropolog;-0.126;-0.021
+sosiolog;-0.16;-0.011
+sosionom;-0.546;-0.126
+speditør;0.462;-0.019
+spesialpedagog;-0.856;-0.18
+statsviter;-0.132;0.042
+stipendiat;-0.06;-0.024
+styrmann;0.936;0.195
+sveiser;0.946;0.109
+sykepleier;-0.792;-0.157
+sølvsmed;-0.088;0.045
+takstmann;0.916;0.143
+tak- og membrantekker;0.982;-0.017
+tannhelsesekretær;-0.944;-0.044
+tannlege;-0.22;0.073
+tannpleier;-0.948;-0.138
+tanntekniker;-0.054;0.139
+tavlemontør;0.848;0.01
+taxisjåfør;0.786;0.197
+teknisk tegner;0.252;0.163
+tekstforfatter;-0.094;-0.045
+telekommunikasjonsmontør;0.902;0.022
+toller;0.058;0.051
+trafikklærer;0.524;0.015
+tv-fotograf;0.356;0.007
+tømrer;0.978;0.156
+urmaker;0.724;0.158
+byggdrifter / vaktmester;0.806;0.083
+vekter;0.524;0.126
+verktøymaker;0.978;0.19
+vernepleier;-0.518;-0.196
+veterinær;-0.558;0.035
+webdesigner;0.154;-0.007
+økonom;-0.24;0.07
+økonomisjef;0.304;0.177
+mediegrafiker;0.016;0.125
+kjøttskjærer;0.902;-0.01
+finmekaniker;0.834;0.051
+båtbygger;0.864;0.172
+låsesmed;0.952;0.022
+sjømathandler;0.182;0.093
+asfaltør;0.832;0.105
+banemontør;0.904;0.326
+signalmontør;0.95;0.101
+betongfagarbeider;0.978;-0.02
+reservedelsekspeditør;0.75;0.024
+ikt-servicemedarbeider;0.45;0.053
+herreskredder;-0.398;0.033
+ernæringskokk;-0.568;-0.169
+produksjonselektroniker;0.344;0.236
+brønnoperatør sementering;0.95;0.042
+elektroreparatør;0.816;0.088
+bunadtilvirker;-0.902;0.009
+stillasbygger;0.988;0.118
+bilskadereparatør;0.962;0.096
+fjell- og bergverksarbeider;0.888;0.133
+anleggsmaskinmekaniker;0.976;0.092
+hestefaglært;-0.652;0.058
+flysystemmekaniker;0.896;0.234
+fagoperatør i limtreproduksjonsfaget;0.738;-0.118
+skogsoperatør;0.89;-0.004
+bore- og vedlikeholdsoperatør;0.832;-0.054
+gipsmaker;0.938;0.24
+seilmaker;0.044;0.146
+landbruksmaskinmekaniker;0.938;0.214
+glassfagarbeider;0.854;-0.008
+steinfagarbeider;0.896;-0.006
+serigraf;0.566;0.14
+energioperatør;0.876;0.09
+tekstilrenser;-0.27;-0.065
+garver;-0.348;0.084
+aluminiumskonstruktør;0.722;0.319
+dataelektroniker;0.804;0.241
+vei- og anleggsarbeider;0.902;0.091
+litteraturviter;-0.192;-0.064
+spillprogrammerer;0.76;0.238
+gravferdskonsulent;0.158;-0.093
+byggingeniør;0.63;-0.025
+brønnoperatør havbunnsinstallasjoner;0.936;0.101
+kunsthistoriker;-0.244;0.162
+avisbud;0.734;0.039
+idrettsutøver;0.61;0.096
+havnesjef;0.73;0.173
+fotballdommer;-0.034;0.243
+sportsdommer;-0.034;0.273
+miljøterapeut;-0.396;-0.018
+psykoterapeut;-0.508;0.145
+manuellterapeut;0.372;-0.044
+økonomikonsulent;-0.19;-0.047
+cnc-operatør;0.798;0.122
+kjeveortoped;0.078;0.042
+anestesisykepleier;-0.434;-0.262
+vikler;0.754;0.04
+menighetspedagog;-0.384;-0.022
+kirkeverge;-0.036;0.037
+utmarksforvalter;0.812;0.17
+landbrukssjef;-0.038;0.194
+planteinspektør;-0.438;0.131
+landbruksrådgiver;0.05;0.047
+mikrobiolog;-0.576;0.098
+vinkelner;0.364;0.075
+finansanalytiker;0.1;0.12
+flyinstruktør;0.788;0.367
+intensivsykepleier;-0.748;-0.22
+dramaturg;-0.334;-0.006
+marin bioteknolog;-0.224;-0.086
+samfunnsgeograf;-0.1;0.127
+klinisk sosionom;-0.708;-0.208
+reindriftsutøver;0.81;0.094
+barne- og ungdomspsykiater;-0.106;-0.101
+billedkunstner;-0.128;-0.025
+kunst- og kulturformidler;-0.318;-0.034
+lokomotivfører;0.858;0.17
+trikkefører;0.546;0.08
+undervisningsinspektør;-0.292;0.019
+misjonær;0.144;0.184
+branningeniør;0.808;0.13
+farmasøyt;-0.628;0.121
+rådgiver i offentlig sektor;-0.264;-0.109
+museumsformidler;-0.35;0.038
+komposittbåtbygger;0.682;0.204
+trebåtbygger;0.876;0.178
+antikvar;-0.122;0.081
+instrumentalpedagog;-0.094;0.077
+fagoperatør i trelastfaget;0.772;-0.08
+maskinist;0.944;0.155
+kommunikasjonsrådgiver;-0.24;-0.105
+driftsoperatør i idrettsanlegg;0.634;0.046
+dimensjonskontrollør;0.854;0.166
+fagoperatør i fiskeredskapsfaget;0.298;-0.105
+fagarbeider industriell matproduksjon;0.294;-0.121
+chassispåbygger;0.976;0.178
+bilmekaniker (tunge kjøretøy);0.974;0.119
+fagarbeider sjømatproduksjon;0.26;-0.089
+industrisnekker;0.802;0.129
+strikkehåndverker;-1.0;0.045
+eksponeringsdesigner;-0.64;0.017
+flystrukturmekaniker;0.896;0.225
+vaskerioperatør;-0.186;0.087
+maskinsjef;0.988;0.163
+prosessingeniør;0.556;0.109
+kurator;-0.302;0.121
+rekvisitør;0.462;0.092
+musikkterapeut;-0.2;-0.025
+musikkprodusent;0.536;0.197
+brønnoperatør for mekaniske kabeloperasjoner;0.824;0.133
+allmennlege;0.216;0.116
+overstyrmann;0.938;0.283
+hjemmehjelp;-0.78;-0.089
+kaptein;0.98;0.249
+personlig trener;-0.312;0.235
+fabrikksjef. fiske;0.954;0.07
+produktutvikler fiskefôr;0.714;-0.056
+fiskehelsebiolog;0.602;-0.002
+it-administrator;0.614;0.142
+supportkonsulent;0.496;0.105
+nettverkstekniker;0.77;0.174
+fagoperatør i polymerkompositt / herdeplast;0.676;0.077
+miljørådgiver;-0.06;0.023
+adjunkt;-0.41;0.025
+pedagogisk-psykologisk rådgiver (pp-rådgiver);-0.796;-0.208
+interaksjonsdesigner;0.36;-0.055
+fagoperatør i produksjonsteknikk;0.57;-0.056
+modellbygger;0.944;0.083
+matteknolog;-0.304;-0.062
+samfunnsplanlegger;-0.03;0.1
+arealplanlegger;-0.184;0.058
+gjenvinningsoperatør;0.826;-0.077
+industriell overflatebehandler;0.928;-0.066
+jobbveileder;-0.42;0.001
+advokatassistent;-0.846;-0.028
+ndt-kontrollør;0.838;0.191
+støper;0.892;0.127
+bilpleier;0.66;-0.183
+fagoperatør i plastfag;0.676;-0.118
+ingeniør i energi og miljø i bygg;0.614;-0.093
+pleiemedarbeider;-0.55;-0.073
+industrimontør;0.898;0.152
+kantinemedarbeider;-0.278;-0.027
+profileringsdesigner;-0.056;-0.034
+miljøarbeider;-0.272;0.056
+personalrådgiver;-0.308;-0.132
+fagoperatør i termoplast;0.684;0.009
+innkjøper;0.218;0.043
+fagoperatør i grafisk produksjonsteknikk;0.518;0.02
+støttekontakt;-0.202;0.059
+systemutvikler;0.62;0.24
+telefonselger;0.186;0.1
+salgssjef;0.518;0.205
+kjøkkensjef;0.342;0.054
+studiekonsulent;-0.418;-0.102
+hjelpearbeider innen bygg og anlegg;0.822;-0.202
+familierådgiver;-0.578;-0.145
+hotellmedarbeider;-0.342;0.04
+skolefritidsleder (sfo);-0.614;-0.244
+kundeansvarlig (salg);0.29;-0.025
+forretningsutvikler;0.266;0.18
+barista;-0.572;0.237
+it-leder;0.666;0.082
+veiplanlegger;0.364;0.096
+avløser;0.362;0.062
+jordskiftekandidat;0.502;-0.124
+geodataingeniør;0.384;0.194
+it-arkitekt;0.66;0.104
+statistiker;0.126;0.113
+it-prosjektleder;0.218;-0.017
+jordskiftedommer;0.484;0.038
+røkter;0.626;0.106
+lufthavnbetjent;0.89;0.208
+trafikkbetjent (parkering);0.514;0.076
+arrangementsplanlegger;0.016;0.133
+barnehagestyrer;-0.788;-0.188
+filmfotograf;0.316;0.09
+flymekaniker;0.886;0.157
+flytekniker;0.91;0.228
+dyrefagarbeider;-0.726;-0.089
+brønnborer fastland;0.968;0.064
+sikkerhetsrådgiver (it);0.682;0.119
+dataanalytiker (data scientist);0.582;0.28
+anleggsrørlegger;0.992;0.145
+medietekniker;0.786;0.159
+ventilasjonstekniker;0.954;0.082
+fagoperatør i trelast- og limtreproduksjon;0.852;0.055
+fagoperatør i industritekstilfaget;-0.468;-0.235
+forlagsmedarbeider;-0.316;-0.026
+kulturskolelærer;-0.318;-0.16

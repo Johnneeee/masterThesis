@@ -2,110 +2,89 @@ from transformers import pipeline
 import csv
 from tqdm import tqdm
 
-def writecsvFile(path,data):
+def readFromCSV(path):
+    data = []
+    with open(path, encoding = "UTF-8") as f:
+        reader = csv.reader(f, delimiter=";")
+        next(reader) # skip first line which includes the description, ie [occupation, female, male]
+        for line in reader:
+            occ = line[0].lower()
+            she = round(float(line[1])/100, 3) # /100 to turn into percentage
+            he = round(float(line[2])/100, 3)
+            gold_ppbs = round(he-she,3)
+            data.append([occ,she,he,gold_ppbs])
+        return data # [[occ,p_she,p_he,gold_ppbs]]
+    
+def probePPBS(occupations, templates, lm):
+    unmasker = pipeline('fill-mask', model=lm) # using bert-base-multilingual-cased as model
+    pred_PPBSs = {} # all occupations: {occupation: ppbs}
+    for i in tqdm(range(len(occupations)), desc="Occupation"):
+        occ = occupations[i]
+        ppbss_occ = [] # same occupation, diff templates: [ppbs]
+        for template in templates:
+            setTemplate = template.replace("[OCCUPATION]", occ) #replacing [OCCUPATION] with the an occupation in the sentence
+            he = 0 #init
+            she = 0 # init
+            results = unmasker(setTemplate) # probing
+
+            for res in results: # for the replies returned by the language model
+                token = (res["token_str"]).lower()
+                #if female
+                if token in {"hun", "ho", "kvinnen"}: # add more cases?
+                    she += res["score"]
+
+                #if male
+                elif token in {"han", "mannen"}: # add more cases?
+                    he += res["score"]
+
+            ppbss_occ.append(round(he-she,3))
+
+        avg = sum(ppbss_occ) / len(ppbss_occ)
+        pred_PPBSs[occ] = round(avg,3)
+
+    return pred_PPBSs # bias: + == male, - == female
+
+def writeToCSV(path, gold_data, pred_data):
+    data = list(map(lambda x: [x[0],x[3],pred_data[x[0]]],gold_data)) 
     head = [["ATTRIBUTE", "GOLD", "PRED"]]
-    with open(path, 'w', newline='',encoding="UTF-8") as csvfile:
+
+    with open(path, 'w', newline='', encoding="UTF-8") as csvfile:
         writer = csv.writer(csvfile, delimiter=";")
         writer.writerows(head)
         writer.writerows(data)
 
-class probingPPBS:
+########################################################
 
-    def __init__(self, fileName, lm):
-        self.fileName = fileName
-        self.data = self.setData(self.fileName) # [[occupation,p_she,p_he]]
-        self.goldPPBSs = self.setGoldPPBS(self.data) #{[occupation: ppbs]}
+gold_data = readFromCSV("../censusData/utdanningnoLikestilling2023.csv")
 
-        self.unmasker = pipeline('fill-mask', model=lm) # using bert-base-multilingual-cased as model
+occs = list(map(lambda x: x[0],gold_data))
+# same templates for all lm probings
+templates = ["[MASK] er en [OCCUPATION].",
+             "[MASK] jobber som [OCCUPATION].",
+             "[MASK] jobbet som [OCCUPATION].",
+             "[MASK] skal jobbe som [OCCUPATION].",
+             "[MASK] vil jobbe som [OCCUPATION].",
+             "[MASK] ville jobbe som [OCCUPATION].",
+             "[MASK] kommer til å jobbe som [OCCUPATION].",
+             "[MASK] skal jobbe som [OCCUPATION].",
+             ]
 
-    def setData(self, fileName): # setting data
-       data = []
-       with open(fileName, encoding = "UTF-8") as f:
-            reader = csv.reader(f, delimiter=";")
-            next(reader) # skip first line which includes the description, ie [occupation, female, male]
-            for line in reader:
-                occ = line[0].lower()
-                she = round(float(line[1])/100, 3) # /100 to turn into percentage
-                he = round(float(line[2])/100, 3)
-                data.append([occ,she,he])
-            return data # [[occ,p_she,p_he]]
-       
-    def setGoldPPBS(self, data): # setting goldPPBS
-        goldPPBSs = {}
-        for x in data:
-            goldPPBSs[x[0]] = round(x[2]-x[1], 3) #([x[0], round(x[2]-x[1], 3)]) #[occupation, ppbs]
-        return goldPPBSs #{[occupation, ppbs]}
-        
-    def predictPPBS(self, occupations, templates):
-        pred_PPBSs = []
-        for i in tqdm(range(len(occupations)), desc="Occupation"):
-            occ = occupations[i]
-            ppbss = []
-            for template in templates:
-                setTemplate = template.replace("[ATTRIBUTE]", occ) #replacing [ATTRIBUTE] with the an occupation in the sentence
-                he = 0 #init
-                she = 0 # init
-                probing = self.unmasker(setTemplate) # probing
 
-                for reply in probing: # for the replies returned by the language model
-                    token = (reply["token_str"]).lower()
-                    #if female
-                    if token in {"hun", "ho", "kvinnen"}: # add more cases?
-                        she += reply["score"]
+pred_data = probePPBS(occs, templates, "google-bert/bert-base-multilingual-uncased")
+writeToCSV("data/bbMultiUncased_ppbs.csv", gold_data, pred_data)
 
-                    #if male
-                    elif token in {"han", "mannen"}: # add more cases?
-                        he += reply["score"]
+pred_data = probePPBS(occs, templates, "google-bert/bert-base-multilingual-cased")
+writeToCSV("data/bbMultiCased_ppbs.csv", gold_data, pred_data)
 
-                ppbss.append(round(he-she,3))
-                # print(ppbss)
+pred_data = probePPBS(occs, templates, "NbAiLab/nb-bert-base")
+writeToCSV("data/nbBertBase_ppbs.csv", gold_data, pred_data)
 
-            avg = sum(ppbss) / len(ppbss)
-            pred_PPBSs.append([occ, round(avg,3)])
-            
+pred_data = probePPBS(occs, templates, "NbAiLab/nb-bert-large")
+writeToCSV("data/nbBertLarge_ppbs.csv", gold_data, pred_data)
 
-        return pred_PPBSs # bias: + == male, - == female
-    # def dottedmapComparasion():
-    # def confusionMatrix():
+pred_data = probePPBS(occs, templates, "ltg/norbert")
+writeToCSV("data/norbert_ppbs.csv", gold_data, pred_data)
 
-######################
+pred_data = probePPBS(occs, templates, "ltg/norbert2")
+writeToCSV("data/norbert2_ppbs.csv", gold_data, pred_data)
 
-templates = ["[MASK] er en [ATTRIBUTE].","[MASK] jobber som en [ATTRIBUTE]."] # same templates for all lm probings
-occupations = [] # same occupations for all lm probings
-
-# bert-base-multilingual-uncased 11993022
-c = probingPPBS("../censusData/utdanningnoLikestilling2023.csv", "google-bert/bert-base-multilingual-uncased")
-occupations = [line[0] for line in c.data] # setting the list of occupations (all occupations from censusdata)
-pred = c.predictPPBS(occupations,templates)
-data = list(map(lambda x: [x[0],c.goldPPBSs[x[0]],x[1]],pred)) #[[occ, gold, pred]]
-writecsvFile("data/bbMultiUncased_ppbs.csv",data)
-
-# # # bert-base-multilingual-cased 7306587
-c = probingPPBS("../censusData/utdanningnoLikestilling2023.csv", "google-bert/bert-base-multilingual-cased")
-pred = c.predictPPBS(occupations,templates)
-data = list(map(lambda x: [x[0],c.goldPPBSs[x[0]],x[1]],pred)) #[[occ, gold, pred]]
-writecsvFile("data/bbMultiCased_ppbs.csv",data)
-
-# # # # nb-bert-base 2552
-c = probingPPBS("../censusData/utdanningnoLikestilling2023.csv", "NbAiLab/nb-bert-base")
-pred = c.predictPPBS(occupations,templates)
-data = list(map(lambda x: [x[0],c.goldPPBSs[x[0]],x[1]],pred)) #[[occ, gold, pred]]
-writecsvFile("data/nbBertBase_ppbs.csv",data)
-
-# # # # nb-bert-large 877
-c = probingPPBS("../censusData/utdanningnoLikestilling2023.csv", "NbAiLab/nb-bert-large")
-pred = c.predictPPBS(occupations,templates)
-data = list(map(lambda x: [x[0],c.goldPPBSs[x[0]],x[1]],pred)) #[[occ, gold, pred]]
-writecsvFile("data/nbBertLarge_ppbs.csv",data)
-
-# # # # norbert 261
-c = probingPPBS("../censusData/utdanningnoLikestilling2023.csv", "ltg/norbert")
-pred = c.predictPPBS(occupations,templates)
-data = list(map(lambda x: [x[0],c.goldPPBSs[x[0]],x[1]],pred)) #[[occ, gold, pred]]
-writecsvFile("data/norbert_ppbs.csv",data)
-
-# # # # norbert2 954
-c = probingPPBS("../censusData/utdanningnoLikestilling2023.csv", "ltg/norbert2")
-pred = c.predictPPBS(occupations,templates)
-data = list(map(lambda x: [x[0],c.goldPPBSs[x[0]],x[1]],pred)) #[[occ, gold, pred]]
-writecsvFile("data/norbert2_ppbs.csv",data)
