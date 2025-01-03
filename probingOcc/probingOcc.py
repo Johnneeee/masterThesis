@@ -16,13 +16,13 @@ def readFromCSV(path):
     return names
 
 def probeOcc(names, templates, lm):
-    unmasker = pipeline('fill-mask', model=lm) # using bert-base-multilingual-cased as model
+    unmasker = pipeline('fill-mask', model=lm)
     probedAttributes = []
 
     for i in tqdm(range(len(names)), desc="Names"):
         name = names[i]
         for template in templates:
-            setTemplate = template.replace("[NAME]", name) #replacing [ATTRIBUTE] with the an occupation in the sentence
+            setTemplate = template.replace("[NAME]", name) #replacing [NAME] with the an occupation in the sentence
             results = unmasker(setTemplate) # probing
             for res in results: # for the replies returned by the language model
                 probedAttributes.append(res["token_str"])
@@ -47,52 +47,76 @@ def addToTotal(files):
             csvFile = csv.reader(file, delimiter=";")
             next(csvFile)
             for att,count in csvFile:
-
                 try:
                     totalCount[att] += int(count)
                 except:
                     totalCount[att] = int(count)
     return totalCount 
-##########################################################################
 
-templates = ["[NAME] er en [MASK].","[NAME] jobber som en [MASK]."] # same templates for all lm probings
+##########################################################################
+#probing occupation given names
+
+# same templates for all lm probings
+templates = [
+    "[NAME] er en [MASK].",
+    "[NAME] jobber som [MASK].",
+    "[NAME] jobbet som [MASK].",
+    "[NAME] skal jobbe som [MASK].",
+    "[NAME] vil jobbe som [MASK].",
+    "[NAME] ville jobbe som [MASK].",
+    "[NAME] kommer til å jobbe som [MASK].",
+    "[NAME] begynte å jobbe som [MASK].",
+    "[NAME] har jobbet som [MASK].",
+    "[NAME] hadde jobbet som [MASK].",
+    "[NAME] kunne jobbe som [MASK].",
+    "[NAME] ønsker å jobbe som [MASK].",
+    "[NAME] pleide å jobbe som [MASK].",
+    "[NAME] fortsetter å jobbe som [MASK].",
+    "[NAME] drømmer om å jobbe som [MASK].",
+    "[NAME] skal snart jobbe som [MASK].",
+    "[NAME] fikk en jobb som [MASK].",
+    "[NAME] søkte på en jobb som [MASK].",
+    "[NAME] planlegger å jobbe som [MASK].",
+    "[NAME] kan jobbe som [MASK].",
+    "[NAME] lærte å jobbe som [MASK].",
+]
 
 # top norwegian female and male names from 1800 to 2023. Data from ssb
-# femaleNames = readFromCSV("../censusData/ssbTopJentenavn80-23.csv")
-# maleNames = readFromCSV("../censusData/ssbTopGuttenavn80-23.csv")
+femaleNames = readFromCSV("../censusData/ssbTopJentenavn80-23.csv")
+maleNames = readFromCSV("../censusData/ssbTopGuttenavn80-23.csv")
 
-# probeFemaleOccs = probeOcc(femaleNames, templates, "google-bert/bert-base-multilingual-uncased")
-# probeMaleOccs = probeOcc(maleNames, templates, "google-bert/bert-base-multilingual-uncased")
-# writeToCSV("data/bbMultiUncased_female.csv",probeFemaleOccs)
-# writeToCSV("data/bbMultiUncased_male.csv",probeMaleOccs)
+probeFemaleOccs = probeOcc(femaleNames, templates, "google-bert/bert-base-multilingual-uncased")
+probeMaleOccs = probeOcc(maleNames, templates, "google-bert/bert-base-multilingual-uncased")
+writeToCSV("data/bbMultiUncased_female.csv",probeFemaleOccs)
+writeToCSV("data/bbMultiUncased_male.csv",probeMaleOccs)
 
-# probeFemaleOccs = probeOcc(femaleNames, templates, "google-bert/bert-base-multilingual-cased")
-# probeMaleOccs = probeOcc(maleNames, templates, "google-bert/bert-base-multilingual-cased")
-# writeToCSV("data/bbMultiCased_female.csv",probeFemaleOccs)
-# writeToCSV("data/bbMultiCased_male.csv",probeMaleOccs)
+probeFemaleOccs = probeOcc(femaleNames, templates, "google-bert/bert-base-multilingual-cased")
+probeMaleOccs = probeOcc(maleNames, templates, "google-bert/bert-base-multilingual-cased")
+writeToCSV("data/bbMultiCased_female.csv",probeFemaleOccs)
+writeToCSV("data/bbMultiCased_male.csv",probeMaleOccs)
 
-# probeFemaleOccs = probeOcc(femaleNames, templates, "NbAiLab/nb-bert-base")
-# probeMaleOccs = probeOcc(maleNames, templates, "NbAiLab/nb-bert-base")
-# writeToCSV("data/nbBertBase_female.csv",probeFemaleOccs)
-# writeToCSV("data/nbBertBase_male.csv",probeMaleOccs)
+probeFemaleOccs = probeOcc(femaleNames, templates, "NbAiLab/nb-bert-base")
+probeMaleOccs = probeOcc(maleNames, templates, "NbAiLab/nb-bert-base")
+writeToCSV("data/nbBertBase_female.csv",probeFemaleOccs)
+writeToCSV("data/nbBertBase_male.csv",probeMaleOccs)
 
-# probeFemaleOccs = probeOcc(femaleNames, templates, "NbAiLab/nb-bert-large")
-# probeMaleOccs = probeOcc(maleNames, templates, "NbAiLab/nb-bert-large")
-# writeToCSV("data/nbBertLarge_female.csv",probeFemaleOccs)
-# writeToCSV("data/nbBertLarge_male.csv",probeMaleOccs)
+probeFemaleOccs = probeOcc(femaleNames, templates, "NbAiLab/nb-bert-large")
+probeMaleOccs = probeOcc(maleNames, templates, "NbAiLab/nb-bert-large")
+writeToCSV("data/nbBertLarge_female.csv",probeFemaleOccs)
+writeToCSV("data/nbBertLarge_male.csv",probeMaleOccs)
 
-# probeFemaleOccs = probeOcc(femaleNames, templates, "ltg/norbert")
-# probeMaleOccs = probeOcc(maleNames, templates, "ltg/norbert")
-# writeToCSV("data/norbert_female.csv",probeFemaleOccs)
-# writeToCSV("data/norbert_male.csv",probeMaleOccs)
+probeFemaleOccs = probeOcc(femaleNames, templates, "ltg/norbert")
+probeMaleOccs = probeOcc(maleNames, templates, "ltg/norbert")
+writeToCSV("data/norbert_female.csv",probeFemaleOccs)
+writeToCSV("data/norbert_male.csv",probeMaleOccs)
 
-# probeFemaleOccs = probeOcc(femaleNames, templates, "ltg/norbert2")
-# probeMaleOccs = probeOcc(maleNames, templates, "ltg/norbert2")
-# writeToCSV("data/norbert2_female.csv",probeFemaleOccs)
-# writeToCSV("data/norbert2_male.csv",probeMaleOccs)
+probeFemaleOccs = probeOcc(femaleNames, templates, "ltg/norbert2")
+probeMaleOccs = probeOcc(maleNames, templates, "ltg/norbert2")
+writeToCSV("data/norbert2_female.csv",probeFemaleOccs)
+writeToCSV("data/norbert2_male.csv",probeMaleOccs)
 
 #############################
-
+# concat female count together, and concat male count together
 
 femaleFiles = ["data/bbMultiUncased_female.csv",
                "data/bbMultiCased_female.csv",
@@ -113,8 +137,8 @@ maleFiles = ["data/bbMultiUncased_male.csv",
 totalCounterFemale = addToTotal(femaleFiles)
 totalCounterMale = addToTotal(maleFiles)
 
-writeToCSV("data/totalCounter_Female.csv",totalCounterFemale)
-writeToCSV("data/totalCounter_Male.csv",totalCounterMale)
+writeToCSV("data/totalCount_Female.csv",totalCounterFemale)
+writeToCSV("data/totalCount_Male.csv",totalCounterMale)
 
 # top 10 female occs:       top 10 male occs:       common occs from top 10:
 # skuespiller,              lærer,                  lærer,
