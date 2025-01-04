@@ -6,6 +6,7 @@ import numpy as np
 from sympy import true, false, Pow, log #using sympy's log and pow to avoid overflow
 from intepretor import Intepretor # just for pretty syntax
 from transformers import pipeline
+from tqdm import tqdm
 
 # Helper functions for the Horn algorithm
 def getRandomValue(length, allow_zero):
@@ -19,10 +20,10 @@ def getRandomValue(length, allow_zero):
         vec[i] = 1
     return vec
 
-def get_label(gender, classification):
+def get_label(gender, classification): #randomGeneratedGenderVec, resultVectorFromLm
     if (gender[0] == 1 and classification == 0) or (gender[1] == 1 and classification == 1):
         return True
-    else:
+    else: # this also catches if the lm returns other answers which are not genders
         return False
     
 def set2theory(set):
@@ -44,7 +45,7 @@ class HornAlgorithm():
         self.V = V
 
         # dynamic
-        self.bad_nc = []
+        self.bad_nc = [] # list of negative counterexamples that cannot produce a rule (according to positive counterexamples)
         self.bad_pc = []
 
     def probe(self, sentence : str):
@@ -54,11 +55,12 @@ class HornAlgorithm():
         result = self.unmasker(sentence)
 
         for reply in result: # for the replies returned by the language model
+            token = (reply["token_str"]).lower()
             #if female
-            if (reply["token_str"]).lower() == "hun" or (reply["token_str"]).lower() == "ho": # i should add more cases
+            if token in {"hun", "ho", "kvinnen"}: # i should add more cases
                 return 0
             #if male
-            if (reply["token_str"]).lower() == "han": # i should add more cases
+            if token in {"han", "mannen"}: # i should add more cases
                 return 1
             else:
                 continue
@@ -161,9 +163,8 @@ class HornAlgorithm():
         i = 1
         #remember positive counterexamples
         Pos = []
-        #list of negative counterexamples that cannot produce a rule (according to positive counterexamples)
-        #bad_nc =[]
-        while True and i!=(iterationCap+1):
+        # while True and i!=(iterationCap+1):
+        for x in tqdm(range(iterationCap), desc="Eq iteration"):
             start = timeit.default_timer()
             #Ask for H
             eq_res = self.EQ(H)
@@ -173,9 +174,7 @@ class HornAlgorithm():
                 timer = stop-start
                 data = [i, len(H), 0, round(timer, 3)]
                 metadata.append(data)
-                print("terminated")
-
-                terminated = True
+                metadata.append(["terminated"])
                 return (metadata, H)
 
             (counterEx,sampleNr) = eq_res
@@ -199,6 +198,7 @@ class HornAlgorithm():
                     s_intersection_x = [1 if s[index] ==1 and counterEx[index] == 1 else 0 for index in range(len(self.V))]
                     A = {index for index,value in enumerate(s_intersection_x) if value ==1}
                     B = {index for index,value in enumerate(s) if value ==1}
+                    
                     if A.issubset(B) and not B.issubset(A): # A properly contained in B
                         idx = S.index(s)
                         if self.MQ(s_intersection_x) == False and s_intersection_x not in self.bad_nc:
@@ -206,6 +206,7 @@ class HornAlgorithm():
                                 S[idx] = s_intersection_x
                                 replaced = True
                             break
+                        
                 if not replaced:
                     S.append(counterEx)
 
@@ -217,7 +218,7 @@ class HornAlgorithm():
             timer = stop-start
             data = [i, len(H), sampleNr, round(timer, 3)]
             metadata.append(data)
-            print(data)
+            # print(data)
             i += 1
 
         return (metadata, H)

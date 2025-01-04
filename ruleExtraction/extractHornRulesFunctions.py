@@ -3,7 +3,7 @@ from itertools import combinations
 from sympy import symbols
 import csv
 
-# pre Horn Algorithm
+# pre Horn Algorithm methods
 def define_variables(number):
     s = "".join(['v'+str(i)+',' for i in range(number)])
     V = [e for e in symbols(s)]
@@ -37,20 +37,13 @@ def storeBackground(background, lookupTable):
         writer.writerows(backgroundSentences)
 
 
-# post Horn Algorithm
-def storeMetadata(writeTo, metadata):
-    with open("rule_extraction/" + writeTo + "_metadata_" + ".csv", 'w', newline='') as csvfile:
-        writer = csv.writer(csvfile)
-        writer.writerows([["ITERATION", "HYP LEN", "SAMPLENR", "RUNTIME"]]) #header
-        writer.writerows(metadata)
-
-
+# post Horn Algorithm methods
 def rulesToSentences(rules, lookupTable):
     strRules = list(map(lambda x: str(x),rules)) # symbol rules to string rules
-    print(strRules)
     ruleSentences = []
     for rule in strRules:
-        match rule[0]:
+        # print(rule)
+        match rule[0]: # matching on the first letter in string
             case "I": # Case implication                                                        # rule = Implies(v10 & v20 & v23 & v28 & v5, v19)
                 antRules = rule[8:-1].split(", ")[0].split(" & ")                               # [v10, v20, v23, v28, v5]
                 conRule = rule[8:-1].split(", ")[1]                                             # [v11]
@@ -60,14 +53,21 @@ def rulesToSentences(rules, lookupTable):
                 ruleSentences.append([ruleSentence])
             case "~": #case negation
                 statements = rule[2:-1].split(" & ")
-                statementsSentences = " & ".join(list(map(lambda x: lookupTable[int(x[1:])],statements)))
-                ruleSentences.append([f"not ({statementsSentences})"])
-            case "v": #case true????????
-                print(f"Sta {rule}")
-            case "len1 true": 
-                pass
-            case "len1 neg":
-                pass
+                if len(statements) == 1: # if the negation clause only contains one value
+                    ruleSentences.append([f"not ({lookupTable[int(rule[2:])]})"])
+                else:
+                    statementsSentences = " & ".join(list(map(lambda x: lookupTable[int(x[1:])],statements)))
+                    ruleSentences.append([f"not ({statementsSentences})"])
+            case "F": # False
+                ruleSentences.append("False")
+            case "T": # True
+                ruleSentences.append("True")
+            case "v": # single rule
+                ruleSentences.append([lookupTable[int(rule[1:])]])
+            case default: #case true????????
+                ruleSentences.append(f"default = {rule}")
+                # print(f"default = {rule}")
+
     return ruleSentences
 
 def dropFalseRules(hornRuleSentences):
@@ -75,14 +75,24 @@ def dropFalseRules(hornRuleSentences):
     rulesFiltered = list(filter(lambda x: [f"not ({x[0].split(' --->')[0]})"] not in negatedRules, hornRuleSentences)) # drops false -> x
     return rulesFiltered
 
-def storeHornRules(writeTo, h, background,lookupTable):
-    # filterH = list(filter(lambda x: x not in background,h)) # filter out background
-    # strH = list(map(lambda x: str(x),h))
+def storeMetadata(writeTo, metadata):
+    with open("rule_extraction/" + writeTo + "_metadata_" + ".csv", 'w', newline='') as csvfile:
+        writer = csv.writer(csvfile)
+        writer.writerows([["ITERATION", "HYP LEN", "SAMPLENR", "RUNTIME"]]) #header
+        writer.writerows(metadata)
+
+def storeHornRules(writeTo, h, lookupTable):
     hornRuleSentences = rulesToSentences(h,lookupTable)
-    # filteredSentences = dropFalseRules(hornRuleSentences)   # filter out false rules
     with open("rule_extraction/" + writeTo + "_HornRules_" + ".csv", 'w', newline='',encoding="UTF-8") as csvfile:
         writer = csv.writer(csvfile)
         writer.writerow(["EXTRACTED HORN RULES"])
         writer.writerows(hornRuleSentences)
-    # for x in formatedRules:
-    #     print(x)
+
+def storeHornRulesFiltered(writeTo, h, background, lookupTable):
+    hNoBackgorund = set(filter(lambda x: x not in background,h)) # filter out background
+    hornRuleSentences = rulesToSentences(hNoBackgorund,lookupTable)
+    hNoFalseRules = dropFalseRules(hornRuleSentences)   # filter out false rules ie, no false -> x
+    with open("rule_extraction/" + writeTo + "_HornRulesFiltered_" + ".csv", 'w', newline='',encoding="UTF-8") as csvfile:
+        writer = csv.writer(csvfile)
+        writer.writerow(["EXTRACTED HORN RULES (FILTERED)"])
+        writer.writerows(hNoFalseRules)
