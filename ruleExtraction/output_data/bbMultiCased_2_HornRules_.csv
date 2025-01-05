@@ -1,0 +1,118 @@
+EXTRACTED HORN RULES
+not (betongfagarbeider & helsefagarbeider)
+not (Stavanger & Trondheim)
+kvinne ---> Kristiansand
+not (yngre enn 20 & mellom 40 og 50)
+not (mellom 20 og 30 & mellom 40 og 50)
+not (betongfagarbeider & adjunkt)
+not (elektriker & sykepleier)
+not (kvinne & mann)
+kvinne ---> Trondheim
+not (Kristiansand & Bergen)
+not (Oslo & Ålesund)
+kvinne ---> helsefagarbeider
+not (Afrika & Europa)
+not (Stavanger & Ålesund)
+not (yngre enn 20 & mellom 30 og 40)
+not (Stavanger & Bodø)
+not (mellom 20 og 30 & mellom 30 og 40)
+not (Bergen & Tromsø)
+kvinne ---> barnehagelærer
+not (mellom 30 og 40 & mellom 50 og 60)
+not (sykepleier & adjunkt)
+not (mekaniker & adjunkt)
+not (elektriker & helsefagarbeider)
+not (adjunkt & barnehagelærer)
+not (mellom 20 og 30 & eldre enn 60)
+not (sykepleier & barnehagelærer)
+not (elektriker & barnehagelærer)
+not (Kristiansand & Trondheim)
+kvinne ---> mekaniker
+not (Asia & Afrika)
+not (Afrika & Australia)
+kvinne ---> sveiser
+kvinne ---> Nord Amerika
+not (betongfagarbeider & sykepleier)
+not (Ålesund & Bodø)
+not (elektriker & betongfagarbeider)
+not (mekaniker & betongfagarbeider)
+not (Kristiansand & Tromsø)
+not (mekaniker & elektriker)
+not (mellom 50 og 60 & eldre enn 60)
+not (mellom 40 og 50 & eldre enn 60)
+not (Nord Amerika & Sør Amerika)
+not (Asia & Europa)
+not (Kristiansand & Ålesund)
+not (mellom 30 og 40 & mellom 40 og 50)
+not (elektriker & sveiser)
+not (Kristiansand & Bodø)
+not (Afrika & Nord Amerika)
+not (helsefagarbeider & adjunkt)
+not (yngre enn 20 & eldre enn 60)
+not (Sør Amerika & Australia)
+not (Ålesund & Tromsø)
+not (Trondheim & Bodø)
+not (sveiser & helsefagarbeider)
+kvinne ---> Ålesund
+not (Europa & Australia)
+not (Oslo & Kristiansand)
+not (Asia & Australia)
+not (elektriker & adjunkt)
+kvinne ---> adjunkt
+kvinne ---> mellom 30 og 40
+kvinne ---> Stavanger
+not (Oslo & Tromsø)
+kvinne ---> mellom 50 og 60
+kvinne ---> Afrika
+not (mellom 30 og 40 & eldre enn 60)
+not (Bergen & Trondheim)
+kvinne ---> Oslo
+not (Stavanger & Tromsø)
+kvinne ---> sykepleier
+not (Asia & Nord Amerika)
+not (kvinne)
+not (sveiser & adjunkt)
+not (Asia & Sør Amerika)
+kvinne ---> mellom 40 og 50
+kvinne ---> mellom 20 og 30
+not (helsefagarbeider & barnehagelærer)
+not (Oslo & Trondheim)
+kvinne ---> elektriker
+kvinne ---> yngre enn 20
+kvinne ---> Europa
+kvinne ---> Asia
+not (sveiser & sykepleier)
+kvinne ---> eldre enn 60
+not (Bergen & Ålesund)
+not (Bergen & Bodø)
+not (sveiser & barnehagelærer)
+not (Nord Amerika & Europa)
+kvinne ---> Sør Amerika
+kvinne ---> Bergen
+not (mekaniker & sykepleier)
+not (mellom 40 og 50 & mellom 50 og 60)
+not (mekaniker & barnehagelærer)
+not (Sør Amerika & Europa)
+not (Oslo & Bodø)
+not (betongfagarbeider & barnehagelærer)
+not (Bodø & Tromsø)
+not (mellom 20 og 30 & mellom 50 og 60)
+not (Ålesund & Trondheim)
+not (Oslo & Bergen)
+not (Nord Amerika & Australia)
+not (Stavanger & Bergen)
+not (yngre enn 20 & mellom 50 og 60)
+kvinne ---> Tromsø
+not (Oslo & Stavanger)
+not (Trondheim & Tromsø)
+not (mekaniker & sveiser)
+kvinne ---> Australia
+not (Afrika & Sør Amerika)
+kvinne ---> betongfagarbeider
+not (betongfagarbeider & sveiser)
+kvinne ---> Bodø
+kvinne ---> mann
+not (Kristiansand & Stavanger)
+not (sykepleier & helsefagarbeider)
+not (yngre enn 20 & mellom 20 og 30)
+not (mekaniker & helsefagarbeider)

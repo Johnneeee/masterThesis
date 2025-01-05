@@ -30,7 +30,7 @@ def generateBackground(V, attLengths):
 def storeBackground(background, lookupTable):
     # strBackground = list(map(lambda x: str(x),background))
     backgroundSentences = rulesToSentences(background,lookupTable)
-    with open('data/background.csv', 'w', newline = '', encoding="UTF-8") as csvfile:
+    with open('input_data/background.csv', 'w', newline = '', encoding="UTF-8") as csvfile:
         writer = csv.writer(csvfile)
         writer.writerows([["BACKGROUND"]])
 
@@ -76,14 +76,14 @@ def dropFalseRules(hornRuleSentences):
     return rulesFiltered
 
 def storeMetadata(writeTo, metadata):
-    with open("rule_extraction/" + writeTo + "_metadata_" + ".csv", 'w', newline='') as csvfile:
+    with open("output_data/" + writeTo + "_metadata_" + ".csv", 'w', newline='') as csvfile:
         writer = csv.writer(csvfile)
         writer.writerows([["ITERATION", "HYP LEN", "SAMPLENR", "RUNTIME"]]) #header
         writer.writerows(metadata)
 
 def storeHornRules(writeTo, h, lookupTable):
     hornRuleSentences = rulesToSentences(h,lookupTable)
-    with open("rule_extraction/" + writeTo + "_HornRules_" + ".csv", 'w', newline='',encoding="UTF-8") as csvfile:
+    with open("output_data/" + writeTo + "_HornRules_" + ".csv", 'w', newline='',encoding="UTF-8") as csvfile:
         writer = csv.writer(csvfile)
         writer.writerow(["EXTRACTED HORN RULES"])
         writer.writerows(hornRuleSentences)
@@ -92,7 +92,7 @@ def storeHornRulesFiltered(writeTo, h, background, lookupTable):
     hNoBackgorund = set(filter(lambda x: x not in background,h)) # filter out background
     hornRuleSentences = rulesToSentences(hNoBackgorund,lookupTable)
     hNoFalseRules = dropFalseRules(hornRuleSentences)   # filter out false rules ie, no false -> x
-    with open("rule_extraction/" + writeTo + "_HornRulesFiltered_" + ".csv", 'w', newline='',encoding="UTF-8") as csvfile:
+    with open("output_data/" + writeTo + "_HornRulesFiltered_" + ".csv", 'w', newline='',encoding="UTF-8") as csvfile:
         writer = csv.writer(csvfile)
         writer.writerow(["EXTRACTED HORN RULES (FILTERED)"])
         writer.writerows(hNoFalseRules)
