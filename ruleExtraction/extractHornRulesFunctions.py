@@ -59,13 +59,13 @@ def rulesToSentences(rules, lookupTable):
                     statementsSentences = " & ".join(list(map(lambda x: lookupTable[int(x[1:])],statements)))
                     ruleSentences.append([f"not ({statementsSentences})"])
             case "F": # False
-                ruleSentences.append("False")
+                ruleSentences.append(["False"])
             case "T": # True
-                ruleSentences.append("True")
+                ruleSentences.append(["True"])
             case "v": # single rule
                 ruleSentences.append([lookupTable[int(rule[1:])]])
             case default: #case true????????
-                ruleSentences.append(f"default = {rule}")
+                ruleSentences.append([f"default = {rule}"])
                 # print(f"default = {rule}")
 
     return ruleSentences
