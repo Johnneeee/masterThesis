@@ -20,205 +20,180 @@ def getRandomValue(length, allow_zero):
         vec[i] = 1
     return vec
 
-def get_label(gender, classification): #randomGeneratedGenderVec, resultVectorFromLm
-    if (gender[0] == 1 and classification == 0) or (gender[1] == 1 and classification == 1):
-        return True
-    else: # this also catches if the lm returns other answers which are not genders
-        return False
-    
-def set2theory(set):
-    tempt = True
-    for e in set:
-        tempt = tempt & e
-    return tempt
+def set2formula(set): #converting set of sympy formulas to one big sympy formula 
+    finalFormula = True
+    for formula in set:
+        finalFormula &= formula
+    return finalFormula
 
-class HornAlgorithm():
-    def __init__(self, epsilon : int, delta : int, lm : str, intepretor : Intepretor, V):
+# epsilon = # error: (differ between model and sampled)
+# delta = # confidence: (chance of differ)
+class HornAlgorithm():                                                          
+    def __init__(self, langaugeModel : str, intepretor : Intepretor, vocabulary, epsilon = 0.2, delta = 0.1):
         # static
-        self.epsilon = epsilon
-        self.delta = delta
         self.intepretor = intepretor
         self.hypSpace = prod(self.intepretor.lengths.values())*2
         self.sampleSize = int ( (1/epsilon) * log( (Pow(2,self.hypSpace) / delta), 2))
-        self.lm = lm
-        self.unmasker = pipeline('fill-mask', model=lm)
-        self.V = V
-
+        self.unmasker = pipeline('fill-mask', model=langaugeModel)
+        self.V = vocabulary
         # dynamic
         self.bad_nc = [] # list of negative counterexamples that cannot produce a rule (according to positive counterexamples)
         self.bad_pc = []
 
     def probe(self, sentence : str):
-        # genderPred: 0 = female, 1 = male
-        # if self.lm.split('-')[0] == 'bert' :
-        #     sentence = sentence.replace('<mask>', '[MASK]')
         result = self.unmasker(sentence)
 
         for reply in result: # for the replies returned by the language model
             token = (reply["token_str"]).lower()
             #if female
-            if token in {"hun", "ho", "kvinnen"}: # i should add more cases
-                return 0
+            if token in {"hun", "ho", "kvinnen"}: # add more cases?
+                return [1,0]
             #if male
-            if token in {"han", "mannen"}: # i should add more cases
-                return 1
-            else:
-                continue
+            if token in {"han", "mannen"}: # add more cases?
+                return [0,1]
 
-        return result[0]['token_str']
+        return [0,0]
 
-    def create_single_sample(self):
-        randomVec = []
+    def generate_sample(self):
+        generatedVec = []
         for att in self.intepretor.attributes:
-            randomVec += getRandomValue(self.intepretor.lengths[att], True) #why true
-        
-        randomGenderVec = getRandomValue(2, allow_zero=False)
-        randomVec += randomGenderVec
+            generatedVec += getRandomValue(self.intepretor.lengths[att], True) #why true
+        generatedGender = getRandomValue(2, False)
+        generatedVec += generatedGender
 
-        sentence = self.intepretor.binaryToSentence(randomVec)
-        # genderPred: 0 = female, 1 = male
-        genderLMPred = self.probe(sentence)
+        sentence = self.intepretor.binaryToSentence(generatedVec)
+        predictedGender = self.probe(sentence)
 
-        label = get_label(randomGenderVec,genderLMPred)
-
-        return (randomVec,label)
+        label = generatedGender == predictedGender
+        return (generatedVec,label)
     
-    def evalFormula(self, formula, x):
-        if formula == true:
-            return True
-        if formula == false:
-            return False
-        a = {self.V[i]: x[i] for i in range(len(self.V))}
+    def evalFormula(self, formula, vector): # -> bool
+        if formula in {true, false}:
+            return formula
+        
+        d = {} # {symbol: bool} # setup for .subs
         for i in range(len(self.V)):
-            a[self.V[i]] = (True if x[i] == 1
-                            else False)
-        return True if formula.subs(a) == True else False
+            d[self.V[i]] = vector[i] == 1
+
+        return formula.subs(d)  # .subs does the evaluation, given the formula and its truth values per symbol
     
     def EQ(self,H):
-        h = true
-        if len(H):
-            h = set2theory(H)
-        for i in range(self.sampleSize):
-            (a,label) = self.create_single_sample()
+        h = set2formula(H) if len(H) else true # convert h to big formula
 
-            # neg counter example
-            if label == False and self.evalFormula(h,a) and a not in self.bad_nc:
-                # print("neg counterex")
-                return (a, i+1)
-            # pos counter example
-            if label == True and not self.evalFormula(h,a):
-                # print("pos counterex")
-                return (a, i+1)
+        for sampleNr in range(1,self.sampleSize+1):
+            (generatedVec,label) = self.generate_sample()
+            evaluatedTheory = self.evalFormula(h,generatedVec)
+
+            # pos counterExample(for mange)
+            if label == False and evaluatedTheory and (generatedVec not in self.bad_nc):
+                return (generatedVec, sampleNr)
+            
+            # neg counterExample (for få)
+            if label == True and evaluatedTheory == False:
+                return (generatedVec, sampleNr)
 
         return True
     
     def MQ(self, assignment):
-        vec = assignment[:-2]
-        genderVec = assignment[-2:]
+        vec = assignment[:-2] # excluding genders
         sentence = self.intepretor.binaryToSentence(vec)
-        genderLMPred = self.probe(sentence)
-        label = get_label(genderVec, genderLMPred)
-        return label
+
+        generatedGender = assignment[-2:]
+        predictedGender = self.probe(sentence)
+        
+        return generatedGender == predictedGender
     
-    def get_hypothesis(self, S, background):
+    def get_hypothesis(self, S):
         H = set()
-        for a in [a for a in S if a not in self.bad_nc]:
-            L = [self.V[index] for index,value in enumerate(a) if a[index] == 1] + [true]
-            R = [self.V[index] for index,value in enumerate(a) if a[index] == 0] + [false]
+        sFiltered = list(filter(lambda x: x not in self.bad_nc, S)) # [vec]
+
+        for vec in sFiltered:
+            L = [self.V[i] for i,val in enumerate(vec) if vec[i] == 1] + [true] # vec -> true(vec)
+            R = [self.V[i] for i,val in enumerate(vec) if vec[i] == 0] + [false] # vec -> false(vec)
             for r in R:
-                clause = functools.reduce(lambda x,y: x & y, L)
-                clause = (clause) >> r
+                clause = functools.reduce(lambda x,y: x & y, L) #[symbols] -> &symbols
+                clause = (clause) >> r # clause = Implies(clause,r)
                 H.add(clause)
-        H = H.union(background)
         return H
-    
-    def refineHyp(self, H, S, Pos):
+
+    def refineHyp(self, H : set, posCounterEx):
         #small optimisation. Refine hypo. with known positive counterexamples.
-        for pos in Pos:
-            for clause in H.copy():
-                if (self.evalFormula(clause, pos) == False):
-                    H.remove(clause)
+        refined_h = H.copy()
 
-        self.identify_problematic_nc(H,S)
-        return H
+        for clause in H:
+            for vec in posCounterEx:
+                if self.evalFormula(clause, vec) == False:
+                    refined_h.remove(clause)
+                    break
 
-    def identify_problematic_nc(self, H, S): 
+        return refined_h
+
+    # bad_nc is the implicated pos counter examples??
+    def find_bad_nc(self, H, S): 
         #check if a nc in S does not falsify a clause in H
-        h = set2theory(H)
-        for a in [a for a in S if a not in self.bad_nc]:
-            if (self.evalFormula(h, a) == True):
-                self.bad_nc.append(a)
+        h = set2formula(H)
+        sFiltered = list(filter(lambda x: x not in self.bad_nc, S)) # [vec]
+        for vec in sFiltered:
+            if (self.evalFormula(h, vec) == True):
+                self.bad_nc.append(vec)
 
-    def checkDup(self, list, a):
-        if a in list:
-            self.bad_nc.append(a)
+    def checkDup(self, vec, list):
+        if vec in list:
+            self.bad_nc.append(vec)
             return True
         return False
     
-    def learn(self,background,iterationCap=-1):
+    def learn(self,iterationCap,background = set()):
         metadata = [] #[[iteration, len(H), sampleNr, runtime]]
-        H = set()
-        H = H.union(background)
+        H = background
         S = []
-        i = 1
         #remember positive counterexamples
-        Pos = []
-        # while True and i!=(iterationCap+1):
-        for x in tqdm(range(iterationCap), desc="Eq iteration"):
+        posCounterEx = []
+
+        for iteration in tqdm(range(1,iterationCap+1), desc="Eq iteration"):
             start = timeit.default_timer()
-            #Ask for H
+
             eq_res = self.EQ(H)
-            if eq_res == True:
+
+            if eq_res == True: #if eq -> True
                 # logging metadata
-                stop = timeit.default_timer()
-                timer = stop-start
-                data = [i, len(H), 0, round(timer, 3)]
-                metadata.append(data)
+                metadata.append([iteration, len(H), 0, round(timeit.default_timer()-start, 3)])
                 metadata.append(["terminated"])
                 return (metadata, H)
 
             (counterEx,sampleNr) = eq_res
-            pos_ex=False
+            pos_ex=False # posEx/negEx lock
 
-            # if EQ() returns a positive counterexample
-            for clause in H.copy():
+            for clause in H.copy(): # if (eq -> positive counter example)
                 if (self.evalFormula(clause, counterEx) == False):
                     if clause in background:
                         self.bad_pc.append(counterEx)
                     else:
                         H.remove(clause)
-                        Pos.append(counterEx)
-                        self.identify_problematic_nc(H,S)
+                        posCounterEx.append(counterEx)
+                        self.find_bad_nc(H,S)
                         pos_ex = True
                         
-            # if EQ() returns a negative counter example
-            if not pos_ex:
-                replaced = False
-                for s in S:
-                    s_intersection_x = [1 if s[index] ==1 and counterEx[index] == 1 else 0 for index in range(len(self.V))]
-                    A = {index for index,value in enumerate(s_intersection_x) if value ==1}
-                    B = {index for index,value in enumerate(s) if value ==1}
+            if pos_ex == False: # else (eq -> negative counter example)
+                for i, s in enumerate(S): # if (exists s in S s.t. statements)
+                    s_intersection_x = [1 if s[i] ==1 and counterEx[i] == 1 else 0 for i in range(len(self.V))]
+                    A = {i for i,val in enumerate(s_intersection_x) if val ==1}
+                    B = {i for i,val in enumerate(s) if val ==1}
                     
-                    if A.issubset(B) and not B.issubset(A): # A properly contained in B
-                        idx = S.index(s)
+                    if A.issubset(B) and B.issubset(A) == False: # A properly contained in B
                         if self.MQ(s_intersection_x) == False and s_intersection_x not in self.bad_nc:
-                            if not self.checkDup(S,s_intersection_x):
-                                S[idx] = s_intersection_x
-                                replaced = True
+                            if self.checkDup(s_intersection_x, S) == False:
+                                S[i] = s_intersection_x
                             break
                         
-                if not replaced:
+                else: # else (doesnt exists s in S s.t. statements)
                     S.append(counterEx)
 
-                H = self.get_hypothesis(S,background)
-                H = self.refineHyp(H,S,Pos)
+                H = self.get_hypothesis(S).union(background)
+                H = self.refineHyp(H,posCounterEx)
+                self.find_bad_nc(H,S)
 
             # logging metadata
-            stop = timeit.default_timer()
-            timer = stop-start
-            data = [i, len(H), sampleNr, round(timer, 3)]
-            metadata.append(data)
-            # print(data)
-            i += 1
+            metadata.append([iteration, len(H), sampleNr, round(timeit.default_timer()-start, 3)])
 
         return (metadata, H)

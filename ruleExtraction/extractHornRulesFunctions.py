@@ -67,7 +67,7 @@ def rulesToSentences(rules, lookupTable):
             case default: #case true????????
                 ruleSentences.append([f"default = {rule}"])
                 # print(f"default = {rule}")
-
+    ruleSentences.sort(key=lambda x: x[0])# sorting
     return ruleSentences
 
 def dropFalseRules(hornRuleSentences):
