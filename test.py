@@ -1,35 +1,42 @@
-# ja = [2,4,6,8]
-# hei = [1,2,3,4,5,6,7,8,9]
-# # nei = list(map(lambda x: str(x),hei))
-# nei = list(filter(lambda x: x not in ja,hei))
-# # nei = list(map(lambda x: str(x),nei))
+# from sympy import symbols, Or, And, true, false
 
-# print(nei)
+# # Define symbolic variables
+# x1, x2, x3, x4 = symbols('x1 x2 x3 x4')
 
-# def number_to_string(argument):
-#     match argument:
-#         case 0:
-#             return "zero"
-#         case 1:
-#             return "one"
-#         case 2:
-#             return "two"
-#         case default:
-#             return "something"
- 
-# head = number_to_string(2)
-# print(head)
+# # Define a formula
+# formula = And(x2, x4)
+# print(formula)
+# # Create a substitution dictionary
+# a = {x1: 1, x2: 1, x3: 0, x4: 1}
+# b = {x1: False, x2: True, x3: False, x4: true}
 
-# ja = {
-#     1:"one",
-#     2:"two"   
-# }
+# # Substitute values
+# print(formula.subs(a))
+# print(formula.subs(b))
+# print(formula.subs(a) == formula.subs(b))
 
-# for x in ja.values():
-#     print(x)
-# ja = ['yngre enn 20', 'mellom 20 og 30', 'mellom 30 og 40', 'mellom 40 og 50', 'mellom 50 og 60', 'eldre enn 60', 'sykepleier', 'helsefagarbeider', 'adjunkt', 'barnehagelærer', 'mekaniker', 'elektriker', 'betongfagarbeider', 'sveiser', 'Oslo', 'Kristiansand', 'Stavanger', 'Bergen', 'Ålesund', 'Trondheim', 'Bodø', 'Tromsø', 'Asia', 'Afrika', 'Nord Amerika', 'Sør Amerika', 'Europa', 'Australia', 'kvinne', 'mann']
-# print(len(ja))
+# c = [1,2,5]
 
-ja = "hei"
+# print("heihei") if len(c) else print("neinei")
+# # print(print(len(c) == True))
 
-print(ja.split("f"))
+# for vec in posCounterEx:
+#     for clause in H.copy():
+#         if self.evalFormula(clause, vec) == False:
+#             H.remove(clause)
+
+# for clause in H:
+#     for vec in posCounterEx:
+#         if self.evalFormula(clause, vec) == False:
+#             H.remove(clause)
+
+# for x in range(6):
+#   if x == 3: 
+#     break
+#   print(x)
+# else:
+#   print("Finally finished!")
+
+ja = ["1","2","3"]
+
+print(list(enumerate(ja)))
