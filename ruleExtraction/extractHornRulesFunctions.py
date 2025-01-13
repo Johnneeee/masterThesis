@@ -72,13 +72,13 @@ def rulesToSentences(rules, lookupTable):
 
 def dropFalseRules(hornRuleSentences):
     negatedRules = list(filter(lambda x: x[0][:3] == "not",hornRuleSentences)) # get rules that starts with "not"
-    rulesFiltered = list(filter(lambda x: [f"not ({x[0].split(' --->')[0]})"] not in negatedRules, hornRuleSentences)) # drops false -> x
+    rulesFiltered = list(filter(lambda x: [f"not ({x[0].split(' ---> ')[0]})"] not in negatedRules, hornRuleSentences)) # drops false -> x
     return rulesFiltered
 
 def storeMetadata(writeTo, metadata):
     with open("output_data/" + writeTo + "_metadata_" + ".csv", 'w', newline='') as csvfile:
         writer = csv.writer(csvfile)
-        writer.writerows([["ITERATION", "HYP LEN", "SAMPLENR", "RUNTIME"]]) #header
+        writer.writerows([["ITERATION", "LEN(HYP)", "SAMPLENR", "RUNTIME"]]) #header
         writer.writerows(metadata)
 
 def storeHornRules(writeTo, h, lookupTable):

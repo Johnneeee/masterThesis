@@ -29,13 +29,15 @@ def set2formula(set): #converting set of sympy formulas to one big sympy formula
 # epsilon = # error: (differ between model and sampled)
 # delta = # confidence: (chance of differ)
 class HornAlgorithm():                                                          
-    def __init__(self, langaugeModel : str, intepretor : Intepretor, vocabulary, epsilon = 0.2, delta = 0.1):
+    def __init__(self, langaugeModel : str, intepretor : Intepretor, vocabulary, triggerTokens, epsilon = 0.2, delta = 0.1):
         # static
         self.intepretor = intepretor
         self.hypSpace = prod(self.intepretor.lengths.values())*2
         self.sampleSize = int ( (1/epsilon) * log( (Pow(2,self.hypSpace) / delta), 2))
         self.unmasker = pipeline('fill-mask', model=langaugeModel)
         self.V = vocabulary
+        self.femaleTokens = triggerTokens[0]
+        self.maleTokens = triggerTokens[1]
         # dynamic
         self.bad_nc = [] # list of negative counterexamples that cannot produce a rule (according to positive counterexamples)
         self.bad_pc = []
@@ -46,10 +48,10 @@ class HornAlgorithm():
         for reply in result: # for the replies returned by the language model
             token = (reply["token_str"]).lower()
             #if female
-            if token in {"hun", "ho", "kvinnen"}: # add more cases?
+            if token in self.femaleTokens:
                 return [1,0]
             #if male
-            if token in {"han", "mannen"}: # add more cases?
+            if token in self.maleTokens:
                 return [0,1]
 
         return [0,0]
@@ -92,7 +94,7 @@ class HornAlgorithm():
             if label == True and evaluatedTheory == False:
                 return (generatedVec, sampleNr)
 
-        return True
+        return (True,0)
     
     def MQ(self, assignment):
         vec = assignment[:-2] # excluding genders
@@ -108,8 +110,8 @@ class HornAlgorithm():
         sFiltered = list(filter(lambda x: x not in self.bad_nc, S)) # [vec]
 
         for vec in sFiltered:
-            L = [self.V[i] for i,val in enumerate(vec) if vec[i] == 1] + [true] # vec -> true(vec)
-            R = [self.V[i] for i,val in enumerate(vec) if vec[i] == 0] + [false] # vec -> false(vec)
+            L = [self.V[i] for i,val in enumerate(vec) if val == 1] + [true] # vec -> true(vec)
+            R = [self.V[i] for i,val in enumerate(vec) if val == 0] + [false] # vec -> false(vec)
             for r in R:
                 clause = functools.reduce(lambda x,y: x & y, L) #[symbols] -> &symbols
                 clause = (clause) >> r # clause = Implies(clause,r)
@@ -136,12 +138,6 @@ class HornAlgorithm():
         for vec in sFiltered:
             if (self.evalFormula(h, vec) == True):
                 self.bad_nc.append(vec)
-
-    def checkDup(self, vec, list):
-        if vec in list:
-            self.bad_nc.append(vec)
-            return True
-        return False
     
     def learn(self,iterationCap,background = set()):
         metadata = [] #[[iteration, len(H), sampleNr, runtime]]
@@ -153,39 +149,44 @@ class HornAlgorithm():
         for iteration in tqdm(range(1,iterationCap+1), desc="Eq iteration"):
             start = timeit.default_timer()
 
-            eq_res = self.EQ(H)
+            (counterEx,sampleNr) = self.EQ(H)
 
-            if eq_res == True: #if eq -> True
+            if counterEx == True: #if eq -> True
                 # logging metadata
-                metadata.append([iteration, len(H), 0, round(timeit.default_timer()-start, 3)])
-                metadata.append(["terminated"])
+                metadata.append([iteration, len(H), "TRUE", round(timeit.default_timer()-start, 3)])
                 return (metadata, H)
 
-            (counterEx,sampleNr) = eq_res
             pos_ex=False # posEx/negEx lock
 
             for clause in H.copy(): # if (eq -> positive counter example)
+
+                if clause in background: # quick exit check
+                    self.bad_pc.append(counterEx)
+                    continue
+
                 if (self.evalFormula(clause, counterEx) == False):
-                    if clause in background:
-                        self.bad_pc.append(counterEx)
-                    else:
-                        H.remove(clause)
-                        posCounterEx.append(counterEx)
-                        self.find_bad_nc(H,S)
-                        pos_ex = True
+                    H.remove(clause)
+                    posCounterEx.append(counterEx)
+                    self.find_bad_nc(H,S)
+                    pos_ex = True
                         
             if pos_ex == False: # else (eq -> negative counter example)
                 for i, s in enumerate(S): # if (exists s in S s.t. statements)
-                    s_intersection_x = [1 if s[i] ==1 and counterEx[i] == 1 else 0 for i in range(len(self.V))]
-                    A = {i for i,val in enumerate(s_intersection_x) if val ==1}
-                    B = {i for i,val in enumerate(s) if val ==1}
-                    
-                    if A.issubset(B) and B.issubset(A) == False: # A properly contained in B
-                        if self.MQ(s_intersection_x) == False and s_intersection_x not in self.bad_nc:
-                            if self.checkDup(s_intersection_x, S) == False:
-                                S[i] = s_intersection_x
+                    cap_sc = [1 if (s[i] ==1 and counterEx[i] == 1) else 0 for i in range(len(self.V))] # cap = intersection
+                    true_sc = {i for i,val in enumerate(cap_sc) if val == 1}
+                    true_s = {i for i,val in enumerate(s) if val == 1}
+
+                    if cap_sc in S:
+                        self.bad_nc.append(cap_sc)
+
+                    if cap_sc in self.bad_nc: # quick exit check
+                        continue
+
+                    if true_sc.issubset(true_s) and (true_s.issubset(true_sc) == False): # if (s \cap c) \subset s
+                        if self.MQ(cap_sc) == False: # if mq(s \cap c) = "no"
+                            S[i] = cap_sc
                             break
-                        
+
                 else: # else (doesnt exists s in S s.t. statements)
                     S.append(counterEx)
 
