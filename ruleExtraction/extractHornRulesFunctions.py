@@ -76,14 +76,14 @@ def dropFalseRules(hornRuleSentences):
     return rulesFiltered
 
 def storeMetadata(writeTo, metadata):
-    with open("output_data/" + writeTo + "_metadata_" + ".csv", 'w', newline='') as csvfile:
+    with open(f"output_data/{writeTo}_metadata.csv", 'w', newline='') as csvfile:
         writer = csv.writer(csvfile)
         writer.writerows([["ITERATION", "LEN(HYP)", "SAMPLENR", "RUNTIME"]]) #header
         writer.writerows(metadata)
 
 def storeHornRules(writeTo, h, lookupTable):
     hornRuleSentences = rulesToSentences(h,lookupTable)
-    with open("output_data/" + writeTo + "_HornRules_" + ".csv", 'w', newline='',encoding="UTF-8") as csvfile:
+    with open(f"output_data/{writeTo}_HornRules.csv", 'w', newline='',encoding="UTF-8") as csvfile:
         writer = csv.writer(csvfile)
         writer.writerow(["EXTRACTED HORN RULES"])
         writer.writerows(hornRuleSentences)
@@ -92,7 +92,57 @@ def storeHornRulesFiltered(writeTo, h, background, lookupTable):
     hNoBackgorund = set(filter(lambda x: x not in background,h)) # filter out background
     hornRuleSentences = rulesToSentences(hNoBackgorund,lookupTable)
     hNoFalseRules = dropFalseRules(hornRuleSentences)   # filter out false rules ie, no false -> x
-    with open("output_data/" + writeTo + "_HornRulesFiltered_" + ".csv", 'w', newline='',encoding="UTF-8") as csvfile:
+    with open(f"output_data/{writeTo}_HornRulesFiltered.csv", 'w', newline='',encoding="UTF-8") as csvfile:
         writer = csv.writer(csvfile)
         writer.writerow(["EXTRACTED HORN RULES (FILTERED)"])
         writer.writerows(hNoFalseRules)
+
+def storeTotalCount(writeTo, fileNames, background):
+    n = len(fileNames)
+    ####################################################################
+    hornRules = {}
+    for fn in fileNames:
+        with open(f"output_data/{fn}_HornRules.csv", mode = "r",encoding="UTF-8") as file:
+            csvFile = csv.reader(file, delimiter=";")
+            next(csvFile)
+            for line in csvFile:
+                rule = line[0]
+                try:
+                    hornRules[rule] += 1
+                except:
+                    hornRules[rule] = 1
+    l = []
+    for x in hornRules.items():
+        l.append([f"{x[1]}/{n}", x[0]])
+    with open(f"output_data/{writeTo}_HornRulesTotal.csv", 'w', newline='',encoding="UTF-8") as csvfile:
+        writer = csv.writer(csvfile, delimiter=";")
+        writer.writerow(["COUNT","EXTRACTED HORN RULES"])
+        writer.writerows(l)
+    ###############################################################
+    hornRulesFiltered = {}
+    for fn in fileNames:
+        with open(f"output_data/{fn}_HornRulesFiltered.csv", mode = "r",encoding="UTF-8") as file:
+            csvFile = csv.reader(file, delimiter=";")
+            next(csvFile)
+            for line in csvFile:
+                rule = line[0]
+                try:
+                    hornRulesFiltered[rule] += 1
+                except:
+                    hornRulesFiltered[rule] = 1
+    l2 = []
+    for x in hornRulesFiltered.items():
+        l2.append([f"{x[1]}/{n}", x[0]])
+    with open(f"output_data/{writeTo}_HornRulesFilteredTotal.csv", 'w', newline='',encoding="UTF-8") as csvfile:
+        writer = csv.writer(csvfile, delimiter=";")
+        writer.writerow(["COUNT","EXTRACTED HORN RULES (FILTERED)"])
+        writer.writerows(l2)
+
+    
+
+    
+    # print(hornRules)
+    # hornRulesFiltered = []
+    # metadata = []
+
+    # print(fileNames)
