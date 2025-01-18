@@ -29,7 +29,7 @@ def set2formula(set): #converting set of sympy formulas to one big sympy formula
 # epsilon = # error: (differ between model and sampled)
 # delta = # confidence: (chance of differ)
 class HornAlgorithm():                                                          
-    def __init__(self, langaugeModel : str, intepretor : Intepretor, vocabulary, triggerTokens, epsilon = 0.2, delta = 0.1):
+    def __init__(self,intepretor : Intepretor, vocabulary, triggerTokens, langaugeModel : str, epsilon = 0.2, delta = 0.1):
         # static
         self.intepretor = intepretor
         self.hypSpace = prod(self.intepretor.lengths.values())*2
@@ -41,6 +41,7 @@ class HornAlgorithm():
         # dynamic
         self.bad_nc = [] # list of negative counterexamples that cannot produce a rule (according to positive counterexamples)
         self.bad_pc = []
+        self.posCounterEx = [] #tracks positive counterexamples encountered
 
     def probe(self, sentence : str):
         result = self.unmasker(sentence)
@@ -118,16 +119,9 @@ class HornAlgorithm():
                 H.add(clause)
         return H
 
-    def refineHyp(self, H : set, posCounterEx):
-        #small optimisation. Refine hypo. with known positive counterexamples.
-        refined_h = H.copy()
-
-        for clause in H:
-            for vec in posCounterEx:
-                if self.evalFormula(clause, vec) == False:
-                    refined_h.remove(clause)
-                    break
-
+    def refineHyp(self, H : set):
+        # drops h in H where exsists p in P s.t. p falsifies h
+        refined_h = set(filter(lambda x: all(self.evalFormula(x, vec) for vec in self.posCounterEx), H.copy()))
         return refined_h
 
     # bad_nc is the implicated pos counter examples??
@@ -143,58 +137,59 @@ class HornAlgorithm():
         metadata = [] #[[iteration, len(H), sampleNr, runtime]]
         H = background
         S = []
-        #remember positive counterexamples
-        posCounterEx = []
 
+        # try:
         for iteration in tqdm(range(1,iterationCap+1), desc="Eq iteration"):
             start = timeit.default_timer()
 
             (counterEx,sampleNr) = self.EQ(H)
-
+            # if counterEx in posCounterEx:
+            #         print("hei")
             if counterEx == True: #if eq -> True
-                # logging metadata
-                metadata.append([iteration, len(H), "TRUE", round(timeit.default_timer()-start, 3)])
-                return (metadata, H)
+                metadata.append([iteration, len(H), "TRUE", round(timeit.default_timer()-start, 3)]) # logging metadata
+                return (metadata, H, iteration)
 
             pos_ex=False # posEx/negEx lock
 
             for clause in H.copy(): # if (eq -> positive counter example)
 
                 if clause in background: # quick exit check
-                    self.bad_pc.append(counterEx)
+                    # self.bad_pc.append(counterEx)
                     continue
 
                 if (self.evalFormula(clause, counterEx) == False):
                     H.remove(clause)
-                    posCounterEx.append(counterEx)
-                    self.find_bad_nc(H,S)
                     pos_ex = True
-                        
+
+            if pos_ex: # if counterexample confirmed as positive counterexample
+                self.posCounterEx.append(counterEx)
+
             if pos_ex == False: # else (eq -> negative counter example)
-                for i, s in enumerate(S): # if (exists s in S s.t. statements)
-                    cap_sc = [1 if (s[i] ==1 and counterEx[i] == 1) else 0 for i in range(len(self.V))] # cap = intersection
+                for idx, s in enumerate(S): # if (exists s in S s.t. statements)
+                    cap_sc = [1 if (s[i] == 1 and counterEx[i] == 1) else 0 for i in range(len(self.V))] # cap = intersection
                     true_sc = {i for i,val in enumerate(cap_sc) if val == 1}
                     true_s = {i for i,val in enumerate(s) if val == 1}
 
-                    if cap_sc in S:
+                    if cap_sc in S: # quick exit check
                         self.bad_nc.append(cap_sc)
+                        continue
 
                     if cap_sc in self.bad_nc: # quick exit check
                         continue
 
                     if true_sc.issubset(true_s) and (true_s.issubset(true_sc) == False): # if (s \cap c) \subset s
                         if self.MQ(cap_sc) == False: # if mq(s \cap c) = "no"
-                            S[i] = cap_sc
+                            S[idx] = cap_sc
                             break
 
                 else: # else (doesnt exists s in S s.t. statements)
                     S.append(counterEx)
 
                 H = self.get_hypothesis(S).union(background)
-                H = self.refineHyp(H,posCounterEx)
-                self.find_bad_nc(H,S)
+                H = self.refineHyp(H)
 
-            # logging metadata
-            metadata.append([iteration, len(H), sampleNr, round(timeit.default_timer()-start, 3)])
-
-        return (metadata, H)
+            self.find_bad_nc(H,S)
+            metadata.append([iteration, len(H), sampleNr, round(timeit.default_timer()-start, 3)]) # logging metadata
+        return (metadata, H, iteration)
+        # except: # save current data in case user decides to interupt the run
+        #     return (metadata, H, iteration-1) # -1 to match the counting bar which starts at 0
