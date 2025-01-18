@@ -138,58 +138,58 @@ class HornAlgorithm():
         H = background
         S = []
 
-        # try:
-        for iteration in tqdm(range(1,iterationCap+1), desc="Eq iteration"):
-            start = timeit.default_timer()
+        try:
+            for iteration in tqdm(range(1,iterationCap+1), desc="Eq iteration"):
+                start = timeit.default_timer()
 
-            (counterEx,sampleNr) = self.EQ(H)
-            # if counterEx in posCounterEx:
-            #         print("hei")
-            if counterEx == True: #if eq -> True
-                metadata.append([iteration, len(H), "TRUE", round(timeit.default_timer()-start, 3)]) # logging metadata
-                return (metadata, H, iteration)
+                (counterEx,sampleNr) = self.EQ(H)
+                # if counterEx in posCounterEx:
+                #         print("hei")
+                if counterEx == True: #if eq -> True
+                    metadata.append([iteration, len(H), "TRUE", round(timeit.default_timer()-start, 3)]) # logging metadata
+                    return (metadata, H, iteration)
 
-            pos_ex=False # posEx/negEx lock
+                pos_ex=False # posEx/negEx lock
 
-            for clause in H.copy(): # if (eq -> positive counter example)
+                for clause in H.copy(): # if (eq -> positive counter example)
 
-                if clause in background: # quick exit check
-                    # self.bad_pc.append(counterEx)
-                    continue
-
-                if (self.evalFormula(clause, counterEx) == False):
-                    H.remove(clause)
-                    pos_ex = True
-
-            if pos_ex: # if counterexample confirmed as positive counterexample
-                self.posCounterEx.append(counterEx)
-
-            if pos_ex == False: # else (eq -> negative counter example)
-                for idx, s in enumerate(S): # if (exists s in S s.t. statements)
-                    cap_sc = [1 if (s[i] == 1 and counterEx[i] == 1) else 0 for i in range(len(self.V))] # cap = intersection
-                    true_sc = {i for i,val in enumerate(cap_sc) if val == 1}
-                    true_s = {i for i,val in enumerate(s) if val == 1}
-
-                    if cap_sc in S: # quick exit check
-                        self.bad_nc.append(cap_sc)
+                    if clause in background: # quick exit check
+                        # self.bad_pc.append(counterEx)
                         continue
 
-                    if cap_sc in self.bad_nc: # quick exit check
-                        continue
+                    if (self.evalFormula(clause, counterEx) == False):
+                        H.remove(clause)
+                        pos_ex = True
 
-                    if true_sc.issubset(true_s) and (true_s.issubset(true_sc) == False): # if (s \cap c) \subset s
-                        if self.MQ(cap_sc) == False: # if mq(s \cap c) = "no"
-                            S[idx] = cap_sc
-                            break
+                if pos_ex: # if counterexample confirmed as positive counterexample
+                    self.posCounterEx.append(counterEx)
 
-                else: # else (doesnt exists s in S s.t. statements)
-                    S.append(counterEx)
+                if pos_ex == False: # else (eq -> negative counter example)
+                    for idx, s in enumerate(S): # if (exists s in S s.t. statements)
+                        cap_sc = [1 if (s[i] == 1 and counterEx[i] == 1) else 0 for i in range(len(self.V))] # cap = intersection
+                        true_sc = {i for i,val in enumerate(cap_sc) if val == 1}
+                        true_s = {i for i,val in enumerate(s) if val == 1}
 
-                H = self.get_hypothesis(S).union(background)
-                H = self.refineHyp(H)
+                        if cap_sc in S: # quick exit check
+                            self.bad_nc.append(cap_sc)
+                            continue
 
-            self.find_bad_nc(H,S)
-            metadata.append([iteration, len(H), sampleNr, round(timeit.default_timer()-start, 3)]) # logging metadata
-        return (metadata, H, iteration)
-        # except: # save current data in case user decides to interupt the run
-        #     return (metadata, H, iteration-1) # -1 to match the counting bar which starts at 0
+                        if cap_sc in self.bad_nc: # quick exit check
+                            continue
+
+                        if true_sc.issubset(true_s) and (true_s.issubset(true_sc) == False): # if (s \cap c) \subset s
+                            if self.MQ(cap_sc) == False: # if mq(s \cap c) = "no"
+                                S[idx] = cap_sc
+                                break
+
+                    else: # else (doesnt exists s in S s.t. statements)
+                        S.append(counterEx)
+
+                    H = self.get_hypothesis(S).union(background)
+                    H = self.refineHyp(H)
+
+                self.find_bad_nc(H,S)
+                metadata.append([iteration, len(H), sampleNr, round(timeit.default_timer()-start, 3)]) # logging metadata
+            return (metadata, H, iteration)
+        except: # save current data in case user decides to interupt the run
+            return (metadata, H, iteration-1) # -1 to match the counting bar which starts at 0

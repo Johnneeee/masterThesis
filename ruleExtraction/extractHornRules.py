@@ -2,7 +2,6 @@ from hornAlgorithm import HornAlgorithm
 from intepretor import Intepretor
 import extractHornRulesFunctions
 
-
 age_file = "input_data/ageValues.csv"
 occ_file = "input_data/occupationValues.csv"
 cities_file = "input_data/cityValues.csv"
@@ -20,8 +19,7 @@ lookupTableValues = intepretor.lookupTableValues + ["kvinne","mann"] #the lookup
 V = extractHornRulesFunctions.define_variables(sum(intepretor.lengths.values()) + 2)
 background = extractHornRulesFunctions.generateBackground(V, intepretor.lengths.values())
 extractHornRulesFunctions.storeBackground(background, lookupTableValues)
-iterations = 10 #i
-loop = 5 #r
+iterations = 5 #i
 templateBERT = template.replace("____", "[MASK]")
 intepretorBERT = Intepretor(attributes, filePaths, neutralCases, templateBERT)
 
@@ -29,75 +27,123 @@ templateROBERTA = template.replace("____", "<mask>")
 intepretorROBERTA = Intepretor(attributes, filePaths, neutralCases, templateROBERTA)
 
 ##########
-
-# "[MASK] er [age] år og er en [occupation] fra [city] med bakgrunn fra [ethnicity]."
-
-# "[MASK] er mellom 20 og 30 år og er lege i Bergen med bakgrunn fra Afrika" 
-
-# FacebookAI/xlm-roberta-base
-# hornAlgorithm = HornAlgorithm(intepretorROBERTA, V, triggerTokens, "FacebookAI/xlm-roberta-base") #init horn algorithm
-# metadata, h, i =  hornAlgorithm.learn(iterations, background) # running the horn algorithm
-# writeTo = f"xlmRBase_{i}" # path name to store data
-# extractHornRulesFunctions.storeMetadata(writeTo,metadata) # store metadata
-# extractHornRulesFunctions.storeHornRules(writeTo, h, lookupTableValues) # store extracted Horn Rules
-# extractHornRulesFunctions.storeHornRulesFiltered(writeTo, h, background, lookupTableValues) # store horn rules filtered
-
-# # FacebookAI/xlm-roberta-large
-# hornAlgorithm = HornAlgorithm(intepretorROBERTA, V, triggerTokens, "FacebookAI/xlm-roberta-large") #init horn algorithm
-# metadata, h, i =  hornAlgorithm.learn(iterations, background) # running the horn algorithm
-# writeTo = f"xlmRLarge_{i}" # path name to store data
-# extractHornRulesFunctions.storeMetadata(writeTo,metadata) # store metadata
-# extractHornRulesFunctions.storeHornRules(writeTo, h, lookupTableValues) # store extracted Horn Rules
-# extractHornRulesFunctions.storeHornRulesFiltered(writeTo, h, background, lookupTableValues) # store horn rules filtered
-
-# # bert-base-multilingual-uncased 11993022
-writeTo = "mBertUncased"
-for r in range(1,loop+1):
-    hornAlgorithm = HornAlgorithm(intepretorBERT, V, triggerTokens, "google-bert/bert-base-multilingual-uncased") #init horn algorithm
+def run(writeTo, lm, intepretor, run):
+    hornAlgorithm = HornAlgorithm(intepretor, V, triggerTokens, lm) #init horn algorithm
     metadata, h, i = hornAlgorithm.learn(iterations, background) # running the horn algorithm
-    # writeTo = f"mBertUncased_i{i}_r{n}" # path name to store data
-    extractHornRulesFunctions.storeMetadata(f"{writeTo}_i{i}_r{r}",metadata) # store metadata
-    extractHornRulesFunctions.storeHornRules(f"{writeTo}_i{i}_r{r}", h, lookupTableValues) # store extracted Horn Rules
-    extractHornRulesFunctions.storeHornRulesFiltered(writeTo, h, background, lookupTableValues) # store horn rules filtered
-files = [f"mBertUncased_i{iterations}_r{n}" for n in range(1,loop+1)]
-extractHornRulesFunctions.storeTotalCount(f"{writeTo}_i{iterations}TotalCount",files, background)
+    path = f"{writeTo}_i{i}_r{run}"
+    extractHornRulesFunctions.storeMetadata(path,metadata) # store metadata
+    extractHornRulesFunctions.storeHornRules(path, h, lookupTableValues) # store extracted Horn Rules
+    extractHornRulesFunctions.storeHornRulesFiltered(path, h, background, lookupTableValues) # store horn rules filtered
 
-# # # bert-base-multilingual-cased 7306587
-# hornAlgorithm = HornAlgorithm(intepretorBERT, V, triggerTokens, "google-bert/bert-base-multilingual-cased") #init horn algorithm
-# metadata, h, i =  hornAlgorithm.learn(iterations, background) # running the horn algorithm
-# writeTo = f"mBertCased_{i}" # path name to store data
-# extractHornRulesFunctions.storeMetadata(writeTo,metadata) # store metadata
-# extractHornRulesFunctions.storeHornRules(writeTo, h, lookupTableValues) # store extracted Horn Rules
-# extractHornRulesFunctions.storeHornRulesFiltered(writeTo, h, background, lookupTableValues) # store horn rules filtered
+# run("xlmRBase", "FacebookAI/xlm-roberta-base", intepretorROBERTA, 1)
+# run("xlmRBase", "FacebookAI/xlm-roberta-base", intepretorROBERTA, 2)
+# run("xlmRBase", "FacebookAI/xlm-roberta-base", intepretorROBERTA, 3)
+# run("xlmRBase", "FacebookAI/xlm-roberta-base", intepretorROBERTA, 4)
+# run("xlmRBase", "FacebookAI/xlm-roberta-base", intepretorROBERTA, 5)
+# run("xlmRBase", "FacebookAI/xlm-roberta-base", intepretorROBERTA, 6)
+# run("xlmRBase", "FacebookAI/xlm-roberta-base", intepretorROBERTA, 7)
+# run("xlmRBase", "FacebookAI/xlm-roberta-base", intepretorROBERTA, 8)
+# run("xlmRBase", "FacebookAI/xlm-roberta-base", intepretorROBERTA, 9)
+# run("xlmRBase", "FacebookAI/xlm-roberta-base", intepretorROBERTA, 10)
+# writeTo = "xlmRBase"
+# files = [f"{writeTo}_i{iterations}_r{n}" for n in range(1,11)]
+# extractHornRulesFunctions.storeTotalCount(f"{writeTo}_i{iterations}_TotalCount",files)
 
-# # # # nb-bert-base 2552
-# hornAlgorithm = HornAlgorithm(intepretorBERT, V, triggerTokens, "NbAiLab/nb-bert-base") #init horn algorithm
-# metadata, h, i =  hornAlgorithm.learn(iterations, background) # running the horn algorithm
-# writeTo = f"nbBertBase_{i}" # path name to store data
-# extractHornRulesFunctions.storeMetadata(writeTo,metadata) # store metadata
-# extractHornRulesFunctions.storeHornRules(writeTo, h, lookupTableValues) # store extracted Horn Rules
-# extractHornRulesFunctions.storeHornRulesFiltered(writeTo, h, background, lookupTableValues) # store horn rules filtered
+# run("xlmRLarge", "FacebookAI/xlm-roberta-large", intepretorROBERTA, 1)
+# run("xlmRLarge", "FacebookAI/xlm-roberta-large", intepretorROBERTA, 2)
+# run("xlmRLarge", "FacebookAI/xlm-roberta-large", intepretorROBERTA, 3)
+# run("xlmRLarge", "FacebookAI/xlm-roberta-large", intepretorROBERTA, 4)
+# run("xlmRLarge", "FacebookAI/xlm-roberta-large", intepretorROBERTA, 5)
+# run("xlmRLarge", "FacebookAI/xlm-roberta-large", intepretorROBERTA, 6)
+# run("xlmRLarge", "FacebookAI/xlm-roberta-large", intepretorROBERTA, 7)
+# run("xlmRLarge", "FacebookAI/xlm-roberta-large", intepretorROBERTA, 8)
+# run("xlmRLarge", "FacebookAI/xlm-roberta-large", intepretorROBERTA, 9)
+# run("xlmRLarge", "FacebookAI/xlm-roberta-large", intepretorROBERTA, 10)
+# writeTo = "xlmRLarge"
+# files = [f"{writeTo}_i{iterations}_r{n}" for n in range(1,11)]
+# extractHornRulesFunctions.storeTotalCount(f"{writeTo}_i{iterations}_TotalCount",files)
 
-# # # nb-bert-large 877
-# hornAlgorithm = HornAlgorithm(intepretorBERT, V, triggerTokens, "NbAiLab/nb-bert-large") #init horn algorithm
-# metadata, h, i =  hornAlgorithm.learn(iterations, background) # running the horn algorithm
-# writeTo = f"nbBertLarge_{i}" # path name to store data
-# extractHornRulesFunctions.storeMetadata(writeTo,metadata) # store metadata
-# extractHornRulesFunctions.storeHornRules(writeTo, h, lookupTableValues) # store extracted Horn Rules
-# extractHornRulesFunctions.storeHornRulesFiltered(writeTo, h, background, lookupTableValues) # store horn rules filtered
+run("mBertUncased", "google-bert/bert-base-multilingual-uncased", intepretorBERT, 1)
+run("mBertUncased", "google-bert/bert-base-multilingual-uncased", intepretorBERT, 2)
+run("mBertUncased", "google-bert/bert-base-multilingual-uncased", intepretorBERT, 3)
+# run("mBertUncased", "google-bert/bert-base-multilingual-uncased", intepretorBERT, 4)
+# run("mBertUncased", "google-bert/bert-base-multilingual-uncased", intepretorBERT, 5)
+# run("mBertUncased", "google-bert/bert-base-multilingual-uncased", intepretorBERT, 6)
+# run("mBertUncased", "google-bert/bert-base-multilingual-uncased", intepretorBERT, 7)
+# run("mBertUncased", "google-bert/bert-base-multilingual-uncased", intepretorBERT, 8)
+# run("mBertUncased", "google-bert/bert-base-multilingual-uncased", intepretorBERT, 9)
+# run("mBertUncased", "google-bert/bert-base-multilingual-uncased", intepretorBERT, 10)
+writeTo = "mBertUncased"
+files = [f"{writeTo}_i{iterations}_r{n}" for n in range(1,4)]
+extractHornRulesFunctions.storeTotalCount(f"{writeTo}_i{iterations}_TotalCount",files)
 
-# # norbert 261
-# hornAlgorithm = HornAlgorithm(intepretorBERT, V, triggerTokens, "ltg/norbert") #init horn algorithm
-# metadata, h, i =  hornAlgorithm.learn(iterations, background) # running the horn algorithm
-# writeTo = f"norbert_{i}" # path name to store data
-# extractHornRulesFunctions.storeMetadata(writeTo,metadata) # store metadata
-# extractHornRulesFunctions.storeHornRules(writeTo, h, lookupTableValues) # store extracted Horn Rules
-# extractHornRulesFunctions.storeHornRulesFiltered(writeTo, h, background, lookupTableValues) # store horn rules filtered
+# run("mBertCased", "google-bert/bert-base-multilingual-cased", intepretorBERT, 1)
+# run("mBertCased", "google-bert/bert-base-multilingual-cased", intepretorBERT, 2)
+# run("mBertCased", "google-bert/bert-base-multilingual-cased", intepretorBERT, 3)
+# run("mBertCased", "google-bert/bert-base-multilingual-cased", intepretorBERT, 4)
+# run("mBertCased", "google-bert/bert-base-multilingual-cased", intepretorBERT, 5)
+# run("mBertCased", "google-bert/bert-base-multilingual-cased", intepretorBERT, 6)
+# run("mBertCased", "google-bert/bert-base-multilingual-cased", intepretorBERT, 7)
+# run("mBertCased", "google-bert/bert-base-multilingual-cased", intepretorBERT, 8)
+# run("mBertCased", "google-bert/bert-base-multilingual-cased", intepretorBERT, 9)
+# run("mBertCased", "google-bert/bert-base-multilingual-cased", intepretorBERT, 10)
+# writeTo = "mBertCased"
+# files = [f"{writeTo}_i{iterations}_r{n}" for n in range(1,11)]
+# extractHornRulesFunctions.storeTotalCount(f"{writeTo}_i{iterations}_TotalCount",files)
 
-# # # norbert2 954
-# hornAlgorithm = HornAlgorithm(intepretorBERT, V, triggerTokens, "ltg/norbert2") #init horn algorithm
-# metadata, h, i =  hornAlgorithm.learn(iterations, background) # running the horn algorithm
-# writeTo = f"norbert2_{i}" # path name to store data
-# extractHornRulesFunctions.storeMetadata(writeTo,metadata) # store metadata
-# extractHornRulesFunctions.storeHornRules(writeTo, h, lookupTableValues) # store extracted Horn Rules
-# extractHornRulesFunctions.storeHornRulesFiltered(writeTo, h, background, lookupTableValues) # store horn rules filtered
+# run("nbBertBase", "NbAiLab/nb-bert-base", intepretorBERT, 1)
+# run("nbBertBase", "NbAiLab/nb-bert-base", intepretorBERT, 2)
+# run("nbBertBase", "NbAiLab/nb-bert-base", intepretorBERT, 3)
+# run("nbBertBase", "NbAiLab/nb-bert-base", intepretorBERT, 4)
+# run("nbBertBase", "NbAiLab/nb-bert-base", intepretorBERT, 5)
+# run("nbBertBase", "NbAiLab/nb-bert-base", intepretorBERT, 6)
+# run("nbBertBase", "NbAiLab/nb-bert-base", intepretorBERT, 7)
+# run("nbBertBase", "NbAiLab/nb-bert-base", intepretorBERT, 8)
+# run("nbBertBase", "NbAiLab/nb-bert-base", intepretorBERT, 9)
+# run("nbBertBase", "NbAiLab/nb-bert-base", intepretorBERT, 10)
+# writeTo = "nbBertBase"
+# files = [f"{writeTo}_i{iterations}_r{n}" for n in range(1,11)]
+# extractHornRulesFunctions.storeTotalCount(f"{writeTo}_i{iterations}_TotalCount",files)
+
+
+# run("nbBertLarge", "NbAiLab/nb-bert-large", intepretorBERT, 1)
+# run("nbBertLarge", "NbAiLab/nb-bert-large", intepretorBERT, 2)
+# run("nbBertLarge", "NbAiLab/nb-bert-large", intepretorBERT, 3)
+# run("nbBertLarge", "NbAiLab/nb-bert-large", intepretorBERT, 4)
+# run("nbBertLarge", "NbAiLab/nb-bert-large", intepretorBERT, 5)
+# run("nbBertLarge", "NbAiLab/nb-bert-large", intepretorBERT, 6)
+# run("nbBertLarge", "NbAiLab/nb-bert-large", intepretorBERT, 7)
+# run("nbBertLarge", "NbAiLab/nb-bert-large", intepretorBERT, 8)
+# run("nbBertLarge", "NbAiLab/nb-bert-large", intepretorBERT, 9)
+# run("nbBertLarge", "NbAiLab/nb-bert-large", intepretorBERT, 10)
+# writeTo = "nbBertLarge"
+# files = [f"{writeTo}_i{iterations}_r{n}" for n in range(1,11)]
+# extractHornRulesFunctions.storeTotalCount(f"{writeTo}_i{iterations}_TotalCount",files)
+
+# run("norbert", "ltg/norbert", intepretorBERT, 1)
+# run("norbert", "ltg/norbert", intepretorBERT, 2)
+# run("norbert", "ltg/norbert", intepretorBERT, 3)
+# run("norbert", "ltg/norbert", intepretorBERT, 4)
+# run("norbert", "ltg/norbert", intepretorBERT, 5)
+# run("norbert", "ltg/norbert", intepretorBERT, 6)
+# run("norbert", "ltg/norbert", intepretorBERT, 7)
+# run("norbert", "ltg/norbert", intepretorBERT, 8)
+# run("norbert", "ltg/norbert", intepretorBERT, 9)
+# run("norbert", "ltg/norbert", intepretorBERT, 10)
+# writeTo = "norbert"
+# files = [f"{writeTo}_i{iterations}_r{n}" for n in range(1,11)]
+# extractHornRulesFunctions.storeTotalCount(f"{writeTo}_i{iterations}_TotalCount",files)
+
+# run("norbert2", "ltg/norbert2", intepretorBERT, 1)
+# run("norbert2", "ltg/norbert2", intepretorBERT, 2)
+# run("norbert2", "ltg/norbert2", intepretorBERT, 3)
+# run("norbert2", "ltg/norbert2", intepretorBERT, 4)
+# run("norbert2", "ltg/norbert2", intepretorBERT, 5)
+# run("norbert2", "ltg/norbert2", intepretorBERT, 6)
+# run("norbert2", "ltg/norbert2", intepretorBERT, 7)
+# run("norbert2", "ltg/norbert2", intepretorBERT, 8)
+# run("norbert2", "ltg/norbert2", intepretorBERT, 9)
+# run("norbert2", "ltg/norbert2", intepretorBERT, 10)
+# writeTo = "norbert2"
+# files = [f"{writeTo}_i{iterations}_r{n}" for n in range(1,11)]
+# extractHornRulesFunctions.storeTotalCount(f"{writeTo}_i{iterations}_TotalCount",files)

@@ -97,7 +97,7 @@ def storeHornRulesFiltered(writeTo, h, background, lookupTable):
         writer.writerow(["EXTRACTED HORN RULES (FILTERED)"])
         writer.writerows(hNoFalseRules)
 
-def storeTotalCount(writeTo, fileNames, background):
+def storeTotalCount(writeTo, fileNames):
     n = len(fileNames)
     ####################################################################
     hornRules = {}
@@ -114,6 +114,7 @@ def storeTotalCount(writeTo, fileNames, background):
     l = []
     for x in hornRules.items():
         l.append([f"{x[1]}/{n}", x[0]])
+    l.sort(key=lambda x: int(x[0][0]),reverse=True) #sorting on count desc
     with open(f"output_data/{writeTo}_HornRulesTotal.csv", 'w', newline='',encoding="UTF-8") as csvfile:
         writer = csv.writer(csvfile, delimiter=";")
         writer.writerow(["COUNT","EXTRACTED HORN RULES"])
@@ -133,16 +134,8 @@ def storeTotalCount(writeTo, fileNames, background):
     l2 = []
     for x in hornRulesFiltered.items():
         l2.append([f"{x[1]}/{n}", x[0]])
+    l2.sort(key=lambda x: int(x[0][0]),reverse=True) #sorting on count desc
     with open(f"output_data/{writeTo}_HornRulesFilteredTotal.csv", 'w', newline='',encoding="UTF-8") as csvfile:
         writer = csv.writer(csvfile, delimiter=";")
         writer.writerow(["COUNT","EXTRACTED HORN RULES (FILTERED)"])
         writer.writerows(l2)
-
-    
-
-    
-    # print(hornRules)
-    # hornRulesFiltered = []
-    # metadata = []
-
-    # print(fileNames)
