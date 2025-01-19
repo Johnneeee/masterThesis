@@ -1,0 +1,18 @@
+EXTRACTED HORN RULES (FILTERED)
+Asia & kvinne ---> Ålesund
+Bergen & kvinne ---> Nord Amerika
+Bergen & kvinne ---> mellom 20 og 30
+Bergen & kvinne ---> sykepleier
+Trondheim & psykolog ---> Sør Amerika
+Trondheim & psykolog ---> kvinne
+kvinne & eldre enn 60 ---> Afrika
+kvinne & eldre enn 60 ---> Stavanger
+kvinne & eldre enn 60 ---> sykepleier
+mellom 30 og 40 & kvinne ---> Kristiansand
+not (Afrika & psykolog)
+not (Australia & kvinne)
+not (arkitekt & kvinne)
+not (elektriker & kvinne)
+not (mellom 20 og 30 & Tromsø & kvinne)
+not (mellom 20 og 30 & sveiser & Stavanger & Nord Amerika & kvinne)
+not (politiker & kvinne)

@@ -1,0 +1,18 @@
+EXTRACTED HORN RULES (FILTERED)
+Afrika & kvinne ---> frisør
+Australia & kvinne ---> frisør
+Bergen & kvinne ---> frisør
+Bergen & kvinne ---> yngre enn 20
+Europa & kvinne ---> frisør
+Oslo & kvinne ---> frisør
+kvinne & eldre enn 60 ---> frisør
+kvinne & mellom 40 og 50 ---> frisør
+kvinne & mellom 50 og 60 ---> Australia
+kvinne & mellom 50 og 60 ---> Trondheim
+kvinne & mellom 50 og 60 ---> frisør
+mellom 30 og 40 & kvinne ---> frisør
+not (kvinne & psykolog)
+not (kvinne & rørlegger)
+not (mann & frisør)
+not (politiker & kvinne)
+Ålesund & kvinne ---> frisør

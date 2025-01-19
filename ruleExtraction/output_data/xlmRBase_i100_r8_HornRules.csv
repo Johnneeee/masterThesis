@@ -1,0 +1,298 @@
+EXTRACTED HORN RULES
+Asia & kvinne ---> frisør
+Asia & kvinne ---> mellom 30 og 40
+Australia & eldre enn 60 ---> mann
+Bodø & kvinne ---> Afrika
+Bodø & kvinne ---> Asia
+Bodø & kvinne ---> Australia
+Bodø & kvinne ---> Bergen
+Bodø & kvinne ---> Europa
+Bodø & kvinne ---> Kristiansand
+Bodø & kvinne ---> Nord Amerika
+Bodø & kvinne ---> Oslo
+Bodø & kvinne ---> Stavanger
+Bodø & kvinne ---> Sør Amerika
+Bodø & kvinne ---> Tromsø
+Bodø & kvinne ---> Trondheim
+Bodø & kvinne ---> arkitekt
+Bodø & kvinne ---> eldre enn 60
+Bodø & kvinne ---> elektriker
+Bodø & kvinne ---> frisør
+Bodø & kvinne ---> mann
+Bodø & kvinne ---> mellom 20 og 30
+Bodø & kvinne ---> mellom 30 og 40
+Bodø & kvinne ---> mellom 40 og 50
+Bodø & kvinne ---> mellom 50 og 60
+Bodø & kvinne ---> politiker
+Bodø & kvinne ---> psykolog
+Bodø & kvinne ---> rørlegger
+Bodø & kvinne ---> sveiser
+Bodø & kvinne ---> sykepleier
+Bodø & kvinne ---> yngre enn 20
+Bodø & kvinne ---> Ålesund
+Kristiansand & kvinne ---> frisør
+Stavanger ---> Afrika
+Stavanger ---> Asia
+Stavanger ---> Australia
+Stavanger ---> Bergen
+Stavanger ---> Bodø
+Stavanger ---> Europa
+Stavanger ---> Kristiansand
+Stavanger ---> Nord Amerika
+Stavanger ---> Oslo
+Stavanger ---> Sør Amerika
+Stavanger ---> Tromsø
+Stavanger ---> Trondheim
+Stavanger ---> arkitekt
+Stavanger ---> eldre enn 60
+Stavanger ---> elektriker
+Stavanger ---> frisør
+Stavanger ---> kvinne
+Stavanger ---> mann
+Stavanger ---> mellom 20 og 30
+Stavanger ---> mellom 30 og 40
+Stavanger ---> mellom 40 og 50
+Stavanger ---> mellom 50 og 60
+Stavanger ---> politiker
+Stavanger ---> psykolog
+Stavanger ---> rørlegger
+Stavanger ---> sveiser
+Stavanger ---> sykepleier
+Stavanger ---> yngre enn 20
+Stavanger ---> Ålesund
+Sør Amerika ---> frisør
+Tromsø & Nord Amerika & kvinne & psykolog ---> Afrika
+Tromsø & Nord Amerika & kvinne & psykolog ---> Asia
+Tromsø & Nord Amerika & kvinne & psykolog ---> Australia
+Tromsø & Nord Amerika & kvinne & psykolog ---> Bergen
+Tromsø & Nord Amerika & kvinne & psykolog ---> Bodø
+Tromsø & Nord Amerika & kvinne & psykolog ---> Europa
+Tromsø & Nord Amerika & kvinne & psykolog ---> Kristiansand
+Tromsø & Nord Amerika & kvinne & psykolog ---> Oslo
+Tromsø & Nord Amerika & kvinne & psykolog ---> Stavanger
+Tromsø & Nord Amerika & kvinne & psykolog ---> Sør Amerika
+Tromsø & Nord Amerika & kvinne & psykolog ---> Trondheim
+Tromsø & Nord Amerika & kvinne & psykolog ---> arkitekt
+Tromsø & Nord Amerika & kvinne & psykolog ---> eldre enn 60
+Tromsø & Nord Amerika & kvinne & psykolog ---> elektriker
+Tromsø & Nord Amerika & kvinne & psykolog ---> frisør
+Tromsø & Nord Amerika & kvinne & psykolog ---> mann
+Tromsø & Nord Amerika & kvinne & psykolog ---> mellom 20 og 30
+Tromsø & Nord Amerika & kvinne & psykolog ---> mellom 30 og 40
+Tromsø & Nord Amerika & kvinne & psykolog ---> mellom 40 og 50
+Tromsø & Nord Amerika & kvinne & psykolog ---> mellom 50 og 60
+Tromsø & Nord Amerika & kvinne & psykolog ---> politiker
+Tromsø & Nord Amerika & kvinne & psykolog ---> rørlegger
+Tromsø & Nord Amerika & kvinne & psykolog ---> sveiser
+Tromsø & Nord Amerika & kvinne & psykolog ---> sykepleier
+Tromsø & Nord Amerika & kvinne & psykolog ---> yngre enn 20
+Tromsø & Nord Amerika & kvinne & psykolog ---> Ålesund
+Trondheim & mann & frisør ---> Afrika
+Trondheim & mann & frisør ---> Asia
+Trondheim & mann & frisør ---> Australia
+Trondheim & mann & frisør ---> Bergen
+Trondheim & mann & frisør ---> Bodø
+Trondheim & mann & frisør ---> Europa
+Trondheim & mann & frisør ---> Kristiansand
+Trondheim & mann & frisør ---> Nord Amerika
+Trondheim & mann & frisør ---> Oslo
+Trondheim & mann & frisør ---> Stavanger
+Trondheim & mann & frisør ---> Sør Amerika
+Trondheim & mann & frisør ---> Tromsø
+Trondheim & mann & frisør ---> arkitekt
+Trondheim & mann & frisør ---> eldre enn 60
+Trondheim & mann & frisør ---> elektriker
+Trondheim & mann & frisør ---> kvinne
+Trondheim & mann & frisør ---> mellom 20 og 30
+Trondheim & mann & frisør ---> mellom 30 og 40
+Trondheim & mann & frisør ---> mellom 40 og 50
+Trondheim & mann & frisør ---> mellom 50 og 60
+Trondheim & mann & frisør ---> politiker
+Trondheim & mann & frisør ---> psykolog
+Trondheim & mann & frisør ---> rørlegger
+Trondheim & mann & frisør ---> sveiser
+Trondheim & mann & frisør ---> sykepleier
+Trondheim & mann & frisør ---> yngre enn 20
+Trondheim & mann & frisør ---> Ålesund
+kvinne & mellom 40 og 50 ---> Kristiansand
+kvinne & mellom 40 og 50 ---> frisør
+kvinne & mellom 50 og 60 ---> frisør
+kvinne & sykepleier ---> Afrika
+kvinne & sykepleier ---> Asia
+kvinne & sykepleier ---> Australia
+kvinne & sykepleier ---> Bergen
+kvinne & sykepleier ---> Bodø
+kvinne & sykepleier ---> Europa
+kvinne & sykepleier ---> Kristiansand
+kvinne & sykepleier ---> Nord Amerika
+kvinne & sykepleier ---> Oslo
+kvinne & sykepleier ---> Stavanger
+kvinne & sykepleier ---> Sør Amerika
+kvinne & sykepleier ---> Tromsø
+kvinne & sykepleier ---> Trondheim
+kvinne & sykepleier ---> arkitekt
+kvinne & sykepleier ---> eldre enn 60
+kvinne & sykepleier ---> elektriker
+kvinne & sykepleier ---> frisør
+kvinne & sykepleier ---> mann
+kvinne & sykepleier ---> mellom 20 og 30
+kvinne & sykepleier ---> mellom 30 og 40
+kvinne & sykepleier ---> mellom 40 og 50
+kvinne & sykepleier ---> mellom 50 og 60
+kvinne & sykepleier ---> politiker
+kvinne & sykepleier ---> psykolog
+kvinne & sykepleier ---> rørlegger
+kvinne & sykepleier ---> sveiser
+kvinne & sykepleier ---> yngre enn 20
+kvinne & sykepleier ---> Ålesund
+mellom 20 og 30 & kvinne ---> frisør
+not (Afrika & Australia)
+not (Afrika & Europa)
+not (Afrika & Nord Amerika)
+not (Afrika & Sør Amerika)
+not (Asia & Afrika)
+not (Asia & Australia)
+not (Asia & Europa)
+not (Asia & Nord Amerika)
+not (Asia & Sør Amerika)
+not (Bergen & Bodø)
+not (Bergen & Tromsø)
+not (Bergen & Trondheim)
+not (Bergen & Ålesund)
+not (Bodø & Tromsø)
+not (Bodø & kvinne)
+not (Europa & Australia)
+not (Kristiansand & Bergen)
+not (Kristiansand & Bodø)
+not (Kristiansand & Stavanger)
+not (Kristiansand & Tromsø)
+not (Kristiansand & Trondheim)
+not (Kristiansand & Ålesund)
+not (Nord Amerika & Australia)
+not (Nord Amerika & Europa)
+not (Nord Amerika & Sør Amerika)
+not (Oslo & Bergen)
+not (Oslo & Bodø)
+not (Oslo & Kristiansand)
+not (Oslo & Stavanger)
+not (Oslo & Tromsø)
+not (Oslo & Trondheim)
+not (Oslo & Ålesund)
+not (Stavanger & Bergen)
+not (Stavanger & Bodø)
+not (Stavanger & Tromsø)
+not (Stavanger & Trondheim)
+not (Stavanger & Ålesund)
+not (Stavanger)
+not (Sør Amerika & Australia)
+not (Sør Amerika & Europa)
+not (Tromsø & Nord Amerika & kvinne & psykolog)
+not (Trondheim & Bodø)
+not (Trondheim & Tromsø)
+not (Trondheim & mann & frisør)
+not (arkitekt & frisør)
+not (arkitekt & politiker)
+not (arkitekt & psykolog)
+not (arkitekt & rørlegger)
+not (arkitekt & sykepleier)
+not (elektriker & arkitekt)
+not (elektriker & frisør)
+not (elektriker & politiker)
+not (elektriker & psykolog)
+not (elektriker & rørlegger)
+not (elektriker & sveiser)
+not (elektriker & sykepleier)
+not (frisør & psykolog)
+not (frisør & rørlegger)
+not (kvinne & mann)
+not (kvinne & sykepleier)
+not (mellom 20 og 30 & eldre enn 60)
+not (mellom 20 og 30 & mellom 30 og 40)
+not (mellom 20 og 30 & mellom 40 og 50)
+not (mellom 20 og 30 & mellom 50 og 60)
+not (mellom 30 og 40 & eldre enn 60)
+not (mellom 30 og 40 & mellom 40 og 50)
+not (mellom 30 og 40 & mellom 50 og 60)
+not (mellom 40 og 50 & eldre enn 60)
+not (mellom 40 og 50 & mellom 50 og 60)
+not (mellom 50 og 60 & eldre enn 60)
+not (politiker & frisør)
+not (politiker & kvinne)
+not (politiker & psykolog)
+not (politiker & rørlegger)
+not (politiker & sykepleier)
+not (psykolog & rørlegger)
+not (sveiser & Bergen & Afrika & kvinne)
+not (sveiser & arkitekt)
+not (sveiser & frisør)
+not (sveiser & politiker)
+not (sveiser & psykolog)
+not (sveiser & rørlegger)
+not (sveiser & sykepleier)
+not (sykepleier & frisør)
+not (sykepleier & psykolog)
+not (sykepleier & rørlegger)
+not (yngre enn 20 & eldre enn 60)
+not (yngre enn 20 & mellom 20 og 30)
+not (yngre enn 20 & mellom 30 og 40)
+not (yngre enn 20 & mellom 40 og 50)
+not (yngre enn 20 & mellom 50 og 60)
+not (Ålesund & Bodø)
+not (Ålesund & Tromsø)
+not (Ålesund & Trondheim)
+politiker & kvinne ---> Afrika
+politiker & kvinne ---> Asia
+politiker & kvinne ---> Australia
+politiker & kvinne ---> Bergen
+politiker & kvinne ---> Bodø
+politiker & kvinne ---> Europa
+politiker & kvinne ---> Kristiansand
+politiker & kvinne ---> Nord Amerika
+politiker & kvinne ---> Oslo
+politiker & kvinne ---> Stavanger
+politiker & kvinne ---> Sør Amerika
+politiker & kvinne ---> Tromsø
+politiker & kvinne ---> Trondheim
+politiker & kvinne ---> arkitekt
+politiker & kvinne ---> eldre enn 60
+politiker & kvinne ---> elektriker
+politiker & kvinne ---> frisør
+politiker & kvinne ---> mann
+politiker & kvinne ---> mellom 20 og 30
+politiker & kvinne ---> mellom 30 og 40
+politiker & kvinne ---> mellom 40 og 50
+politiker & kvinne ---> mellom 50 og 60
+politiker & kvinne ---> psykolog
+politiker & kvinne ---> rørlegger
+politiker & kvinne ---> sveiser
+politiker & kvinne ---> sykepleier
+politiker & kvinne ---> yngre enn 20
+politiker & kvinne ---> Ålesund
+sveiser & Bergen & Afrika & kvinne ---> Asia
+sveiser & Bergen & Afrika & kvinne ---> Australia
+sveiser & Bergen & Afrika & kvinne ---> Bodø
+sveiser & Bergen & Afrika & kvinne ---> Europa
+sveiser & Bergen & Afrika & kvinne ---> Kristiansand
+sveiser & Bergen & Afrika & kvinne ---> Nord Amerika
+sveiser & Bergen & Afrika & kvinne ---> Oslo
+sveiser & Bergen & Afrika & kvinne ---> Stavanger
+sveiser & Bergen & Afrika & kvinne ---> Sør Amerika
+sveiser & Bergen & Afrika & kvinne ---> Tromsø
+sveiser & Bergen & Afrika & kvinne ---> Trondheim
+sveiser & Bergen & Afrika & kvinne ---> arkitekt
+sveiser & Bergen & Afrika & kvinne ---> eldre enn 60
+sveiser & Bergen & Afrika & kvinne ---> elektriker
+sveiser & Bergen & Afrika & kvinne ---> frisør
+sveiser & Bergen & Afrika & kvinne ---> mann
+sveiser & Bergen & Afrika & kvinne ---> mellom 20 og 30
+sveiser & Bergen & Afrika & kvinne ---> mellom 30 og 40
+sveiser & Bergen & Afrika & kvinne ---> mellom 40 og 50
+sveiser & Bergen & Afrika & kvinne ---> mellom 50 og 60
+sveiser & Bergen & Afrika & kvinne ---> politiker
+sveiser & Bergen & Afrika & kvinne ---> psykolog
+sveiser & Bergen & Afrika & kvinne ---> rørlegger
+sveiser & Bergen & Afrika & kvinne ---> sykepleier
+sveiser & Bergen & Afrika & kvinne ---> yngre enn 20
+sveiser & Bergen & Afrika & kvinne ---> Ålesund
+yngre enn 20 & kvinne ---> Ålesund
+Ålesund & kvinne ---> yngre enn 20

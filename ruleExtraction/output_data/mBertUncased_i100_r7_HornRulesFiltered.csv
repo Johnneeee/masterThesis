@@ -1,0 +1,13 @@
+EXTRACTED HORN RULES (FILTERED)
+Australia & kvinne ---> sykepleier
+eldre enn 60 ---> mann
+frisør ---> mann
+kvinne & mellom 50 og 60 ---> sykepleier
+mann & sykepleier ---> eldre enn 60
+not (Kristiansand & Nord Amerika & mann & psykolog)
+not (arkitekt & kvinne)
+not (elektriker & kvinne)
+not (kvinne & rørlegger)
+not (mellom 30 og 40 & Bodø & Afrika & kvinne)
+not (sveiser & kvinne)
+not (yngre enn 20 & kvinne)

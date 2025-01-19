@@ -1,0 +1,16 @@
+EXTRACTED HORN RULES (FILTERED)
+Asia & kvinne ---> frisør
+Australia & kvinne ---> frisør
+Nord Amerika & kvinne ---> frisør
+Stavanger & kvinne ---> frisør
+Trondheim & kvinne ---> frisør
+kvinne & mellom 50 og 60 ---> frisør
+not (Bodø & Australia & mann & mellom 50 og 60 & frisør)
+not (arkitekt & kvinne)
+not (elektriker & kvinne)
+not (kvinne & psykolog)
+not (kvinne & rørlegger)
+not (kvinne & sykepleier)
+not (politiker & kvinne)
+not (sveiser & kvinne)
+Ålesund ---> mann

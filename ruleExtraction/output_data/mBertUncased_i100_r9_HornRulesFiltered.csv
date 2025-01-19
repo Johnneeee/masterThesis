@@ -1,0 +1,23 @@
+EXTRACTED HORN RULES (FILTERED)
+Asia & kvinne ---> Stavanger
+Asia & kvinne ---> mellom 30 og 40
+Asia & kvinne ---> psykolog
+Bodø & kvinne ---> Europa
+Bodø & kvinne ---> sykepleier
+Kristiansand & Asia ---> frisør
+Kristiansand & Asia ---> mann
+Kristiansand & Asia ---> mellom 50 og 60
+Nord Amerika & kvinne ---> Stavanger
+Nord Amerika & kvinne ---> mellom 20 og 30
+Nord Amerika & kvinne ---> psykolog
+eldre enn 60 ---> mann
+kvinne & mellom 50 og 60 ---> Australia
+kvinne & mellom 50 og 60 ---> Trondheim
+kvinne & mellom 50 og 60 ---> sykepleier
+not (Bergen & Europa & kvinne & mellom 40 og 50 & rørlegger)
+not (arkitekt & kvinne)
+not (elektriker & kvinne)
+not (mellom 20 og 30 & mann & sykepleier)
+not (mellom 20 og 30 & politiker & Australia & kvinne)
+not (mellom 20 og 30 & Ålesund & Europa & kvinne)
+not (yngre enn 20 & kvinne)

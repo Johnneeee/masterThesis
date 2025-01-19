@@ -1,0 +1,16 @@
+EXTRACTED HORN RULES (FILTERED)
+Afrika & kvinne ---> Kristiansand
+Afrika & kvinne ---> frisør
+Australia & kvinne ---> Trondheim
+Australia & kvinne ---> frisør
+Australia & kvinne ---> mellom 50 og 60
+Oslo & kvinne ---> frisør
+mellom 30 og 40 ---> Australia
+mellom 30 og 40 ---> mann
+not (arkitekt & kvinne)
+not (elektriker & kvinne)
+not (kvinne & rørlegger)
+not (mellom 20 og 30 & Nord Amerika & mann & frisør)
+not (sveiser & kvinne)
+not (yngre enn 20 & politiker & Europa & kvinne)
+not (Ålesund & kvinne)
