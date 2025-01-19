@@ -3,7 +3,7 @@ import numpy as np
 import random
 import csv
 
-class Binarizer:
+class Binarizer: 
     """
         Takes care of converting a datapoint of the given dataset to a binary vector and vice-versa. The conversion is 
         a necessary step in using the rule-extractor with a language model. The relevant direction is here: converting a binary vector 
