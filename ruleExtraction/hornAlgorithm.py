@@ -122,47 +122,47 @@ class HornAlgorithm():
         H = background
         S = []
 
-        # try:
-        for iteration in tqdm(range(1,iterationCap+1), desc="Eq iteration"):
-            start = timeit.default_timer()
-            (counterEx,sampleNr) = self.EQ(H)
+        try:
+            for iteration in tqdm(range(1,iterationCap+1), desc="Eq iteration"):
+                start = timeit.default_timer()
+                (counterEx,sampleNr) = self.EQ(H)
 
-            if counterEx == True: #if (eq -> True)
-                metadata.append([iteration, len(H), "TRUE", f"{timeit.default_timer()-start:.3f}"]) # logging metadata
-                return (metadata, H, iteration)
+                if counterEx == True: #if (eq -> True)
+                    metadata.append([iteration, len(H), "TRUE", f"{timeit.default_timer()-start:.3f}"]) # logging metadata
+                    return (metadata, H, iteration)
 
-            pos_ex=False # posEx/negEx lock
+                pos_ex=False # posEx/negEx lock
 
-            for clause in H.copy(): # if (eq -> positive counter example)
-                if ((clause not in background) and (self.evalFormula(clause, counterEx) == False)):
-                    H.remove(clause)
-                    pos_ex = True
+                for clause in H.copy(): # if (eq -> positive counter example)
+                    if ((clause not in background) and (self.evalFormula(clause, counterEx) == False)):
+                        H.remove(clause)
+                        pos_ex = True
 
-            if pos_ex: self.posCounterEx.append(counterEx) # if counterexample confirmed as positive counterexample
+                if pos_ex: self.posCounterEx.append(counterEx) # if counterexample confirmed as positive counterexample
 
-            if pos_ex == False: # else (eq -> negative counter example)
-                for idx, s in enumerate(S): # if (exists s in S s.t. statements)
-                    cap_sc = [1 if (s[i] == 1 and counterEx[i] == 1) else 0 for i in range(len(self.V))] # cap = intersection
-                    true_sc = {i for i,val in enumerate(cap_sc) if val == 1}
-                    true_s = {i for i,val in enumerate(s) if val == 1}
+                if pos_ex == False: # else (eq -> negative counter example)
+                    for idx, s in enumerate(S): # if (exists s in S s.t. statements)
+                        cap_sc = [1 if (s[i] == 1 and counterEx[i] == 1) else 0 for i in range(len(self.V))] # cap = intersection
+                        true_sc = {i for i,val in enumerate(cap_sc) if val == 1}
+                        true_s = {i for i,val in enumerate(s) if val == 1}
 
-                    if cap_sc in self.bad_nc: continue # quick exit check
-                    if cap_sc in S: # quick exit check (this happens less often)
-                        self.bad_nc.append(cap_sc)
-                        continue
+                        if cap_sc in self.bad_nc: continue # quick exit check
+                        if cap_sc in S: # quick exit check (this happens less often)
+                            self.bad_nc.append(cap_sc)
+                            continue
 
-                    if true_sc.issubset(true_s) and (true_s.issubset(true_sc) == False): # if (s \cap c) \subset s
-                        if self.MQ(cap_sc) == False: # if mq(s \cap c) = "no"
-                            S[idx] = cap_sc
-                            break
+                        if true_sc.issubset(true_s) and (true_s.issubset(true_sc) == False): # if (s \cap c) \subset s
+                            if self.MQ(cap_sc) == False: # if mq(s \cap c) = "no"
+                                S[idx] = cap_sc
+                                break
 
-                else: S.append(counterEx) # else (doesnt exists s in S s.t. statements)
+                    else: S.append(counterEx) # else (doesnt exists s in S s.t. statements)
 
-                H = self.get_hypothesis(S).union(background)
-                H = set(filter(lambda x: all(self.evalFormula(x, vec) for vec in self.posCounterEx), H.copy())) # refining H: drops h in H where exsists p in P s.t. p falsifies h
+                    H = self.get_hypothesis(S).union(background)
+                    H = set(filter(lambda x: all(self.evalFormula(x, vec) for vec in self.posCounterEx), H.copy())) # refining H: drops h in H where exsists p in P s.t. p falsifies h
 
-            self.find_bad_nc(H,S)
-            metadata.append([iteration, len(H), sampleNr, f"{timeit.default_timer()-start:.3f}"]) # logging metadata
-        return (metadata, H, iteration)
-        # except: # save current data in case user decides to interupt the run
-        #     return (metadata, H, iteration-1) # -1 to match the counting bar which starts at 0
+                self.find_bad_nc(H,S)
+                metadata.append([iteration, len(H), sampleNr, f"{timeit.default_timer()-start:.3f}"]) # logging metadata
+            return (metadata, H, iteration)
+        except: # save current data in case user decides to interupt the run
+            return (metadata, H, iteration-1) # -1 to match the counting bar which starts at 0
