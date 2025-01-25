@@ -1,0 +1,176 @@
+EXTRACTED HORN RULES (FILTERED)
+Asia & kvinne & eldre enn 60 ---> Bergen
+Bodø ---> Australia
+Bodø ---> frisør
+Bodø ---> kvinne
+Bodø ---> mellom 40 og 50
+Oslo & Afrika ---> FALSE
+Oslo & Afrika ---> arkitekt
+Oslo & Afrika ---> eldre enn 60
+Oslo & Afrika ---> elektriker
+Oslo & Afrika ---> frisør
+Oslo & Afrika ---> kvinne
+Oslo & Afrika ---> mann
+Oslo & Afrika ---> mellom 20 og 30
+Oslo & Afrika ---> mellom 30 og 40
+Oslo & Afrika ---> mellom 40 og 50
+Oslo & Afrika ---> mellom 50 og 60
+Oslo & Afrika ---> politiker
+Oslo & Afrika ---> psykolog
+Oslo & Afrika ---> rørlegger
+Oslo & Afrika ---> sveiser
+Oslo & Afrika ---> sykepleier
+Oslo & Afrika ---> yngre enn 20
+Stavanger & kvinne & eldre enn 60 ---> Afrika
+Stavanger & kvinne & eldre enn 60 ---> Asia
+Stavanger & kvinne & eldre enn 60 ---> Australia
+Stavanger & kvinne & eldre enn 60 ---> Europa
+Stavanger & kvinne & eldre enn 60 ---> FALSE
+Stavanger & kvinne & eldre enn 60 ---> Nord Amerika
+Stavanger & kvinne & eldre enn 60 ---> Sør Amerika
+Stavanger & kvinne & eldre enn 60 ---> arkitekt
+Stavanger & kvinne & eldre enn 60 ---> elektriker
+Stavanger & kvinne & eldre enn 60 ---> frisør
+Stavanger & kvinne & eldre enn 60 ---> politiker
+Stavanger & kvinne & eldre enn 60 ---> psykolog
+Stavanger & kvinne & eldre enn 60 ---> rørlegger
+Stavanger & kvinne & eldre enn 60 ---> sveiser
+Stavanger & kvinne & eldre enn 60 ---> sykepleier
+arkitekt & kvinne ---> Afrika
+arkitekt & kvinne ---> Asia
+arkitekt & kvinne ---> Australia
+arkitekt & kvinne ---> Bergen
+arkitekt & kvinne ---> Bodø
+arkitekt & kvinne ---> Europa
+arkitekt & kvinne ---> FALSE
+arkitekt & kvinne ---> Kristiansand
+arkitekt & kvinne ---> Nord Amerika
+arkitekt & kvinne ---> Oslo
+arkitekt & kvinne ---> Stavanger
+arkitekt & kvinne ---> Sør Amerika
+arkitekt & kvinne ---> Tromsø
+arkitekt & kvinne ---> Trondheim
+arkitekt & kvinne ---> eldre enn 60
+arkitekt & kvinne ---> mellom 20 og 30
+arkitekt & kvinne ---> mellom 30 og 40
+arkitekt & kvinne ---> mellom 40 og 50
+arkitekt & kvinne ---> mellom 50 og 60
+arkitekt & kvinne ---> yngre enn 20
+arkitekt & kvinne ---> Ålesund
+elektriker & kvinne ---> Afrika
+elektriker & kvinne ---> Asia
+elektriker & kvinne ---> Australia
+elektriker & kvinne ---> Bergen
+elektriker & kvinne ---> Bodø
+elektriker & kvinne ---> Europa
+elektriker & kvinne ---> FALSE
+elektriker & kvinne ---> Kristiansand
+elektriker & kvinne ---> Nord Amerika
+elektriker & kvinne ---> Oslo
+elektriker & kvinne ---> Stavanger
+elektriker & kvinne ---> Sør Amerika
+elektriker & kvinne ---> Tromsø
+elektriker & kvinne ---> Trondheim
+elektriker & kvinne ---> eldre enn 60
+elektriker & kvinne ---> mellom 20 og 30
+elektriker & kvinne ---> mellom 30 og 40
+elektriker & kvinne ---> mellom 40 og 50
+elektriker & kvinne ---> mellom 50 og 60
+elektriker & kvinne ---> yngre enn 20
+elektriker & kvinne ---> Ålesund
+kvinne & mellom 50 og 60 ---> frisør
+kvinne & rørlegger ---> Afrika
+kvinne & rørlegger ---> Asia
+kvinne & rørlegger ---> Australia
+kvinne & rørlegger ---> Bergen
+kvinne & rørlegger ---> Bodø
+kvinne & rørlegger ---> Europa
+kvinne & rørlegger ---> FALSE
+kvinne & rørlegger ---> Kristiansand
+kvinne & rørlegger ---> Nord Amerika
+kvinne & rørlegger ---> Oslo
+kvinne & rørlegger ---> Stavanger
+kvinne & rørlegger ---> Sør Amerika
+kvinne & rørlegger ---> Tromsø
+kvinne & rørlegger ---> Trondheim
+kvinne & rørlegger ---> eldre enn 60
+kvinne & rørlegger ---> mellom 20 og 30
+kvinne & rørlegger ---> mellom 30 og 40
+kvinne & rørlegger ---> mellom 40 og 50
+kvinne & rørlegger ---> mellom 50 og 60
+kvinne & rørlegger ---> yngre enn 20
+kvinne & rørlegger ---> Ålesund
+mann & frisør ---> Afrika
+mann & frisør ---> Asia
+mann & frisør ---> Australia
+mann & frisør ---> Bergen
+mann & frisør ---> Bodø
+mann & frisør ---> Europa
+mann & frisør ---> FALSE
+mann & frisør ---> Kristiansand
+mann & frisør ---> Nord Amerika
+mann & frisør ---> Oslo
+mann & frisør ---> Stavanger
+mann & frisør ---> Sør Amerika
+mann & frisør ---> Tromsø
+mann & frisør ---> Trondheim
+mann & frisør ---> eldre enn 60
+mann & frisør ---> mellom 20 og 30
+mann & frisør ---> mellom 30 og 40
+mann & frisør ---> mellom 40 og 50
+mann & frisør ---> mellom 50 og 60
+mann & frisør ---> yngre enn 20
+mann & frisør ---> Ålesund
+mellom 20 og 30 & kvinne ---> Australia
+mellom 20 og 30 & kvinne ---> Oslo
+mellom 20 og 30 & kvinne ---> frisør
+politiker & kvinne ---> Afrika
+politiker & kvinne ---> Asia
+politiker & kvinne ---> Australia
+politiker & kvinne ---> Bergen
+politiker & kvinne ---> Bodø
+politiker & kvinne ---> Europa
+politiker & kvinne ---> FALSE
+politiker & kvinne ---> Kristiansand
+politiker & kvinne ---> Nord Amerika
+politiker & kvinne ---> Oslo
+politiker & kvinne ---> Stavanger
+politiker & kvinne ---> Sør Amerika
+politiker & kvinne ---> Tromsø
+politiker & kvinne ---> Trondheim
+politiker & kvinne ---> eldre enn 60
+politiker & kvinne ---> mellom 20 og 30
+politiker & kvinne ---> mellom 30 og 40
+politiker & kvinne ---> mellom 40 og 50
+politiker & kvinne ---> mellom 50 og 60
+politiker & kvinne ---> yngre enn 20
+politiker & kvinne ---> Ålesund
+sveiser & Trondheim & kvinne ---> Afrika
+sveiser & Trondheim & kvinne ---> Asia
+sveiser & Trondheim & kvinne ---> Australia
+sveiser & Trondheim & kvinne ---> Europa
+sveiser & Trondheim & kvinne ---> FALSE
+sveiser & Trondheim & kvinne ---> Nord Amerika
+sveiser & Trondheim & kvinne ---> Sør Amerika
+sveiser & Trondheim & kvinne ---> eldre enn 60
+sveiser & Trondheim & kvinne ---> mellom 20 og 30
+sveiser & Trondheim & kvinne ---> mellom 30 og 40
+sveiser & Trondheim & kvinne ---> mellom 40 og 50
+sveiser & Trondheim & kvinne ---> mellom 50 og 60
+sveiser & Trondheim & kvinne ---> yngre enn 20
+sveiser & kvinne & mellom 40 og 50 ---> Afrika
+sveiser & kvinne & mellom 40 og 50 ---> Asia
+sveiser & kvinne & mellom 40 og 50 ---> Australia
+sveiser & kvinne & mellom 40 og 50 ---> Bergen
+sveiser & kvinne & mellom 40 og 50 ---> Bodø
+sveiser & kvinne & mellom 40 og 50 ---> Europa
+sveiser & kvinne & mellom 40 og 50 ---> FALSE
+sveiser & kvinne & mellom 40 og 50 ---> Kristiansand
+sveiser & kvinne & mellom 40 og 50 ---> Nord Amerika
+sveiser & kvinne & mellom 40 og 50 ---> Oslo
+sveiser & kvinne & mellom 40 og 50 ---> Stavanger
+sveiser & kvinne & mellom 40 og 50 ---> Sør Amerika
+sveiser & kvinne & mellom 40 og 50 ---> Tromsø
+sveiser & kvinne & mellom 40 og 50 ---> Trondheim
+sveiser & kvinne & mellom 40 og 50 ---> Ålesund
+sykepleier ---> mann
