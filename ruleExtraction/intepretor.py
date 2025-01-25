@@ -10,7 +10,7 @@ class Intepretor:
         self.lookupTableValues = sum([x[0] for x in self.lookupTable.values()],[]) #the lookuptable flattened
 
     def formatLookupTable(self, attributes, filePaths, neutralCases):
-        # {attribute: ([attributes], neutralCase)}
+        # {attribute: ([values], neutralCase)}
         # ['occupation': (['sykepleier', 'helsefagarbeider', 'adjunkt', 'barnehagelærer', 'mekaniker', 'elektriker', 'betongfagarbeider', 'sveiser'], 'person')},]
         lookup = {}
         for i in range(len(attributes)):
