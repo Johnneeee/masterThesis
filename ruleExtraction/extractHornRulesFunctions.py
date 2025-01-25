@@ -2,6 +2,7 @@ import numpy as np
 from itertools import combinations
 from sympy import symbols
 import csv
+import datetime
 
 # pre Horn Algorithm methods
 def define_variables(number):
@@ -36,7 +37,6 @@ def storeBackground(background, lookupTable):
 
         writer.writerows(backgroundSentences)
 
-
 # post Horn Algorithm methods
 def rulesToSentences(rules, lookupTable):
     strRules = list(map(lambda x: str(x),rules)) # symbol rules to string rules
@@ -54,10 +54,10 @@ def rulesToSentences(rules, lookupTable):
             case "~": #case negation
                 statements = rule[2:-1].split(" & ")
                 if len(statements) == 1: # if the negation clause only contains one value
-                    ruleSentences.append([f"not ({lookupTable[int(rule[2:])]})"])
+                    ruleSentences.append([f"{lookupTable[int(rule[2:])]} ---> FALSE"])
                 else:
                     statementsSentences = " & ".join(list(map(lambda x: lookupTable[int(x[1:])],statements)))
-                    ruleSentences.append([f"not ({statementsSentences})"])
+                    ruleSentences.append([f"{statementsSentences} ---> FALSE"])
             case "F": # False
                 ruleSentences.append(["False"])
             case "T": # True
@@ -71,91 +71,22 @@ def rulesToSentences(rules, lookupTable):
     return ruleSentences
 
 def dropFalseRules(hornRuleSentences):
-    negatedRules = list(filter(lambda x: x[0][:3] == "not",hornRuleSentences)) # get rules that starts with "not"
-    rulesFiltered = list(filter(lambda x: [f"not ({x[0].split(' ---> ')[0]})"] not in negatedRules, hornRuleSentences)) # drops false -> x
+    negatedRules = list(filter(lambda x: x[0].split(' ---> ')[1] == "FALSE",hornRuleSentences)) # get rules that starts with "not"
+    rulesFiltered = list(filter(lambda x: [f"{x[0].split(' ---> ')[0]} ---> FALSE"] not in negatedRules, hornRuleSentences)) # drops false -> x
     return rulesFiltered
 
 def storeMetadata(writeTo, metadata):
     with open(f"output_data/singleRuns/{writeTo}_metadata.csv", 'w', newline='') as csvfile:
         writer = csv.writer(csvfile, delimiter=";")
-        writer.writerows([["ITERATION", "LEN(HYP)", "SAMPLENR", "RUNTIME"]]) #header
+        totalRuntime = [["-", "-", "-", "-", str(datetime.timedelta(seconds=int(sum([float(x[3]) for x in metadata]))))]]
+        writer.writerows([["ITERATION", "LEN(HYP)", "SAMPLENR", "RUNTIME(sample)", "RUNTIME(total)"]]) #header
         writer.writerows(metadata)
+        writer.writerows(totalRuntime)
 
-def storeHornRules(writeTo, h, lookupTable):
-    hornRuleSentences = rulesToSentences(h,lookupTable)
+def storeHornRules(writeTo, h, lookupTable, drop = set()):
+    hNoBackgorund = set(filter(lambda x: x not in drop,h)) # filter out background
+    hornRuleSentences = rulesToSentences(hNoBackgorund,lookupTable)
     with open(f"output_data/singleRuns/{writeTo}_HornRules.csv", 'w', newline='',encoding="UTF-8") as csvfile:
         writer = csv.writer(csvfile)
-        writer.writerow(["EXTRACTED HORN RULES"])
-        writer.writerows(hornRuleSentences)
-
-def storeHornRulesFiltered(writeTo, h, background, lookupTable):
-    hNoBackgorund = set(filter(lambda x: x not in background,h)) # filter out background
-    hornRuleSentences = rulesToSentences(hNoBackgorund,lookupTable)
-    hNoFalseRules = dropFalseRules(hornRuleSentences)   # filter out false rules ie, no false -> x
-    with open(f"output_data/singleRuns/{writeTo}_HornRulesFiltered.csv", 'w', newline='',encoding="UTF-8") as csvfile:
-        writer = csv.writer(csvfile)
         writer.writerow(["EXTRACTED HORN RULES (FILTERED)"])
-        writer.writerows(hNoFalseRules)
-
-def storeCountHornRules(writeTo, fileNames):
-    n = len(fileNames)
-    hornRules = {}
-    for fn in fileNames:
-        with open(f"output_data/singleRuns/{fn}_HornRules.csv", mode = "r",encoding="UTF-8") as file:
-            csvFile = csv.reader(file, delimiter=";")
-            next(csvFile)
-            for line in csvFile:
-                rule = line[0]
-                try:
-                    hornRules[rule] += 1
-                except:
-                    hornRules[rule] = 1
-    l = []
-    for x in hornRules.items():
-        l.append([f"{x[1]}/{n}", x[0]])
-    l.sort(key=lambda x: int(x[0][0]),reverse=True) #sorting on count desc
-    with open(f"output_data/{writeTo}_HornRulesTotal.csv", 'w', newline='',encoding="UTF-8") as csvfile:
-        writer = csv.writer(csvfile, delimiter=";")
-        writer.writerow(["COUNT","EXTRACTED HORN RULES"])
-        writer.writerows(l)
-
-def storeCountHornRulesFiltered(writeTo, fileNames):
-    n = len(fileNames)
-    hornRulesFiltered = {}
-    for fn in fileNames:
-        with open(f"output_data/singleRuns/{fn}_HornRulesFiltered.csv", mode = "r",encoding="UTF-8") as file:
-            csvFile = csv.reader(file, delimiter=";")
-            next(csvFile)
-            for line in csvFile:
-                rule = line[0]
-                try:
-                    hornRulesFiltered[rule] += 1
-                except:
-                    hornRulesFiltered[rule] = 1
-    l2 = []
-    for x in hornRulesFiltered.items():
-        l2.append([f"{x[1]}/{n}", x[0]])
-    l2.sort(key=lambda x: int(x[0][0]),reverse=True) #sorting on count desc
-    with open(f"output_data/{writeTo}_HornRulesFilteredTotal.csv", 'w', newline='',encoding="UTF-8") as csvfile:
-        writer = csv.writer(csvfile, delimiter=";")
-        writer.writerow(["COUNT","EXTRACTED HORN RULES (FILTERED)"])
-        writer.writerows(l2)
-
-def storeTotalMetadata(writeTo, fileNames):
-    n = len(fileNames)
-    runTimes = []
-    for fn in fileNames[:1]:
-        rt = 0
-        with open(f"output_data/singleRuns/{fn}_metadata.csv", mode = "r",encoding="UTF-8") as file:
-            csvFile = csv.reader(file, delimiter=";")
-            next(csvFile)
-            for line in csvFile:
-                print(line[2])
-                break
-                # rt += float(line[0][3])
-        runTimes.append([fn, round(rt,3)])
-
-    with open(f"output_data/{writeTo}_metadataTotal.csv", 'w', newline='',encoding="UTF-8") as csvfile:
-        writer = csv.writer(csvfile, delimiter=";")
-        writer.writerow(["fileName","runTimes"])
-        writer.writerows(runTimes)
+        writer.writerows(hornRuleSentences)
