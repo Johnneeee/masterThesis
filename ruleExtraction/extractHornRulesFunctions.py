@@ -70,23 +70,72 @@ def rulesToSentences(rules, lookupTable):
     ruleSentences.sort(key=lambda x: x[0])# sorting
     return ruleSentences
 
-def dropFalseRules(hornRuleSentences):
-    negatedRules = list(filter(lambda x: x[0].split(' ---> ')[1] == "FALSE",hornRuleSentences)) # get rules that starts with "not"
-    rulesFiltered = list(filter(lambda x: [f"{x[0].split(' ---> ')[0]} ---> FALSE"] not in negatedRules, hornRuleSentences)) # drops false -> x
-    return rulesFiltered
-
 def storeMetadata(writeTo, metadata):
-    with open(f"output_data/singleRuns/{writeTo}_metadata.csv", 'w', newline='') as csvfile:
+    with open(f"output_data/metadata/{writeTo}.csv", 'w', newline='') as csvfile:
         writer = csv.writer(csvfile, delimiter=";")
         totalRuntime = [["-", "-", "-", "-", str(datetime.timedelta(seconds=int(sum([float(x[3]) for x in metadata]))))]]
         writer.writerows([["ITERATION", "LEN(HYP)", "SAMPLENR", "RUNTIME(sample)", "RUNTIME(total)"]]) #header
         writer.writerows(metadata)
         writer.writerows(totalRuntime)
 
-def storeHornRules(writeTo, h, lookupTable, drop = set()):
-    hNoBackgorund = set(filter(lambda x: x not in drop,h)) # filter out background
+def storeHornRules(writeTo, h, lookupTable):
+    hornRuleSentences = rulesToSentences(h,lookupTable)
+    with open(f"output_data/runsRaw/{writeTo}.csv", 'w', newline='',encoding="UTF-8") as csvfile:
+        writer = csv.writer(csvfile)
+        writer.writerow(["EXTRACTED HORN RULES"])
+        writer.writerows(hornRuleSentences)
+
+# filter
+def dropFalseRules(hornRuleSentences):
+    negatedRules = [x[0][:-11] for x in hornRuleSentences if x[0][-11:] == " ---> FALSE"]
+    rulesFiltered = [x for x in hornRuleSentences if (x[0][-5:] == "FALSE") or (x[0].split(" ---> ")[0]) not in negatedRules]
+    return rulesFiltered
+
+def storeHornRulesFiltered(writeTo, h, lookupTable, background):
+    hNoBackgorund = set(filter(lambda x: x not in background,h)) # drops background
     hornRuleSentences = rulesToSentences(hNoBackgorund,lookupTable)
-    with open(f"output_data/singleRuns/{writeTo}_HornRules.csv", 'w', newline='',encoding="UTF-8") as csvfile:
+    hnofalse = dropFalseRules(hornRuleSentences) # drops false -> x
+    with open(f"output_data/runsFiltered/{writeTo}.csv", 'w', newline='',encoding="UTF-8") as csvfile:
         writer = csv.writer(csvfile)
         writer.writerow(["EXTRACTED HORN RULES (FILTERED)"])
-        writer.writerows(hornRuleSentences)
+        writer.writerows(hnofalse)
+
+# concat
+def storeCountHornRulesFiltered(writeTo, fileNames):
+    n = len(fileNames)
+    hornRulesFiltered = {}
+    for fn in fileNames:
+        with open(f"output_data/runsFiltered/{fn}.csv", mode = "r",encoding="UTF-8") as file:
+            csvFile = csv.reader(file, delimiter=";")
+            next(csvFile)
+            for line in csvFile:
+                rule = line[0]
+                try:
+                    hornRulesFiltered[rule] += 1
+                except:
+                    hornRulesFiltered[rule] = 1
+    l2 = []
+    for x in hornRulesFiltered.items():
+        l2.append([f"{x[1]}/{n}", x[0]])
+    l2.sort(key=lambda x: int(x[0][0]),reverse=True) #sorting on count desc
+    with open(f"output_data/runsFilteredTotal/{writeTo}.csv", 'w', newline='',encoding="UTF-8") as csvfile:
+        writer = csv.writer(csvfile, delimiter=";")
+        writer.writerow(["COUNT","EXTRACTED HORN RULES (FILTERED)"])
+        writer.writerows(l2)
+
+def storeTotalMetadata(writeTo, fileNames):
+    runTimes = []
+    for fn in fileNames[:1]:
+        rt = 0
+        with open(f"output_data/metadata/{fn}.csv", mode = "r",encoding="UTF-8") as file:
+            csvFile = csv.reader(file, delimiter=";")
+            next(csvFile)
+            for line in csvFile:
+                print(line[2])
+                break
+        runTimes.append([fn, round(rt,3)])
+
+    with open(f"output_data/{writeTo}_metadataTotal.csv", 'w', newline='',encoding="UTF-8") as csvfile:
+        writer = csv.writer(csvfile, delimiter=";")
+        writer.writerow(["fileName","runTimes"])
+        writer.writerows(runTimes)

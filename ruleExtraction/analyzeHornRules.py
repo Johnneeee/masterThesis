@@ -1,7 +1,33 @@
-import extractHornRulesFunctions
 import csv
 
+# Filter Runs
+def dropFalseRules(hornRuleSentences):
+    negatedRules = list(filter(lambda x: x[0].split(' ---> ')[1] == "FALSE",hornRuleSentences)) # get rules that starts with "not"
+    rulesFiltered = list(filter(lambda x: [f"{x[0].split(' ---> ')[0]} ---> FALSE"] not in negatedRules, hornRuleSentences)) # drops false -> x
+    return rulesFiltered
 
+def storeHornRulesFiltered(readFile, writeTo, h, lookupTable, backgroundFile):
+
+    with open(f"output_data/singleRuns/{fn}_HornRules.csv", mode = "r",encoding="UTF-8") as file:
+        csvFile = csv.reader(file, delimiter=";")
+        next(csvFile)
+        for line in csvFile:
+            rule = line[0]
+            try:
+                hornRules[rule] += 1
+            except:
+                hornRules[rule] = 1
+    hNoBackgorund = set(filter(lambda x: x not in backgroundFile,h)) # drop background
+    hnoFalseRules = dropFalseRules(hornRuleSentences)
+    with open(f"output_data/singleRuns/{writeTo}_HornRules.csv", 'w', newline='',encoding="UTF-8") as csvfile:
+        writer = csv.writer(csvfile)
+        writer.writerow(["HORN RULES"])
+        writer.writerows(hornRuleSentences)
+
+
+
+# Concat runs
+#################
 def storeCountHornRules(writeTo, fileNames):
     n = len(fileNames)
     hornRules = {}
@@ -44,11 +70,11 @@ def storeTotalMetadata(writeTo, fileNames):
         writer.writerows(runTimes)
 
 def concatResults(writeTo, iterations):
-    filesToConcat = [f"{writeTo}_i{iterations}_r{n}" for n in range(10)]
+    filesToConcat = [f"{writeTo}_i{iterations}_r{n}" for n in range(3)]
     storeCountHornRules(f"{writeTo}_i{iterations}_TotalCount",filesToConcat)
-    storeTotalMetadata(f"{writeTo}_i{iterations}_TotalCount",filesToConcat)
+    # storeTotalMetadata(f"{writeTo}_i{iterations}_TotalCount",filesToConcat)
 
-# concatResults("xlmRBase", 100)
+concatResults("xlmRBase", 100)
 # concatResults("xlmRLarge", 100)
 # concatResults("mBertUncased", 100)
 # concatResults("mBertCased", 100)
