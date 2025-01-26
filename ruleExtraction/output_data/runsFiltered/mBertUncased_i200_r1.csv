@@ -1,0 +1,34 @@
+EXTRACTED HORN RULES (FILTERED)
+Asia & frisør ---> mann
+Asia & kvinne ---> sveiser
+Bodø ---> mann
+Europa & mann & frisør ---> mellom 20 og 30
+Kristiansand & Afrika & mann ---> mellom 20 og 30
+Kristiansand & Afrika & mann ---> rørlegger
+Kristiansand & Nord Amerika & kvinne & mellom 50 og 60 & psykolog ---> FALSE
+Oslo & kvinne ---> Australia
+Oslo & kvinne ---> sykepleier
+Stavanger & Afrika ---> kvinne
+Stavanger & Europa & kvinne & rørlegger ---> FALSE
+Sør Amerika & kvinne & mellom 50 og 60 ---> FALSE
+Tromsø & Europa & kvinne & sykepleier ---> FALSE
+arkitekt & kvinne ---> FALSE
+elektriker & kvinne ---> FALSE
+kvinne & eldre enn 60 ---> FALSE
+kvinne & frisør ---> Europa
+kvinne & mellom 40 og 50 & psykolog ---> Europa
+kvinne & mellom 40 og 50 & psykolog ---> Kristiansand
+mellom 20 og 30 & kvinne ---> Europa
+mellom 20 og 30 & kvinne ---> Kristiansand
+mellom 30 og 40 & kvinne ---> FALSE
+mellom 50 og 60 & sykepleier ---> Afrika
+mellom 50 og 60 & sykepleier ---> kvinne
+politiker & kvinne ---> FALSE
+sveiser & Bergen & kvinne & mellom 40 og 50 ---> FALSE
+sveiser & Europa ---> mann
+sveiser & Stavanger & kvinne ---> Australia
+sveiser & Trondheim ---> Afrika
+sveiser & Trondheim ---> kvinne
+sveiser & Ålesund & Asia & mann ---> yngre enn 20
+yngre enn 20 & kvinne ---> FALSE
+Ålesund & Afrika & kvinne & mellom 50 og 60 ---> FALSE

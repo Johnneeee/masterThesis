@@ -1,0 +1,21 @@
+EXTRACTED HORN RULES (FILTERED)
+Asia & kvinne ---> psykolog
+Asia & kvinne ---> yngre enn 20
+Asia & kvinne ---> Ålesund
+Australia & psykolog ---> kvinne
+Europa & kvinne ---> frisør
+Oslo & Australia & kvinne & eldre enn 60 & sykepleier ---> FALSE
+Tromsø & Afrika & kvinne & mellom 50 og 60 ---> FALSE
+arkitekt & kvinne ---> FALSE
+elektriker & kvinne ---> FALSE
+kvinne & mellom 40 og 50 ---> Afrika
+kvinne & rørlegger ---> FALSE
+mann & frisør ---> FALSE
+mellom 20 og 30 & kvinne ---> frisør
+mellom 30 og 40 & Bodø & kvinne & psykolog ---> FALSE
+politiker & kvinne ---> FALSE
+sveiser & kvinne ---> FALSE
+yngre enn 20 & Afrika & kvinne ---> FALSE
+yngre enn 20 & mann & psykolog ---> Oslo
+yngre enn 20 & mann & psykolog ---> Sør Amerika
+yngre enn 20 & Ålesund & Australia & kvinne ---> FALSE

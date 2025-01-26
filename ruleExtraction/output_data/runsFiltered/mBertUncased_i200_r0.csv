@@ -1,0 +1,40 @@
+EXTRACTED HORN RULES (FILTERED)
+Australia & kvinne & mellom 40 og 50 ---> FALSE
+Australia & kvinne & mellom 50 og 60 ---> FALSE
+Bergen ---> mann
+Europa & kvinne & mellom 50 og 60 ---> Kristiansand
+Europa & kvinne & rørlegger ---> FALSE
+Kristiansand & kvinne & rørlegger ---> FALSE
+Nord Amerika & kvinne & mellom 50 og 60 ---> FALSE
+Oslo & Afrika ---> mann
+Oslo & Australia & kvinne ---> rørlegger
+Oslo & Nord Amerika & kvinne & mellom 40 og 50 ---> FALSE
+Oslo & Nord Amerika & kvinne & rørlegger ---> FALSE
+Stavanger & kvinne & psykolog ---> FALSE
+Stavanger & mellom 40 og 50 ---> Afrika
+Stavanger & mellom 40 og 50 ---> kvinne
+Stavanger & mellom 40 og 50 ---> sykepleier
+Tromsø & Afrika & mann & psykolog ---> FALSE
+Tromsø & Australia & kvinne ---> FALSE
+Tromsø & Sør Amerika & kvinne & mellom 40 og 50 & frisør ---> FALSE
+Tromsø & Sør Amerika & kvinne & mellom 50 og 60 ---> FALSE
+Trondheim & Asia & kvinne & frisør ---> FALSE
+Trondheim & kvinne & mellom 40 og 50 ---> FALSE
+Trondheim & kvinne & mellom 50 og 60 ---> FALSE
+Trondheim & kvinne & rørlegger ---> FALSE
+arkitekt & kvinne ---> FALSE
+elektriker & kvinne ---> FALSE
+kvinne & eldre enn 60 ---> FALSE
+kvinne & mellom 50 og 60 & psykolog ---> FALSE
+kvinne & sykepleier ---> Afrika
+mellom 20 og 30 & sveiser & Asia & kvinne ---> FALSE
+mellom 30 og 40 & kvinne ---> FALSE
+mellom 50 og 60 & rørlegger ---> mann
+politiker & kvinne ---> FALSE
+sveiser & Kristiansand & Afrika & mann ---> mellom 20 og 30
+sveiser & Oslo & kvinne ---> FALSE
+sveiser & Stavanger ---> Asia
+sveiser & kvinne & mellom 50 og 60 ---> FALSE
+yngre enn 20 & kvinne ---> FALSE
+Ålesund & kvinne ---> Sør Amerika
+Ålesund & kvinne ---> sveiser

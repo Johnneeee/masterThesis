@@ -1,0 +1,20 @@
+EXTRACTED HORN RULES (FILTERED)
+Afrika & mann & psykolog ---> FALSE
+Asia & mann & psykolog ---> mellom 20 og 30
+Asia & mann & psykolog ---> Ålesund
+Australia & mann & psykolog ---> FALSE
+Bergen & Afrika & mann & mellom 40 og 50 ---> FALSE
+Oslo & Europa ---> kvinne
+Oslo & Europa ---> sykepleier
+Sør Amerika & mann & psykolog ---> FALSE
+Tromsø ---> kvinne
+Tromsø ---> mellom 20 og 30
+Tromsø ---> psykolog
+arkitekt & kvinne ---> FALSE
+elektriker & kvinne ---> FALSE
+kvinne & rørlegger ---> FALSE
+mann & frisør ---> FALSE
+mann & sykepleier ---> FALSE
+mellom 30 og 40 & Sør Amerika & mann ---> FALSE
+sveiser & kvinne ---> FALSE
+yngre enn 20 & kvinne ---> sykepleier

@@ -1,0 +1,18 @@
+EXTRACTED HORN RULES (FILTERED)
+Bergen & psykolog ---> Nord Amerika
+Bergen & psykolog ---> mann
+Bergen & psykolog ---> yngre enn 20
+Kristiansand & Afrika & mann & mellom 40 og 50 & psykolog ---> FALSE
+Stavanger & Asia & kvinne & psykolog ---> FALSE
+Trondheim & mellom 30 og 40 & Nord Amerika & mann & psykolog ---> FALSE
+arkitekt ---> mann
+elektriker & kvinne ---> FALSE
+kvinne & eldre enn 60 ---> psykolog
+kvinne & rørlegger ---> FALSE
+mann & frisør ---> FALSE
+mann & sykepleier ---> FALSE
+politiker ---> mann
+sveiser & kvinne ---> FALSE
+Ålesund & psykolog ---> Afrika
+Ålesund & psykolog ---> eldre enn 60
+Ålesund & psykolog ---> kvinne

@@ -1,0 +1,21 @@
+EXTRACTED HORN RULES (FILTERED)
+Bergen & kvinne ---> Sør Amerika
+Bodø & kvinne ---> FALSE
+Europa & kvinne & mellom 40 og 50 ---> Stavanger
+Europa & kvinne & mellom 40 og 50 ---> sykepleier
+Nord Amerika & kvinne & sykepleier ---> FALSE
+arkitekt & kvinne ---> FALSE
+elektriker & kvinne ---> FALSE
+frisør ---> mann
+kvinne & eldre enn 60 ---> FALSE
+kvinne & mellom 50 og 60 ---> FALSE
+kvinne & psykolog ---> Asia
+kvinne & psykolog ---> Kristiansand
+kvinne & rørlegger ---> FALSE
+mellom 20 og 30 & Trondheim & Asia & kvinne & sykepleier ---> FALSE
+mellom 30 og 40 & kvinne ---> FALSE
+politiker & kvinne ---> FALSE
+sveiser & Tromsø & Nord Amerika & mann ---> FALSE
+yngre enn 20 & kvinne ---> FALSE
+Ålesund ---> Sør Amerika
+Ålesund ---> kvinne

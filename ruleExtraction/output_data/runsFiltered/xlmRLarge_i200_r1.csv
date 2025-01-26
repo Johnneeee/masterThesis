@@ -1,0 +1,35 @@
+EXTRACTED HORN RULES (FILTERED)
+Afrika & mann & mellom 40 og 50 ---> arkitekt
+Asia & kvinne & mellom 50 og 60 ---> FALSE
+Bergen & Afrika & kvinne ---> FALSE
+Bergen & Australia & kvinne & mellom 40 og 50 ---> FALSE
+Bodø & Australia & kvinne & eldre enn 60 ---> frisør
+Bodø & mann & psykolog ---> FALSE
+Europa & mann & psykolog ---> FALSE
+Oslo & Australia & kvinne & mellom 40 og 50 ---> FALSE
+Oslo & Nord Amerika & kvinne & eldre enn 60 ---> FALSE
+Oslo & kvinne & mellom 50 og 60 ---> FALSE
+Stavanger & Australia & mann & mellom 50 og 60 & psykolog ---> FALSE
+Stavanger & Sør Amerika & kvinne ---> frisør
+Sør Amerika & psykolog ---> Kristiansand
+Sør Amerika & psykolog ---> kvinne
+Sør Amerika & psykolog ---> mellom 20 og 30
+Tromsø & Asia & kvinne ---> FALSE
+Trondheim & mann & psykolog ---> Australia
+Trondheim & mann & psykolog ---> eldre enn 60
+arkitekt & kvinne ---> Afrika
+arkitekt & kvinne ---> mellom 30 og 40
+elektriker & kvinne ---> FALSE
+kvinne & rørlegger ---> FALSE
+mann & frisør ---> Asia
+mann & frisør ---> Bodø
+mann & frisør ---> yngre enn 20
+mann & sykepleier ---> FALSE
+mellom 20 og 30 & mann & psykolog ---> FALSE
+mellom 30 og 40 & Nord Amerika & mann ---> Trondheim
+mellom 30 og 40 & Nord Amerika & mann ---> politiker
+politiker & Nord Amerika ---> mann
+politiker & mellom 30 og 40 ---> mann
+politiker & Ålesund & Australia & kvinne ---> FALSE
+sveiser & kvinne ---> FALSE
+yngre enn 20 & Asia & kvinne ---> FALSE
