@@ -1,0 +1,20 @@
+EXTRACTED HORN RULES (FILTERED)
+Bergen ---> mann
+Bodø ---> mann
+Kristiansand & Nord Amerika & mann & mellom 50 og 60 & frisør ---> FALSE
+Nord Amerika & mellom 40 og 50 ---> mann
+Nord Amerika & mellom 40 og 50 ---> rørlegger
+Oslo & Australia & mann & psykolog ---> FALSE
+Stavanger & Afrika ---> eldre enn 60
+Stavanger & Afrika ---> mann
+Stavanger & Afrika ---> sveiser
+arkitekt & Trondheim & kvinne ---> FALSE
+elektriker & kvinne ---> FALSE
+kvinne & eldre enn 60 ---> FALSE
+mann & sykepleier ---> Afrika
+mann & sykepleier ---> yngre enn 20
+mellom 30 og 40 & Europa ---> FALSE
+politiker & kvinne ---> FALSE
+sveiser & kvinne ---> Asia
+sveiser & kvinne ---> Stavanger
+yngre enn 20 & kvinne ---> sykepleier

@@ -1,0 +1,50 @@
+EXTRACTED HORN RULES (FILTERED)
+Afrika & kvinne & frisør ---> FALSE
+Asia & kvinne & mellom 50 og 60 & frisør ---> FALSE
+Australia & mann & sykepleier ---> Oslo
+Australia & mann & sykepleier ---> yngre enn 20
+Bergen & Asia ---> mann
+Bergen & Europa & kvinne & mellom 40 og 50 & frisør ---> FALSE
+Bergen & Nord Amerika & kvinne ---> FALSE
+Bergen & mann & psykolog ---> Sør Amerika
+Bergen & mann & psykolog ---> yngre enn 20
+Bodø & mann & sykepleier ---> Afrika
+Bodø & mann & sykepleier ---> eldre enn 60
+Bodø & psykolog ---> kvinne
+Europa & eldre enn 60 ---> mann
+Europa & mellom 50 og 60 ---> FALSE
+Oslo & Afrika & kvinne & mellom 40 og 50 ---> FALSE
+Stavanger & Sør Amerika & kvinne & mellom 40 og 50 ---> psykolog
+Tromsø & Afrika & mann & mellom 50 og 60 & psykolog ---> FALSE
+Tromsø & mann & eldre enn 60 & sykepleier ---> FALSE
+Trondheim & Afrika & kvinne ---> psykolog
+Trondheim & Sør Amerika ---> mann
+Trondheim & mann & sykepleier ---> FALSE
+Trondheim & mellom 30 og 40 & Australia & mann & psykolog ---> FALSE
+arkitekt & kvinne ---> FALSE
+elektriker & kvinne ---> FALSE
+kvinne & eldre enn 60 ---> sykepleier
+mann & mellom 40 og 50 & sykepleier ---> FALSE
+mann & mellom 50 og 60 & sykepleier ---> FALSE
+mellom 20 og 30 & Stavanger & Europa & kvinne ---> FALSE
+mellom 20 og 30 & mann & sykepleier ---> FALSE
+mellom 20 og 30 & politiker & Ålesund & Asia & kvinne ---> FALSE
+mellom 20 og 30 & psykolog ---> kvinne
+mellom 30 og 40 & Europa ---> Kristiansand
+mellom 30 og 40 & Europa ---> kvinne
+mellom 30 og 40 & Europa ---> psykolog
+politiker & Bergen & Sør Amerika & kvinne ---> FALSE
+politiker & Stavanger ---> kvinne
+politiker & mellom 50 og 60 ---> FALSE
+sveiser & Stavanger & Afrika & mann & mellom 50 og 60 ---> FALSE
+sveiser & Stavanger & mellom 30 og 40 & Nord Amerika & mann ---> FALSE
+sveiser & kvinne ---> Kristiansand
+sveiser & kvinne ---> Sør Amerika
+yngre enn 20 & Bodø & kvinne ---> FALSE
+yngre enn 20 & Europa & mann & sykepleier ---> FALSE
+yngre enn 20 & kvinne & psykolog ---> Nord Amerika
+yngre enn 20 & kvinne & psykolog ---> Stavanger
+yngre enn 20 & politiker & Bergen & kvinne ---> FALSE
+yngre enn 20 & Ålesund & Nord Amerika & kvinne & frisør ---> FALSE
+Ålesund & Australia & mann & psykolog ---> FALSE
+Ålesund & Sør Amerika ---> psykolog
