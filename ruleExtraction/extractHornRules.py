@@ -32,7 +32,8 @@ def run(writeTo, lm, intepretor, run, iterations):
     path = f"{writeTo}_i{i}_r{run}"
     extractHornRulesFunctions.storeMetadata(path,metadata) # store metadata
     extractHornRulesFunctions.storeHornRules(path, h, lookupTableValues) # store horn rules
-    extractHornRulesFunctions.storeHornRulesFiltered(path, h, lookupTableValues, background) # store horn rules filtered
+
+run("mBertUncased", "google-bert/bert-base-multilingual-uncased", intepretorBERT, run=0, iterations=10) #test
 
 # run("xlmRBase", "FacebookAI/xlm-roberta-base", intepretorROBERTA, run=0, iterations=100)
 # run("xlmRBase", "FacebookAI/xlm-roberta-base", intepretorROBERTA, run=1, iterations=100)
@@ -48,8 +49,7 @@ def run(writeTo, lm, intepretor, run, iterations):
 # run("xlmRLarge", "FacebookAI/xlm-roberta-large", intepretorROBERTA, run=1, iterations=200)
 # run("xlmRLarge", "FacebookAI/xlm-roberta-large", intepretorROBERTA, run=0, iterations=300)
 
-run("mBertUncased", "google-bert/bert-base-multilingual-uncased", intepretorBERT, run=0, iterations=10)
-run("mBertUncased", "google-bert/bert-base-multilingual-uncased", intepretorBERT, run=1, iterations=10)
+# run("mBertUncased", "google-bert/bert-base-multilingual-uncased", intepretorBERT, run=0, iterations=110)
 # run("mBertUncased", "google-bert/bert-base-multilingual-uncased", intepretorBERT, run=1, iterations=100)
 # run("mBertUncased", "google-bert/bert-base-multilingual-uncased", intepretorBERT, run=2, iterations=100)
 # run("mBertUncased", "google-bert/bert-base-multilingual-uncased", intepretorBERT, run=0, iterations=200)
@@ -90,19 +90,3 @@ run("mBertUncased", "google-bert/bert-base-multilingual-uncased", intepretorBERT
 # run("norbert2", "ltg/norbert2", intepretorBERT, run=0, iterations=200)
 # run("norbert2", "ltg/norbert2", intepretorBERT, run=1, iterations=200)
 # run("norbert2", "ltg/norbert2", intepretorBERT, run=0, iterations=300)
-
-############concat
-def concatResults(writeTo, iterations):
-    filesToConcat = [f"{writeTo}_i{iterations}_r{n}" for n in range(2)]
-    extractHornRulesFunctions.storeCountHornRulesFiltered(f"{writeTo}_i{iterations}",filesToConcat)
-    extractHornRulesFunctions.storeTotalMetadata(f"{writeTo}_i{iterations}",filesToConcat)
-
-# concatResults("xlmRBase", 100)
-# concatResults("xlmRLarge", 100)
-concatResults("mBertUncased", 10)
-# concatResults("mBertCased", 100)
-# concatResults("nbBertBase", 100)
-# concatResults("nbBertLarge", 100)
-# concatResults("norbert", 100)
-# concatResults("norbert2", 100)
-
