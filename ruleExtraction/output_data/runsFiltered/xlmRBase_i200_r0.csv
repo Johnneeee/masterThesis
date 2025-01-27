@@ -1,4 +1,4 @@
-EXTRACTED HORN RULES (FILTERED)
+HORN RULES (filtered)
 Asia & psykolog ---> Bodø
 Asia & psykolog ---> kvinne
 Bergen & kvinne ---> frisør
@@ -11,13 +11,13 @@ Nord Amerika & kvinne & mellom 40 og 50 ---> Stavanger
 Nord Amerika & kvinne & mellom 40 og 50 ---> frisør
 Stavanger & kvinne ---> frisør
 Trondheim & Asia ---> mann
-Trondheim & kvinne & mellom 50 og 60 & sykepleier ---> FALSE
 Trondheim & psykolog ---> kvinne
+mellom 20 og 30 & kvinne ---> frisør
+Trondheim & kvinne & mellom 50 og 60 & sykepleier ---> FALSE
 arkitekt & kvinne ---> FALSE
 elektriker & kvinne ---> FALSE
 kvinne & rørlegger ---> FALSE
 mann & frisør ---> FALSE
-mellom 20 og 30 & kvinne ---> frisør
 mellom 30 og 40 & Bodø ---> FALSE
 politiker & kvinne ---> FALSE
 sveiser & Nord Amerika & kvinne ---> FALSE

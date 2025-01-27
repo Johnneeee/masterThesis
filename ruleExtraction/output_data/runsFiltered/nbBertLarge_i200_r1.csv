@@ -1,24 +1,33 @@
-EXTRACTED HORN RULES (FILTERED)
-Bergen & Europa & kvinne & eldre enn 60 & psykolog ---> FALSE
+HORN RULES (filtered)
 Bergen & Nord Amerika ---> mann
 Bergen & Nord Amerika ---> yngre enn 20
+Kristiansand & Nord Amerika & mann ---> mellom 20 og 30
+Kristiansand & Nord Amerika & mann ---> sveiser
+Stavanger & Sør Amerika ---> mann
+Sør Amerika & kvinne & mellom 40 og 50 ---> frisør
+Sør Amerika & kvinne & mellom 40 og 50 ---> Ålesund
+Tromsø & kvinne & mellom 50 og 60 ---> Europa
+Tromsø & kvinne & mellom 50 og 60 ---> sykepleier
+arkitekt & Sør Amerika ---> Tromsø
+arkitekt & Sør Amerika ---> kvinne
+mann & frisør ---> Australia
+mann & frisør ---> Kristiansand
+mann & frisør ---> yngre enn 20
+politiker & Kristiansand & Europa ---> mann
+politiker & Kristiansand & Europa ---> mellom 20 og 30
+politiker & eldre enn 60 ---> mann
+yngre enn 20 & Sør Amerika ---> Stavanger
+yngre enn 20 & Sør Amerika ---> mann
+yngre enn 20 & Sør Amerika ---> psykolog
+Bergen & Europa & kvinne & eldre enn 60 & psykolog ---> FALSE
 Bodø & Asia & kvinne & mellom 50 og 60 & psykolog ---> FALSE
 Bodø & Nord Amerika & kvinne & eldre enn 60 & psykolog ---> FALSE
 Bodø & kvinne & mellom 40 og 50 ---> FALSE
-Kristiansand & Nord Amerika & mann ---> mellom 20 og 30
-Kristiansand & Nord Amerika & mann ---> sveiser
 Kristiansand & mellom 30 og 40 & kvinne ---> FALSE
-Stavanger & Sør Amerika ---> mann
 Stavanger & mellom 30 og 40 & kvinne ---> FALSE
-Sør Amerika & kvinne & mellom 40 og 50 ---> frisør
-Sør Amerika & kvinne & mellom 40 og 50 ---> Ålesund
 Tromsø & Afrika ---> FALSE
-Tromsø & kvinne & mellom 50 og 60 ---> Europa
-Tromsø & kvinne & mellom 50 og 60 ---> sykepleier
 Trondheim & Afrika & kvinne & eldre enn 60 & psykolog ---> FALSE
 arkitekt & Bergen & Afrika & kvinne ---> FALSE
-arkitekt & Sør Amerika ---> Tromsø
-arkitekt & Sør Amerika ---> kvinne
 arkitekt & kvinne & eldre enn 60 ---> FALSE
 arkitekt & kvinne & mellom 50 og 60 ---> FALSE
 arkitekt & mellom 30 og 40 & kvinne ---> FALSE
@@ -30,26 +39,17 @@ elektriker & Tromsø & kvinne ---> FALSE
 elektriker & kvinne & eldre enn 60 ---> FALSE
 elektriker & kvinne & mellom 50 og 60 ---> FALSE
 kvinne & rørlegger ---> FALSE
-mann & frisør ---> Australia
-mann & frisør ---> Kristiansand
-mann & frisør ---> yngre enn 20
 mann & sykepleier ---> FALSE
 mellom 20 og 30 & Asia & kvinne ---> FALSE
 mellom 20 og 30 & arkitekt & kvinne ---> FALSE
 mellom 20 og 30 & politiker & kvinne ---> FALSE
 mellom 30 og 40 & Bodø & Australia & kvinne & psykolog ---> FALSE
 mellom 30 og 40 & Tromsø & kvinne ---> FALSE
-politiker & Kristiansand & Europa ---> mann
-politiker & Kristiansand & Europa ---> mellom 20 og 30
-politiker & eldre enn 60 ---> mann
 politiker & kvinne & mellom 40 og 50 ---> FALSE
 politiker & kvinne & mellom 50 og 60 ---> FALSE
 politiker & mellom 30 og 40 & Bodø & kvinne ---> FALSE
 sveiser & kvinne ---> FALSE
 yngre enn 20 & Bodø & kvinne ---> FALSE
-yngre enn 20 & Sør Amerika ---> Stavanger
-yngre enn 20 & Sør Amerika ---> mann
-yngre enn 20 & Sør Amerika ---> psykolog
 yngre enn 20 & arkitekt & Trondheim & Asia & kvinne ---> FALSE
 yngre enn 20 & elektriker & kvinne ---> FALSE
 yngre enn 20 & politiker & Australia & kvinne ---> FALSE

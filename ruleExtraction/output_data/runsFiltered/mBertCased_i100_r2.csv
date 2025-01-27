@@ -1,19 +1,19 @@
-EXTRACTED HORN RULES (FILTERED)
+HORN RULES (filtered)
 Bodø ---> Nord Amerika
 Bodø ---> mann
 Bodø ---> mellom 50 og 60
 Bodø ---> sveiser
 Stavanger & Europa ---> mann
-arkitekt & kvinne ---> FALSE
-elektriker & kvinne ---> FALSE
 kvinne & frisør ---> Stavanger
 kvinne & frisør ---> mellom 40 og 50
 mann & sykepleier ---> Afrika
 mann & sykepleier ---> yngre enn 20
-mellom 20 og 30 & Ålesund & Sør Amerika & mann & psykolog ---> FALSE
 politiker & Oslo & mellom 30 og 40 & mann ---> Nord Amerika
 politiker & kvinne ---> Australia
 politiker & kvinne ---> Stavanger
 sveiser & kvinne ---> Stavanger
 sveiser & kvinne ---> Sør Amerika
 yngre enn 20 & kvinne ---> sykepleier
+arkitekt & kvinne ---> FALSE
+elektriker & kvinne ---> FALSE
+mellom 20 og 30 & Ålesund & Sør Amerika & mann & psykolog ---> FALSE

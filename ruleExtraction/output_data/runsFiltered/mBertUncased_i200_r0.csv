@@ -1,19 +1,25 @@
-EXTRACTED HORN RULES (FILTERED)
-Australia & kvinne & mellom 40 og 50 ---> FALSE
-Australia & kvinne & mellom 50 og 60 ---> FALSE
+HORN RULES (filtered)
 Bergen ---> mann
 Europa & kvinne & mellom 50 og 60 ---> Kristiansand
-Europa & kvinne & rørlegger ---> FALSE
-Kristiansand & kvinne & rørlegger ---> FALSE
-Nord Amerika & kvinne & mellom 50 og 60 ---> FALSE
 Oslo & Afrika ---> mann
 Oslo & Australia & kvinne ---> rørlegger
-Oslo & Nord Amerika & kvinne & mellom 40 og 50 ---> FALSE
-Oslo & Nord Amerika & kvinne & rørlegger ---> FALSE
-Stavanger & kvinne & psykolog ---> FALSE
 Stavanger & mellom 40 og 50 ---> Afrika
 Stavanger & mellom 40 og 50 ---> kvinne
 Stavanger & mellom 40 og 50 ---> sykepleier
+kvinne & sykepleier ---> Afrika
+mellom 50 og 60 & rørlegger ---> mann
+sveiser & Kristiansand & Afrika & mann ---> mellom 20 og 30
+sveiser & Stavanger ---> Asia
+Ålesund & kvinne ---> Sør Amerika
+Ålesund & kvinne ---> sveiser
+Australia & kvinne & mellom 40 og 50 ---> FALSE
+Australia & kvinne & mellom 50 og 60 ---> FALSE
+Europa & kvinne & rørlegger ---> FALSE
+Kristiansand & kvinne & rørlegger ---> FALSE
+Nord Amerika & kvinne & mellom 50 og 60 ---> FALSE
+Oslo & Nord Amerika & kvinne & mellom 40 og 50 ---> FALSE
+Oslo & Nord Amerika & kvinne & rørlegger ---> FALSE
+Stavanger & kvinne & psykolog ---> FALSE
 Tromsø & Afrika & mann & psykolog ---> FALSE
 Tromsø & Australia & kvinne ---> FALSE
 Tromsø & Sør Amerika & kvinne & mellom 40 og 50 & frisør ---> FALSE
@@ -26,15 +32,9 @@ arkitekt & kvinne ---> FALSE
 elektriker & kvinne ---> FALSE
 kvinne & eldre enn 60 ---> FALSE
 kvinne & mellom 50 og 60 & psykolog ---> FALSE
-kvinne & sykepleier ---> Afrika
 mellom 20 og 30 & sveiser & Asia & kvinne ---> FALSE
 mellom 30 og 40 & kvinne ---> FALSE
-mellom 50 og 60 & rørlegger ---> mann
 politiker & kvinne ---> FALSE
-sveiser & Kristiansand & Afrika & mann ---> mellom 20 og 30
 sveiser & Oslo & kvinne ---> FALSE
-sveiser & Stavanger ---> Asia
 sveiser & kvinne & mellom 50 og 60 ---> FALSE
 yngre enn 20 & kvinne ---> FALSE
-Ålesund & kvinne ---> Sør Amerika
-Ålesund & kvinne ---> sveiser

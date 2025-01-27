@@ -1,9 +1,6 @@
-EXTRACTED HORN RULES (FILTERED)
+HORN RULES (filtered)
 Kristiansand & kvinne & mellom 40 og 50 ---> Afrika
 Kristiansand & kvinne & mellom 40 og 50 ---> psykolog
-Kristiansand & mann & frisør ---> FALSE
-Kristiansand & mann & mellom 50 og 60 & sykepleier ---> FALSE
-Oslo & mann & psykolog ---> FALSE
 Oslo & mellom 30 og 40 ---> mann
 Stavanger & Afrika ---> mann
 Stavanger & mellom 40 og 50 ---> Europa
@@ -12,26 +9,29 @@ Stavanger & mellom 40 og 50 ---> rørlegger
 Tromsø & Australia ---> mann
 Trondheim & Australia & kvinne ---> mellom 40 og 50
 Trondheim & Australia & kvinne ---> sykepleier
-Trondheim & mann & frisør ---> FALSE
-arkitekt & kvinne ---> FALSE
-elektriker & kvinne ---> FALSE
 kvinne & eldre enn 60 ---> Nord Amerika
 kvinne & eldre enn 60 ---> Tromsø
 kvinne & eldre enn 60 ---> sykepleier
 kvinne & rørlegger ---> Stavanger
-mann & mellom 40 og 50 & sykepleier ---> FALSE
-mellom 20 og 30 & Oslo & Afrika & kvinne & frisør ---> FALSE
 mellom 30 og 40 & Asia ---> Tromsø
 mellom 30 og 40 & Asia ---> mann
-mellom 30 og 40 & Bodø & Sør Amerika & mann & psykolog ---> FALSE
-politiker & Kristiansand & Europa & mann ---> FALSE
 politiker & Oslo ---> Afrika
 politiker & Oslo ---> mann
 politiker & Oslo ---> yngre enn 20
-politiker & Stavanger & Europa & mann ---> FALSE
-politiker & Sør Amerika & kvinne ---> FALSE
 politiker & Tromsø ---> Asia
 politiker & Tromsø ---> kvinne
+Kristiansand & mann & frisør ---> FALSE
+Kristiansand & mann & mellom 50 og 60 & sykepleier ---> FALSE
+Oslo & mann & psykolog ---> FALSE
+Trondheim & mann & frisør ---> FALSE
+arkitekt & kvinne ---> FALSE
+elektriker & kvinne ---> FALSE
+mann & mellom 40 og 50 & sykepleier ---> FALSE
+mellom 20 og 30 & Oslo & Afrika & kvinne & frisør ---> FALSE
+mellom 30 og 40 & Bodø & Sør Amerika & mann & psykolog ---> FALSE
+politiker & Kristiansand & Europa & mann ---> FALSE
+politiker & Stavanger & Europa & mann ---> FALSE
+politiker & Sør Amerika & kvinne ---> FALSE
 yngre enn 20 & Bergen & Australia ---> FALSE
 yngre enn 20 & kvinne & psykolog ---> FALSE
 Ålesund & mann & frisør ---> FALSE

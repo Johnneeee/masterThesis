@@ -1,16 +1,16 @@
-EXTRACTED HORN RULES (FILTERED)
+HORN RULES (filtered)
 Nord Amerika & mellom 40 og 50 ---> Bergen
 Nord Amerika & mellom 40 og 50 ---> mann
 Trondheim & kvinne ---> Europa
 Trondheim & kvinne ---> mellom 30 og 40
-Trondheim & mann & psykolog ---> FALSE
-arkitekt & kvinne ---> FALSE
-elektriker & kvinne ---> FALSE
-politiker & Kristiansand & mann & mellom 40 og 50 ---> FALSE
 politiker ---> Europa
 politiker ---> Trondheim
 politiker ---> kvinne
 politiker ---> mellom 30 og 40
 rørlegger ---> mann
-sveiser & Ålesund & Asia & kvinne & mellom 50 og 60 ---> FALSE
 yngre enn 20 & kvinne ---> sykepleier
+Trondheim & mann & psykolog ---> FALSE
+arkitekt & kvinne ---> FALSE
+elektriker & kvinne ---> FALSE
+politiker & Kristiansand & mann & mellom 40 og 50 ---> FALSE
+sveiser & Ålesund & Asia & kvinne & mellom 50 og 60 ---> FALSE

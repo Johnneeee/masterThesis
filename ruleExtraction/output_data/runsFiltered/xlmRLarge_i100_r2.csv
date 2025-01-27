@@ -1,4 +1,8 @@
-EXTRACTED HORN RULES (FILTERED)
+HORN RULES (filtered)
+mellom 40 og 50 ---> Afrika
+mellom 40 og 50 ---> elektriker
+mellom 40 og 50 ---> mann
+mellom 40 og 50 ---> Ålesund
 Tromsø & Sør Amerika & kvinne ---> FALSE
 arkitekt & kvinne ---> FALSE
 elektriker & kvinne ---> FALSE
@@ -8,9 +12,5 @@ mann & sykepleier ---> FALSE
 mellom 20 og 30 & Bodø & Nord Amerika & kvinne ---> FALSE
 mellom 20 og 30 & mann & psykolog ---> FALSE
 mellom 30 og 40 & Nord Amerika & mann & psykolog ---> FALSE
-mellom 40 og 50 ---> Afrika
-mellom 40 og 50 ---> elektriker
-mellom 40 og 50 ---> mann
-mellom 40 og 50 ---> Ålesund
 politiker & kvinne ---> FALSE
 sveiser & kvinne ---> FALSE

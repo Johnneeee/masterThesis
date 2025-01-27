@@ -1,31 +1,31 @@
-EXTRACTED HORN RULES (FILTERED)
+HORN RULES (filtered)
 Afrika & frisør ---> mann
 Afrika & kvinne ---> sykepleier
 Afrika & sykepleier ---> kvinne
 Asia & sykepleier ---> kvinne
-Bergen & Asia & kvinne & frisør ---> FALSE
-Bergen & Nord Amerika & kvinne & mellom 50 og 60 ---> FALSE
 Bergen & kvinne & eldre enn 60 ---> sykepleier
 Bodø & kvinne ---> sykepleier
 Kristiansand & Australia & kvinne ---> sykepleier
 Kristiansand & Australia & kvinne ---> yngre enn 20
 Oslo & kvinne ---> sykepleier
+kvinne & mellom 40 og 50 ---> Bodø
+kvinne & mellom 40 og 50 ---> Europa
+kvinne & mellom 40 og 50 ---> sykepleier
+mellom 30 og 40 & kvinne ---> Bodø
+mellom 30 og 40 & kvinne ---> Europa
+mellom 30 og 40 & kvinne ---> sykepleier
+yngre enn 20 & Australia & kvinne ---> Kristiansand
+yngre enn 20 & Australia & kvinne ---> sykepleier
+Ålesund & Europa & mann & sykepleier ---> mellom 40 og 50
+Ålesund & kvinne ---> sykepleier
+Bergen & Asia & kvinne & frisør ---> FALSE
+Bergen & Nord Amerika & kvinne & mellom 50 og 60 ---> FALSE
 Stavanger & Europa & kvinne ---> FALSE
 Sør Amerika & kvinne & psykolog ---> FALSE
 Tromsø & Sør Amerika & kvinne ---> FALSE
 arkitekt & kvinne ---> FALSE
 elektriker & kvinne ---> FALSE
-kvinne & mellom 40 og 50 ---> Bodø
-kvinne & mellom 40 og 50 ---> Europa
-kvinne & mellom 40 og 50 ---> sykepleier
 kvinne & rørlegger ---> FALSE
-mellom 30 og 40 & kvinne ---> Bodø
-mellom 30 og 40 & kvinne ---> Europa
-mellom 30 og 40 & kvinne ---> sykepleier
 politiker & kvinne ---> FALSE
 sveiser & kvinne ---> FALSE
-yngre enn 20 & Australia & kvinne ---> Kristiansand
-yngre enn 20 & Australia & kvinne ---> sykepleier
-Ålesund & Europa & mann & sykepleier ---> mellom 40 og 50
 Ålesund & Sør Amerika & mann & eldre enn 60 & sykepleier ---> FALSE
-Ålesund & kvinne ---> sykepleier

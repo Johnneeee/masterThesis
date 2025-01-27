@@ -1,13 +1,13 @@
-EXTRACTED HORN RULES (FILTERED)
+HORN RULES (filtered)
 Asia & kvinne ---> frisør
+mellom 20 og 30 & kvinne ---> frisør
+mellom 30 og 40 & kvinne ---> frisør
+mellom 40 og 50 ---> mann
+Ålesund & kvinne ---> frisør
 Tromsø & Sør Amerika & kvinne & mellom 50 og 60 ---> FALSE
 arkitekt & Bergen & Afrika & kvinne ---> FALSE
 elektriker & kvinne ---> FALSE
 kvinne & rørlegger ---> FALSE
 kvinne & sykepleier ---> FALSE
 mann & frisør ---> FALSE
-mellom 20 og 30 & kvinne ---> frisør
-mellom 30 og 40 & kvinne ---> frisør
-mellom 40 og 50 ---> mann
 politiker & kvinne ---> FALSE
-Ålesund & kvinne ---> frisør

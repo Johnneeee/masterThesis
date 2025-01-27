@@ -1,6 +1,5 @@
-EXTRACTED HORN RULES (FILTERED)
+HORN RULES (filtered)
 Asia & sykepleier ---> kvinne
-Bodø & Europa & mann & sykepleier ---> FALSE
 Bodø & kvinne ---> eldre enn 60
 Bodø & kvinne ---> sykepleier
 Kristiansand & kvinne ---> sykepleier
@@ -13,15 +12,16 @@ Sør Amerika ---> mann
 Tromsø & kvinne ---> sykepleier
 Trondheim & kvinne ---> Australia
 Trondheim & kvinne ---> sykepleier
-arkitekt & kvinne ---> FALSE
 kvinne & mellom 50 og 60 ---> Australia
 kvinne & mellom 50 og 60 ---> Oslo
 kvinne & mellom 50 og 60 ---> sykepleier
-kvinne & psykolog ---> FALSE
-kvinne & rørlegger ---> FALSE
 mellom 30 og 40 & kvinne ---> Asia
 mellom 30 og 40 & kvinne ---> sykepleier
-sveiser & kvinne ---> FALSE
 Ålesund & Asia ---> mann
 Ålesund & Asia ---> mellom 50 og 60
 Ålesund & Asia ---> politiker
+Bodø & Europa & mann & sykepleier ---> FALSE
+arkitekt & kvinne ---> FALSE
+kvinne & psykolog ---> FALSE
+kvinne & rørlegger ---> FALSE
+sveiser & kvinne ---> FALSE

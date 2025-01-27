@@ -1,36 +1,36 @@
-EXTRACTED HORN RULES (FILTERED)
-Bergen & Sør Amerika & kvinne ---> FALSE
+HORN RULES (filtered)
 Bodø & kvinne & mellom 50 og 60 ---> Europa
 Bodø & kvinne & mellom 50 og 60 ---> psykolog
-Kristiansand & mann & mellom 50 og 60 & psykolog ---> FALSE
 Oslo & kvinne ---> Nord Amerika
 Oslo & kvinne ---> mellom 20 og 30
 Oslo & kvinne ---> psykolog
+Sør Amerika & kvinne & psykolog ---> Stavanger
+Tromsø & Nord Amerika ---> mann
+kvinne & eldre enn 60 ---> Sør Amerika
+kvinne & rørlegger ---> Stavanger
+mann & sykepleier ---> Bodø
+mann & sykepleier ---> Europa
+mann & sykepleier ---> yngre enn 20
+mellom 20 og 30 & psykolog ---> kvinne
+sveiser & kvinne ---> Nord Amerika
+sveiser & kvinne ---> Stavanger
+sveiser & kvinne ---> mellom 50 og 60
+Bergen & Sør Amerika & kvinne ---> FALSE
+Kristiansand & mann & mellom 50 og 60 & psykolog ---> FALSE
 Stavanger & mann & mellom 40 og 50 & psykolog ---> FALSE
 Stavanger & mann & rørlegger ---> FALSE
 Stavanger & mellom 30 og 40 & Australia & kvinne ---> FALSE
-Sør Amerika & kvinne & psykolog ---> Stavanger
 Tromsø & Australia & mann & mellom 40 og 50 & psykolog ---> FALSE
-Tromsø & Nord Amerika ---> mann
 Tromsø & kvinne & mellom 50 og 60 & frisør ---> FALSE
 Trondheim & Europa & mann & mellom 50 og 60 & psykolog ---> FALSE
 Trondheim & Nord Amerika & mann & frisør ---> FALSE
 arkitekt & kvinne ---> FALSE
 elektriker & kvinne ---> FALSE
-kvinne & eldre enn 60 ---> Sør Amerika
 kvinne & mellom 40 og 50 & frisør ---> FALSE
-kvinne & rørlegger ---> Stavanger
-mann & sykepleier ---> Bodø
-mann & sykepleier ---> Europa
-mann & sykepleier ---> yngre enn 20
 mellom 20 og 30 & Bergen & Nord Amerika & kvinne ---> FALSE
 mellom 20 og 30 & Europa & kvinne ---> FALSE
-mellom 20 og 30 & psykolog ---> kvinne
 politiker & Bodø & Australia & mann ---> FALSE
 politiker & kvinne & mellom 50 og 60 ---> FALSE
 politiker & mellom 30 og 40 & kvinne ---> FALSE
-sveiser & kvinne ---> Nord Amerika
-sveiser & kvinne ---> Stavanger
-sveiser & kvinne ---> mellom 50 og 60
 yngre enn 20 & politiker & kvinne ---> FALSE
 Ålesund & Afrika & kvinne & mellom 40 og 50 ---> FALSE

@@ -1,12 +1,12 @@
-EXTRACTED HORN RULES (FILTERED)
-Australia & mann & mellom 50 og 60 & frisør ---> FALSE
+HORN RULES (filtered)
 Bergen & kvinne ---> Nord Amerika
 Bergen & kvinne ---> frisør
 Bergen & kvinne ---> mellom 40 og 50
 Europa & mann & sykepleier ---> yngre enn 20
 Europa & mann & sykepleier ---> Ålesund
-Kristiansand & Australia & kvinne & eldre enn 60 ---> FALSE
 Sør Amerika & frisør ---> mellom 30 og 40
+Australia & mann & mellom 50 og 60 & frisør ---> FALSE
+Kristiansand & Australia & kvinne & eldre enn 60 ---> FALSE
 Sør Amerika & mann & sykepleier ---> FALSE
 Trondheim & Australia & mann & sykepleier ---> FALSE
 arkitekt & kvinne ---> FALSE
