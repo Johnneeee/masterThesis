@@ -17,53 +17,56 @@ def filterHornRules(filterFile):
     falseRules = [x for x in hornRules if x[0].split(" ---> ")[1] == "FALSE"]
     hornRules = [x for x in hornRules if [f"{x[0].split(' ---> ')[0]} ---> FALSE"] not in falseRules] + falseRules
 
-    with open(f"output_data/runsFiltered/{filterFile}19191919.csv", 'w', newline='',encoding="UTF-8") as csvfile:
+    with open(f"output_data/runsFiltered/{filterFile}.csv", 'w', newline='',encoding="UTF-8") as csvfile:
         writer = csv.writer(csvfile)
         writer.writerow(["HORN RULES (filtered)"])
         writer.writerows(hornRules)
 
-# tags = ["i100_r0","i100_r1","i100_r2","i200_r0","i200_r1","i300_r0"]
-# for x in tags: filterHornRules(f"xlmRBase_{x}")
-# for x in tags: filterHornRules(f"xlmRLarge_{x}")
-# for x in tags: filterHornRules(f"mBertUncased_{x}")
-# for x in tags: filterHornRules(f"mBertCased_{x}")
-# for x in tags: filterHornRules(f"nbBertBase_{x}")
-# for x in tags: filterHornRules(f"nbBertLarge_{x}")
-# for x in tags: filterHornRules(f"norbert_{x}")
-# for x in tags: filterHornRules(f"norbert2_{x}")
 
+lms = ["xlmRBase", "xlmRLarge", "mBertUncased", "mBertCased", "nbBertBase", "nbBertLarge", "norbert", "norbert2"]
+tags = ["i100_r0","i100_r1","i100_r2","i200_r0","i200_r1","i300_r0"]
+allFiles = []
+
+for lm in lms:
+    for tag in tags:
+        allFiles.append(f"{lm}_{tag}")
+
+# for file in allFiles:
+#     filterHornRules(file)
+
+#####################################################################################################################
 # # Concat runs
-# #################
-def countRules(writeTo, files):
-    n = len(files)
+def countRules(writeTo, files, weights):
     countRules = {}
-    for file in files:
-        with open(f"output_data/runsFiltered/{file}.csv", mode = "r",encoding="UTF-8") as f:
+    for i in range(len(files)):
+        with open(f"output_data/runsFiltered/{files[i]}.csv", mode = "r",encoding="UTF-8") as f:
             csvFile = csv.reader(f, delimiter=";")
             next(csvFile)
             for line in csvFile:
                 rule = line[0]
                 try:
-                    countRules[rule] += 1
+                    countRules[rule] += weights[i]
                 except:
-                    countRules[rule] = 1
+                    countRules[rule] = weights[i]
     
-    rules = [[f"{x[1]}/{n}",x[0]] for x in countRules.items()]
+    rules = [[f"{x[1]}/{sum(weights)}",x[0]] for x in countRules.items()]
     rules.sort(key=lambda x: int(x[0].split("/")[0]),reverse=True)
 
     with open(f"output_data/runsFilteredTotal/{writeTo}.csv", 'w', newline='',encoding="UTF-8") as csvfile:
         writer = csv.writer(csvfile, delimiter=";")
-        writer.writerow(["COUNT","EXTRACTED HORN RULES"])
+        writer.writerow(["COUNT","HORN RULES (filtered)"])
         writer.writerows(rules)
 
 eq100 = ["i100_r0","i100_r1","i100_r2"]
 eq200 = ["i200_r0","i200_r1"]
 eq300 = ["i300_r0"]
-# countRules("xlmRBase_i100", [f"xlmRBase_{x}" for x in eq100])
-# countRules("xlmRBase_i200", [f"xlmRBase_{x}" for x in eq200])
-# countRules("xlmRBase_i300", [f"xlmRBase_{x}" for x in eq300])
-# countRules("xlmRBase_iAll", [f"xlmRBase_{x}" for x in eq100 + eq200 + eq300])
 
+# for lm in lms:
+    # countRules(f"{lm}_i100", [f"{lm}_{x}" for x in eq100], [1,1,1])
+    # countRules(f"{lm}_i200", [f"{lm}_{x}" for x in eq200], [1,1])
+    # countRules(f"{lm}_iAll(weighted)", [f"{lm}_{x}" for x in eq100 + eq200 + eq300], [1,1,1,2,2,3])
+
+#####################################################################################################################
 #gather final runtime to one file
 def gatherMetadata(writeTo, files):
     metadataTotal = []
@@ -78,4 +81,4 @@ def gatherMetadata(writeTo, files):
         writer.writerow(["RUN","RUNTIME"])
         writer.writerows(metadataTotal)
 
-gatherMetadata("xlmBase", [f"xlmRBase_{x}" for x in eq100 + eq200 + eq300])
+# gatherMetadata("allRuntimes(total)", allFiles)
