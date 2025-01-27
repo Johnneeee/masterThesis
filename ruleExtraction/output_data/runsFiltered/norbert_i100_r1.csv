@@ -1,0 +1,24 @@
+EXTRACTED HORN RULES (FILTERED)
+Afrika & kvinne ---> Tromsø
+Afrika & kvinne ---> mellom 50 og 60
+Afrika & kvinne ---> sykepleier
+Australia ---> mann
+Bodø & kvinne ---> Sør Amerika
+Bodø & kvinne ---> sykepleier
+Europa & kvinne ---> frisør
+Nord Amerika & kvinne ---> sykepleier
+Oslo & Sør Amerika & mann & sykepleier ---> FALSE
+Sør Amerika & kvinne ---> sykepleier
+Trondheim ---> mann
+arkitekt & kvinne ---> FALSE
+kvinne & mellom 50 og 60 ---> Afrika
+kvinne & mellom 50 og 60 ---> Tromsø
+kvinne & mellom 50 og 60 ---> sykepleier
+kvinne & psykolog ---> FALSE
+kvinne & rørlegger ---> FALSE
+mellom 20 og 30 & kvinne ---> Asia
+mellom 20 og 30 & kvinne ---> Tromsø
+mellom 20 og 30 & kvinne ---> sykepleier
+mellom 30 og 40 ---> mann
+mellom 40 og 50 ---> mann
+politiker & kvinne ---> FALSE

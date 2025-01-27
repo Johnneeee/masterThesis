@@ -1,0 +1,39 @@
+EXTRACTED HORN RULES (FILTERED)
+Afrika & mann & sykepleier ---> eldre enn 60
+Afrika & mann & sykepleier ---> Ålesund
+Australia & mann & sykepleier ---> FALSE
+Australia & mellom 50 og 60 ---> FALSE
+Bergen & frisør ---> kvinne
+Bodø & Sør Amerika & mann & frisør ---> FALSE
+Bodø & kvinne ---> frisør
+Europa & sykepleier ---> kvinne
+Kristiansand & Afrika & mann & eldre enn 60 & frisør ---> FALSE
+Kristiansand & Sør Amerika & mann & sykepleier ---> FALSE
+Nord Amerika & mann & sykepleier ---> FALSE
+Oslo & Nord Amerika & mann & eldre enn 60 & frisør ---> FALSE
+Oslo & mellom 30 og 40 & Australia & mann & frisør ---> FALSE
+Oslo & mellom 50 og 60 ---> FALSE
+Stavanger & Sør Amerika ---> mann
+Tromsø & Afrika & kvinne & mellom 50 og 60 ---> FALSE
+Trondheim & Australia ---> kvinne
+Trondheim & Australia ---> sykepleier
+Trondheim & Australia ---> yngre enn 20
+Trondheim & mann & mellom 50 og 60 & frisør ---> FALSE
+arkitekt & kvinne ---> FALSE
+elektriker & kvinne ---> FALSE
+kvinne & psykolog ---> FALSE
+kvinne & rørlegger ---> FALSE
+mann & mellom 50 og 60 & sykepleier ---> FALSE
+mellom 20 og 30 & Kristiansand & Australia & mann & frisør ---> FALSE
+mellom 30 og 40 & Sør Amerika ---> Bergen
+mellom 30 og 40 & Sør Amerika ---> kvinne
+mellom 30 og 40 & Sør Amerika ---> sykepleier
+mellom 40 og 50 & frisør ---> kvinne
+politiker & kvinne ---> FALSE
+sveiser & kvinne ---> FALSE
+yngre enn 20 & Europa & kvinne ---> Kristiansand
+yngre enn 20 & Europa & kvinne ---> sykepleier
+yngre enn 20 & Sør Amerika & kvinne ---> Bergen
+yngre enn 20 & Sør Amerika & kvinne ---> frisør
+Ålesund & frisør ---> FALSE
+Ålesund & mellom 50 og 60 ---> mann

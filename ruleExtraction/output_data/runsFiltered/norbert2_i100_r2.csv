@@ -1,0 +1,12 @@
+EXTRACTED HORN RULES (FILTERED)
+Bergen & kvinne ---> mellom 20 og 30
+Bergen & kvinne ---> sykepleier
+Kristiansand & mann & sykepleier ---> eldre enn 60
+Oslo & Australia & kvinne ---> FALSE
+arkitekt & kvinne ---> FALSE
+elektriker & kvinne ---> FALSE
+kvinne & psykolog ---> FALSE
+mellom 20 og 30 & Ålesund & Afrika & kvinne & rørlegger ---> FALSE
+mellom 30 og 40 & Europa & kvinne ---> Bodø
+mellom 30 og 40 & Europa & kvinne ---> frisør
+politiker & kvinne ---> FALSE

@@ -1,0 +1,19 @@
+EXTRACTED HORN RULES (FILTERED)
+Australia & mann & mellom 50 og 60 & frisør ---> FALSE
+Bergen & kvinne ---> Nord Amerika
+Bergen & kvinne ---> frisør
+Bergen & kvinne ---> mellom 40 og 50
+Europa & mann & sykepleier ---> yngre enn 20
+Europa & mann & sykepleier ---> Ålesund
+Kristiansand & Australia & kvinne & eldre enn 60 ---> FALSE
+Sør Amerika & frisør ---> mellom 30 og 40
+Sør Amerika & mann & sykepleier ---> FALSE
+Trondheim & Australia & mann & sykepleier ---> FALSE
+arkitekt & kvinne ---> FALSE
+elektriker & kvinne ---> FALSE
+kvinne & psykolog ---> FALSE
+kvinne & rørlegger ---> FALSE
+mellom 20 og 30 & Afrika & kvinne ---> FALSE
+mellom 20 og 30 & Nord Amerika & mann & sykepleier ---> FALSE
+politiker & kvinne ---> FALSE
+sveiser & kvinne ---> FALSE

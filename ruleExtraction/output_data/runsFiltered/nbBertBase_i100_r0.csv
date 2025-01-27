@@ -1,0 +1,13 @@
+EXTRACTED HORN RULES (FILTERED)
+Oslo & Nord Amerika & kvinne & mellom 40 og 50 ---> FALSE
+Trondheim & mellom 30 og 40 & kvinne ---> Europa
+Trondheim & mellom 30 og 40 & kvinne ---> politiker
+kvinne & rørlegger ---> FALSE
+mann & frisør ---> FALSE
+mann & psykolog ---> Stavanger
+mann & psykolog ---> Sør Amerika
+mann & sykepleier ---> FALSE
+mellom 20 og 30 & sveiser & kvinne ---> FALSE
+politiker ---> kvinne
+sveiser & Europa & kvinne & mellom 50 og 60 ---> FALSE
+sveiser & kvinne & mellom 40 og 50 ---> FALSE

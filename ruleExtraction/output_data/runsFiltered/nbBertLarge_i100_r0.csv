@@ -1,0 +1,22 @@
+EXTRACTED HORN RULES (FILTERED)
+Kristiansand & Asia & kvinne & eldre enn 60 & psykolog ---> FALSE
+Stavanger & Afrika ---> FALSE
+Sør Amerika & kvinne & mellom 40 og 50 ---> FALSE
+arkitekt & Oslo & Australia & kvinne & eldre enn 60 ---> FALSE
+arkitekt & Stavanger & Australia & kvinne & mellom 40 og 50 ---> FALSE
+arkitekt ---> Europa
+arkitekt ---> mann
+arkitekt ---> mellom 50 og 60
+elektriker & Stavanger & kvinne ---> FALSE
+elektriker & kvinne & mellom 40 og 50 ---> FALSE
+elektriker & kvinne & mellom 50 og 60 ---> FALSE
+kvinne & rørlegger ---> FALSE
+mann & frisør ---> FALSE
+mellom 20 og 30 & elektriker & Trondheim & Sør Amerika & kvinne ---> FALSE
+mellom 30 og 40 & Bodø & kvinne ---> FALSE
+politiker & mellom 30 og 40 & kvinne ---> FALSE
+sveiser & kvinne ---> FALSE
+yngre enn 20 & Kristiansand & kvinne & psykolog ---> FALSE
+yngre enn 20 & Stavanger & Asia & kvinne & psykolog ---> FALSE
+yngre enn 20 & politiker & Tromsø & Sør Amerika & kvinne ---> FALSE
+yngre enn 20 & Ålesund & kvinne ---> sykepleier

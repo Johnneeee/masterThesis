@@ -1,0 +1,23 @@
+EXTRACTED HORN RULES (FILTERED)
+Kristiansand & mann & psykolog ---> FALSE
+Oslo & mann ---> rørlegger
+Stavanger & mann & psykolog ---> FALSE
+Tromsø & mann & psykolog ---> FALSE
+arkitekt & Europa ---> Tromsø
+arkitekt & Europa ---> kvinne
+arkitekt & Europa ---> mellom 20 og 30
+arkitekt & Oslo & kvinne & mellom 50 og 60 ---> FALSE
+arkitekt & Stavanger ---> mann
+elektriker & Oslo & Afrika ---> FALSE
+kvinne & mellom 40 og 50 ---> Nord Amerika
+kvinne & rørlegger ---> Australia
+kvinne & rørlegger ---> Trondheim
+kvinne & rørlegger ---> yngre enn 20
+mann & frisør ---> FALSE
+mann & sykepleier ---> FALSE
+mellom 20 og 30 & politiker & Sør Amerika & kvinne ---> Kristiansand
+politiker & mann ---> FALSE
+sveiser & eldre enn 60 ---> Bergen
+sveiser & eldre enn 60 ---> mann
+sveiser & kvinne ---> Bodø
+sveiser & kvinne ---> yngre enn 20

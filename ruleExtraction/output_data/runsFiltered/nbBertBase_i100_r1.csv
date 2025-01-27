@@ -1,0 +1,13 @@
+EXTRACTED HORN RULES (FILTERED)
+Stavanger & Asia & mann ---> FALSE
+Tromsø & Nord Amerika & kvinne & mellom 40 og 50 ---> FALSE
+Trondheim & mellom 30 og 40 & kvinne ---> FALSE
+elektriker & Bergen & Asia & mann ---> FALSE
+elektriker & Europa & kvinne ---> Stavanger
+elektriker & Europa & kvinne ---> yngre enn 20
+kvinne & rørlegger ---> FALSE
+mann & frisør ---> FALSE
+mann & psykolog ---> FALSE
+mann & sykepleier ---> FALSE
+sveiser & kvinne ---> FALSE
+Ålesund ---> Sør Amerika
