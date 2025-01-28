@@ -1,0 +1,55 @@
+HORN RULES (filtered)
+Australia & kvinne & sykepleier ---> Oslo
+Bergen & kvinne ---> Asia
+Bergen & kvinne ---> sveiser
+Kristiansand & Afrika & mann & sykepleier ---> mellom 20 og 30
+Kristiansand & Europa & mann & mellom 50 og 60 ---> rørlegger
+Oslo & Australia & kvinne ---> sykepleier
+Stavanger & kvinne & mellom 40 og 50 & sykepleier ---> Afrika
+Sør Amerika & psykolog ---> kvinne
+Tromsø & kvinne & psykolog ---> Afrika
+Trondheim & mann ---> Europa
+Trondheim & mann ---> mellom 30 og 40
+kvinne & mellom 50 og 60 ---> Europa
+kvinne & mellom 50 og 60 ---> Kristiansand
+kvinne & mellom 50 og 60 ---> psykolog
+sveiser & Europa ---> mann
+sveiser & Nord Amerika ---> mann
+sveiser & Tromsø ---> kvinne
+Asia & kvinne & mellom 40 og 50 ---> FALSE
+Bodø & Australia & kvinne & mellom 40 og 50 & rørlegger ---> FALSE
+Europa & kvinne & mellom 40 og 50 & frisør ---> FALSE
+Kristiansand & kvinne & frisør ---> FALSE
+Nord Amerika & kvinne & frisør ---> FALSE
+Nord Amerika & kvinne & psykolog ---> FALSE
+Nord Amerika & kvinne & sykepleier ---> FALSE
+Oslo & Afrika & mann & rørlegger ---> FALSE
+Oslo & kvinne & psykolog ---> FALSE
+Oslo & mellom 30 og 40 & kvinne & sykepleier ---> FALSE
+Stavanger & Sør Amerika & kvinne & rørlegger ---> FALSE
+Sør Amerika & kvinne & mellom 40 og 50 ---> FALSE
+Sør Amerika & kvinne & sykepleier ---> FALSE
+Tromsø & Asia & kvinne & rørlegger ---> FALSE
+Tromsø & Australia & kvinne ---> FALSE
+Tromsø & kvinne & frisør ---> FALSE
+Trondheim & kvinne & mellom 40 og 50 ---> FALSE
+Trondheim & kvinne & rørlegger ---> FALSE
+arkitekt & kvinne ---> FALSE
+elektriker & kvinne ---> FALSE
+kvinne & eldre enn 60 ---> FALSE
+mellom 20 og 30 & Afrika & kvinne ---> FALSE
+mellom 20 og 30 & Australia & kvinne ---> FALSE
+mellom 20 og 30 & Bodø & kvinne ---> FALSE
+mellom 20 og 30 & Nord Amerika & kvinne ---> FALSE
+mellom 20 og 30 & Sør Amerika & kvinne ---> FALSE
+mellom 20 og 30 & Trondheim & kvinne ---> FALSE
+mellom 20 og 30 & kvinne & frisør ---> FALSE
+mellom 20 og 30 & kvinne & psykolog ---> FALSE
+mellom 20 og 30 & Ålesund & kvinne ---> FALSE
+politiker & kvinne ---> FALSE
+sveiser & Stavanger & mellom 30 og 40 & kvinne ---> FALSE
+sveiser & Ålesund & kvinne ---> FALSE
+yngre enn 20 & kvinne ---> FALSE
+Ålesund & kvinne & frisør ---> FALSE
+Ålesund & kvinne & psykolog ---> FALSE
+Ålesund & mellom 30 og 40 & Asia & kvinne ---> FALSE

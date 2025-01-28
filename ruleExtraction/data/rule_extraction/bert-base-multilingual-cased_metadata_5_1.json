@@ -1,1 +1,0 @@
-{"head": {"model": "bert-base-multilingual-cased", "experiment": 1}, "data": {"runtime": 19.89890190004371, "average_sample": [{"sample": 1, "runtime": 2.4429158000275493}, {"sample": 1, "runtime": 1.8742566001601517}, {"sample": 5, "runtime": 8.896297100000083}, {"sample": 7, "runtime": 5.207958800019696}, {"sample": 0, "runtime": 1.4769196000415832}], "terminated": false}}

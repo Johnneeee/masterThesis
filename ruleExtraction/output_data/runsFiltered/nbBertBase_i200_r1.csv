@@ -1,0 +1,40 @@
+HORN RULES (filtered)
+Bergen & Asia & mann ---> mellom 40 og 50
+Bergen & Asia & mann ---> rørlegger
+Kristiansand & Sør Amerika ---> kvinne
+Oslo & Europa ---> eldre enn 60
+Oslo & Europa ---> kvinne
+Oslo & Europa ---> sykepleier
+Sør Amerika & psykolog ---> Kristiansand
+Sør Amerika & psykolog ---> kvinne
+Sør Amerika & psykolog ---> mellom 20 og 30
+arkitekt & Nord Amerika ---> mann
+arkitekt & Nord Amerika ---> mellom 50 og 60
+arkitekt & Nord Amerika ---> Ålesund
+elektriker & Trondheim & Europa & mann ---> mellom 40 og 50
+kvinne & rørlegger ---> Australia
+kvinne & rørlegger ---> Bergen
+kvinne & rørlegger ---> yngre enn 20
+mann & mellom 50 og 60 & psykolog ---> Europa
+mann & mellom 50 og 60 & psykolog ---> Stavanger
+mellom 20 og 30 & psykolog ---> Kristiansand
+mellom 20 og 30 & psykolog ---> Sør Amerika
+mellom 20 og 30 & psykolog ---> kvinne
+mellom 30 og 40 & kvinne ---> Australia
+mellom 30 og 40 & kvinne ---> Oslo
+mellom 30 og 40 & kvinne ---> psykolog
+sveiser & kvinne ---> yngre enn 20
+Bergen & mellom 30 og 40 & Europa & mann & psykolog ---> FALSE
+Bodø & Asia & mann & mellom 40 og 50 ---> FALSE
+Bodø & Australia ---> FALSE
+Oslo & Asia & mann ---> FALSE
+arkitekt & Trondheim & Afrika & mann ---> FALSE
+elektriker & Australia & kvinne & mellom 40 og 50 ---> FALSE
+elektriker & Ålesund & kvinne & eldre enn 60 ---> FALSE
+mann & frisør ---> FALSE
+mann & sykepleier ---> FALSE
+mellom 20 og 30 & elektriker & kvinne ---> FALSE
+politiker & Trondheim & mellom 30 og 40 & Australia & mann ---> FALSE
+yngre enn 20 & Bodø & mann & psykolog ---> FALSE
+yngre enn 20 & Kristiansand & Asia & mann ---> FALSE
+Ålesund & Europa & kvinne & mellom 50 og 60 ---> FALSE

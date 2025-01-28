@@ -1,0 +1,23 @@
+HORN RULES (filtered)
+Oslo & mann ---> rørlegger
+arkitekt & Europa ---> Tromsø
+arkitekt & Europa ---> kvinne
+arkitekt & Europa ---> mellom 20 og 30
+arkitekt & Stavanger ---> mann
+kvinne & mellom 40 og 50 ---> Nord Amerika
+kvinne & rørlegger ---> Australia
+kvinne & rørlegger ---> Trondheim
+kvinne & rørlegger ---> yngre enn 20
+mellom 20 og 30 & politiker & Sør Amerika & kvinne ---> Kristiansand
+sveiser & eldre enn 60 ---> Bergen
+sveiser & eldre enn 60 ---> mann
+sveiser & kvinne ---> Bodø
+sveiser & kvinne ---> yngre enn 20
+Kristiansand & mann & psykolog ---> FALSE
+Stavanger & mann & psykolog ---> FALSE
+Tromsø & mann & psykolog ---> FALSE
+arkitekt & Oslo & kvinne & mellom 50 og 60 ---> FALSE
+elektriker & Oslo & Afrika ---> FALSE
+mann & frisør ---> FALSE
+mann & sykepleier ---> FALSE
+politiker & mann ---> FALSE

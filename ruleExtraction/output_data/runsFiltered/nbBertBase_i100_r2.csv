@@ -1,0 +1,18 @@
+HORN RULES (filtered)
+Tromsø & mann ---> Sør Amerika
+Tromsø & mann ---> mellom 20 og 30
+arkitekt & Stavanger ---> mann
+mellom 20 og 30 & kvinne ---> Bergen
+mellom 20 og 30 & kvinne ---> Nord Amerika
+mellom 20 og 30 & kvinne ---> frisør
+politiker & mann ---> Asia
+politiker & mann ---> Kristiansand
+politiker & mann ---> mellom 50 og 60
+arkitekt & Oslo & Afrika & mann & eldre enn 60 ---> FALSE
+kvinne & rørlegger ---> FALSE
+mann & frisør ---> FALSE
+mann & psykolog ---> FALSE
+mann & sykepleier ---> FALSE
+politiker & Ålesund & Europa & mann & mellom 40 og 50 ---> FALSE
+yngre enn 20 & Ålesund & Nord Amerika & mann ---> FALSE
+Ålesund & Afrika & mann ---> FALSE

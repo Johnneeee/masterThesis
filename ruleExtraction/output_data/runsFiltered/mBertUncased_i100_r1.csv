@@ -1,0 +1,17 @@
+HORN RULES (filtered)
+Bodø & kvinne ---> Europa
+Sør Amerika & kvinne & psykolog ---> Trondheim
+Tromsø & kvinne ---> Asia
+Tromsø & kvinne ---> sveiser
+Ålesund & kvinne ---> Afrika
+Kristiansand & Afrika & mann & psykolog ---> FALSE
+Kristiansand & Sør Amerika & mann & mellom 40 og 50 ---> FALSE
+Sør Amerika & kvinne & mellom 50 og 60 ---> FALSE
+arkitekt & kvinne ---> FALSE
+elektriker & kvinne ---> FALSE
+kvinne & eldre enn 60 ---> FALSE
+kvinne & frisør ---> FALSE
+mellom 20 og 30 & kvinne ---> FALSE
+mellom 30 og 40 & kvinne ---> FALSE
+politiker & kvinne ---> FALSE
+yngre enn 20 & kvinne ---> FALSE
