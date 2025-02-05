@@ -33,7 +33,7 @@ def run(writeTo, lm, intepretor, run, iterations):
     extractHornRulesFunctions.storeMetadata(path,metadata) # store metadata
     extractHornRulesFunctions.storeHornRules(path, h, lookupTableValues) # store horn rules
 
-run("mBertUncased", "google-bert/bert-base-multilingual-uncased", intepretorBERT, run=0, iterations=10) #test
+run("lol", "ltg/norbert", intepretorBERT, run=0, iterations=1000) #test
 
 # run("xlmRBase", "FacebookAI/xlm-roberta-base", intepretorROBERTA, run=0, iterations=100)
 # run("xlmRBase", "FacebookAI/xlm-roberta-base", intepretorROBERTA, run=1, iterations=100)
