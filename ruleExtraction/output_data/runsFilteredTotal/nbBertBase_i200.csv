@@ -1,0 +1,57 @@
+COUNT;HORN RULES (filtered)
+2/2;kvinne & rørlegger ---> Australia
+2/2;kvinne & rørlegger ---> yngre enn 20
+2/2;sveiser & kvinne ---> yngre enn 20
+2/2;mann & frisør ---> FALSE
+2/2;mann & sykepleier ---> FALSE
+1/2;Oslo & mann ---> rørlegger
+1/2;arkitekt & Europa ---> Tromsø
+1/2;arkitekt & Europa ---> kvinne
+1/2;arkitekt & Europa ---> mellom 20 og 30
+1/2;arkitekt & Stavanger ---> mann
+1/2;kvinne & mellom 40 og 50 ---> Nord Amerika
+1/2;kvinne & rørlegger ---> Trondheim
+1/2;mellom 20 og 30 & politiker & Sør Amerika & kvinne ---> Kristiansand
+1/2;sveiser & eldre enn 60 ---> Bergen
+1/2;sveiser & eldre enn 60 ---> mann
+1/2;sveiser & kvinne ---> Bodø
+1/2;Kristiansand & mann & psykolog ---> FALSE
+1/2;Stavanger & mann & psykolog ---> FALSE
+1/2;Tromsø & mann & psykolog ---> FALSE
+1/2;arkitekt & Oslo & kvinne & mellom 50 og 60 ---> FALSE
+1/2;elektriker & Oslo & Afrika ---> FALSE
+1/2;politiker & mann ---> FALSE
+1/2;Bergen & Asia & mann ---> mellom 40 og 50
+1/2;Bergen & Asia & mann ---> rørlegger
+1/2;Kristiansand & Sør Amerika ---> kvinne
+1/2;Oslo & Europa ---> eldre enn 60
+1/2;Oslo & Europa ---> kvinne
+1/2;Oslo & Europa ---> sykepleier
+1/2;Sør Amerika & psykolog ---> Kristiansand
+1/2;Sør Amerika & psykolog ---> kvinne
+1/2;Sør Amerika & psykolog ---> mellom 20 og 30
+1/2;arkitekt & Nord Amerika ---> mann
+1/2;arkitekt & Nord Amerika ---> mellom 50 og 60
+1/2;arkitekt & Nord Amerika ---> Ålesund
+1/2;elektriker & Trondheim & Europa & mann ---> mellom 40 og 50
+1/2;kvinne & rørlegger ---> Bergen
+1/2;mann & mellom 50 og 60 & psykolog ---> Europa
+1/2;mann & mellom 50 og 60 & psykolog ---> Stavanger
+1/2;mellom 20 og 30 & psykolog ---> Kristiansand
+1/2;mellom 20 og 30 & psykolog ---> Sør Amerika
+1/2;mellom 20 og 30 & psykolog ---> kvinne
+1/2;mellom 30 og 40 & kvinne ---> Australia
+1/2;mellom 30 og 40 & kvinne ---> Oslo
+1/2;mellom 30 og 40 & kvinne ---> psykolog
+1/2;Bergen & mellom 30 og 40 & Europa & mann & psykolog ---> FALSE
+1/2;Bodø & Asia & mann & mellom 40 og 50 ---> FALSE
+1/2;Bodø & Australia ---> FALSE
+1/2;Oslo & Asia & mann ---> FALSE
+1/2;arkitekt & Trondheim & Afrika & mann ---> FALSE
+1/2;elektriker & Australia & kvinne & mellom 40 og 50 ---> FALSE
+1/2;elektriker & Ålesund & kvinne & eldre enn 60 ---> FALSE
+1/2;mellom 20 og 30 & elektriker & kvinne ---> FALSE
+1/2;politiker & Trondheim & mellom 30 og 40 & Australia & mann ---> FALSE
+1/2;yngre enn 20 & Bodø & mann & psykolog ---> FALSE
+1/2;yngre enn 20 & Kristiansand & Asia & mann ---> FALSE
+1/2;Ålesund & Europa & kvinne & mellom 50 og 60 ---> FALSE

@@ -1,0 +1,53 @@
+COUNT;HORN RULES (filtered)
+1/1;Asia & kvinne ---> sykepleier
+1/1;Australia & frisør ---> mann
+1/1;Europa & kvinne & eldre enn 60 ---> sykepleier
+1/1;Kristiansand & kvinne & mellom 50 og 60 ---> Asia
+1/1;Kristiansand & kvinne & mellom 50 og 60 ---> sykepleier
+1/1;Nord Amerika & kvinne & mellom 40 og 50 ---> sykepleier
+1/1;Nord Amerika & mann & sykepleier ---> mellom 30 og 40
+1/1;Oslo & Afrika ---> mann
+1/1;mellom 20 og 30 & Asia & mann & sykepleier ---> Bergen
+1/1;mellom 20 og 30 & Tromsø & kvinne ---> Asia
+1/1;mellom 20 og 30 & Tromsø & kvinne ---> sykepleier
+1/1;mellom 20 og 30 & kvinne & sykepleier ---> Asia
+1/1;mellom 30 og 40 & Europa & kvinne ---> Bodø
+1/1;mellom 30 og 40 & Europa & kvinne ---> sykepleier
+1/1;yngre enn 20 & kvinne ---> sykepleier
+1/1;Ålesund & Sør Amerika & mann & sykepleier ---> mellom 20 og 30
+1/1;Ålesund & kvinne ---> Australia
+1/1;Ålesund & kvinne ---> eldre enn 60
+1/1;Ålesund & kvinne ---> sykepleier
+1/1;Bergen & Australia & mann & sykepleier ---> FALSE
+1/1;Bergen & kvinne & mellom 40 og 50 ---> FALSE
+1/1;Bodø & Australia & kvinne & eldre enn 60 ---> FALSE
+1/1;Bodø & Sør Amerika & kvinne ---> FALSE
+1/1;Bodø & kvinne & mellom 50 og 60 ---> FALSE
+1/1;Kristiansand & Afrika & kvinne & eldre enn 60 ---> FALSE
+1/1;Kristiansand & Sør Amerika & kvinne & mellom 40 og 50 ---> FALSE
+1/1;Oslo & Asia & mann & sykepleier ---> FALSE
+1/1;Oslo & kvinne & mellom 40 og 50 ---> FALSE
+1/1;Stavanger & Asia & mann & sykepleier ---> FALSE
+1/1;Stavanger & Sør Amerika & mann & sykepleier ---> FALSE
+1/1;Stavanger & kvinne & frisør ---> FALSE
+1/1;Sør Amerika & kvinne & mellom 50 og 60 ---> FALSE
+1/1;Tromsø & Afrika & mann & sykepleier ---> FALSE
+1/1;Tromsø & Australia & kvinne & mellom 50 og 60 & sykepleier ---> FALSE
+1/1;Tromsø & Sør Amerika & mann & sykepleier ---> FALSE
+1/1;arkitekt & kvinne ---> FALSE
+1/1;elektriker & kvinne ---> FALSE
+1/1;kvinne & eldre enn 60 & frisør ---> FALSE
+1/1;kvinne & mellom 50 og 60 & frisør ---> FALSE
+1/1;kvinne & psykolog ---> FALSE
+1/1;kvinne & rørlegger ---> FALSE
+1/1;mellom 20 og 30 & Bodø & kvinne & frisør ---> FALSE
+1/1;mellom 20 og 30 & Kristiansand & kvinne ---> FALSE
+1/1;mellom 20 og 30 & Nord Amerika & kvinne ---> FALSE
+1/1;mellom 30 og 40 & Nord Amerika & kvinne ---> FALSE
+1/1;mellom 30 og 40 & Tromsø & kvinne ---> FALSE
+1/1;mellom 30 og 40 & kvinne & frisør ---> FALSE
+1/1;politiker & kvinne ---> FALSE
+1/1;sveiser & kvinne ---> FALSE
+1/1;yngre enn 20 & Australia & mann & sykepleier ---> FALSE
+1/1;yngre enn 20 & Europa & mann & sykepleier ---> FALSE
+1/1;yngre enn 20 & Sør Amerika & mann & sykepleier ---> FALSE

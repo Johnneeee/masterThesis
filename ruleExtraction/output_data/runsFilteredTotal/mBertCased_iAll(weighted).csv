@@ -1,4 +1,4 @@
-COUNT;EXTRACTED HORN RULES
+COUNT;HORN RULES (filtered)
 10/10;elektriker & kvinne ---> FALSE
 9/10;arkitekt & kvinne ---> FALSE
 5/10;kvinne & eldre enn 60 ---> sykepleier

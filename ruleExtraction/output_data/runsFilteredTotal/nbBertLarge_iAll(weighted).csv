@@ -1,4 +1,4 @@
-COUNT;EXTRACTED HORN RULES
+COUNT;HORN RULES (filtered)
 10/10;sveiser & kvinne ---> FALSE
 9/10;kvinne & rørlegger ---> FALSE
 8/10;mellom 20 og 30 & politiker & kvinne ---> FALSE
