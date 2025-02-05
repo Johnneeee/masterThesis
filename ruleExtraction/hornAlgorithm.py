@@ -27,7 +27,7 @@ def getRandomValue(length, allow_zero):
     return vec
 
 def set2formula(set): #converting set of sympy formulas to one big sympy formula 
-    return (functools.reduce(lambda x,y: x & y, set) & True) # {sympy} -> &sympy & True
+    return functools.reduce(lambda x,y: x & y, set | {True}) # {sympy} -> &sympy & True
 
 # epsilon = # error: (differ between model and sampled)
 # delta = # confidence: (chance of differ)
