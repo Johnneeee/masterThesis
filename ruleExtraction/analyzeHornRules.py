@@ -44,19 +44,19 @@ def addGuide(dataFile):
         csvFile = csv.reader(file, delimiter=";")
         next(csvFile)
         ethnicity = [x[0] for x in csvFile]
-        print(ethnicity)
+        # print(ethnicity)
 
     with open(f"input_data/cityValues.csv", mode = "r",encoding="UTF-8") as file:
         csvFile = csv.reader(file, delimiter=";")
         next(csvFile)
         city = [x[0] for x in csvFile]
-        print(city)
+        # print(city)
 
     with open(f"output_data/runsFiltered/{dataFile}.csv", mode = "r",encoding="UTF-8") as file:
         csvFile = csv.reader(file, delimiter=";")
         next(csvFile)
         hornRules = [x for x in csvFile]
-        print(hornRules)
+        # print(hornRules)
 
     for i in range(len(hornRules)):
         for x in city:
