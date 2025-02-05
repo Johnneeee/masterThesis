@@ -1,5 +1,17 @@
 import csv
+import matplotlib.pyplot as plt
+import numpy as np
 
+#getting available filenames
+lms = ["xlmRBase", "xlmRLarge", "mBertUncased", "mBertCased", "nbBertBase", "nbBertLarge", "norbert", "norbert2"]
+tags = ["i100_r0","i100_r1","i100_r2","i200_r0","i200_r1","i300_r0"]
+allFiles = []
+
+for lm in lms:
+    for tag in tags:
+        allFiles.append(f"{lm}_{tag}")
+
+#####################################################################################################################
 # Filter Runs
 def filterHornRules(filterFile):
     with open(f"input_data/background.csv", mode = "r",encoding="UTF-8") as file:
@@ -22,17 +34,43 @@ def filterHornRules(filterFile):
         writer.writerow(["HORN RULES (filtered)"])
         writer.writerows(hornRules)
 
-
-lms = ["xlmRBase", "xlmRLarge", "mBertUncased", "mBertCased", "nbBertBase", "nbBertLarge", "norbert", "norbert2"]
-tags = ["i100_r0","i100_r1","i100_r2","i200_r0","i200_r1","i300_r0"]
-allFiles = []
-
-for lm in lms:
-    for tag in tags:
-        allFiles.append(f"{lm}_{tag}")
-
 # for file in allFiles:
 #     filterHornRules(file)
+
+#####################################################################################################################
+# adding guiding comments
+def addGuide(dataFile):
+    with open(f"input_data/ethnicityValues.csv", mode = "r",encoding="UTF-8") as file:
+        csvFile = csv.reader(file, delimiter=";")
+        next(csvFile)
+        ethnicity = [x[0] for x in csvFile]
+        print(ethnicity)
+
+    with open(f"input_data/cityValues.csv", mode = "r",encoding="UTF-8") as file:
+        csvFile = csv.reader(file, delimiter=";")
+        next(csvFile)
+        city = [x[0] for x in csvFile]
+        print(city)
+
+    with open(f"output_data/runsFiltered/{dataFile}.csv", mode = "r",encoding="UTF-8") as file:
+        csvFile = csv.reader(file, delimiter=";")
+        next(csvFile)
+        hornRules = [x for x in csvFile]
+        print(hornRules)
+
+    for i in range(len(hornRules)):
+        for x in city:
+            hornRules[i] = [hornRules[i][0].replace(x,f"{x}(residence)")]
+        for x in ethnicity:
+            hornRules[i] = [hornRules[i][0].replace(x,f"{x}(ethnicity)")]
+
+    with open(f"output_data/runsFiltered/fake{dataFile}.csv", 'w', newline='',encoding="UTF-8") as csvfile:
+        writer = csv.writer(csvfile)
+        writer.writerow(["HORN RULES (filtered + guide tags)"])
+        writer.writerows(hornRules)
+
+# for file in allFiles:
+#     addGuide(file)
 
 #####################################################################################################################
 # # Concat runs
@@ -62,23 +100,56 @@ eq200 = ["i200_r0","i200_r1"]
 eq300 = ["i300_r0"]
 
 # for lm in lms:
-    # countRules(f"{lm}_i100", [f"{lm}_{x}" for x in eq100], [1,1,1])
-    # countRules(f"{lm}_i200", [f"{lm}_{x}" for x in eq200], [1,1])
-    # countRules(f"{lm}_iAll(weighted)", [f"{lm}_{x}" for x in eq100 + eq200 + eq300], [1,1,1,2,2,3])
-
+#     countRules(f"{lm}_i100", [f"{lm}_{x}" for x in eq100], [1,1,1])
+#     countRules(f"{lm}_i200", [f"{lm}_{x}" for x in eq200], [1,1])
+#     countRules(f"{lm}_i300", [f"{lm}_{x}" for x in eq300], [1])
+#     countRules(f"{lm}_iAll(weighted)", [f"{lm}_{x}" for x in eq100 + eq200 + eq300], [1,1,1,2,2,3])
 #####################################################################################################################
-#gather final runtime to one file
-def gatherMetadata(writeTo, files):
-    metadataTotal = []
+# symetric diff heatmap
 
-    for file in files:
-        with open(f"output_data/metadata/{file}.csv", mode = "r",encoding="UTF-8") as f:
-            runtime = f.readlines()[-1].split(";")[-1][:-1] # runtime total
-            metadataTotal.append([file,runtime])
+def formatData(file):
+    with open(f"output_data/runsFilteredTotal/{file}.csv", mode = "r",encoding="UTF-8") as f:
+        data = f.readlines()[1:]
+        data = list(map(lambda x: x.split(";")[1].split(" ---> "),data)) # seperate ant and con
+        data = list(map(lambda x: (set(x[0].split(" & ")), x[1]),data)) # seperate ant on &
 
-    with open(f"output_data/metadataTotal/{writeTo}.csv", 'w', newline='',encoding="UTF-8") as csvfile:
-        writer = csv.writer(csvfile, delimiter=";")
-        writer.writerow(["RUN","RUNTIME"])
-        writer.writerows(metadataTotal)
+    return data
 
-# gatherMetadata("allRuntimes(total)", allFiles)
+def symdiff(file1, file2):
+    data1 = formatData(file1)
+    data2 = formatData(file2)
+    concat = data1 + data2
+
+    mutual = list(filter(lambda x: x in data1, data2))
+    symdiff = list(filter(lambda x: x not in mutual, concat))
+    return (symdiff, len(symdiff))
+
+def createSymdiffMatrix(itag):
+    matrix = []
+    for f1 in lms:
+        vector = []
+        for f2 in lms:
+            vector.append(symdiff(f"{f1 + itag}",f"{f2 + itag}")[1])
+        matrix.append(vector)
+    return matrix
+
+# i100 = createSymdiffMatrix("_i100")
+# i200 = createSymdiffMatrix("_i200")
+# i300 = createSymdiffMatrix("_i300")
+# iAll = createSymdiffMatrix("_iAll(weighted)")
+
+# lms_ = ["xlmRB", "xlmRL", "mBU", "mBC", "nbBB", "nbBL", "norb", "norb2"]
+# figure, axis = plt.subplots(2, 2, figsize=(12, 12))
+
+# def setHeatmap(matrix, title, position):
+#     x,y = position
+#     axis[x, y].imshow(matrix, cmap='RdYlGn_r', interpolation='nearest')
+#     axis[x, y].set_xticks(ticks=np.arange(len(lms_)), labels=lms_, rotation=30)
+#     axis[x, y].set_yticks(ticks=np.arange(len(lms_)), labels=lms_)
+#     axis[x, y].set_title(title)
+
+# setHeatmap(i100, "i100", [0,0])
+# setHeatmap(i200, "i200", [0,1])
+# setHeatmap(i300, "i300", [1,0])
+# setHeatmap(iAll, "iAll", [1,1])
+# plt.show()
