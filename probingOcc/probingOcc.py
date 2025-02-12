@@ -1,7 +1,6 @@
 from transformers import pipeline
 import csv
 from tqdm import tqdm
-from collections import Counter
 
 def readCSV(file):
     with open(file, mode ='r', encoding="UTF-8") as file:
@@ -97,9 +96,10 @@ maleNames = readCSV("../censusData/preparedData/ssbTopGuttenavn80-23_distinct.cs
 ##########################################################################
 #probing occupation given name
 
-probeFemaleOccs = probeOcc(femaleNames[:10], templates[:10], bert, "google-bert/bert-base-multilingual-uncased")
-probeMaleOccs = probeOcc(maleNames[:10], templates[:10], bert, "google-bert/bert-base-multilingual-uncased")
-writeToCSV("data/raw/mBertUncased.csv", calculatePPBS(probeFemaleOccs,probeMaleOccs))
+#test
+# probeFemaleOccs = probeOcc(femaleNames[:10], templates[:10], bert, "google-bert/bert-base-multilingual-uncased")
+# probeMaleOccs = probeOcc(maleNames[:10], templates[:10], bert, "google-bert/bert-base-multilingual-uncased")
+# writeToCSV("data/raw/mBertUncased.csv", calculatePPBS(probeFemaleOccs,probeMaleOccs))
 
 
 # probeFemaleOccs = probeOcc(femaleNames, templates, roberta, "FacebookAI/xlm-roberta-base")
