@@ -2,19 +2,15 @@ from transformers import pipeline
 import csv
 from tqdm import tqdm
 
-def readFromCSV(path):
+def readCSV(path): # -> # [[occ,p_she,p_he,gold_ppbs]]
     data = []
     with open(path, encoding = "UTF-8") as f:
         reader = csv.reader(f, delimiter=";")
         next(reader) # skip first line which includes the description, ie [occupation, female, male]
-        for line in reader:
-            occ = line[0].lower()
-            she = round(float(line[1])/100, 3) # /100 to turn into percentage
-            he = round(float(line[2])/100, 3)
-            gold_ppbs = round(he-she,3)
-            data.append([occ,she,he,gold_ppbs])
-    return data # [[occ,p_she,p_he,gold_ppbs]]
-    
+        data = [[x[0]] + [float(y) for y in x[1:]] for x in reader]
+    return data
+
+
 def probePPBS(occupations, templates, maskTag, lm):
     templates = list(map(lambda x: x.replace("____", maskTag), templates))
     unmasker = pipeline('fill-mask', model=lm) # using bert-base-multilingual-cased as model
@@ -45,7 +41,8 @@ def probePPBS(occupations, templates, maskTag, lm):
 
     return pred_PPBSs # bias: + == male, - == female
 
-def writeToCSV(path, gold_data, pred_data):
+
+def writeCSV(path, gold_data, pred_data):
     data = list(map(lambda x: [x[0],x[3],pred_data[x[0]]],gold_data)) 
     head = [["ATTRIBUTE", "GOLD", "PRED"]]
 
@@ -53,24 +50,6 @@ def writeToCSV(path, gold_data, pred_data):
         writer = csv.writer(csvfile, delimiter=";")
         writer.writerows(head)
         writer.writerows(data)
-
-def totalAvgPPBS(files):
-    nrLms = len(files)
-    totalAvgPPBS = {}
-    for file in files:
-        with open(file, mode ='r', encoding="UTF-8") as f:
-            csvFile = csv.reader(f, delimiter=";")
-            next(csvFile)
-            for occ,gold,pred in csvFile:
-                try:
-                    totalAvgPPBS[occ] += float(pred)
-                except:
-                    totalAvgPPBS[occ] = float(pred)
-    for x in totalAvgPPBS:
-        totalAvgPPBS[x] = round(totalAvgPPBS[x] / nrLms, 3)
-
-    return totalAvgPPBS
-
 ##########################################################################
 # init data for probing
 
@@ -101,7 +80,7 @@ templates = [
 ]
 
 # gender distribution across occupations in norway 2023. (utdanning.no)
-gold_data = readFromCSV("../censusData/utdanningnoLikestilling2023.csv")
+gold_data = readCSV("../censusData/preparedData/utdanningnoLikestilling2023_ppbs.csv")
 occs = list(map(lambda x: x[0],gold_data))
 bert = "[MASK]"
 roberta = "<mask>"
@@ -109,43 +88,26 @@ roberta = "<mask>"
 ##########################################################################
 # probing gender given occupation
 
-pred_data = probePPBS(occs, templates, roberta, "FacebookAI/xlm-roberta-base")
-writeToCSV("data/xlmRBase_ppbs.csv", gold_data, pred_data)
+pred_data = probePPBS(occs[:2], templates[:2], roberta, "FacebookAI/xlm-roberta-base")
+writeCSV("data/raw/xlmRBaseskskks_ppbs.csv", gold_data[:2], pred_data)
 
 pred_data = probePPBS(occs, templates, roberta, "FacebookAI/xlm-roberta-large")
-writeToCSV("data/xlmRLarge_ppbs.csv", gold_data, pred_data)
+writeCSV("data/raw/xlmRLarge_ppbs.csv", gold_data, pred_data)
 
 pred_data = probePPBS(occs, templates, bert, "google-bert/bert-base-multilingual-uncased")
-writeToCSV("data/mBertUncased_ppbs.csv", gold_data, pred_data)
+writeCSV("data/raw/mBertUncased_ppbs.csv", gold_data, pred_data)
 
 pred_data = probePPBS(occs, templates, bert, "google-bert/bert-base-multilingual-cased")
-writeToCSV("data/mBertCased_ppbs.csv", gold_data, pred_data)
+writeCSV("data/raw/mBertCased_ppbs.csv", gold_data, pred_data)
 
 pred_data = probePPBS(occs, templates, bert, "NbAiLab/nb-bert-base")
-writeToCSV("data/nbBertBase_ppbs.csv", gold_data, pred_data)
+writeCSV("data/raw/nbBertBase_ppbs.csv", gold_data, pred_data)
 
 pred_data = probePPBS(occs, templates, bert, "NbAiLab/nb-bert-large")
-writeToCSV("data/nbBertLarge_ppbs.csv", gold_data, pred_data)
+writeCSV("data/raw/nbBertLarge_ppbs.csv", gold_data, pred_data)
 
 pred_data = probePPBS(occs, templates, bert, "ltg/norbert")
-writeToCSV("data/norbert_ppbs.csv", gold_data, pred_data)
+writeCSV("data/raw/norbert_ppbs.csv", gold_data, pred_data)
 
 pred_data = probePPBS(occs, templates, bert, "ltg/norbert2")
-writeToCSV("data/norbert2_ppbs.csv", gold_data, pred_data)
-
-##########################################################################
-# averaging ppbs across all the lms
-
-files = [
-    "data/xlmRBase_ppbs.csv",
-    "data/xlmRLarge_ppbs.csv",
-    "data/mBertUncased_ppbs.csv",
-    "data/mBertCased_ppbs.csv",
-    "data/nbBertBase_ppbs.csv",
-    "data/nbBertLarge_ppbs.csv",
-    "data/norbert_ppbs.csv",
-    "data/norbert2_ppbs.csv"
-]
-
-totalAvgPred = totalAvgPPBS(files)
-writeToCSV("data/totalAvgPPBS_ppbs.csv", gold_data, totalAvgPred)
+writeCSV("data/raw/norbert2_ppbs.csv", gold_data, pred_data)
