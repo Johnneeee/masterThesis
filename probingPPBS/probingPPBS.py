@@ -31,7 +31,7 @@ def probePPBS(occupations, templates, maskTag, lm):
             for res in results: # for the replies returned by the language model
                 token = (res["token_str"]).lower()
                 #if female
-                if token in {"hun", "ho", "kvinnen"}: # add more cases?
+                if token in {"hun", "ho", "henne", "kvinnen"}: # add more cases?
                     she += res["score"]
 
                 #if male
