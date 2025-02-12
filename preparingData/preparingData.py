@@ -37,7 +37,7 @@ def prepareAddPPBS(read,write):
     # return data # [[occ,p_she,p_he,gold_ppbs]]
     pass
 
-prepareDistnctNames("../censusData/ssbTopJentenavn80-23.csv", "../censusData/preparedData/ssbTopJentenavn80-23_distinct.csv")
-prepareDistnctNames("../censusData/ssbTopGuttenavn80-23.csv", "../censusData/preparedData/ssbTopGuttenavn80-23_distinct.csv")
+prepareDistnctNames("../censusData/raw/ssbTopJentenavn80-23.csv", "../censusData/preparedData/ssbTopJentenavn80-23_distinct.csv")
+prepareDistnctNames("../censusData/raw/ssbTopGuttenavn80-23.csv", "../censusData/preparedData/ssbTopGuttenavn80-23_distinct.csv")
 
-prepareAddPPBS("../censusData/utdanningnoLikestilling2023.csv", "../censusData/preparedData/utdanningnoLikestilling2023_ppbs.csv")
+prepareAddPPBS("../censusData/raw/utdanningnoLikestilling2023.csv", "../censusData/preparedData/utdanningnoLikestilling2023_ppbs.csv")
