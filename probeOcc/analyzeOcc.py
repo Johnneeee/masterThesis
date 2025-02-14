@@ -2,7 +2,7 @@ import csv
 lms = ["xlmRBase", "xlmRLarge", "mBertUncased", "mBertCased", "nbBertBase", "nbBertLarge", "norbert", "norbert2"]
 # ##########################################################################
 
-def filterOcc(file):
+def filterOcc(file): # filtered
     with open(f"../censusData/preparedData/utdanningnoLikestilling2023_ppbs.csv", mode ='r', encoding="UTF-8") as f:
         csvFile = csv.reader(f, delimiter=";")
         next(csvFile)
@@ -28,7 +28,7 @@ def filterOcc(file):
 
 # ##########################################################################
 
-def totalFiltered(files):
+def totalFiltered(files): # total/totalFiltered
     totalData = {}
     for file in files:
         with open(f"data/filtered/{file}.csv", mode ='r', encoding="UTF-8") as f:
@@ -58,7 +58,7 @@ totalFiltered(lms)
 
 # ##########################################################################
 
-def totalRaw(files):
+def totalRaw(files): # ->total/totalRaw
     totalData = {}
     for file in files:
         with open(f"data/raw/{file}.csv", mode ='r', encoding="UTF-8") as f:
