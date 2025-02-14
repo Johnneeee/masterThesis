@@ -91,8 +91,8 @@ templates = [
 
 bert = "[MASK]"
 roberta = "<mask>"
-femaleNames = readCSV("../censusData/preparedData/ssbTopJentenavn80-23_distinct.csv")
-maleNames = readCSV("../censusData/preparedData/ssbTopGuttenavn80-23_distinct.csv")
+femaleNames = readCSV("../censusData/preparedData/ssbTopJentenavn80-23_prepared.csv")
+maleNames = readCSV("../censusData/preparedData/ssbTopGuttenavn80-23_prepared.csv")
 
 
 ##########################################################################
@@ -101,37 +101,37 @@ maleNames = readCSV("../censusData/preparedData/ssbTopGuttenavn80-23_distinct.cs
 #test
 # probeFemaleOccs = probeOcc(femaleNames[:10], templates[:10], bert, "google-bert/bert-base-multilingual-uncased")
 # probeMaleOccs = probeOcc(maleNames[:10], templates[:10], bert, "google-bert/bert-base-multilingual-uncased")
-# writeToCSV("data/raw/mBertUncased.csv", calculatePPBS(probeFemaleOccs,probeMaleOccs))
+# writeToCSV("data/raw/mBertUncased_occ.csv", calculatePPBS(probeFemaleOccs,probeMaleOccs))
 
 
 # probeFemaleOccs = probeOcc(femaleNames, templates, roberta, "FacebookAI/xlm-roberta-base")
 # probeMaleOccs = probeOcc(maleNames, templates, roberta, "FacebookAI/xlm-roberta-base")
-# writeToCSV("data/raw/xlmRBase.csv",calculatePPBS(probeFemaleOccs,probeMaleOccs))
+# writeToCSV("data/raw/xlmRBase_occ.csv",calculatePPBS(probeFemaleOccs,probeMaleOccs))
 
 # probeFemaleOccs = probeOcc(femaleNames, templates, roberta, "FacebookAI/xlm-roberta-large")
 # probeMaleOccs = probeOcc(maleNames, templates, roberta, "FacebookAI/xlm-roberta-large")
-# writeToCSV("data/raw/xlmRLarge.csv",calculatePPBS(probeFemaleOccs,probeMaleOccs))
+# writeToCSV("data/raw/xlmRLarge_occ.csv",calculatePPBS(probeFemaleOccs,probeMaleOccs))
 
 # probeFemaleOccs = probeOcc(femaleNames, templates, bert, "google-bert/bert-base-multilingual-uncased")
 # probeMaleOccs = probeOcc(maleNames, templates, bert, "google-bert/bert-base-multilingual-uncased")
-# writeToCSV("data/raw/mBertUncased.csv",calculatePPBS(probeFemaleOccs,probeMaleOccs))
+# writeToCSV("data/raw/mBertUncased_occ.csv",calculatePPBS(probeFemaleOccs,probeMaleOccs))
 
 # probeFemaleOccs = probeOcc(femaleNames, templates, bert, "google-bert/bert-base-multilingual-cased")
 # probeMaleOccs = probeOcc(maleNames, templates, bert, "google-bert/bert-base-multilingual-cased")
-# writeToCSV("data/raw/mBertCased.csv",calculatePPBS(probeFemaleOccs,probeMaleOccs))
+# writeToCSV("data/raw/mBertCased_occ.csv",calculatePPBS(probeFemaleOccs,probeMaleOccs))
 
 # probeFemaleOccs = probeOcc(femaleNames, templates, bert, "NbAiLab/nb-bert-base")
 # probeMaleOccs = probeOcc(maleNames, templates, bert, "NbAiLab/nb-bert-base")
-# writeToCSV("data/raw/nbBertBase.csv",calculatePPBS(probeFemaleOccs,probeMaleOccs))
+# writeToCSV("data/raw/nbBertBase_occ.csv",calculatePPBS(probeFemaleOccs,probeMaleOccs))
 
 # probeFemaleOccs = probeOcc(femaleNames, templates, bert, "NbAiLab/nb-bert-large")
 # probeMaleOccs = probeOcc(maleNames, templates, bert, "NbAiLab/nb-bert-large")
-# writeToCSV("data/raw/nbBertLarge.csv",calculatePPBS(probeFemaleOccs,probeMaleOccs))
+# writeToCSV("data/raw/nbBertLarge_occ.csv",calculatePPBS(probeFemaleOccs,probeMaleOccs))
 
 # probeFemaleOccs = probeOcc(femaleNames, templates, bert, "ltg/norbert")
 # probeMaleOccs = probeOcc(maleNames, templates, bert, "ltg/norbert")
-# writeToCSV("data/raw/norbert.csv",calculatePPBS(probeFemaleOccs,probeMaleOccs))
+# writeToCSV("data/raw/norbert_occ.csv",calculatePPBS(probeFemaleOccs,probeMaleOccs))
 
 # probeFemaleOccs = probeOcc(femaleNames, templates, bert, "ltg/norbert2")
 # probeMaleOccs = probeOcc(maleNames, templates, bert, "ltg/norbert2")
-# writeToCSV("data/raw/norbert2.csv",calculatePPBS(probeFemaleOccs,probeMaleOccs))
+# writeToCSV("data/raw/norbert2_occ.csv",calculatePPBS(probeFemaleOccs,probeMaleOccs))
