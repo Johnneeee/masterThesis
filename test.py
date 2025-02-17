@@ -2,4 +2,26 @@ data = {'advokat': [1403, 1428, 0.048, 0.076, 0.028, 0.02], 'lærer': [1328, 101
 
 ja = [[x[0]] + x[1] for x in data.items()]
 
-print(ja)
+# print(ja)
+
+totalAvgPPBS = {"ja": 0.019}
+# totalAvgPPBS["ja"] += float("0.055")/2
+totalAvgPPBS["ja"] = (totalAvgPPBS["ja"] + float("0.055"))/2
+
+print(data)
+
+# for x in data:
+#     print(x)
+# print(data.keys())
+
+# totalAvgPPBS["ja"] = (totalAvgPPBS["ja"] + float("0.632"))/2
+# (0.055 + 0.019 + 0.623)/3
+# print(totalAvgPPBS)
+
+# advokat
+
+# xlmrBase advokat;890 ;1306;0.056;0.108;0.052
+# xlmrLarg advokat;1403;1428;0.048;0.076;0.028
+# mbertUnc advokat;1466;1255;0.072;0.093;0.021
+            #     [2293,2734,0.052,0.092,0.040,0.02]
+#                 [3759,3989,0.059,0.092,0.034,0.02]

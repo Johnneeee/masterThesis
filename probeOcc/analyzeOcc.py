@@ -1,92 +1,79 @@
 import csv
-lms = ["xlmRBase", "xlmRLarge", "mBertUncased", "mBertCased", "nbBertBase", "nbBertLarge", "norbert", "norbert2"]
 # ##########################################################################
 
 def filterOcc(file): # filtered
-    with open(f"../censusData/preparedData/utdanningnoLikestilling2023_ppbs.csv", mode ='r', encoding="UTF-8") as f:
+    # getting gold data
+    with open(f"../censusData/preparedData/utdanningnoLikestilling2023_prepared.csv", mode ='r', encoding="UTF-8") as f:
         csvFile = csv.reader(f, delimiter=";")
         next(csvFile)
-        occs = {x[0]: x[3] for x in csvFile}
+        gold_data = {x[0]: float(x[3]) for x in csvFile}
 
-    with open(f"data/raw/{file}.csv", mode ='r', encoding="UTF-8") as f:
+    #getting pred data
+    with open(f"data/raw/{file}_occ.csv", mode ='r', encoding="UTF-8") as f:
         csvFile = csv.reader(f, delimiter=";")
         next(csvFile)
-        data = f.readlines()
+        data = [x for x in csvFile]
 
-    data = [x[:-1].split(";") for x in data] #formatting data
-    data = list(filter(lambda x: x[0] in occs, data)) # filter away occs that doesnt appear in census
-    data = list(map(lambda x: x + [occs[x[0]]],data))
+    data = list(filter(lambda x: x[0] in gold_data, data)) # filter data
+    data = [x + [gold_data[x[0]]] for x in data] # adding gold ppbs in end of list
 
+    #write data
     head = [["ATTRIBUTE", "COUNT FEMALE", "COUNT MALE", "P(FEMALE)", "P(MALE)", "P(PPBS)", "GOLD PPBS"]]
-    with open(f"data/filtered/{file}.csv", 'w', newline='', encoding="UTF-8") as csvfile:
+    with open(f"data/filtered/{file}Filtered_occ.csv", 'w', newline='', encoding="UTF-8") as csvfile:
         writer = csv.writer(csvfile, delimiter=";")
         writer.writerows(head)
         writer.writerows(data)
 
+# lms = ["xlmRBase", "xlmRLarge", "mBertUncased", "mBertCased", "nbBertBase", "nbBertLarge", "norbert", "norbert2"]
 # for name in lms:
 #     filterOcc(name)
 
 # ##########################################################################
 
-def totalFiltered(files): # total/totalFiltered
+def total(files, tag): # total/totalFiltered
+    occAppearnceCount = {}
     totalData = {}
     for file in files:
-        with open(f"data/filtered/{file}.csv", mode ='r', encoding="UTF-8") as f:
+        with open(f"data/{tag}/{file}_occ.csv", mode ='r', encoding="UTF-8") as f:
             csvFile = csv.reader(f, delimiter=";")
             next(csvFile)
             for line in csvFile:
                 try: # update
+                    occAppearnceCount[line[0]] += 1
                     totalData[line[0]][0] += int(line[1])    #count she
                     totalData[line[0]][1] += int(line[2])    #count he
-                    totalData[line[0]][2] = round((totalData[line[0]][2] + float(line[3]))/2,3)  #pshe
-                    totalData[line[0]][3] = round((totalData[line[0]][3] + float(line[4]))/2,3)  #phe
-                    totalData[line[0]][4] = round((totalData[line[0]][4] + float(line[5]))/2,3)  #ppbs
+                    totalData[line[0]][2] = round(totalData[line[0]][2] + float(line[3]),3)  #pshe 
+                    totalData[line[0]][3] = round(totalData[line[0]][3] + float(line[4]),3)  #phe
+                    totalData[line[0]][4] = round(totalData[line[0]][4] + float(line[5]),3)  #pshe 
                 except: # set
+                    occAppearnceCount[line[0]] = 1
                     totalData[line[0]] = [int(x) for x in line[1:3]] + [float(x) for x in line[3:]]
-
-
+    for x in totalData: # average out
+        totalData[x][2] = round(totalData[x][2]/occAppearnceCount[x],3) #pshe
+        totalData[x][3] = round(totalData[x][3]/occAppearnceCount[x],3) #phe
+        totalData[x][4] = round(totalData[x][4]/occAppearnceCount[x],3) #ppbs
+    
+    # format data before writing
     head = [["ATTRIBUTE", "COUNT FEMALE", "COUNT MALE", "P(FEMALE)", "P(MALE)", "P(PPBS)", "GOLD PPBS"]]
+    if tag == "raw":
+        head = [["ATTRIBUTE", "COUNT FEMALE", "COUNT MALE", "P(FEMALE)", "P(MALE)", "P(PPBS)"]]
     data = [[x[0]] + x[1] for x in totalData.items()]
     data = sorted(data, key=lambda x: max(x[1], x[2]),reverse=True)
 
-    with open(f"data/total/totalFiltered.csv", 'w', newline='', encoding="UTF-8") as csvfile:
+    # writing data
+    with open(f"data/total/total{tag}_occ.csv", 'w', newline='', encoding="UTF-8") as csvfile:
         writer = csv.writer(csvfile, delimiter=";")
         writer.writerows(head)
         writer.writerows(data)
 
-totalFiltered(lms)
+
+lms = ["xlmRBaseFiltered", "xlmRLargeFiltered", "mBertUncasedFiltered", "mBertCasedFiltered", "nbBertBaseFiltered", "nbBertLargeFiltered", "norbertFiltered", "norbert2Filtered"]
+total(lms, "filtered")
+
+lms = ["xlmRBase", "xlmRLarge", "mBertUncased", "mBertCased", "nbBertBase", "nbBertLarge", "norbert", "norbert2"]
+total(lms, "raw")
 
 # ##########################################################################
-
-def totalRaw(files): # ->total/totalRaw
-    totalData = {}
-    for file in files:
-        with open(f"data/raw/{file}.csv", mode ='r', encoding="UTF-8") as f:
-            csvFile = csv.reader(f, delimiter=";")
-            next(csvFile)
-            for line in csvFile:
-                try: # update
-                    totalData[line[0]][0] += int(line[1])    #count she
-                    totalData[line[0]][1] += int(line[2])    #count he
-                    totalData[line[0]][2] = round((totalData[line[0]][2] + float(line[3]))/2,3)  #pshe
-                    totalData[line[0]][3] = round((totalData[line[0]][3] + float(line[4]))/2,3)  #phe
-                    totalData[line[0]][4] = round((totalData[line[0]][4] + float(line[5]))/2,3)  #ppbs
-                except: # set
-                    totalData[line[0]] = [int(x) for x in line[1:3]] + [float(x) for x in line[3:]]
-
-
-    head = [["ATTRIBUTE", "COUNT FEMALE", "COUNT MALE", "P(FEMALE)", "P(MALE)", "P(PPBS)"]]
-    data = [[x[0]] + x[1] for x in totalData.items()]
-    data = sorted(data, key=lambda x: max(x[1], x[2]),reverse=True)
-
-    with open(f"data/total/totalRaw.csv", 'w', newline='', encoding="UTF-8") as csvfile:
-        writer = csv.writer(csvfile, delimiter=";")
-        writer.writerows(head)
-        writer.writerows(data)
-
-totalRaw(lms)
-    
-
 # # top 20 female occs:       top 20 male occs:
 # # lærer                     lærer,
 # # journalist,               skuespiller,
