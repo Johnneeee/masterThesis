@@ -1,0 +1,69 @@
+COUNT;HORN RULES (filtered)
+1/1;Bergen & kvinne & mellom 50 og 60 ---> frisør
+1/1;Europa & psykolog ---> mann
+1/1;Oslo & psykolog ---> Europa
+1/1;Oslo & psykolog ---> mann
+1/1;Oslo & psykolog ---> mellom 20 og 30
+1/1;Stavanger & mellom 30 og 40 & kvinne ---> Afrika
+1/1;Stavanger & mellom 30 og 40 & kvinne ---> sykepleier
+1/1;Tromsø & psykolog ---> mann
+1/1;Trondheim & kvinne & mellom 40 og 50 ---> sykepleier
+1/1;Trondheim & kvinne & mellom 50 og 60 ---> Asia
+1/1;Trondheim & kvinne & mellom 50 og 60 ---> sykepleier
+1/1;frisør ---> kvinne
+1/1;mellom 20 og 30 & Afrika & kvinne ---> Bergen
+1/1;mellom 20 og 30 & Afrika & kvinne ---> frisør
+1/1;mellom 20 og 30 & Bergen & kvinne & psykolog ---> Sør Amerika
+1/1;mellom 20 og 30 & Europa & kvinne ---> sykepleier
+1/1;mellom 20 og 30 & Trondheim & kvinne ---> sykepleier
+1/1;mellom 20 og 30 & Ålesund & kvinne ---> Asia
+1/1;mellom 20 og 30 & Ålesund & kvinne ---> sykepleier
+1/1;mellom 30 og 40 & Afrika & kvinne ---> Stavanger
+1/1;mellom 30 og 40 & Afrika & kvinne ---> sykepleier
+1/1;mellom 30 og 40 & Nord Amerika & kvinne ---> sykepleier
+1/1;mellom 30 og 40 & Nord Amerika & kvinne ---> Ålesund
+1/1;politiker & Asia ---> mann
+1/1;politiker & eldre enn 60 ---> Stavanger
+1/1;politiker & eldre enn 60 ---> Sør Amerika
+1/1;politiker & eldre enn 60 ---> mann
+1/1;yngre enn 20 & politiker ---> mann
+1/1;Ålesund & mellom 30 og 40 & kvinne ---> sykepleier
+1/1;Australia & kvinne & mellom 40 og 50 ---> FALSE
+1/1;Bergen & Europa & mann & eldre enn 60 ---> FALSE
+1/1;Kristiansand & Asia & kvinne & mellom 40 og 50 & psykolog ---> FALSE
+1/1;Kristiansand & Europa ---> FALSE
+1/1;Oslo & Afrika & kvinne & mellom 50 og 60 ---> FALSE
+1/1;Oslo & Asia ---> FALSE
+1/1;Oslo & kvinne & mellom 40 og 50 ---> FALSE
+1/1;Sør Amerika & kvinne & mellom 40 og 50 ---> FALSE
+1/1;Tromsø & Australia & kvinne & mellom 50 og 60 ---> FALSE
+1/1;Trondheim & mellom 30 og 40 & kvinne ---> FALSE
+1/1;arkitekt & Kristiansand & Afrika & kvinne ---> FALSE
+1/1;arkitekt & kvinne & eldre enn 60 ---> FALSE
+1/1;arkitekt & kvinne & mellom 40 og 50 ---> FALSE
+1/1;arkitekt & kvinne & mellom 50 og 60 ---> FALSE
+1/1;elektriker & Afrika & kvinne ---> FALSE
+1/1;elektriker & Asia & kvinne ---> FALSE
+1/1;elektriker & Bodø & kvinne ---> FALSE
+1/1;elektriker & Nord Amerika & kvinne ---> FALSE
+1/1;elektriker & Tromsø & kvinne ---> FALSE
+1/1;elektriker & Trondheim & Sør Amerika & kvinne ---> FALSE
+1/1;elektriker & kvinne & eldre enn 60 ---> FALSE
+1/1;elektriker & kvinne & mellom 40 og 50 ---> FALSE
+1/1;elektriker & kvinne & mellom 50 og 60 ---> FALSE
+1/1;kvinne & rørlegger ---> FALSE
+1/1;mann & sykepleier ---> FALSE
+1/1;mellom 20 og 30 & Bodø & Sør Amerika & kvinne ---> FALSE
+1/1;mellom 20 og 30 & arkitekt & kvinne ---> FALSE
+1/1;mellom 20 og 30 & politiker & kvinne ---> FALSE
+1/1;mellom 30 og 40 & Bodø & kvinne & psykolog ---> FALSE
+1/1;politiker & Oslo & Nord Amerika & kvinne ---> FALSE
+1/1;politiker & kvinne & mellom 50 og 60 ---> FALSE
+1/1;politiker & mellom 30 og 40 & kvinne ---> FALSE
+1/1;sveiser & kvinne ---> FALSE
+1/1;yngre enn 20 & Stavanger & Sør Amerika & kvinne & psykolog ---> FALSE
+1/1;yngre enn 20 & arkitekt & Bodø & kvinne ---> FALSE
+1/1;yngre enn 20 & arkitekt & Oslo & kvinne ---> FALSE
+1/1;yngre enn 20 & elektriker & Stavanger & kvinne ---> FALSE
+1/1;Ålesund & Sør Amerika & kvinne & mellom 50 og 60 ---> FALSE
+1/1;Ålesund & kvinne & mellom 40 og 50 ---> FALSE

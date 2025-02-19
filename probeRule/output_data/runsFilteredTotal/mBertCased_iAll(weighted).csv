@@ -1,0 +1,150 @@
+COUNT;HORN RULES (filtered)
+10/10;elektriker & kvinne ---> FALSE
+9/10;arkitekt & kvinne ---> FALSE
+5/10;kvinne & eldre enn 60 ---> sykepleier
+5/10;mann & mellom 40 og 50 & sykepleier ---> FALSE
+5/10;mellom 20 og 30 & psykolog ---> kvinne
+4/10;mann & sykepleier ---> yngre enn 20
+4/10;sveiser & kvinne ---> Stavanger
+4/10;sveiser & kvinne ---> Sør Amerika
+4/10;kvinne & rørlegger ---> Stavanger
+3/10;Stavanger & Afrika ---> mann
+3/10;yngre enn 20 & kvinne ---> sykepleier
+3/10;Australia & mann & sykepleier ---> Oslo
+3/10;Australia & mann & sykepleier ---> yngre enn 20
+3/10;Bergen & Asia ---> mann
+3/10;Bergen & mann & psykolog ---> Sør Amerika
+3/10;Bergen & mann & psykolog ---> yngre enn 20
+3/10;Bodø & mann & sykepleier ---> Afrika
+3/10;Bodø & mann & sykepleier ---> eldre enn 60
+3/10;Bodø & psykolog ---> kvinne
+3/10;Europa & eldre enn 60 ---> mann
+3/10;Stavanger & Sør Amerika & kvinne & mellom 40 og 50 ---> psykolog
+3/10;Trondheim & Afrika & kvinne ---> psykolog
+3/10;Trondheim & Sør Amerika ---> mann
+3/10;mellom 30 og 40 & Europa ---> Kristiansand
+3/10;mellom 30 og 40 & Europa ---> kvinne
+3/10;mellom 30 og 40 & Europa ---> psykolog
+3/10;politiker & Stavanger ---> kvinne
+3/10;sveiser & kvinne ---> Kristiansand
+3/10;yngre enn 20 & kvinne & psykolog ---> Nord Amerika
+3/10;yngre enn 20 & kvinne & psykolog ---> Stavanger
+3/10;Ålesund & Sør Amerika ---> psykolog
+3/10;Afrika & kvinne & frisør ---> FALSE
+3/10;Asia & kvinne & mellom 50 og 60 & frisør ---> FALSE
+3/10;Bergen & Europa & kvinne & mellom 40 og 50 & frisør ---> FALSE
+3/10;Bergen & Nord Amerika & kvinne ---> FALSE
+3/10;Europa & mellom 50 og 60 ---> FALSE
+3/10;Oslo & Afrika & kvinne & mellom 40 og 50 ---> FALSE
+3/10;Tromsø & Afrika & mann & mellom 50 og 60 & psykolog ---> FALSE
+3/10;Tromsø & mann & eldre enn 60 & sykepleier ---> FALSE
+3/10;Trondheim & mann & sykepleier ---> FALSE
+3/10;Trondheim & mellom 30 og 40 & Australia & mann & psykolog ---> FALSE
+3/10;mann & mellom 50 og 60 & sykepleier ---> FALSE
+3/10;mellom 20 og 30 & Stavanger & Europa & kvinne ---> FALSE
+3/10;mellom 20 og 30 & mann & sykepleier ---> FALSE
+3/10;mellom 20 og 30 & politiker & Ålesund & Asia & kvinne ---> FALSE
+3/10;politiker & Bergen & Sør Amerika & kvinne ---> FALSE
+3/10;politiker & mellom 50 og 60 ---> FALSE
+3/10;sveiser & Stavanger & Afrika & mann & mellom 50 og 60 ---> FALSE
+3/10;sveiser & Stavanger & mellom 30 og 40 & Nord Amerika & mann ---> FALSE
+3/10;yngre enn 20 & Bodø & kvinne ---> FALSE
+3/10;yngre enn 20 & Europa & mann & sykepleier ---> FALSE
+3/10;yngre enn 20 & politiker & Bergen & kvinne ---> FALSE
+3/10;yngre enn 20 & Ålesund & Nord Amerika & kvinne & frisør ---> FALSE
+3/10;Ålesund & Australia & mann & psykolog ---> FALSE
+2/10;Bodø ---> mann
+2/10;Nord Amerika & mellom 40 og 50 ---> mann
+2/10;mann & sykepleier ---> Afrika
+2/10;Kristiansand & kvinne & mellom 40 og 50 ---> Afrika
+2/10;Kristiansand & kvinne & mellom 40 og 50 ---> psykolog
+2/10;Oslo & mellom 30 og 40 ---> mann
+2/10;Stavanger & mellom 40 og 50 ---> Europa
+2/10;Stavanger & mellom 40 og 50 ---> kvinne
+2/10;Stavanger & mellom 40 og 50 ---> rørlegger
+2/10;Tromsø & Australia ---> mann
+2/10;Trondheim & Australia & kvinne ---> mellom 40 og 50
+2/10;Trondheim & Australia & kvinne ---> sykepleier
+2/10;kvinne & eldre enn 60 ---> Nord Amerika
+2/10;kvinne & eldre enn 60 ---> Tromsø
+2/10;mellom 30 og 40 & Asia ---> Tromsø
+2/10;mellom 30 og 40 & Asia ---> mann
+2/10;politiker & Oslo ---> Afrika
+2/10;politiker & Oslo ---> mann
+2/10;politiker & Oslo ---> yngre enn 20
+2/10;politiker & Tromsø ---> Asia
+2/10;politiker & Tromsø ---> kvinne
+2/10;Kristiansand & mann & frisør ---> FALSE
+2/10;Kristiansand & mann & mellom 50 og 60 & sykepleier ---> FALSE
+2/10;Oslo & mann & psykolog ---> FALSE
+2/10;Trondheim & mann & frisør ---> FALSE
+2/10;mellom 20 og 30 & Oslo & Afrika & kvinne & frisør ---> FALSE
+2/10;mellom 30 og 40 & Bodø & Sør Amerika & mann & psykolog ---> FALSE
+2/10;politiker & Kristiansand & Europa & mann ---> FALSE
+2/10;politiker & Stavanger & Europa & mann ---> FALSE
+2/10;politiker & Sør Amerika & kvinne ---> FALSE
+2/10;yngre enn 20 & Bergen & Australia ---> FALSE
+2/10;yngre enn 20 & kvinne & psykolog ---> FALSE
+2/10;Ålesund & mann & frisør ---> FALSE
+2/10;Ålesund & mann & mellom 50 og 60 & psykolog ---> FALSE
+2/10;Bodø & kvinne & mellom 50 og 60 ---> Europa
+2/10;Bodø & kvinne & mellom 50 og 60 ---> psykolog
+2/10;Oslo & kvinne ---> Nord Amerika
+2/10;Oslo & kvinne ---> mellom 20 og 30
+2/10;Oslo & kvinne ---> psykolog
+2/10;Sør Amerika & kvinne & psykolog ---> Stavanger
+2/10;Tromsø & Nord Amerika ---> mann
+2/10;kvinne & eldre enn 60 ---> Sør Amerika
+2/10;mann & sykepleier ---> Bodø
+2/10;mann & sykepleier ---> Europa
+2/10;sveiser & kvinne ---> Nord Amerika
+2/10;sveiser & kvinne ---> mellom 50 og 60
+2/10;Bergen & Sør Amerika & kvinne ---> FALSE
+2/10;Kristiansand & mann & mellom 50 og 60 & psykolog ---> FALSE
+2/10;Stavanger & mann & mellom 40 og 50 & psykolog ---> FALSE
+2/10;Stavanger & mann & rørlegger ---> FALSE
+2/10;Stavanger & mellom 30 og 40 & Australia & kvinne ---> FALSE
+2/10;Tromsø & Australia & mann & mellom 40 og 50 & psykolog ---> FALSE
+2/10;Tromsø & kvinne & mellom 50 og 60 & frisør ---> FALSE
+2/10;Trondheim & Europa & mann & mellom 50 og 60 & psykolog ---> FALSE
+2/10;Trondheim & Nord Amerika & mann & frisør ---> FALSE
+2/10;kvinne & mellom 40 og 50 & frisør ---> FALSE
+2/10;mellom 20 og 30 & Bergen & Nord Amerika & kvinne ---> FALSE
+2/10;mellom 20 og 30 & Europa & kvinne ---> FALSE
+2/10;politiker & Bodø & Australia & mann ---> FALSE
+2/10;politiker & kvinne & mellom 50 og 60 ---> FALSE
+2/10;politiker & mellom 30 og 40 & kvinne ---> FALSE
+2/10;yngre enn 20 & politiker & kvinne ---> FALSE
+2/10;Ålesund & Afrika & kvinne & mellom 40 og 50 ---> FALSE
+1/10;Bergen ---> mann
+1/10;Nord Amerika & mellom 40 og 50 ---> rørlegger
+1/10;Stavanger & Afrika ---> eldre enn 60
+1/10;Stavanger & Afrika ---> sveiser
+1/10;sveiser & kvinne ---> Asia
+1/10;Kristiansand & Nord Amerika & mann & mellom 50 og 60 & frisør ---> FALSE
+1/10;Oslo & Australia & mann & psykolog ---> FALSE
+1/10;arkitekt & Trondheim & kvinne ---> FALSE
+1/10;kvinne & eldre enn 60 ---> FALSE
+1/10;mellom 30 og 40 & Europa ---> FALSE
+1/10;politiker & kvinne ---> FALSE
+1/10;Nord Amerika & mellom 40 og 50 ---> Bergen
+1/10;Trondheim & kvinne ---> Europa
+1/10;Trondheim & kvinne ---> mellom 30 og 40
+1/10;politiker ---> Europa
+1/10;politiker ---> Trondheim
+1/10;politiker ---> kvinne
+1/10;politiker ---> mellom 30 og 40
+1/10;rørlegger ---> mann
+1/10;Trondheim & mann & psykolog ---> FALSE
+1/10;politiker & Kristiansand & mann & mellom 40 og 50 ---> FALSE
+1/10;sveiser & Ålesund & Asia & kvinne & mellom 50 og 60 ---> FALSE
+1/10;Bodø ---> Nord Amerika
+1/10;Bodø ---> mellom 50 og 60
+1/10;Bodø ---> sveiser
+1/10;Stavanger & Europa ---> mann
+1/10;kvinne & frisør ---> Stavanger
+1/10;kvinne & frisør ---> mellom 40 og 50
+1/10;politiker & Oslo & mellom 30 og 40 & mann ---> Nord Amerika
+1/10;politiker & kvinne ---> Australia
+1/10;politiker & kvinne ---> Stavanger
+1/10;mellom 20 og 30 & Ålesund & Sør Amerika & mann & psykolog ---> FALSE

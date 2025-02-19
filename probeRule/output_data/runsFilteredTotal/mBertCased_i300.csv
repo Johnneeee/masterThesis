@@ -1,0 +1,50 @@
+COUNT;HORN RULES (filtered)
+1/1;Australia & mann & sykepleier ---> Oslo
+1/1;Australia & mann & sykepleier ---> yngre enn 20
+1/1;Bergen & Asia ---> mann
+1/1;Bergen & mann & psykolog ---> Sør Amerika
+1/1;Bergen & mann & psykolog ---> yngre enn 20
+1/1;Bodø & mann & sykepleier ---> Afrika
+1/1;Bodø & mann & sykepleier ---> eldre enn 60
+1/1;Bodø & psykolog ---> kvinne
+1/1;Europa & eldre enn 60 ---> mann
+1/1;Stavanger & Sør Amerika & kvinne & mellom 40 og 50 ---> psykolog
+1/1;Trondheim & Afrika & kvinne ---> psykolog
+1/1;Trondheim & Sør Amerika ---> mann
+1/1;kvinne & eldre enn 60 ---> sykepleier
+1/1;mellom 20 og 30 & psykolog ---> kvinne
+1/1;mellom 30 og 40 & Europa ---> Kristiansand
+1/1;mellom 30 og 40 & Europa ---> kvinne
+1/1;mellom 30 og 40 & Europa ---> psykolog
+1/1;politiker & Stavanger ---> kvinne
+1/1;sveiser & kvinne ---> Kristiansand
+1/1;sveiser & kvinne ---> Sør Amerika
+1/1;yngre enn 20 & kvinne & psykolog ---> Nord Amerika
+1/1;yngre enn 20 & kvinne & psykolog ---> Stavanger
+1/1;Ålesund & Sør Amerika ---> psykolog
+1/1;Afrika & kvinne & frisør ---> FALSE
+1/1;Asia & kvinne & mellom 50 og 60 & frisør ---> FALSE
+1/1;Bergen & Europa & kvinne & mellom 40 og 50 & frisør ---> FALSE
+1/1;Bergen & Nord Amerika & kvinne ---> FALSE
+1/1;Europa & mellom 50 og 60 ---> FALSE
+1/1;Oslo & Afrika & kvinne & mellom 40 og 50 ---> FALSE
+1/1;Tromsø & Afrika & mann & mellom 50 og 60 & psykolog ---> FALSE
+1/1;Tromsø & mann & eldre enn 60 & sykepleier ---> FALSE
+1/1;Trondheim & mann & sykepleier ---> FALSE
+1/1;Trondheim & mellom 30 og 40 & Australia & mann & psykolog ---> FALSE
+1/1;arkitekt & kvinne ---> FALSE
+1/1;elektriker & kvinne ---> FALSE
+1/1;mann & mellom 40 og 50 & sykepleier ---> FALSE
+1/1;mann & mellom 50 og 60 & sykepleier ---> FALSE
+1/1;mellom 20 og 30 & Stavanger & Europa & kvinne ---> FALSE
+1/1;mellom 20 og 30 & mann & sykepleier ---> FALSE
+1/1;mellom 20 og 30 & politiker & Ålesund & Asia & kvinne ---> FALSE
+1/1;politiker & Bergen & Sør Amerika & kvinne ---> FALSE
+1/1;politiker & mellom 50 og 60 ---> FALSE
+1/1;sveiser & Stavanger & Afrika & mann & mellom 50 og 60 ---> FALSE
+1/1;sveiser & Stavanger & mellom 30 og 40 & Nord Amerika & mann ---> FALSE
+1/1;yngre enn 20 & Bodø & kvinne ---> FALSE
+1/1;yngre enn 20 & Europa & mann & sykepleier ---> FALSE
+1/1;yngre enn 20 & politiker & Bergen & kvinne ---> FALSE
+1/1;yngre enn 20 & Ålesund & Nord Amerika & kvinne & frisør ---> FALSE
+1/1;Ålesund & Australia & mann & psykolog ---> FALSE

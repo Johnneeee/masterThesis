@@ -1,0 +1,50 @@
+HORN RULES (filtered)
+Asia & kvinne & eldre enn 60 ---> frisør
+Kristiansand & mellom 50 og 60 ---> kvinne
+Oslo & Asia & kvinne ---> eldre enn 60
+Oslo & Asia & kvinne ---> frisør
+Oslo & Nord Amerika & kvinne ---> frisør
+Stavanger & Sør Amerika & kvinne ---> psykolog
+Stavanger & Sør Amerika & kvinne ---> yngre enn 20
+Stavanger & mellom 30 og 40 & Nord Amerika & kvinne ---> sykepleier
+Trondheim & Afrika ---> mann
+Trondheim & Afrika ---> mellom 20 og 30
+Trondheim & Afrika ---> sveiser
+Trondheim & Asia & kvinne ---> frisør
+Trondheim & Asia & kvinne ---> yngre enn 20
+Trondheim & kvinne & mellom 50 og 60 ---> psykolog
+frisør ---> kvinne
+mellom 20 og 30 & mann & psykolog ---> Asia
+mellom 20 og 30 & mann & psykolog ---> Stavanger
+Ålesund & Sør Amerika ---> eldre enn 60
+Ålesund & Sør Amerika ---> frisør
+Ålesund & Sør Amerika ---> kvinne
+Ålesund & psykolog ---> Australia
+Ålesund & psykolog ---> mann
+Afrika & mann & psykolog ---> FALSE
+Bergen & Afrika & kvinne & eldre enn 60 ---> FALSE
+Bodø & Australia & kvinne & mellom 50 og 60 ---> FALSE
+Bodø & Europa & kvinne ---> FALSE
+Bodø & Nord Amerika & mann & psykolog ---> FALSE
+Bodø & Sør Amerika & kvinne & eldre enn 60 & psykolog ---> FALSE
+Sør Amerika & mann & mellom 40 og 50 ---> FALSE
+Sør Amerika & mann & psykolog ---> FALSE
+Tromsø & Afrika & kvinne & mellom 50 og 60 ---> FALSE
+Tromsø & kvinne & mellom 40 og 50 ---> FALSE
+Trondheim & Nord Amerika & kvinne & mellom 40 og 50 ---> FALSE
+elektriker & kvinne ---> FALSE
+kvinne & rørlegger ---> FALSE
+mann & mellom 40 og 50 & psykolog ---> FALSE
+mann & sykepleier ---> FALSE
+mellom 20 og 30 & Bodø & Afrika & kvinne ---> FALSE
+mellom 30 og 40 & Europa ---> FALSE
+mellom 30 og 40 & mann & psykolog ---> FALSE
+politiker & Bergen & kvinne ---> FALSE
+politiker & Bodø & kvinne ---> FALSE
+politiker & Kristiansand & kvinne ---> FALSE
+politiker & Oslo & kvinne ---> FALSE
+politiker & Stavanger & kvinne ---> FALSE
+politiker & Tromsø & kvinne ---> FALSE
+politiker & Ålesund & kvinne ---> FALSE
+sveiser & kvinne ---> FALSE
+yngre enn 20 & Nord Amerika & kvinne ---> FALSE

@@ -1,0 +1,43 @@
+COUNT;HORN RULES (filtered)
+3/3;kvinne & psykolog ---> FALSE
+3/3;politiker & kvinne ---> FALSE
+2/3;arkitekt & kvinne ---> FALSE
+2/3;elektriker & kvinne ---> FALSE
+2/3;kvinne & rørlegger ---> FALSE
+1/3;Bergen & kvinne ---> Nord Amerika
+1/3;Bergen & kvinne ---> frisør
+1/3;Bergen & kvinne ---> mellom 40 og 50
+1/3;Europa & mann & sykepleier ---> yngre enn 20
+1/3;Europa & mann & sykepleier ---> Ålesund
+1/3;Sør Amerika & frisør ---> mellom 30 og 40
+1/3;Australia & mann & mellom 50 og 60 & frisør ---> FALSE
+1/3;Kristiansand & Australia & kvinne & eldre enn 60 ---> FALSE
+1/3;Sør Amerika & mann & sykepleier ---> FALSE
+1/3;Trondheim & Australia & mann & sykepleier ---> FALSE
+1/3;mellom 20 og 30 & Afrika & kvinne ---> FALSE
+1/3;mellom 20 og 30 & Nord Amerika & mann & sykepleier ---> FALSE
+1/3;sveiser & kvinne ---> FALSE
+1/3;Australia & kvinne ---> Oslo
+1/3;Australia & kvinne ---> eldre enn 60
+1/3;Australia & kvinne ---> sykepleier
+1/3;Bodø & kvinne ---> Europa
+1/3;Bodø & kvinne ---> frisør
+1/3;Bodø & kvinne ---> mellom 20 og 30
+1/3;Nord Amerika & kvinne ---> frisør
+1/3;Stavanger & Asia & kvinne ---> frisør
+1/3;Stavanger & Asia & kvinne ---> mellom 40 og 50
+1/3;Sør Amerika & sykepleier ---> kvinne
+1/3;mann & sykepleier ---> yngre enn 20
+1/3;Afrika & kvinne & mellom 40 og 50 ---> FALSE
+1/3;Bergen & Europa & mann & mellom 50 og 60 & frisør ---> FALSE
+1/3;Kristiansand & Afrika & mann & mellom 50 og 60 & frisør ---> FALSE
+1/3;Kristiansand & Europa & mann & mellom 40 og 50 & frisør ---> FALSE
+1/3;yngre enn 20 & kvinne ---> FALSE
+1/3;Ålesund & kvinne & eldre enn 60 ---> FALSE
+1/3;Bergen & kvinne ---> mellom 20 og 30
+1/3;Bergen & kvinne ---> sykepleier
+1/3;Kristiansand & mann & sykepleier ---> eldre enn 60
+1/3;mellom 30 og 40 & Europa & kvinne ---> Bodø
+1/3;mellom 30 og 40 & Europa & kvinne ---> frisør
+1/3;Oslo & Australia & kvinne ---> FALSE
+1/3;mellom 20 og 30 & Ålesund & Afrika & kvinne & rørlegger ---> FALSE

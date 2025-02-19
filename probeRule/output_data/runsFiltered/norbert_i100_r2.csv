@@ -1,0 +1,21 @@
+HORN RULES (filtered)
+Asia & kvinne ---> sykepleier
+Bodø & kvinne & mellom 40 og 50 & sykepleier ---> Europa
+Kristiansand & kvinne ---> Afrika
+Kristiansand & kvinne ---> mellom 50 og 60
+Kristiansand & kvinne ---> sykepleier
+Sør Amerika & kvinne ---> sykepleier
+Tromsø & kvinne ---> Australia
+Tromsø & kvinne ---> sykepleier
+frisør ---> mann
+kvinne & eldre enn 60 ---> sykepleier
+kvinne & mellom 50 og 60 ---> sykepleier
+mellom 30 og 40 & kvinne ---> Afrika
+mellom 30 og 40 & kvinne ---> Bodø
+mellom 30 og 40 & kvinne ---> sykepleier
+yngre enn 20 & kvinne ---> Asia
+yngre enn 20 & kvinne ---> sykepleier
+Ålesund ---> mann
+Stavanger & Asia & mann & sykepleier ---> FALSE
+arkitekt & kvinne ---> FALSE
+kvinne & rørlegger ---> FALSE

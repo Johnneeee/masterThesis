@@ -1,0 +1,58 @@
+COUNT;HORN RULES (filtered)
+3/3;kvinne & mellom 50 og 60 ---> sykepleier
+3/3;arkitekt & kvinne ---> FALSE
+3/3;kvinne & rørlegger ---> FALSE
+2/3;Bodø & kvinne ---> sykepleier
+2/3;Kristiansand & kvinne ---> sykepleier
+2/3;Tromsø & kvinne ---> sykepleier
+2/3;mellom 30 og 40 & kvinne ---> sykepleier
+2/3;kvinne & psykolog ---> FALSE
+2/3;Sør Amerika & kvinne ---> sykepleier
+1/3;Asia & sykepleier ---> kvinne
+1/3;Bodø & kvinne ---> eldre enn 60
+1/3;Kristiansand & kvinne ---> yngre enn 20
+1/3;Nord Amerika ---> sykepleier
+1/3;Stavanger & kvinne ---> Afrika
+1/3;Stavanger & kvinne ---> sykepleier
+1/3;Stavanger & kvinne ---> yngre enn 20
+1/3;Sør Amerika ---> mann
+1/3;Trondheim & kvinne ---> Australia
+1/3;Trondheim & kvinne ---> sykepleier
+1/3;kvinne & mellom 50 og 60 ---> Australia
+1/3;kvinne & mellom 50 og 60 ---> Oslo
+1/3;mellom 30 og 40 & kvinne ---> Asia
+1/3;Ålesund & Asia ---> mann
+1/3;Ålesund & Asia ---> mellom 50 og 60
+1/3;Ålesund & Asia ---> politiker
+1/3;Bodø & Europa & mann & sykepleier ---> FALSE
+1/3;sveiser & kvinne ---> FALSE
+1/3;Afrika & kvinne ---> Tromsø
+1/3;Afrika & kvinne ---> mellom 50 og 60
+1/3;Afrika & kvinne ---> sykepleier
+1/3;Australia ---> mann
+1/3;Bodø & kvinne ---> Sør Amerika
+1/3;Europa & kvinne ---> frisør
+1/3;Nord Amerika & kvinne ---> sykepleier
+1/3;Trondheim ---> mann
+1/3;kvinne & mellom 50 og 60 ---> Afrika
+1/3;kvinne & mellom 50 og 60 ---> Tromsø
+1/3;mellom 20 og 30 & kvinne ---> Asia
+1/3;mellom 20 og 30 & kvinne ---> Tromsø
+1/3;mellom 20 og 30 & kvinne ---> sykepleier
+1/3;mellom 30 og 40 ---> mann
+1/3;mellom 40 og 50 ---> mann
+1/3;Oslo & Sør Amerika & mann & sykepleier ---> FALSE
+1/3;politiker & kvinne ---> FALSE
+1/3;Asia & kvinne ---> sykepleier
+1/3;Bodø & kvinne & mellom 40 og 50 & sykepleier ---> Europa
+1/3;Kristiansand & kvinne ---> Afrika
+1/3;Kristiansand & kvinne ---> mellom 50 og 60
+1/3;Tromsø & kvinne ---> Australia
+1/3;frisør ---> mann
+1/3;kvinne & eldre enn 60 ---> sykepleier
+1/3;mellom 30 og 40 & kvinne ---> Afrika
+1/3;mellom 30 og 40 & kvinne ---> Bodø
+1/3;yngre enn 20 & kvinne ---> Asia
+1/3;yngre enn 20 & kvinne ---> sykepleier
+1/3;Ålesund ---> mann
+1/3;Stavanger & Asia & mann & sykepleier ---> FALSE

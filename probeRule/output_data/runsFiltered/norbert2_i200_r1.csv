@@ -1,0 +1,39 @@
+HORN RULES (filtered)
+Afrika & mann & sykepleier ---> eldre enn 60
+Afrika & mann & sykepleier ---> Ålesund
+Bergen & frisør ---> kvinne
+Bodø & kvinne ---> frisør
+Europa & sykepleier ---> kvinne
+Stavanger & Sør Amerika ---> mann
+Trondheim & Australia ---> kvinne
+Trondheim & Australia ---> sykepleier
+Trondheim & Australia ---> yngre enn 20
+mellom 30 og 40 & Sør Amerika ---> Bergen
+mellom 30 og 40 & Sør Amerika ---> kvinne
+mellom 30 og 40 & Sør Amerika ---> sykepleier
+mellom 40 og 50 & frisør ---> kvinne
+yngre enn 20 & Europa & kvinne ---> Kristiansand
+yngre enn 20 & Europa & kvinne ---> sykepleier
+yngre enn 20 & Sør Amerika & kvinne ---> Bergen
+yngre enn 20 & Sør Amerika & kvinne ---> frisør
+Ålesund & mellom 50 og 60 ---> mann
+Australia & mann & sykepleier ---> FALSE
+Australia & mellom 50 og 60 ---> FALSE
+Bodø & Sør Amerika & mann & frisør ---> FALSE
+Kristiansand & Afrika & mann & eldre enn 60 & frisør ---> FALSE
+Kristiansand & Sør Amerika & mann & sykepleier ---> FALSE
+Nord Amerika & mann & sykepleier ---> FALSE
+Oslo & Nord Amerika & mann & eldre enn 60 & frisør ---> FALSE
+Oslo & mellom 30 og 40 & Australia & mann & frisør ---> FALSE
+Oslo & mellom 50 og 60 ---> FALSE
+Tromsø & Afrika & kvinne & mellom 50 og 60 ---> FALSE
+Trondheim & mann & mellom 50 og 60 & frisør ---> FALSE
+arkitekt & kvinne ---> FALSE
+elektriker & kvinne ---> FALSE
+kvinne & psykolog ---> FALSE
+kvinne & rørlegger ---> FALSE
+mann & mellom 50 og 60 & sykepleier ---> FALSE
+mellom 20 og 30 & Kristiansand & Australia & mann & frisør ---> FALSE
+politiker & kvinne ---> FALSE
+sveiser & kvinne ---> FALSE
+Ålesund & frisør ---> FALSE
