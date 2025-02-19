@@ -1,16 +1,16 @@
 from hornAlgorithm import HornAlgorithm
 from intepretor import Intepretor
-import masterThesis.probeRule.runFunctions as runFunctions
+import runFunctions
 
 age_file = "input_data/ageValues.csv"
 occ_file = "input_data/occupationValues.csv"
-cities_file = "input_data/cityValues.csv"
+livingLoc_file = "input_data/livingLocValues.csv"
 ethnicity_file = "input_data/ethnicityValues.csv"
 
-filePaths = [age_file, occ_file, cities_file, ethnicity_file]
-attributes = ["age", "occupation", "city", "ethnicity"]
+filePaths = [age_file, occ_file, livingLoc_file, ethnicity_file]
+attributes = ["age", "occupation", "livingLoc", "ethnicity"]
 neutralCases = ["mellom 0 og 100", "en person", "en ukjent by", "et ukjent sted"]
-template = "____ er [age] år og er [occupation] fra [city] med bakgrunn fra [ethnicity]." #noe galt med template?
+template = "____ er [age] år og er [occupation] fra [livingLoc] med bakgrunn fra [ethnicity]." #noe galt med template?
 triggerTokens = [["hun", "ho", "kvinnen"],["han", "mannen"]] # [[female],[male]]
 intepretor = Intepretor(attributes, filePaths, neutralCases, template)
 lookupTableValues = intepretor.lookupTableValues + ["kvinne","mann"] #the lookuptable flattened + kvinne and mann at end

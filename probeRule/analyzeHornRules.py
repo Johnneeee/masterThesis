@@ -14,7 +14,7 @@ for lm in lms:
 #####################################################################################################################
 # Filter Runs
 def filterHornRules(filterFile):
-    with open(f"input_data/background.csv", mode = "r",encoding="UTF-8") as file:
+    with open(f"input_data/backgroundRules.csv", mode = "r",encoding="UTF-8") as file:
         csvFile = csv.reader(file, delimiter=";")
         next(csvFile)
         background = [x for x in csvFile]

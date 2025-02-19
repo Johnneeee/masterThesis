@@ -1,27 +1,46 @@
-data = {'advokat': [1403, 1428, 0.048, 0.076, 0.028, 0.02], 'lærer': [1328, 1014, 0.076, 0.078, 0.002, -0.378], 'lege': [1250, 873, 0.062, 0.056, -0.006, -0.086], 'fotograf': [826, 931, 0.052, 0.051, -0.001, 0.332], 'modell': [858, 57, 0.064, 0.043, -0.021, -0.368], 'arkitekt': [16, 291, 0.029, 0.035, 0.006, -0.008], 'journalist': [239, 187, 0.033, 0.029, -0.004, 0.072], 'psykolog': [189, 141, 0.042, 0.037, -0.005, -0.51], 'revisor': [2, 102, 0.016, 0.028, 0.012, 0.026], 'skuespiller': [75, 71, 0.052, 0.05, -0.002, 0.002], 'redaktør': [43, 51, 0.044, 0.051, 0.007, 0.006], 'leder': [25, 22, 0.023, 0.029, 0.006, 0.306], 'jurist': [0, 25, 0.0, 0.032, 0.032, -0.284], 'professor': [0, 2, 0.0, 0.025, 0.025, 0.336], 'prest': [0, 2, 0.0, 0.028, 0.028, 0.33]}
+import matplotlib.pyplot as plt
+import csv
 
-ja = [[x[0]] + x[1] for x in data.items()]
+def readData(path): # -> [[atts, yGold, yPred]]
+    data = []
+    with open(path, mode ='r', encoding="UTF-8")as file:
+        csvFile = csv.reader(file, delimiter = ";")
+        next(csvFile)
+        for lines in csvFile:
+            data.append([lines[0],float(lines[1]),float(lines[2])])
 
-# print(ja)
+    data = sorted(data, key= lambda x: x[2], reverse=True) # sorted on pred ppbs low to high
+    # data = data[::-1] # same order as censusdata
+    
+    return data
 
-totalAvgPPBS = {"ja": 0.019}
-# totalAvgPPBS["ja"] += float("0.055")/2
-totalAvgPPBS["ja"] = (totalAvgPPBS["ja"] + float("0.055"))/2
 
-print(data)
+def plotdata(data, name):
+    atts = [x[0] for x in data]
+    yGold = [x[1] for x in data]
+    yPred = [x[2] for x in data]
+    y_positions = range(len(yGold))
+    
+    plt.figure(figsize=(10,70))
+    
+    plt.scatter(yGold, y_positions, color='green', label='gold')
+    plt.scatter(yPred, y_positions, color='red', label='pred')
+    
+    # # Customize the y-axis to show only labels
+    plt.yticks(ticks=y_positions, labels=atts)
+    plt.ylim(-1,450)  
+    
+    # # Add labels, title, and legend
+    plt.xlabel('PPBS')
+    plt.ylabel('Occupations')
+    plt.title(name)
+    plt.legend()
+    
+    # grid
+    plt.grid()
+    plt.axvline(color='black')
 
-# for x in data:
-#     print(x)
-# print(data.keys())
 
-# totalAvgPPBS["ja"] = (totalAvgPPBS["ja"] + float("0.632"))/2
-# (0.055 + 0.019 + 0.623)/3
-# print(totalAvgPPBS)
-
-# advokat
-
-# xlmrBase advokat;890 ;1306;0.056;0.108;0.052
-# xlmrLarg advokat;1403;1428;0.048;0.076;0.028
-# mbertUnc advokat;1466;1255;0.072;0.093;0.021
-            #     [2293,2734,0.052,0.092,0.040,0.02]
-#                 [3759,3989,0.059,0.092,0.034,0.02]
+data = readData("data/raw/xlmRBase_ppbs.csv") # read data from file
+plotdata(data, "xlmRBase") # Plot the data
+plt.show()
