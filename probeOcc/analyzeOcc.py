@@ -61,7 +61,7 @@ def total(files, tag): # total/totalFiltered
     data = sorted(data, key=lambda x: max(x[1], x[2]),reverse=True)
 
     # writing data
-    with open(f"data/total/total{tag}_occ.csv", 'w', newline='', encoding="UTF-8") as csvfile:
+    with open(f"data/total/total{tag[0].upper() + tag[1:]}_occ.csv", 'w', newline='', encoding="UTF-8") as csvfile:
         writer = csv.writer(csvfile, delimiter=";")
         writer.writerows(head)
         writer.writerows(data)
