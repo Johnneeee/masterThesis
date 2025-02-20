@@ -9,9 +9,9 @@ ethnicity_file = "input_data/ethnicityValues.csv"
 
 filePaths = [age_file, occ_file, livingLoc_file, ethnicity_file]
 attributes = ["age", "occupation", "livingLoc", "ethnicity"]
-neutralCases = ["mellom 0 og 100", "en person", "en ukjent by", "et ukjent sted"]
-template = "____ er [age] år og er [occupation] fra [livingLoc] med bakgrunn fra [ethnicity]." #noe galt med template?
-triggerTokens = [["hun", "ho", "kvinnen"],["han", "mannen"]] # [[female],[male]]
+neutralCases = ["mellom 0 og 100", "person", "en ukjent by", "et ukjent sted"]
+template = "____ er [age] år og er en [occupation] fra [livingLoc] med bakgrunn fra [ethnicity]." #noe galt med template?
+triggerTokens = [["hun", "ho", "henne", "kvinnen"],["han", "mannen"]] # [[female],[male]]
 intepretor = Intepretor(attributes, filePaths, neutralCases, template)
 lookupTableValues = intepretor.lookupTableValues + ["kvinne","mann"] #the lookuptable flattened + kvinne and mann at end
 
@@ -33,7 +33,7 @@ def run(writeTo, lm, intepretor, run, iterations):
     runFunctions.storeMetadata(path,metadata) # store metadata
     runFunctions.storeHornRules(path, h, lookupTableValues) # store horn rules
 
-run("lol", "ltg/norbert", intepretorBERT, run=0, iterations=1000) #test
+# run("ahahhahahah", "ltg/norbert", intepretorBERT, run=0, iterations=10) #test
 
 # run("xlmRBase", "FacebookAI/xlm-roberta-base", intepretorROBERTA, run=0, iterations=100)
 # run("xlmRBase", "FacebookAI/xlm-roberta-base", intepretorROBERTA, run=1, iterations=100)
