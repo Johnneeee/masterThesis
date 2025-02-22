@@ -46,7 +46,7 @@ def addGuide(dataFile):
         ethnicity = [x[0] for x in csvFile]
         # print(ethnicity)
 
-    with open(f"input_data/cityValues.csv", mode = "r",encoding="UTF-8") as file:
+    with open(f"input_data/livingLocValues.csv", mode = "r",encoding="UTF-8") as file:
         csvFile = csv.reader(file, delimiter=";")
         next(csvFile)
         city = [x[0] for x in csvFile]
@@ -60,7 +60,7 @@ def addGuide(dataFile):
 
     for i in range(len(hornRules)):
         for x in city:
-            hornRules[i] = [hornRules[i][0].replace(x,f"{x}(residence)")]
+            hornRules[i] = [hornRules[i][0].replace(x,f"{x}(livingLoc)")]
         for x in ethnicity:
             hornRules[i] = [hornRules[i][0].replace(x,f"{x}(ethnicity)")]
 
