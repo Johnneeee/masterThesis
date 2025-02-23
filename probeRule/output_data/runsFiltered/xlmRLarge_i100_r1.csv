@@ -1,0 +1,15 @@
+HORN RULES (filtered)
+Australia & mellom 40 og 50 ---> Stavanger
+Australia & mellom 40 og 50 ---> elektriker
+Australia & mellom 40 og 50 ---> mann
+Bergen & kvinne ---> mellom 20 og 30
+Ålesund & kvinne ---> Europa
+Ålesund & kvinne ---> mellom 30 og 40
+Ålesund & kvinne ---> modell
+Oslo & Europa ---> FALSE
+Tromsø & Asia & kvinne & eldre enn 60 ---> FALSE
+frisør & mann ---> FALSE
+kvinne & advokat ---> FALSE
+kvinne & rørlegger ---> FALSE
+mann & modell ---> FALSE
+sykepleier & mann ---> FALSE

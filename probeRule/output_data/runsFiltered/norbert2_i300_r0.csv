@@ -1,0 +1,51 @@
+HORN RULES (filtered)
+Asia & mellom 50 og 60 ---> kvinne
+Bergen & Europa ---> mann
+Bergen & Nord Amerika ---> kvinne
+Bergen & Nord Amerika ---> modell
+Bodø & Nord Amerika ---> mann
+Oslo & Afrika ---> kvinne
+Stavanger & Asia ---> kvinne
+Sør Amerika & kvinne & mellom 50 og 60 ---> Oslo
+Sør Amerika & kvinne & mellom 50 og 60 ---> sykepleier
+Tromsø & kvinne & eldre enn 60 ---> Sør Amerika
+Tromsø & kvinne & eldre enn 60 ---> modell
+Tromsø & kvinne & mellom 40 og 50 ---> Nord Amerika
+Tromsø & kvinne & mellom 40 og 50 ---> sykepleier
+frisør & Asia ---> kvinne
+frisør & Asia ---> yngre enn 20
+frisør & Europa & mann ---> eldre enn 60
+frisør & Tromsø & kvinne ---> Europa
+frisør & Tromsø & kvinne ---> yngre enn 20
+sykepleier & Kristiansand & mann ---> mellom 40 og 50
+sykepleier & kvinne & eldre enn 60 ---> Kristiansand
+sykepleier & kvinne & eldre enn 60 ---> Sør Amerika
+sykepleier & mellom 30 og 40 & mann ---> Trondheim
+sykepleier & mellom 50 og 60 ---> kvinne
+yngre enn 20 & Afrika & kvinne ---> Stavanger
+yngre enn 20 & Afrika & kvinne ---> frisør
+Australia & mann & modell ---> FALSE
+Bergen & Afrika & mann & mellom 50 og 60 & modell ---> FALSE
+Bergen & mellom 30 og 40 ---> FALSE
+Kristiansand & mellom 30 og 40 & Asia & kvinne ---> FALSE
+Nord Amerika & mann & modell ---> FALSE
+Oslo & Nord Amerika & kvinne & eldre enn 60 ---> FALSE
+frisør & Afrika & mann & mellom 50 og 60 ---> FALSE
+frisør & Australia & mann ---> FALSE
+frisør & Nord Amerika & mann ---> FALSE
+frisør & Sør Amerika & mann ---> FALSE
+frisør & Ålesund & mellom 30 og 40 & kvinne ---> FALSE
+kvinne & advokat ---> FALSE
+kvinne & elektriker ---> FALSE
+kvinne & rørlegger ---> FALSE
+mellom 20 og 30 & Oslo & mann & modell ---> FALSE
+mellom 20 og 30 & Stavanger & Europa & kvinne ---> FALSE
+mellom 20 og 30 & sykepleier & mann ---> FALSE
+mellom 20 og 30 & Ålesund & Afrika & mann & modell ---> FALSE
+mellom 30 og 40 & Nord Amerika ---> FALSE
+musiker & kvinne ---> FALSE
+psykolog & kvinne ---> FALSE
+sykepleier & Bergen & Sør Amerika & mann & mellom 40 og 50 ---> FALSE
+sykepleier & Oslo & kvinne & mellom 40 og 50 ---> FALSE
+yngre enn 20 & Sør Amerika & kvinne ---> FALSE
+yngre enn 20 & Ålesund & kvinne ---> FALSE

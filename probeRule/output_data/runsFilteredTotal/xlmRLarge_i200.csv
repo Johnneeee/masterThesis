@@ -1,0 +1,47 @@
+COUNT;HORN RULES (filtered)
+2/2;kvinne & elektriker ---> FALSE
+2/2;kvinne & rørlegger ---> FALSE
+2/2;mann & modell ---> FALSE
+2/2;musiker & kvinne ---> FALSE
+2/2;psykolog & Ålesund & mann ---> FALSE
+2/2;sykepleier & mann ---> FALSE
+1/2;Australia & mellom 50 og 60 ---> kvinne
+1/2;Australia & mellom 50 og 60 ---> sykepleier
+1/2;Oslo & Sør Amerika & kvinne & mellom 40 og 50 ---> frisør
+1/2;Tromsø & Nord Amerika & kvinne ---> mellom 20 og 30
+1/2;Tromsø & Nord Amerika & kvinne ---> modell
+1/2;Trondheim & Nord Amerika & kvinne ---> frisør
+1/2;frisør ---> kvinne
+1/2;mellom 20 og 30 & Bodø & kvinne ---> Asia
+1/2;mellom 20 og 30 & Bodø & kvinne ---> sykepleier
+1/2;mellom 30 og 40 & Sør Amerika ---> kvinne
+1/2;psykolog & Afrika ---> kvinne
+1/2;psykolog & Bodø ---> kvinne
+1/2;psykolog & Stavanger & mann ---> Asia
+1/2;psykolog & Stavanger & mann ---> yngre enn 20
+1/2;Ålesund & Afrika ---> mann
+1/2;Bodø & kvinne & mellom 50 og 60 & advokat ---> FALSE
+1/2;Stavanger & kvinne & advokat ---> FALSE
+1/2;psykolog & Kristiansand & mann ---> FALSE
+1/2;psykolog & Oslo & kvinne & eldre enn 60 ---> FALSE
+1/2;psykolog & Trondheim & mann ---> FALSE
+1/2;psykolog & mellom 30 og 40 & mann ---> FALSE
+1/2;Ålesund & kvinne & advokat ---> FALSE
+1/2;mellom 20 og 30 & Trondheim & kvinne ---> sykepleier
+1/2;mellom 20 og 30 & psykolog ---> kvinne
+1/2;mellom 30 og 40 & Afrika & mann ---> Kristiansand
+1/2;mellom 30 og 40 & Afrika & mann ---> musiker
+1/2;mellom 30 og 40 & Bodø & Europa & mann ---> advokat
+1/2;psykolog & Kristiansand & mann ---> Asia
+1/2;psykolog & Kristiansand & mann ---> eldre enn 60
+1/2;Kristiansand & Australia & kvinne & eldre enn 60 ---> FALSE
+1/2;Oslo & Sør Amerika & kvinne & eldre enn 60 ---> FALSE
+1/2;Oslo & kvinne & mellom 40 og 50 ---> FALSE
+1/2;Trondheim & Asia & kvinne & mellom 50 og 60 & advokat ---> FALSE
+1/2;frisør & mann ---> FALSE
+1/2;mellom 20 og 30 & Kristiansand & Europa & kvinne ---> FALSE
+1/2;psykolog & Bergen & Sør Amerika & mann ---> FALSE
+1/2;psykolog & Tromsø & Afrika & mann & eldre enn 60 ---> FALSE
+1/2;psykolog & mellom 30 og 40 & Australia & mann ---> FALSE
+1/2;yngre enn 20 & Bergen & Australia & kvinne ---> FALSE
+1/2;yngre enn 20 & psykolog & Nord Amerika & mann ---> FALSE

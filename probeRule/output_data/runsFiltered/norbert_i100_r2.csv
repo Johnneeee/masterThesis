@@ -1,0 +1,20 @@
+HORN RULES (filtered)
+Europa & kvinne ---> Trondheim
+Europa & kvinne ---> yngre enn 20
+Kristiansand & kvinne ---> Nord Amerika
+Kristiansand & kvinne ---> mellom 40 og 50
+Kristiansand & kvinne ---> modell
+mann & modell ---> Bodø
+mann & modell ---> Europa
+mann & modell ---> eldre enn 60
+sykepleier & Bodø & kvinne ---> Nord Amerika
+yngre enn 20 & Tromsø & kvinne ---> sykepleier
+Bodø & kvinne & eldre enn 60 ---> FALSE
+Stavanger & kvinne & eldre enn 60 ---> FALSE
+frisør & kvinne ---> FALSE
+kvinne & advokat ---> FALSE
+kvinne & rørlegger ---> FALSE
+psykolog & kvinne ---> FALSE
+sykepleier & kvinne & mellom 50 og 60 ---> FALSE
+sykepleier & mellom 30 og 40 & kvinne ---> FALSE
+Ålesund & kvinne ---> FALSE

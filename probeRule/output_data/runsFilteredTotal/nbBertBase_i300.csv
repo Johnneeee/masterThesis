@@ -1,0 +1,47 @@
+COUNT;HORN RULES (filtered)
+1/1;Bergen & Sør Amerika ---> kvinne
+1/1;Bergen & Sør Amerika ---> mellom 40 og 50
+1/1;Bergen & Sør Amerika ---> psykolog
+1/1;Oslo & mellom 40 og 50 ---> kvinne
+1/1;Oslo & mellom 50 og 60 ---> Australia
+1/1;Oslo & mellom 50 og 60 ---> mann
+1/1;Sør Amerika & kvinne & mellom 50 og 60 ---> Stavanger
+1/1;Sør Amerika & kvinne & mellom 50 og 60 ---> frisør
+1/1;Trondheim & Nord Amerika & mann & eldre enn 60 ---> elektriker
+1/1;Trondheim & kvinne & advokat ---> Australia
+1/1;mellom 20 og 30 & psykolog & mann ---> Australia
+1/1;psykolog & Bodø ---> kvinne
+1/1;psykolog & Oslo ---> kvinne
+1/1;psykolog & Oslo ---> mellom 40 og 50
+1/1;yngre enn 20 & Kristiansand ---> Europa
+1/1;yngre enn 20 & Kristiansand ---> kvinne
+1/1;yngre enn 20 & Kristiansand ---> psykolog
+1/1;yngre enn 20 & Trondheim & Europa & mann ---> rørlegger
+1/1;yngre enn 20 & psykolog & mann ---> Australia
+1/1;yngre enn 20 & Ålesund ---> kvinne
+1/1;Ålesund & mellom 50 og 60 ---> mann
+1/1;Afrika & eldre enn 60 ---> FALSE
+1/1;Bodø & kvinne & advokat ---> FALSE
+1/1;Europa & kvinne & advokat ---> FALSE
+1/1;Kristiansand & Afrika ---> FALSE
+1/1;Oslo & mellom 30 og 40 & Nord Amerika & kvinne ---> FALSE
+1/1;Tromsø & Europa & mann ---> FALSE
+1/1;frisør & Stavanger & Asia & mann ---> FALSE
+1/1;frisør & Tromsø & mann ---> FALSE
+1/1;kvinne & elektriker ---> FALSE
+1/1;kvinne & mellom 50 og 60 & advokat ---> FALSE
+1/1;kvinne & rørlegger ---> FALSE
+1/1;mann & modell ---> FALSE
+1/1;mellom 20 og 30 & Oslo & Sør Amerika & kvinne ---> FALSE
+1/1;mellom 20 og 30 & kvinne & advokat ---> FALSE
+1/1;mellom 30 og 40 & Bodø & kvinne ---> FALSE
+1/1;musiker & kvinne ---> FALSE
+1/1;psykolog & Bergen & Afrika & mann ---> FALSE
+1/1;psykolog & Stavanger & mann ---> FALSE
+1/1;psykolog & Tromsø & Afrika & mann & mellom 40 og 50 ---> FALSE
+1/1;psykolog & Trondheim & Asia & mann & mellom 50 og 60 ---> FALSE
+1/1;psykolog & mellom 30 og 40 & mann ---> FALSE
+1/1;sykepleier & mann ---> FALSE
+1/1;yngre enn 20 & Bodø ---> FALSE
+1/1;yngre enn 20 & Oslo & Asia & mann ---> FALSE
+1/1;yngre enn 20 & Oslo & Australia & mann ---> FALSE

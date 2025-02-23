@@ -1,0 +1,46 @@
+HORN RULES (filtered)
+Afrika & mann & modell ---> mellom 40 og 50
+Afrika & mann & modell ---> Ålesund
+Bergen & Europa & kvinne ---> modell
+Bergen & mann & modell ---> mellom 30 og 40
+Bodø & Afrika & kvinne ---> modell
+Kristiansand & Afrika & kvinne & eldre enn 60 ---> modell
+Kristiansand & Sør Amerika & kvinne ---> modell
+Oslo & Europa & kvinne ---> sykepleier
+Oslo & Europa & kvinne ---> yngre enn 20
+Stavanger & kvinne & eldre enn 60 ---> Europa
+Stavanger & kvinne & eldre enn 60 ---> sykepleier
+Tromsø & Afrika & kvinne ---> sykepleier
+Tromsø & Afrika & kvinne ---> yngre enn 20
+Trondheim & Asia & kvinne ---> sykepleier
+Trondheim & Asia & kvinne ---> yngre enn 20
+Trondheim & modell ---> kvinne
+eldre enn 60 & modell ---> kvinne
+kvinne & mellom 50 og 60 ---> modell
+mellom 30 og 40 & Australia & kvinne ---> Bodø
+mellom 30 og 40 & Australia & kvinne ---> modell
+mellom 30 og 40 & Bodø & kvinne ---> Australia
+mellom 30 og 40 & Bodø & kvinne ---> modell
+sykepleier & Oslo & kvinne ---> Europa
+sykepleier & Oslo & kvinne ---> yngre enn 20
+sykepleier & Stavanger & kvinne ---> Europa
+sykepleier & Stavanger & kvinne ---> eldre enn 60
+sykepleier & Trondheim & Europa & mann ---> mellom 20 og 30
+sykepleier & mann & eldre enn 60 ---> Stavanger
+sykepleier & mellom 30 og 40 & kvinne ---> Europa
+Kristiansand & mellom 30 og 40 & Nord Amerika & mann & modell ---> FALSE
+Oslo & Afrika & kvinne & eldre enn 60 ---> FALSE
+Stavanger & Australia & mann & mellom 50 og 60 & modell ---> FALSE
+Tromsø & Asia & kvinne & mellom 40 og 50 & modell ---> FALSE
+Tromsø & Sør Amerika & kvinne & eldre enn 60 ---> FALSE
+frisør & kvinne ---> FALSE
+kvinne & advokat ---> FALSE
+kvinne & elektriker ---> FALSE
+kvinne & rørlegger ---> FALSE
+mellom 20 og 30 & Nord Amerika & kvinne ---> FALSE
+mellom 30 og 40 & Tromsø & kvinne ---> FALSE
+musiker & kvinne ---> FALSE
+psykolog & kvinne ---> FALSE
+sykepleier & Bodø & kvinne ---> FALSE
+sykepleier & Ålesund & kvinne & mellom 40 og 50 ---> FALSE
+yngre enn 20 & mann & modell ---> FALSE

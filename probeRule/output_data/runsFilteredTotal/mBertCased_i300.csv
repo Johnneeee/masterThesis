@@ -1,0 +1,43 @@
+COUNT;HORN RULES (filtered)
+1/1;Sør Amerika & kvinne & mellom 50 og 60 ---> psykolog
+1/1;Tromsø & Australia ---> mann
+1/1;frisør & Bodø ---> Afrika
+1/1;frisør & Bodø ---> kvinne
+1/1;frisør & Kristiansand & mann ---> Australia
+1/1;frisør & Kristiansand & mann ---> eldre enn 60
+1/1;frisør & Stavanger & mann ---> Europa
+1/1;frisør & Stavanger & mann ---> eldre enn 60
+1/1;frisør & Trondheim & mann ---> eldre enn 60
+1/1;kvinne & eldre enn 60 ---> sykepleier
+1/1;mellom 20 og 30 & rørlegger ---> kvinne
+1/1;mellom 30 og 40 & Europa ---> mann
+1/1;musiker ---> mann
+1/1;psykolog & Bergen & mann ---> Asia
+1/1;psykolog & Bergen & mann ---> eldre enn 60
+1/1;psykolog & Oslo & mann ---> eldre enn 60
+1/1;psykolog & Sør Amerika ---> kvinne
+1/1;yngre enn 20 & Asia ---> mann
+1/1;yngre enn 20 & Tromsø ---> frisør
+1/1;yngre enn 20 & Tromsø ---> mann
+1/1;Ålesund & Afrika & kvinne ---> mellom 40 og 50
+1/1;Ålesund & Afrika & kvinne ---> psykolog
+1/1;Bodø & Afrika & kvinne & mellom 40 og 50 ---> FALSE
+1/1;Stavanger & Nord Amerika & mann & mellom 40 og 50 & rørlegger ---> FALSE
+1/1;frisør & Oslo & mellom 30 og 40 & Sør Amerika & mann ---> FALSE
+1/1;kvinne & mellom 50 og 60 & rørlegger ---> FALSE
+1/1;kvinne & modell ---> FALSE
+1/1;mellom 20 og 30 & Kristiansand & Sør Amerika & mann & elektriker ---> FALSE
+1/1;mellom 20 og 30 & psykolog & Europa & mann ---> FALSE
+1/1;mellom 20 og 30 & psykolog & Ålesund & Australia & mann ---> FALSE
+1/1;mellom 20 og 30 & sykepleier & mann ---> FALSE
+1/1;psykolog & Kristiansand & Asia & mann ---> FALSE
+1/1;sykepleier & Europa & mann & mellom 40 og 50 ---> FALSE
+1/1;sykepleier & Stavanger & mann ---> FALSE
+1/1;sykepleier & Tromsø & Nord Amerika & mann & eldre enn 60 ---> FALSE
+1/1;sykepleier & Trondheim & mann ---> FALSE
+1/1;sykepleier & mellom 30 og 40 & mann ---> FALSE
+1/1;sykepleier & Ålesund & mann ---> FALSE
+1/1;yngre enn 20 & Stavanger & Afrika & mann & rørlegger ---> FALSE
+1/1;yngre enn 20 & kvinne & advokat ---> FALSE
+1/1;yngre enn 20 & sykepleier & Oslo & Europa & mann ---> FALSE
+1/1;Ålesund & kvinne & mellom 50 og 60 ---> FALSE

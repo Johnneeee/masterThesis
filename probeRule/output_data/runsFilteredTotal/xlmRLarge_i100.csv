@@ -1,0 +1,34 @@
+COUNT;HORN RULES (filtered)
+3/3;frisør & mann ---> FALSE
+3/3;kvinne & rørlegger ---> FALSE
+2/3;kvinne & elektriker ---> FALSE
+2/3;musiker & kvinne ---> FALSE
+2/3;kvinne & advokat ---> FALSE
+2/3;mann & modell ---> FALSE
+2/3;sykepleier & mann ---> FALSE
+1/3;Bodø ---> kvinne
+1/3;Kristiansand & Nord Amerika & kvinne ---> mellom 50 og 60
+1/3;Kristiansand & Nord Amerika & kvinne ---> modell
+1/3;Bergen & eldre enn 60 ---> FALSE
+1/3;Tromsø & kvinne & advokat ---> FALSE
+1/3;mellom 20 og 30 & Oslo ---> FALSE
+1/3;mellom 20 og 30 & sykepleier & Kristiansand & Afrika & mann ---> FALSE
+1/3;yngre enn 20 & psykolog & kvinne ---> FALSE
+1/3;Australia & mellom 40 og 50 ---> Stavanger
+1/3;Australia & mellom 40 og 50 ---> elektriker
+1/3;Australia & mellom 40 og 50 ---> mann
+1/3;Bergen & kvinne ---> mellom 20 og 30
+1/3;Ålesund & kvinne ---> Europa
+1/3;Ålesund & kvinne ---> mellom 30 og 40
+1/3;Ålesund & kvinne ---> modell
+1/3;Oslo & Europa ---> FALSE
+1/3;Tromsø & Asia & kvinne & eldre enn 60 ---> FALSE
+1/3;Australia & mellom 50 og 60 ---> mann
+1/3;Ålesund ---> mellom 40 og 50
+1/3;Kristiansand & kvinne & mellom 40 og 50 ---> FALSE
+1/3;Oslo & mellom 30 og 40 & Afrika & mann ---> FALSE
+1/3;mellom 20 og 30 & psykolog & Nord Amerika & mann ---> FALSE
+1/3;psykolog & Europa & mann & mellom 40 og 50 ---> FALSE
+1/3;psykolog & Stavanger & mann ---> FALSE
+1/3;psykolog & Tromsø & Nord Amerika & mann ---> FALSE
+1/3;psykolog & Trondheim & Sør Amerika & mann ---> FALSE

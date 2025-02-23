@@ -1,0 +1,14 @@
+HORN RULES (filtered)
+Bodø & Asia & mann & eldre enn 60 ---> musiker
+Trondheim & mann ---> Nord Amerika
+Trondheim & mann ---> mellom 20 og 30
+mellom 20 og 30 & Australia & kvinne ---> Oslo
+psykolog ---> kvinne
+Bodø & Sør Amerika & mann & eldre enn 60 ---> FALSE
+Kristiansand & mann & eldre enn 60 ---> FALSE
+frisør & mann ---> FALSE
+kvinne & elektriker ---> FALSE
+kvinne & rørlegger ---> FALSE
+mann & modell ---> FALSE
+musiker & kvinne ---> FALSE
+sykepleier & mann ---> FALSE

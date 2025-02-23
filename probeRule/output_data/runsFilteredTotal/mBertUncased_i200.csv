@@ -1,0 +1,73 @@
+COUNT;HORN RULES (filtered)
+2/2;kvinne & rørlegger ---> Afrika
+2/2;kvinne & advokat ---> FALSE
+2/2;kvinne & elektriker ---> FALSE
+2/2;musiker & kvinne ---> FALSE
+2/2;sykepleier & Kristiansand & mann ---> FALSE
+1/2;Asia & kvinne & mellom 40 og 50 ---> Trondheim
+1/2;Asia & kvinne & mellom 40 og 50 ---> modell
+1/2;Europa & mann & modell ---> Tromsø
+1/2;Europa & mann & modell ---> yngre enn 20
+1/2;Nord Amerika & mann & modell ---> Oslo
+1/2;Nord Amerika & mann & modell ---> yngre enn 20
+1/2;Sør Amerika & mann & modell ---> yngre enn 20
+1/2;Trondheim & Afrika ---> kvinne
+1/2;Trondheim & Afrika ---> mellom 40 og 50
+1/2;Trondheim & Afrika ---> rørlegger
+1/2;frisør & kvinne ---> Europa
+1/2;frisør & kvinne ---> Kristiansand
+1/2;kvinne & rørlegger ---> mellom 40 og 50
+1/2;mellom 30 og 40 & Nord Amerika ---> mann
+1/2;mellom 30 og 40 & Nord Amerika ---> psykolog
+1/2;mellom 30 og 40 & Nord Amerika ---> Ålesund
+1/2;psykolog & Asia ---> Bergen
+1/2;psykolog & Asia ---> kvinne
+1/2;psykolog & Australia ---> mann
+1/2;sykepleier & Afrika & mann ---> eldre enn 60
+1/2;Asia & mann & modell ---> FALSE
+1/2;Australia & mann & modell ---> FALSE
+1/2;Nord Amerika & kvinne & mellom 40 og 50 ---> FALSE
+1/2;Stavanger & Sør Amerika ---> FALSE
+1/2;Stavanger & mellom 30 og 40 & Asia & kvinne ---> FALSE
+1/2;mellom 20 og 30 & Bergen & Afrika & kvinne ---> FALSE
+1/2;mellom 20 og 30 & sykepleier & mann ---> FALSE
+1/2;psykolog & Bergen & Nord Amerika & kvinne & mellom 50 og 60 ---> FALSE
+1/2;sykepleier & Oslo & Nord Amerika & mann ---> FALSE
+1/2;sykepleier & mann & mellom 40 og 50 ---> FALSE
+1/2;sykepleier & mann & mellom 50 og 60 ---> FALSE
+1/2;yngre enn 20 & kvinne ---> FALSE
+1/2;Asia & kvinne & mellom 50 og 60 ---> Tromsø
+1/2;Asia & kvinne & mellom 50 og 60 ---> sykepleier
+1/2;Asia & mann & modell ---> Tromsø
+1/2;Asia & mann & modell ---> eldre enn 60
+1/2;Bergen & Europa ---> mann
+1/2;Bergen & Europa ---> mellom 50 og 60
+1/2;Bergen & Europa ---> rørlegger
+1/2;Bodø & kvinne ---> Sør Amerika
+1/2;Bodø & kvinne ---> sykepleier
+1/2;Kristiansand & Nord Amerika & mann ---> musiker
+1/2;Kristiansand & Nord Amerika & mann ---> yngre enn 20
+1/2;Stavanger & Sør Amerika & mann ---> sykepleier
+1/2;Stavanger & Sør Amerika & mann ---> yngre enn 20
+1/2;Stavanger & mellom 50 og 60 ---> Afrika
+1/2;Stavanger & mellom 50 og 60 ---> mann
+1/2;kvinne & eldre enn 60 ---> Stavanger
+1/2;kvinne & eldre enn 60 ---> sykepleier
+1/2;kvinne & rørlegger ---> Stavanger
+1/2;kvinne & rørlegger ---> mellom 30 og 40
+1/2;psykolog & mellom 50 og 60 ---> Australia
+1/2;psykolog & mellom 50 og 60 ---> Kristiansand
+1/2;psykolog & mellom 50 og 60 ---> kvinne
+1/2;sykepleier & Tromsø & mann ---> Nord Amerika
+1/2;sykepleier & Tromsø & mann ---> eldre enn 60
+1/2;yngre enn 20 & kvinne ---> Asia
+1/2;yngre enn 20 & kvinne ---> Oslo
+1/2;yngre enn 20 & kvinne ---> modell
+1/2;Stavanger & mellom 30 og 40 & Europa & kvinne ---> FALSE
+1/2;Trondheim & mellom 30 og 40 & Australia & kvinne ---> FALSE
+1/2;frisør & Bergen & mellom 30 og 40 & Sør Amerika & kvinne ---> FALSE
+1/2;frisør & Trondheim & Afrika & kvinne & mellom 50 og 60 ---> FALSE
+1/2;mellom 20 og 30 & Ålesund & mann & modell ---> FALSE
+1/2;psykolog & Nord Amerika & kvinne & mellom 40 og 50 ---> FALSE
+1/2;psykolog & mellom 30 og 40 & Tromsø & kvinne ---> FALSE
+1/2;sykepleier & Bodø & mann ---> FALSE
