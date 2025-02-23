@@ -2,7 +2,6 @@ import numpy as np
 from itertools import combinations
 from sympy import symbols
 import csv
-import datetime
 
 # pre Horn Algorithm methods
 def define_variables(number):
@@ -71,12 +70,10 @@ def rulesToSentences(rules, lookupTable):
     return ruleSentences
 
 def storeMetadata(writeTo, metadata):
-    with open(f"output_data/metadata/{writeTo}.csv", 'w', newline='') as csvfile:
+    with open(f"output_data/metadataRaw/{writeTo}.csv", 'w', newline='') as csvfile:
         writer = csv.writer(csvfile, delimiter=";")
-        totalRuntime = [["-", "-", "-", "-", str(datetime.timedelta(seconds=int(sum([float(x[3]) for x in metadata]))))]]
-        writer.writerows([["ITERATION", "LEN(HYP)", "SAMPLENR", "RUNTIME(sample)", "RUNTIME(total)"]]) #header
+        writer.writerows([["ITERATION", "LEN(HYP)", "SAMPLENR", "RUNTIME(sample)"]]) #header
         writer.writerows(metadata)
-        writer.writerows(totalRuntime)
 
 def storeHornRules(writeTo, h, lookupTable):
     hornRuleSentences = rulesToSentences(h,lookupTable)
