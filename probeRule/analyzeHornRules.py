@@ -1,6 +1,4 @@
 import csv
-import matplotlib.pyplot as plt
-import numpy as np
 
 #getting available filenames
 lms = ["xlmRBase", "xlmRLarge", "mBertUncased", "mBertCased", "nbBertBase", "nbBertLarge", "norbert", "norbert2"]
