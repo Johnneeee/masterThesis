@@ -1,0 +1,131 @@
+COUNT;HORN RULES (filtered)
+6/6;frisør & kvinne ---> FALSE
+6/6;kvinne & rørlegger ---> FALSE
+5/6;kvinne & advokat ---> FALSE
+4/6;kvinne & elektriker ---> FALSE
+4/6;musiker & kvinne ---> FALSE
+4/6;psykolog & kvinne ---> FALSE
+3/6;Stavanger & kvinne ---> modell
+3/6;mellom 30 og 40 & kvinne ---> modell
+3/6;kvinne & mellom 50 og 60 ---> modell
+3/6;yngre enn 20 & mann & modell ---> FALSE
+2/6;kvinne & mellom 40 og 50 ---> Afrika
+2/6;kvinne & mellom 40 og 50 ---> modell
+2/6;Australia & kvinne ---> modell
+2/6;Kristiansand & kvinne ---> modell
+2/6;yngre enn 20 & Tromsø & kvinne ---> sykepleier
+2/6;Afrika & mann & modell ---> Ålesund
+2/6;sykepleier & Stavanger & kvinne ---> Europa
+1/6;Bergen & kvinne ---> eldre enn 60
+1/6;Bodø & kvinne ---> Afrika
+1/6;Bodø & kvinne ---> mellom 30 og 40
+1/6;Bodø & kvinne ---> modell
+1/6;Nord Amerika & kvinne ---> Tromsø
+1/6;Nord Amerika & kvinne ---> mellom 50 og 60
+1/6;Nord Amerika & kvinne ---> modell
+1/6;Stavanger & kvinne ---> Afrika
+1/6;kvinne & mellom 40 og 50 ---> Stavanger
+1/6;mellom 30 og 40 & kvinne ---> Afrika
+1/6;mellom 30 og 40 & kvinne ---> Bodø
+1/6;mellom 20 og 30 & kvinne ---> FALSE
+1/6;psykolog & kvinne & mellom 50 og 60 ---> FALSE
+1/6;sykepleier & Oslo & Asia & kvinne & mellom 50 og 60 ---> FALSE
+1/6;Stavanger & kvinne ---> Nord Amerika
+1/6;Stavanger & kvinne ---> eldre enn 60
+1/6;Sør Amerika ---> mann
+1/6;Kristiansand & Asia & kvinne & eldre enn 60 & elektriker ---> FALSE
+1/6;mellom 30 og 40 & kvinne ---> FALSE
+1/6;musiker & Bodø & kvinne ---> FALSE
+1/6;sykepleier & Europa & mann & mellom 50 og 60 ---> FALSE
+1/6;Europa & kvinne ---> Trondheim
+1/6;Europa & kvinne ---> yngre enn 20
+1/6;Kristiansand & kvinne ---> Nord Amerika
+1/6;Kristiansand & kvinne ---> mellom 40 og 50
+1/6;mann & modell ---> Bodø
+1/6;mann & modell ---> Europa
+1/6;mann & modell ---> eldre enn 60
+1/6;sykepleier & Bodø & kvinne ---> Nord Amerika
+1/6;Bodø & kvinne & eldre enn 60 ---> FALSE
+1/6;Stavanger & kvinne & eldre enn 60 ---> FALSE
+1/6;sykepleier & kvinne & mellom 50 og 60 ---> FALSE
+1/6;sykepleier & mellom 30 og 40 & kvinne ---> FALSE
+1/6;Ålesund & kvinne ---> FALSE
+1/6;Asia & modell ---> Kristiansand
+1/6;Asia & modell ---> kvinne
+1/6;Asia & modell ---> mellom 50 og 60
+1/6;Sør Amerika & mann & modell ---> Ålesund
+1/6;Tromsø & eldre enn 60 ---> Europa
+1/6;Tromsø & eldre enn 60 ---> kvinne
+1/6;Tromsø & eldre enn 60 ---> sykepleier
+1/6;kvinne & mellom 40 og 50 ---> Oslo
+1/6;mellom 20 og 30 & Stavanger & kvinne ---> Australia
+1/6;mellom 20 og 30 & Stavanger & kvinne ---> modell
+1/6;mellom 20 og 30 & Tromsø & kvinne ---> Sør Amerika
+1/6;mellom 20 og 30 & Tromsø & kvinne ---> modell
+1/6;sykepleier & Nord Amerika & mann & mellom 40 og 50 ---> Bergen
+1/6;sykepleier & Stavanger & kvinne ---> yngre enn 20
+1/6;sykepleier & Trondheim & kvinne ---> Asia
+1/6;sykepleier & Trondheim & kvinne ---> eldre enn 60
+1/6;yngre enn 20 & Tromsø & kvinne ---> Sør Amerika
+1/6;Ålesund & kvinne ---> Afrika
+1/6;Ålesund & kvinne ---> modell
+1/6;Australia & mann & modell ---> FALSE
+1/6;Bodø & Nord Amerika & kvinne ---> FALSE
+1/6;Nord Amerika & mann & modell ---> FALSE
+1/6;Tromsø & Australia & kvinne ---> FALSE
+1/6;sykepleier & Bergen & Australia & mann & eldre enn 60 ---> FALSE
+1/6;yngre enn 20 & sykepleier & mann ---> FALSE
+1/6;Kristiansand & Asia ---> mann
+1/6;Nord Amerika & mellom 50 og 60 ---> mann
+1/6;Stavanger & kvinne ---> Australia
+1/6;mann & eldre enn 60 & modell ---> Stavanger
+1/6;mann & eldre enn 60 & modell ---> Sør Amerika
+1/6;mellom 20 og 30 & Sør Amerika & kvinne ---> Oslo
+1/6;mellom 20 og 30 & Sør Amerika & kvinne ---> modell
+1/6;sykepleier & kvinne & mellom 40 og 50 ---> Sør Amerika
+1/6;Ålesund ---> mann
+1/6;Afrika & mann & modell ---> FALSE
+1/6;Bodø & Asia & kvinne & mellom 50 og 60 ---> FALSE
+1/6;Kristiansand & Europa & kvinne ---> FALSE
+1/6;Tromsø & Sør Amerika & kvinne & mellom 50 og 60 ---> FALSE
+1/6;Trondheim & Asia & kvinne & mellom 40 og 50 ---> FALSE
+1/6;Trondheim & Sør Amerika & kvinne ---> FALSE
+1/6;mellom 20 og 30 & Tromsø & kvinne ---> FALSE
+1/6;mellom 20 og 30 & sykepleier & Bergen & Asia & kvinne ---> FALSE
+1/6;mellom 30 og 40 & Sør Amerika & mann & modell ---> FALSE
+1/6;yngre enn 20 & Trondheim & kvinne ---> FALSE
+1/6;Afrika & mann & modell ---> mellom 40 og 50
+1/6;Bergen & Europa & kvinne ---> modell
+1/6;Bergen & mann & modell ---> mellom 30 og 40
+1/6;Bodø & Afrika & kvinne ---> modell
+1/6;Kristiansand & Afrika & kvinne & eldre enn 60 ---> modell
+1/6;Kristiansand & Sør Amerika & kvinne ---> modell
+1/6;Oslo & Europa & kvinne ---> sykepleier
+1/6;Oslo & Europa & kvinne ---> yngre enn 20
+1/6;Stavanger & kvinne & eldre enn 60 ---> Europa
+1/6;Stavanger & kvinne & eldre enn 60 ---> sykepleier
+1/6;Tromsø & Afrika & kvinne ---> sykepleier
+1/6;Tromsø & Afrika & kvinne ---> yngre enn 20
+1/6;Trondheim & Asia & kvinne ---> sykepleier
+1/6;Trondheim & Asia & kvinne ---> yngre enn 20
+1/6;Trondheim & modell ---> kvinne
+1/6;eldre enn 60 & modell ---> kvinne
+1/6;mellom 30 og 40 & Australia & kvinne ---> Bodø
+1/6;mellom 30 og 40 & Australia & kvinne ---> modell
+1/6;mellom 30 og 40 & Bodø & kvinne ---> Australia
+1/6;mellom 30 og 40 & Bodø & kvinne ---> modell
+1/6;sykepleier & Oslo & kvinne ---> Europa
+1/6;sykepleier & Oslo & kvinne ---> yngre enn 20
+1/6;sykepleier & Stavanger & kvinne ---> eldre enn 60
+1/6;sykepleier & Trondheim & Europa & mann ---> mellom 20 og 30
+1/6;sykepleier & mann & eldre enn 60 ---> Stavanger
+1/6;sykepleier & mellom 30 og 40 & kvinne ---> Europa
+1/6;Kristiansand & mellom 30 og 40 & Nord Amerika & mann & modell ---> FALSE
+1/6;Oslo & Afrika & kvinne & eldre enn 60 ---> FALSE
+1/6;Stavanger & Australia & mann & mellom 50 og 60 & modell ---> FALSE
+1/6;Tromsø & Asia & kvinne & mellom 40 og 50 & modell ---> FALSE
+1/6;Tromsø & Sør Amerika & kvinne & eldre enn 60 ---> FALSE
+1/6;mellom 20 og 30 & Nord Amerika & kvinne ---> FALSE
+1/6;mellom 30 og 40 & Tromsø & kvinne ---> FALSE
+1/6;sykepleier & Bodø & kvinne ---> FALSE
+1/6;sykepleier & Ålesund & kvinne & mellom 40 og 50 ---> FALSE
