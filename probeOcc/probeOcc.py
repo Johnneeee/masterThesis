@@ -10,7 +10,7 @@ def readCSV(file):
     return names
 
 
-def probeOcc(names, templates, maskTag, lm):
+def probeOcc(names, templates, maskTag, lm): #-> {occ: [count, pGender]}
     templates = list(map(lambda x: x.replace("____", maskTag), templates))
     unmasker = pipeline('fill-mask', model=lm)
     probedAttributes = {}
@@ -28,7 +28,7 @@ def probeOcc(names, templates, maskTag, lm):
                 except:
                     probedAttributes[token] = [1,res["score"]]
 
-    for att in probedAttributes:
+    for att in probedAttributes: # -> averaging
         ppbs = round(probedAttributes[att][1]/probedAttributes[att][0], 3)
         probedAttributes[att][1] = ppbs
 
@@ -99,8 +99,8 @@ maleNames = readCSV("../censusData/preparedData/ssbTopGuttenavn80-23_prepared.cs
 #probing occupation given name
 
 #test
-# probeFemaleOccs = probeOcc(femaleNames[:10], templates[:10], bert, "google-bert/bert-base-multilingual-uncased")
-# probeMaleOccs = probeOcc(maleNames[:10], templates[:10], bert, "google-bert/bert-base-multilingual-uncased")
+# probeFemaleOccs = probeOcc(femaleNames[:2], templates[:2], bert, "google-bert/bert-base-multilingual-uncased")
+# probeMaleOccs = probeOcc(maleNames[:2], templates[:2], bert, "google-bert/bert-base-multilingual-uncased")
 # writeToCSV("data/raw/mBertUncased_occ.csv", calculatePPBS(probeFemaleOccs,probeMaleOccs))
 
 

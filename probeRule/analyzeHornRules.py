@@ -102,3 +102,4 @@ eq300 = ["i300_r0"]
 #     countRules(f"{lm}_i200", [f"{lm}_{x}" for x in eq200], [1,1])
 #     countRules(f"{lm}_i300", [f"{lm}_{x}" for x in eq300], [1])
 #     countRules(f"{lm}_iAll(weighted)", [f"{lm}_{x}" for x in eq100 + eq200 + eq300], [1,1,1,2,2,3])
+#     countRules(f"{lm}_iAll", [f"{lm}_{x}" for x in eq100 + eq200 + eq300], [1,1,1,1,1,1])
