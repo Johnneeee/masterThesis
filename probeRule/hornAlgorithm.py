@@ -46,7 +46,6 @@ class HornAlgorithm():
 
         # dynamic
         self.bad_nc = [] # list of negative counterexamples that cannot produce a rule (according to positive counterexamples)
-        self.posCounterEx = [] #tracks positive counterexamples encountered
 
     def probe(self, sentence : str):
         for reply in self.unmasker(sentence): # for the replies returned by the language model
@@ -119,6 +118,8 @@ class HornAlgorithm():
     
     def learn(self,iterationCap,background = set()):
         metadata = [] #[[iteration, len(H), sampleNr, runtime(sample), runtime(total)]]
+        posCounterEx = [] #tracks positive counterexamples encountered
+        
         H = background
         S = []
 
@@ -138,7 +139,7 @@ class HornAlgorithm():
                     H.remove(clause)
                     pos_ex = True
 
-            if pos_ex: self.posCounterEx.append(counterEx) # if counterexample confirmed as positive counterexample
+            if pos_ex: posCounterEx.append(counterEx) # if counterexample confirmed as positive counterexample
 
             if pos_ex == False: # else (eq -> negative counter example)
                 for idx, s in enumerate(S): # if (exists s in S s.t. statements)
@@ -159,7 +160,7 @@ class HornAlgorithm():
                 else: S.append(counterEx) # else (doesnt exists s in S s.t. statements)
 
                 H = self.get_hypothesis(S).union(background)
-                H = set(filter(lambda x: all(self.evalFormula(x, vec) for vec in self.posCounterEx), H.copy())) # refining H: drops h in H where exsists p in P s.t. p falsifies h
+                H = set(filter(lambda x: all(self.evalFormula(x, vec) for vec in posCounterEx), H.copy())) # refining H: drops h in H where exsists p in P s.t. p falsifies h
 
             self.find_bad_nc(H,S)
             metadata.append([iteration, len(H), sampleNr, f"{timeit.default_timer()-start:.3f}"]) # logging metadata
