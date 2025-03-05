@@ -16,6 +16,8 @@ def filterOcc(file): # filtered
 
     data = list(filter(lambda x: x[0] in gold_data, data)) # filter data
     data = [x + [gold_data[x[0]]] for x in data] # adding gold ppbs in end of list
+    data = sorted(data, key=lambda x: int(x[1]) + int(x[2]),reverse=True)
+
 
     #write data
     head = [["ATTRIBUTE", "COUNT FEMALE", "COUNT MALE", "P(FEMALE)", "P(MALE)", "P(PPBS)", "GOLD PPBS"]]
@@ -24,9 +26,9 @@ def filterOcc(file): # filtered
         writer.writerows(head)
         writer.writerows(data)
 
-# lms = ["xlmRBase", "xlmRLarge", "mBertUncased", "mBertCased", "nbBertBase", "nbBertLarge", "norbert", "norbert2"]
-# for name in lms:
-#     filterOcc(name)
+lms = ["xlmRBase", "xlmRLarge", "mBertUncased", "mBertCased", "nbBertBase", "nbBertLarge", "norbert", "norbert2"]
+for name in lms:
+    filterOcc(name)
 
 # ##########################################################################
 
@@ -58,7 +60,7 @@ def total(files, tag): # total/totalFiltered
     if tag == "raw":
         head = [["ATTRIBUTE", "COUNT FEMALE", "COUNT MALE", "P(FEMALE)", "P(MALE)", "P(PPBS)"]]
     data = [[x[0]] + x[1] for x in totalData.items()]
-    data = sorted(data, key=lambda x: max(x[1], x[2]),reverse=True)
+    data = sorted(data, key=lambda x: x[1] + x[2],reverse=True)
 
     # writing data
     with open(f"data/total/total{tag[0].upper() + tag[1:]}_occ.csv", 'w', newline='', encoding="UTF-8") as csvfile:
