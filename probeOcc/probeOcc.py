@@ -56,7 +56,7 @@ def calculatePPBS(femaleProbings,maleProbings): # -> # {occ: [femalecount, malec
 
 def writeToCSV(path, data : dict):
     data = [[x[0]] + x[1] for x in data.items()]
-    data = sorted(data, key=lambda x: max(x[1], x[2]),reverse=True)
+    data = sorted(data, key=lambda x: x[1] + x[2],reverse=True)
     head = [["ATTRIBUTE", "COUNT FEMALE", "COUNT MALE", "P(FEMALE)", "P(MALE)", "PPBS"]]
     with open(path, 'w', newline='', encoding="UTF-8") as csvfile:
         writer = csv.writer(csvfile, delimiter=";")
