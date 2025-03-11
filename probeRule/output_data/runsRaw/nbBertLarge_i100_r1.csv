@@ -1,0 +1,261 @@
+EXTRACTED HORN RULES
+Afrika & Australia ---> FALSE
+Afrika & Europa ---> FALSE
+Afrika & Nord Amerika ---> FALSE
+Afrika & Sør Amerika ---> FALSE
+Asia & Afrika ---> FALSE
+Asia & Australia ---> FALSE
+Asia & Europa ---> FALSE
+Asia & Nord Amerika ---> FALSE
+Asia & Sør Amerika ---> FALSE
+Asia & kvinne & mellom 40 og 50 & rørlegger ---> Bergen
+Asia & kvinne & mellom 40 og 50 & rørlegger ---> Bodø
+Asia & kvinne & mellom 40 og 50 & rørlegger ---> FALSE
+Asia & kvinne & mellom 40 og 50 & rørlegger ---> Kristiansand
+Asia & kvinne & mellom 40 og 50 & rørlegger ---> Oslo
+Asia & kvinne & mellom 40 og 50 & rørlegger ---> Stavanger
+Asia & kvinne & mellom 40 og 50 & rørlegger ---> Tromsø
+Asia & kvinne & mellom 40 og 50 & rørlegger ---> Trondheim
+Asia & kvinne & mellom 40 og 50 & rørlegger ---> Ålesund
+Bergen & Bodø ---> FALSE
+Bergen & Tromsø ---> FALSE
+Bergen & Trondheim ---> FALSE
+Bergen & Ålesund ---> FALSE
+Bodø & Nord Amerika & kvinne & advokat ---> FALSE
+Bodø & Nord Amerika & kvinne & advokat ---> eldre enn 60
+Bodø & Nord Amerika & kvinne & advokat ---> mellom 20 og 30
+Bodø & Nord Amerika & kvinne & advokat ---> mellom 30 og 40
+Bodø & Nord Amerika & kvinne & advokat ---> mellom 40 og 50
+Bodø & Nord Amerika & kvinne & advokat ---> mellom 50 og 60
+Bodø & Nord Amerika & kvinne & advokat ---> yngre enn 20
+Bodø & Tromsø ---> FALSE
+Europa & Australia ---> FALSE
+Europa & mellom 50 og 60 ---> Kristiansand
+Europa & mellom 50 og 60 ---> kvinne
+Europa & mellom 50 og 60 ---> sykepleier
+Kristiansand & Afrika & kvinne & eldre enn 60 & elektriker ---> FALSE
+Kristiansand & Bergen ---> FALSE
+Kristiansand & Bodø ---> FALSE
+Kristiansand & Stavanger ---> FALSE
+Kristiansand & Tromsø ---> FALSE
+Kristiansand & Trondheim ---> FALSE
+Kristiansand & mellom 30 og 40 & kvinne ---> Afrika
+Kristiansand & mellom 30 og 40 & kvinne ---> Asia
+Kristiansand & mellom 30 og 40 & kvinne ---> Australia
+Kristiansand & mellom 30 og 40 & kvinne ---> Europa
+Kristiansand & mellom 30 og 40 & kvinne ---> FALSE
+Kristiansand & mellom 30 og 40 & kvinne ---> Nord Amerika
+Kristiansand & mellom 30 og 40 & kvinne ---> Sør Amerika
+Kristiansand & mellom 30 og 40 & kvinne ---> advokat
+Kristiansand & mellom 30 og 40 & kvinne ---> elektriker
+Kristiansand & mellom 30 og 40 & kvinne ---> forfatter
+Kristiansand & mellom 30 og 40 & kvinne ---> fotograf
+Kristiansand & mellom 30 og 40 & kvinne ---> frisør
+Kristiansand & mellom 30 og 40 & kvinne ---> modell
+Kristiansand & mellom 30 og 40 & kvinne ---> rørlegger
+Kristiansand & mellom 30 og 40 & kvinne ---> sykepleier
+Kristiansand & Ålesund ---> FALSE
+Nord Amerika & Australia ---> FALSE
+Nord Amerika & Europa ---> FALSE
+Nord Amerika & Sør Amerika ---> FALSE
+Oslo & Bergen ---> FALSE
+Oslo & Bodø ---> FALSE
+Oslo & Kristiansand ---> FALSE
+Oslo & Stavanger ---> FALSE
+Oslo & Tromsø ---> FALSE
+Oslo & Trondheim ---> FALSE
+Oslo & Ålesund ---> FALSE
+Oslo ---> Asia
+Oslo ---> forfatter
+Oslo ---> kvinne
+Oslo ---> yngre enn 20
+Stavanger & Bergen ---> FALSE
+Stavanger & Bodø ---> FALSE
+Stavanger & Tromsø ---> FALSE
+Stavanger & Trondheim ---> FALSE
+Stavanger & Ålesund ---> FALSE
+Sør Amerika & Australia ---> FALSE
+Sør Amerika & Europa ---> FALSE
+Trondheim & Bodø ---> FALSE
+Trondheim & Tromsø ---> FALSE
+advokat & elektriker ---> FALSE
+advokat & modell ---> FALSE
+advokat & rørlegger ---> FALSE
+advokat ---> mann
+advokat ---> mellom 40 og 50
+elektriker & modell ---> FALSE
+elektriker & rørlegger ---> FALSE
+forfatter & advokat ---> FALSE
+forfatter & elektriker ---> FALSE
+forfatter & mann ---> Afrika
+forfatter & mann ---> Asia
+forfatter & mann ---> Australia
+forfatter & mann ---> Bergen
+forfatter & mann ---> Bodø
+forfatter & mann ---> Europa
+forfatter & mann ---> FALSE
+forfatter & mann ---> Kristiansand
+forfatter & mann ---> Nord Amerika
+forfatter & mann ---> Oslo
+forfatter & mann ---> Stavanger
+forfatter & mann ---> Sør Amerika
+forfatter & mann ---> Tromsø
+forfatter & mann ---> Trondheim
+forfatter & mann ---> eldre enn 60
+forfatter & mann ---> mellom 20 og 30
+forfatter & mann ---> mellom 30 og 40
+forfatter & mann ---> mellom 40 og 50
+forfatter & mann ---> mellom 50 og 60
+forfatter & mann ---> yngre enn 20
+forfatter & mann ---> Ålesund
+forfatter & modell ---> FALSE
+forfatter & rørlegger ---> FALSE
+fotograf & advokat ---> FALSE
+fotograf & elektriker ---> FALSE
+fotograf & forfatter ---> FALSE
+fotograf & kvinne & eldre enn 60 ---> Afrika
+fotograf & kvinne & eldre enn 60 ---> Asia
+fotograf & kvinne & eldre enn 60 ---> Australia
+fotograf & kvinne & eldre enn 60 ---> Bergen
+fotograf & kvinne & eldre enn 60 ---> Bodø
+fotograf & kvinne & eldre enn 60 ---> Europa
+fotograf & kvinne & eldre enn 60 ---> FALSE
+fotograf & kvinne & eldre enn 60 ---> Kristiansand
+fotograf & kvinne & eldre enn 60 ---> Nord Amerika
+fotograf & kvinne & eldre enn 60 ---> Oslo
+fotograf & kvinne & eldre enn 60 ---> Stavanger
+fotograf & kvinne & eldre enn 60 ---> Sør Amerika
+fotograf & kvinne & eldre enn 60 ---> Tromsø
+fotograf & kvinne & eldre enn 60 ---> Trondheim
+fotograf & kvinne & eldre enn 60 ---> Ålesund
+fotograf & kvinne & mellom 40 og 50 ---> Afrika
+fotograf & kvinne & mellom 40 og 50 ---> Asia
+fotograf & kvinne & mellom 40 og 50 ---> Australia
+fotograf & kvinne & mellom 40 og 50 ---> Bergen
+fotograf & kvinne & mellom 40 og 50 ---> Bodø
+fotograf & kvinne & mellom 40 og 50 ---> Europa
+fotograf & kvinne & mellom 40 og 50 ---> FALSE
+fotograf & kvinne & mellom 40 og 50 ---> Kristiansand
+fotograf & kvinne & mellom 40 og 50 ---> Nord Amerika
+fotograf & kvinne & mellom 40 og 50 ---> Oslo
+fotograf & kvinne & mellom 40 og 50 ---> Stavanger
+fotograf & kvinne & mellom 40 og 50 ---> Sør Amerika
+fotograf & kvinne & mellom 40 og 50 ---> Tromsø
+fotograf & kvinne & mellom 40 og 50 ---> Trondheim
+fotograf & kvinne & mellom 40 og 50 ---> Ålesund
+fotograf & modell ---> FALSE
+fotograf & rørlegger ---> FALSE
+frisør & advokat ---> FALSE
+frisør & elektriker ---> FALSE
+frisør & forfatter ---> FALSE
+frisør & fotograf ---> FALSE
+frisør & modell ---> FALSE
+frisør & rørlegger ---> FALSE
+kvinne & eldre enn 60 & rørlegger ---> Afrika
+kvinne & eldre enn 60 & rørlegger ---> Asia
+kvinne & eldre enn 60 & rørlegger ---> Australia
+kvinne & eldre enn 60 & rørlegger ---> Bergen
+kvinne & eldre enn 60 & rørlegger ---> Bodø
+kvinne & eldre enn 60 & rørlegger ---> Europa
+kvinne & eldre enn 60 & rørlegger ---> FALSE
+kvinne & eldre enn 60 & rørlegger ---> Kristiansand
+kvinne & eldre enn 60 & rørlegger ---> Nord Amerika
+kvinne & eldre enn 60 & rørlegger ---> Oslo
+kvinne & eldre enn 60 & rørlegger ---> Stavanger
+kvinne & eldre enn 60 & rørlegger ---> Sør Amerika
+kvinne & eldre enn 60 & rørlegger ---> Tromsø
+kvinne & eldre enn 60 & rørlegger ---> Trondheim
+kvinne & eldre enn 60 & rørlegger ---> Ålesund
+kvinne & mann ---> FALSE
+mann & mellom 50 og 60 ---> Afrika
+mann & mellom 50 og 60 ---> Asia
+mann & mellom 50 og 60 ---> Australia
+mann & mellom 50 og 60 ---> Bergen
+mann & mellom 50 og 60 ---> Bodø
+mann & mellom 50 og 60 ---> Europa
+mann & mellom 50 og 60 ---> FALSE
+mann & mellom 50 og 60 ---> Kristiansand
+mann & mellom 50 og 60 ---> Nord Amerika
+mann & mellom 50 og 60 ---> Oslo
+mann & mellom 50 og 60 ---> Stavanger
+mann & mellom 50 og 60 ---> Sør Amerika
+mann & mellom 50 og 60 ---> Tromsø
+mann & mellom 50 og 60 ---> Trondheim
+mann & mellom 50 og 60 ---> advokat
+mann & mellom 50 og 60 ---> elektriker
+mann & mellom 50 og 60 ---> forfatter
+mann & mellom 50 og 60 ---> fotograf
+mann & mellom 50 og 60 ---> frisør
+mann & mellom 50 og 60 ---> modell
+mann & mellom 50 og 60 ---> rørlegger
+mann & mellom 50 og 60 ---> sykepleier
+mann & mellom 50 og 60 ---> Ålesund
+mellom 20 og 30 & Asia & kvinne ---> Bergen
+mellom 20 og 30 & Asia & kvinne ---> Bodø
+mellom 20 og 30 & Asia & kvinne ---> FALSE
+mellom 20 og 30 & Asia & kvinne ---> Kristiansand
+mellom 20 og 30 & Asia & kvinne ---> Oslo
+mellom 20 og 30 & Asia & kvinne ---> Stavanger
+mellom 20 og 30 & Asia & kvinne ---> Tromsø
+mellom 20 og 30 & Asia & kvinne ---> Trondheim
+mellom 20 og 30 & Asia & kvinne ---> advokat
+mellom 20 og 30 & Asia & kvinne ---> elektriker
+mellom 20 og 30 & Asia & kvinne ---> forfatter
+mellom 20 og 30 & Asia & kvinne ---> fotograf
+mellom 20 og 30 & Asia & kvinne ---> frisør
+mellom 20 og 30 & Asia & kvinne ---> modell
+mellom 20 og 30 & Asia & kvinne ---> rørlegger
+mellom 20 og 30 & Asia & kvinne ---> sykepleier
+mellom 20 og 30 & Asia & kvinne ---> Ålesund
+mellom 20 og 30 & eldre enn 60 ---> FALSE
+mellom 20 og 30 & mellom 30 og 40 ---> FALSE
+mellom 20 og 30 & mellom 40 og 50 ---> FALSE
+mellom 20 og 30 & mellom 50 og 60 ---> FALSE
+mellom 30 og 40 & Bodø & Asia & kvinne ---> FALSE
+mellom 30 og 40 & Bodø & Asia & kvinne ---> advokat
+mellom 30 og 40 & Bodø & Asia & kvinne ---> elektriker
+mellom 30 og 40 & Bodø & Asia & kvinne ---> forfatter
+mellom 30 og 40 & Bodø & Asia & kvinne ---> fotograf
+mellom 30 og 40 & Bodø & Asia & kvinne ---> frisør
+mellom 30 og 40 & Bodø & Asia & kvinne ---> modell
+mellom 30 og 40 & Bodø & Asia & kvinne ---> rørlegger
+mellom 30 og 40 & Bodø & Asia & kvinne ---> sykepleier
+mellom 30 og 40 & Tromsø & kvinne ---> Afrika
+mellom 30 og 40 & Tromsø & kvinne ---> Asia
+mellom 30 og 40 & Tromsø & kvinne ---> Australia
+mellom 30 og 40 & Tromsø & kvinne ---> Europa
+mellom 30 og 40 & Tromsø & kvinne ---> FALSE
+mellom 30 og 40 & Tromsø & kvinne ---> Nord Amerika
+mellom 30 og 40 & Tromsø & kvinne ---> Sør Amerika
+mellom 30 og 40 & Tromsø & kvinne ---> advokat
+mellom 30 og 40 & Tromsø & kvinne ---> elektriker
+mellom 30 og 40 & Tromsø & kvinne ---> forfatter
+mellom 30 og 40 & Tromsø & kvinne ---> fotograf
+mellom 30 og 40 & Tromsø & kvinne ---> frisør
+mellom 30 og 40 & Tromsø & kvinne ---> modell
+mellom 30 og 40 & Tromsø & kvinne ---> rørlegger
+mellom 30 og 40 & Tromsø & kvinne ---> sykepleier
+mellom 30 og 40 & eldre enn 60 ---> FALSE
+mellom 30 og 40 & mellom 40 og 50 ---> FALSE
+mellom 30 og 40 & mellom 50 og 60 ---> FALSE
+mellom 40 og 50 & eldre enn 60 ---> FALSE
+mellom 40 og 50 & mellom 50 og 60 ---> FALSE
+mellom 50 og 60 & eldre enn 60 ---> FALSE
+rørlegger & modell ---> FALSE
+sykepleier & advokat ---> FALSE
+sykepleier & elektriker ---> FALSE
+sykepleier & forfatter ---> FALSE
+sykepleier & fotograf ---> FALSE
+sykepleier & frisør ---> FALSE
+sykepleier & modell ---> FALSE
+sykepleier & rørlegger ---> FALSE
+yngre enn 20 & Tromsø & Afrika & kvinne & rørlegger ---> FALSE
+yngre enn 20 & eldre enn 60 ---> FALSE
+yngre enn 20 & mellom 20 og 30 ---> FALSE
+yngre enn 20 & mellom 30 og 40 ---> FALSE
+yngre enn 20 & mellom 40 og 50 ---> FALSE
+yngre enn 20 & mellom 50 og 60 ---> FALSE
+Ålesund & Bodø ---> FALSE
+Ålesund & Sør Amerika & mann & mellom 40 og 50 & modell ---> FALSE
+Ålesund & Tromsø ---> FALSE
+Ålesund & Trondheim ---> FALSE
