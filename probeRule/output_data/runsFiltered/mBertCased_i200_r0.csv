@@ -1,0 +1,46 @@
+HORN RULES (filtered)
+Afrika & mellom 50 og 60 ---> advokat
+Afrika & mellom 50 og 60 ---> mann
+Bodø & Asia ---> mann
+Bodø & Asia ---> mellom 30 og 40
+Bodø & Asia ---> modell
+Tromsø & Afrika & kvinne ---> frisør
+Tromsø & Afrika & kvinne ---> mellom 30 og 40
+forfatter & Bodø & mann ---> Afrika
+forfatter & Bodø & mann ---> eldre enn 60
+forfatter & Kristiansand ---> Afrika
+forfatter & Kristiansand ---> kvinne
+forfatter & Kristiansand ---> mellom 20 og 30
+fotograf & Nord Amerika & mann ---> Trondheim
+frisør & Bergen ---> mann
+frisør & Tromsø & mann ---> Australia
+frisør & Tromsø & mann ---> eldre enn 60
+frisør & mellom 30 og 40 ---> Afrika
+frisør & mellom 30 og 40 ---> Tromsø
+frisør & mellom 30 og 40 ---> kvinne
+kvinne & rørlegger ---> Afrika
+kvinne & rørlegger ---> Stavanger
+kvinne & rørlegger ---> mellom 40 og 50
+mellom 20 og 30 & Oslo ---> Asia
+mellom 20 og 30 & Oslo ---> kvinne
+mellom 20 og 30 & Oslo ---> sykepleier
+yngre enn 20 & fotograf ---> mann
+Europa & kvinne & eldre enn 60 ---> FALSE
+Kristiansand & mellom 40 og 50 ---> FALSE
+Stavanger & Australia & kvinne & mellom 50 og 60 & advokat ---> FALSE
+forfatter & mellom 30 og 40 & Tromsø & Australia & mann ---> FALSE
+forfatter & Ålesund & Sør Amerika & mann & mellom 40 og 50 ---> FALSE
+fotograf & Australia & mann ---> FALSE
+fotograf & Europa & mann ---> FALSE
+fotograf & Kristiansand & mann ---> FALSE
+frisør & Bodø & mann ---> FALSE
+frisør & Ålesund & Sør Amerika & mann & mellom 50 og 60 ---> FALSE
+kvinne & elektriker ---> FALSE
+kvinne & modell ---> FALSE
+mellom 20 og 30 & forfatter & Trondheim & mann ---> FALSE
+mellom 20 og 30 & sykepleier & Stavanger & Afrika & mann ---> FALSE
+sykepleier & Bergen & mann ---> FALSE
+sykepleier & Kristiansand & mellom 30 og 40 & Asia & mann ---> FALSE
+sykepleier & Ålesund & mann ---> FALSE
+yngre enn 20 & frisør & Stavanger & Afrika & mann ---> FALSE
+yngre enn 20 & sykepleier & Oslo & Asia & mann ---> FALSE

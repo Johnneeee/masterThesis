@@ -1,0 +1,73 @@
+COUNT;HORN RULES (filtered)
+2/2;Kristiansand & mann & modell ---> FALSE
+2/2;frisør & kvinne ---> FALSE
+2/2;kvinne & advokat ---> FALSE
+2/2;kvinne & elektriker ---> FALSE
+2/2;kvinne & rørlegger ---> FALSE
+1/2;Bergen & kvinne ---> Australia
+1/2;Bergen & kvinne ---> mellom 30 og 40
+1/2;Bergen & kvinne ---> modell
+1/2;Bodø & kvinne ---> Australia
+1/2;Bodø & kvinne ---> yngre enn 20
+1/2;Kristiansand & Asia ---> forfatter
+1/2;Kristiansand & Asia ---> kvinne
+1/2;Stavanger & kvinne ---> Europa
+1/2;Stavanger & kvinne ---> sykepleier
+1/2;Stavanger & mann & modell ---> Asia
+1/2;Stavanger & mann & modell ---> mellom 50 og 60
+1/2;forfatter & Afrika ---> kvinne
+1/2;forfatter & Afrika ---> Ålesund
+1/2;forfatter & Oslo & kvinne ---> Sør Amerika
+1/2;forfatter & Stavanger & Asia & mann ---> mellom 40 og 50
+1/2;forfatter & Tromsø & kvinne ---> Asia
+1/2;forfatter & Trondheim & kvinne ---> Asia
+1/2;forfatter & Trondheim & kvinne ---> mellom 30 og 40
+1/2;sykepleier & Australia ---> Bodø
+1/2;sykepleier & Australia ---> kvinne
+1/2;sykepleier & Australia ---> yngre enn 20
+1/2;sykepleier & Tromsø ---> Asia
+1/2;sykepleier & Tromsø ---> eldre enn 60
+1/2;sykepleier & Tromsø ---> kvinne
+1/2;sykepleier & kvinne & mellom 40 og 50 ---> Nord Amerika
+1/2;yngre enn 20 & Afrika ---> Bergen
+1/2;yngre enn 20 & Afrika ---> frisør
+1/2;yngre enn 20 & Afrika ---> mann
+1/2;Kristiansand & kvinne & mellom 40 og 50 ---> FALSE
+1/2;Oslo & mann & modell ---> FALSE
+1/2;Sør Amerika & mann & modell ---> FALSE
+1/2;Tromsø & mann & modell ---> FALSE
+1/2;fotograf & kvinne ---> FALSE
+1/2;kvinne & mellom 50 og 60 ---> FALSE
+1/2;mellom 20 og 30 & Tromsø & Australia & kvinne ---> FALSE
+1/2;mellom 20 og 30 & Trondheim & Afrika & kvinne ---> FALSE
+1/2;mellom 20 og 30 & forfatter & kvinne ---> FALSE
+1/2;sykepleier & Stavanger & Europa & mann ---> FALSE
+1/2;sykepleier & Trondheim & Nord Amerika & mann & eldre enn 60 ---> FALSE
+1/2;yngre enn 20 & Trondheim & Asia & mann & modell ---> FALSE
+1/2;Ålesund & Australia & kvinne & mellom 40 og 50 ---> FALSE
+1/2;Australia & mann & modell ---> mellom 20 og 30
+1/2;Australia & mann & modell ---> Ålesund
+1/2;Bergen & Nord Amerika & kvinne ---> modell
+1/2;Europa & modell ---> kvinne
+1/2;Europa & modell ---> mellom 30 og 40
+1/2;Kristiansand & kvinne ---> Sør Amerika
+1/2;Kristiansand & kvinne ---> mellom 50 og 60
+1/2;Kristiansand & kvinne ---> modell
+1/2;Stavanger & kvinne ---> modell
+1/2;forfatter & Australia ---> Stavanger
+1/2;forfatter & Australia ---> mann
+1/2;forfatter & Australia ---> mellom 30 og 40
+1/2;forfatter & Tromsø & Asia & mann ---> mellom 30 og 40
+1/2;mann & eldre enn 60 & modell ---> Tromsø
+1/2;mellom 20 og 30 & kvinne ---> modell
+1/2;mellom 30 og 40 & Europa & kvinne ---> modell
+1/2;sykepleier & Kristiansand & Afrika & mann ---> mellom 40 og 50
+1/2;Asia & mann & modell ---> FALSE
+1/2;Australia & mellom 50 og 60 ---> FALSE
+1/2;forfatter & Tromsø & Nord Amerika & mann ---> FALSE
+1/2;forfatter & kvinne ---> FALSE
+1/2;fotograf & Tromsø & kvinne ---> FALSE
+1/2;sykepleier & Bergen & Asia & mann & eldre enn 60 ---> FALSE
+1/2;yngre enn 20 & Oslo & Australia & kvinne ---> FALSE
+1/2;yngre enn 20 & forfatter & Bodø & Asia & mann ---> FALSE
+1/2;yngre enn 20 & sykepleier & Ålesund & Sør Amerika & kvinne ---> FALSE

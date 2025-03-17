@@ -1,0 +1,28 @@
+HORN RULES (filtered)
+Afrika ---> kvinne
+Afrika ---> modell
+Bergen ---> kvinne
+Bergen ---> modell
+Oslo & kvinne ---> Sør Amerika
+Oslo & kvinne ---> modell
+Tromsø & kvinne ---> Australia
+Tromsø & kvinne ---> mellom 50 og 60
+Tromsø & kvinne ---> modell
+forfatter & kvinne ---> Asia
+forfatter & kvinne ---> Bodø
+kvinne & eldre enn 60 ---> Afrika
+kvinne & eldre enn 60 ---> Trondheim
+kvinne & eldre enn 60 ---> modell
+sykepleier & eldre enn 60 ---> mann
+sykepleier & eldre enn 60 ---> Ålesund
+Ålesund & kvinne ---> Australia
+Ålesund & kvinne ---> modell
+Bodø & Sør Amerika & kvinne ---> FALSE
+Kristiansand & kvinne & mellom 40 og 50 ---> FALSE
+Nord Amerika & mann & mellom 50 og 60 & modell ---> FALSE
+Stavanger & kvinne ---> FALSE
+Trondheim & Australia & kvinne & mellom 40 og 50 ---> FALSE
+kvinne & elektriker ---> FALSE
+kvinne & rørlegger ---> FALSE
+mellom 20 og 30 & sykepleier & Europa & mann ---> FALSE
+sykepleier & Bodø & kvinne & mellom 50 og 60 ---> FALSE

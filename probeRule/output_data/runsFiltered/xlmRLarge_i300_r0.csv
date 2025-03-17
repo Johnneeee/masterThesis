@@ -1,0 +1,40 @@
+HORN RULES (filtered)
+Australia & kvinne & eldre enn 60 ---> modell
+Bergen & Asia & kvinne ---> modell
+Bergen & Europa & kvinne & mellom 50 og 60 ---> sykepleier
+Bodø & Sør Amerika ---> kvinne
+Kristiansand & Asia & kvinne ---> sykepleier
+Kristiansand & mellom 30 og 40 & kvinne ---> Afrika
+Nord Amerika & kvinne & mellom 50 og 60 ---> sykepleier
+Oslo & kvinne & eldre enn 60 ---> modell
+Trondheim & Sør Amerika & kvinne ---> mellom 30 og 40
+forfatter & Nord Amerika & kvinne ---> yngre enn 20
+forfatter & Trondheim & mann & mellom 40 og 50 ---> Nord Amerika
+mellom 20 og 30 & Kristiansand & kvinne ---> Nord Amerika
+mellom 20 og 30 & Kristiansand & kvinne ---> sykepleier
+mellom 20 og 30 & forfatter & kvinne ---> Afrika
+mellom 20 og 30 & forfatter & kvinne ---> Oslo
+yngre enn 20 & Europa ---> kvinne
+Ålesund & Nord Amerika & kvinne ---> eldre enn 60
+Ålesund & Nord Amerika & kvinne ---> modell
+Asia & kvinne & mellom 40 og 50 & advokat ---> FALSE
+Bergen & Afrika & mann & mellom 40 og 50 ---> FALSE
+Bergen & mellom 30 og 40 & Afrika & mann ---> FALSE
+Kristiansand & kvinne & eldre enn 60 ---> FALSE
+Tromsø & Asia & kvinne & eldre enn 60 ---> FALSE
+Tromsø & Nord Amerika & kvinne & eldre enn 60 ---> FALSE
+forfatter & Bodø & Europa & kvinne ---> FALSE
+forfatter & Tromsø & kvinne ---> FALSE
+forfatter & kvinne & eldre enn 60 ---> FALSE
+forfatter & Ålesund ---> FALSE
+fotograf & kvinne ---> FALSE
+frisør & mann ---> FALSE
+kvinne & elektriker ---> FALSE
+kvinne & rørlegger ---> FALSE
+mann & modell ---> FALSE
+sykepleier & mann ---> FALSE
+yngre enn 20 & Bergen & kvinne ---> FALSE
+yngre enn 20 & Tromsø & kvinne ---> FALSE
+yngre enn 20 & Ålesund & Asia & kvinne ---> FALSE
+Ålesund & Afrika & kvinne & mellom 50 og 60 ---> FALSE
+Ålesund & mellom 30 og 40 & Australia & kvinne ---> FALSE

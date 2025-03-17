@@ -1,0 +1,12 @@
+HORN RULES (filtered)
+advokat ---> mann
+mellom 30 og 40 & kvinne ---> forfatter
+Australia & kvinne & eldre enn 60 & rørlegger ---> FALSE
+Bergen & Sør Amerika & kvinne & mellom 40 og 50 ---> FALSE
+Kristiansand & Asia & kvinne & modell ---> FALSE
+forfatter & Stavanger & mann ---> FALSE
+forfatter & Trondheim & mann ---> FALSE
+fotograf & Stavanger & Australia & mann & mellom 50 og 60 ---> FALSE
+kvinne & elektriker ---> FALSE
+mellom 20 og 30 & Trondheim & kvinne ---> FALSE
+sykepleier & Ålesund & Nord Amerika & mann & mellom 40 og 50 ---> FALSE

@@ -1,0 +1,52 @@
+COUNT;HORN RULES (filtered)
+1/1;Bergen & kvinne & mellom 40 og 50 ---> Sør Amerika
+1/1;Bergen & kvinne & mellom 40 og 50 ---> frisør
+1/1;Bodø & Nord Amerika & kvinne ---> mellom 20 og 30
+1/1;Bodø & kvinne & mellom 40 og 50 ---> Afrika
+1/1;Bodø & kvinne & mellom 40 og 50 ---> frisør
+1/1;Kristiansand & Australia & kvinne ---> mellom 40 og 50
+1/1;Kristiansand & Australia & kvinne ---> modell
+1/1;Kristiansand & kvinne & eldre enn 60 ---> frisør
+1/1;Nord Amerika & kvinne & eldre enn 60 ---> frisør
+1/1;Stavanger & kvinne & mellom 40 og 50 ---> Nord Amerika
+1/1;Stavanger & kvinne & mellom 40 og 50 ---> frisør
+1/1;Stavanger & mellom 30 og 40 & kvinne ---> frisør
+1/1;Sør Amerika & kvinne & mellom 40 og 50 ---> Bergen
+1/1;Sør Amerika & kvinne & mellom 40 og 50 ---> frisør
+1/1;frisør & Australia & mann ---> Tromsø
+1/1;frisør & Australia & mann ---> eldre enn 60
+1/1;frisør & Sør Amerika & mann ---> Tromsø
+1/1;frisør & Sør Amerika & mann ---> yngre enn 20
+1/1;frisør & mann & eldre enn 60 ---> Australia
+1/1;frisør & mann & eldre enn 60 ---> Tromsø
+1/1;frisør & mellom 50 og 60 ---> kvinne
+1/1;mellom 20 og 30 & Bodø & Afrika & kvinne ---> modell
+1/1;mellom 20 og 30 & Kristiansand & kvinne ---> frisør
+1/1;mellom 20 og 30 & Trondheim & kvinne ---> Afrika
+1/1;mellom 20 og 30 & Trondheim & kvinne ---> frisør
+1/1;mellom 20 og 30 & frisør & Bodø & kvinne ---> Nord Amerika
+1/1;mellom 20 og 30 & Ålesund & Afrika & kvinne ---> modell
+1/1;yngre enn 20 & Europa & kvinne ---> frisør
+1/1;yngre enn 20 & Kristiansand & Sør Amerika & kvinne ---> frisør
+1/1;Oslo & mellom 30 og 40 & Nord Amerika & kvinne ---> FALSE
+1/1;Sør Amerika & kvinne & mellom 50 og 60 ---> FALSE
+1/1;Tromsø & Asia & kvinne & mellom 50 og 60 ---> FALSE
+1/1;Tromsø & Nord Amerika & kvinne ---> FALSE
+1/1;Tromsø & Sør Amerika & kvinne ---> FALSE
+1/1;Trondheim & Australia & kvinne & eldre enn 60 ---> FALSE
+1/1;forfatter & kvinne ---> FALSE
+1/1;fotograf & kvinne ---> FALSE
+1/1;frisør & Afrika & mann ---> FALSE
+1/1;frisør & Bergen & mellom 30 og 40 & mann ---> FALSE
+1/1;frisør & Europa & mann ---> FALSE
+1/1;frisør & Stavanger & mann ---> FALSE
+1/1;frisør & mann & mellom 40 og 50 ---> FALSE
+1/1;kvinne & advokat ---> FALSE
+1/1;kvinne & elektriker ---> FALSE
+1/1;kvinne & rørlegger ---> FALSE
+1/1;mann & modell ---> FALSE
+1/1;mellom 20 og 30 & Bergen & Europa & kvinne ---> FALSE
+1/1;sykepleier & kvinne ---> FALSE
+1/1;yngre enn 20 & Australia & kvinne ---> FALSE
+1/1;yngre enn 20 & Bergen & kvinne ---> FALSE
+1/1;yngre enn 20 & Ålesund & Nord Amerika ---> FALSE

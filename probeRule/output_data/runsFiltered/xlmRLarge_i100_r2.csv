@@ -1,0 +1,15 @@
+HORN RULES (filtered)
+forfatter & kvinne ---> Europa
+forfatter & kvinne ---> mellom 40 og 50
+forfatter & kvinne ---> Ålesund
+Bergen & Afrika ---> FALSE
+forfatter & Stavanger & Europa & mann & mellom 40 og 50 ---> FALSE
+fotograf & kvinne ---> FALSE
+frisør & mann ---> FALSE
+kvinne & advokat ---> FALSE
+kvinne & elektriker ---> FALSE
+kvinne & rørlegger ---> FALSE
+mann & modell ---> FALSE
+mellom 20 og 30 & Bodø & Afrika & kvinne ---> FALSE
+sykepleier & mann ---> FALSE
+yngre enn 20 & Ålesund & kvinne ---> FALSE

@@ -1,0 +1,46 @@
+COUNT;HORN RULES (filtered)
+1/1;Bergen & mellom 30 og 40 & kvinne ---> Afrika
+1/1;Bergen & mellom 30 og 40 & kvinne ---> sykepleier
+1/1;Bodø & Nord Amerika & kvinne ---> modell
+1/1;mellom 20 og 30 & Bodø ---> mann
+1/1;mellom 20 og 30 & Tromsø & Asia & kvinne ---> modell
+1/1;mellom 20 og 30 & sykepleier & mann ---> Tromsø
+1/1;mellom 30 og 40 & Europa & kvinne ---> frisør
+1/1;sykepleier & Australia & mann ---> Bergen
+1/1;sykepleier & Australia & mann ---> eldre enn 60
+1/1;sykepleier & Europa ---> kvinne
+1/1;sykepleier & Europa ---> mellom 50 og 60
+1/1;sykepleier & Oslo & mann ---> mellom 30 og 40
+1/1;yngre enn 20 & Bodø & kvinne ---> Europa
+1/1;yngre enn 20 & Bodø & kvinne ---> modell
+1/1;yngre enn 20 & Europa & kvinne ---> modell
+1/1;Ålesund & mann & modell ---> mellom 50 og 60
+1/1;Asia & kvinne & mellom 50 og 60 ---> FALSE
+1/1;Bergen & mann & modell ---> FALSE
+1/1;Bodø & Afrika & mann & modell ---> FALSE
+1/1;Europa & mann & modell ---> FALSE
+1/1;Kristiansand & mann & modell ---> FALSE
+1/1;Kristiansand & mellom 30 og 40 & kvinne ---> FALSE
+1/1;Oslo & Asia & kvinne ---> FALSE
+1/1;Oslo & mann & modell ---> FALSE
+1/1;Stavanger & Afrika & mann & mellom 40 og 50 & modell ---> FALSE
+1/1;Stavanger & mellom 30 og 40 & kvinne ---> FALSE
+1/1;Sør Amerika & mann & modell ---> FALSE
+1/1;Tromsø & Sør Amerika & kvinne & eldre enn 60 ---> FALSE
+1/1;Trondheim & Asia ---> FALSE
+1/1;Trondheim & mann & modell ---> FALSE
+1/1;Trondheim & mellom 30 og 40 & Afrika & kvinne ---> FALSE
+1/1;forfatter & kvinne ---> FALSE
+1/1;fotograf & kvinne ---> FALSE
+1/1;frisør & Afrika & mann ---> FALSE
+1/1;frisør & Australia & mann ---> FALSE
+1/1;frisør & Europa & mann ---> FALSE
+1/1;frisør & Nord Amerika & mann ---> FALSE
+1/1;frisør & Sør Amerika & mann ---> FALSE
+1/1;kvinne & advokat ---> FALSE
+1/1;kvinne & elektriker ---> FALSE
+1/1;kvinne & rørlegger ---> FALSE
+1/1;mellom 20 og 30 & Australia & mann & modell ---> FALSE
+1/1;sykepleier & mann & mellom 40 og 50 ---> FALSE
+1/1;yngre enn 20 & Kristiansand ---> FALSE
+1/1;Ålesund & Afrika & kvinne & eldre enn 60 ---> FALSE

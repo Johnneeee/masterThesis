@@ -31,7 +31,7 @@ def addTotalRuntime(file):
 for file in allFiles:
     addTotalRuntime(file)
 
-addTotalRuntime("ahahhahahah_i10_r0")
+# addTotalRuntime("ahahhahahah_i10_r0")
 #####################################################################################################################
 #gather final runtime to one file
 def gatherMetadata(writeTo, files):

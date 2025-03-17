@@ -1,0 +1,24 @@
+HORN RULES (filtered)
+Europa & mellom 50 og 60 ---> Kristiansand
+Europa & mellom 50 og 60 ---> kvinne
+Europa & mellom 50 og 60 ---> sykepleier
+Oslo ---> Asia
+Oslo ---> forfatter
+Oslo ---> kvinne
+Oslo ---> yngre enn 20
+advokat ---> mann
+advokat ---> mellom 40 og 50
+Asia & kvinne & mellom 40 og 50 & rørlegger ---> FALSE
+Bodø & Nord Amerika & kvinne & advokat ---> FALSE
+Kristiansand & Afrika & kvinne & eldre enn 60 & elektriker ---> FALSE
+Kristiansand & mellom 30 og 40 & kvinne ---> FALSE
+forfatter & mann ---> FALSE
+fotograf & kvinne & eldre enn 60 ---> FALSE
+fotograf & kvinne & mellom 40 og 50 ---> FALSE
+kvinne & eldre enn 60 & rørlegger ---> FALSE
+mann & mellom 50 og 60 ---> FALSE
+mellom 20 og 30 & Asia & kvinne ---> FALSE
+mellom 30 og 40 & Bodø & Asia & kvinne ---> FALSE
+mellom 30 og 40 & Tromsø & kvinne ---> FALSE
+yngre enn 20 & Tromsø & Afrika & kvinne & rørlegger ---> FALSE
+Ålesund & Sør Amerika & mann & mellom 40 og 50 & modell ---> FALSE

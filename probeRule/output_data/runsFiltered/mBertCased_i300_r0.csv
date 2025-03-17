@@ -1,0 +1,52 @@
+HORN RULES (filtered)
+Australia & eldre enn 60 ---> mann
+Stavanger & Sør Amerika ---> elektriker
+Stavanger & Sør Amerika ---> mann
+forfatter & Oslo ---> mann
+forfatter & Tromsø & mann ---> Nord Amerika
+forfatter & Tromsø & mann ---> eldre enn 60
+fotograf & Nord Amerika ---> kvinne
+fotograf & mellom 40 og 50 ---> Afrika
+fotograf & mellom 40 og 50 ---> Stavanger
+fotograf & mellom 40 og 50 ---> kvinne
+fotograf & Ålesund ---> kvinne
+frisør & Bergen ---> kvinne
+frisør & Tromsø ---> kvinne
+frisør & Trondheim ---> Asia
+frisør & Trondheim ---> mann
+frisør & Trondheim ---> yngre enn 20
+frisør & mellom 40 og 50 ---> kvinne
+kvinne & elektriker ---> Nord Amerika
+kvinne & elektriker ---> Stavanger
+kvinne & elektriker ---> mellom 20 og 30
+kvinne & rørlegger ---> Nord Amerika
+kvinne & rørlegger ---> Stavanger
+mellom 30 og 40 & Europa & kvinne ---> frisør
+sykepleier & mann & mellom 40 og 50 ---> Asia
+yngre enn 20 & Sør Amerika & kvinne ---> Tromsø
+yngre enn 20 & Sør Amerika & kvinne ---> fotograf
+Afrika & kvinne & eldre enn 60 ---> FALSE
+Asia & kvinne & modell ---> FALSE
+Europa & mellom 40 og 50 ---> FALSE
+Nord Amerika & kvinne & modell ---> FALSE
+Oslo & Afrika & kvinne ---> FALSE
+Oslo & advokat ---> FALSE
+Tromsø & kvinne & advokat ---> FALSE
+forfatter & Trondheim & mann ---> FALSE
+fotograf & Oslo & mann ---> FALSE
+frisør & Oslo & Europa & kvinne & eldre enn 60 ---> FALSE
+frisør & Ålesund & mann & mellom 50 og 60 ---> FALSE
+kvinne & mellom 40 og 50 & advokat ---> FALSE
+kvinne & mellom 50 og 60 & modell ---> FALSE
+mellom 20 og 30 & Stavanger & mann & rørlegger ---> FALSE
+mellom 20 og 30 & Sør Amerika & kvinne ---> FALSE
+mellom 20 og 30 & Tromsø & Afrika & kvinne & modell ---> FALSE
+mellom 20 og 30 & sykepleier & Tromsø & Asia & mann ---> FALSE
+mellom 30 og 40 & kvinne & advokat ---> FALSE
+sykepleier & Bergen & mann ---> FALSE
+sykepleier & Stavanger & mann ---> FALSE
+sykepleier & Trondheim & mann ---> FALSE
+sykepleier & mellom 30 og 40 & mann ---> FALSE
+Ålesund & Europa & kvinne ---> FALSE
+Ålesund & Sør Amerika & kvinne & mellom 40 og 50 ---> FALSE
+Ålesund & kvinne & advokat ---> FALSE

@@ -1,0 +1,17 @@
+HORN RULES (filtered)
+Afrika & kvinne ---> Trondheim
+Afrika & kvinne ---> frisør
+Asia & kvinne ---> modell
+frisør & Australia & mann ---> mellom 50 og 60
+frisør & Nord Amerika & mann ---> Bodø
+frisør & Nord Amerika & mann ---> yngre enn 20
+mellom 30 og 40 ---> kvinne
+forfatter & kvinne ---> FALSE
+fotograf & kvinne ---> FALSE
+frisør & Asia & mann ---> FALSE
+kvinne & advokat ---> FALSE
+kvinne & elektriker ---> FALSE
+kvinne & rørlegger ---> FALSE
+mann & modell ---> FALSE
+mellom 20 og 30 & frisør & Ålesund & Sør Amerika & mann ---> FALSE
+sykepleier & kvinne ---> FALSE

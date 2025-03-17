@@ -1,0 +1,17 @@
+HORN RULES (filtered)
+Kristiansand ---> kvinne
+Tromsø & kvinne ---> Nord Amerika
+Tromsø & kvinne ---> mellom 20 og 30
+Tromsø & kvinne ---> sykepleier
+kvinne & advokat ---> Afrika
+kvinne & advokat ---> mellom 40 og 50
+mellom 20 og 30 & kvinne ---> sykepleier
+Bodø & Nord Amerika & kvinne & mellom 40 og 50 ---> FALSE
+fotograf & kvinne ---> FALSE
+frisør & mann ---> FALSE
+kvinne & elektriker ---> FALSE
+kvinne & rørlegger ---> FALSE
+mann & modell ---> FALSE
+sykepleier & mann ---> FALSE
+yngre enn 20 & Oslo & Sør Amerika & kvinne ---> FALSE
+yngre enn 20 & forfatter & kvinne ---> FALSE

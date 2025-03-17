@@ -1,0 +1,16 @@
+HORN RULES (filtered)
+fotograf ---> mann
+kvinne & mellom 40 og 50 ---> Europa
+kvinne & mellom 40 og 50 ---> sykepleier
+mellom 30 og 40 & kvinne ---> Kristiansand
+mellom 30 og 40 & kvinne ---> Nord Amerika
+mellom 30 og 40 & kvinne ---> modell
+Ålesund & kvinne ---> Afrika
+Ålesund & kvinne ---> modell
+Bergen & Sør Amerika & kvinne & advokat ---> FALSE
+Tromsø & kvinne ---> FALSE
+frisør & kvinne ---> FALSE
+kvinne & rørlegger ---> FALSE
+mellom 20 og 30 & Bodø & Nord Amerika & kvinne ---> FALSE
+sykepleier & Afrika & mann ---> FALSE
+yngre enn 20 & Oslo & Asia & mann & modell ---> FALSE

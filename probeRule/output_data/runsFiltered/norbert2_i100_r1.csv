@@ -1,0 +1,13 @@
+HORN RULES (filtered)
+Bodø & kvinne ---> Australia
+Bodø & kvinne ---> mellom 50 og 60
+Bodø & kvinne ---> sykepleier
+kvinne & eldre enn 60 ---> modell
+kvinne & mellom 40 og 50 ---> modell
+forfatter & kvinne ---> FALSE
+fotograf & kvinne ---> FALSE
+frisør & Australia & mann ---> FALSE
+frisør & Trondheim & mellom 30 og 40 & Europa & mann ---> FALSE
+kvinne & elektriker ---> FALSE
+mann & modell ---> FALSE
+Ålesund & Sør Amerika & kvinne & mellom 50 og 60 ---> FALSE

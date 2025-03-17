@@ -1,0 +1,46 @@
+HORN RULES (filtered)
+Bergen & mellom 30 og 40 & kvinne ---> Afrika
+Bergen & mellom 30 og 40 & kvinne ---> sykepleier
+Bodø & Nord Amerika & kvinne ---> modell
+mellom 20 og 30 & Bodø ---> mann
+mellom 20 og 30 & Tromsø & Asia & kvinne ---> modell
+mellom 20 og 30 & sykepleier & mann ---> Tromsø
+mellom 30 og 40 & Europa & kvinne ---> frisør
+sykepleier & Australia & mann ---> Bergen
+sykepleier & Australia & mann ---> eldre enn 60
+sykepleier & Europa ---> kvinne
+sykepleier & Europa ---> mellom 50 og 60
+sykepleier & Oslo & mann ---> mellom 30 og 40
+yngre enn 20 & Bodø & kvinne ---> Europa
+yngre enn 20 & Bodø & kvinne ---> modell
+yngre enn 20 & Europa & kvinne ---> modell
+Ålesund & mann & modell ---> mellom 50 og 60
+Asia & kvinne & mellom 50 og 60 ---> FALSE
+Bergen & mann & modell ---> FALSE
+Bodø & Afrika & mann & modell ---> FALSE
+Europa & mann & modell ---> FALSE
+Kristiansand & mann & modell ---> FALSE
+Kristiansand & mellom 30 og 40 & kvinne ---> FALSE
+Oslo & Asia & kvinne ---> FALSE
+Oslo & mann & modell ---> FALSE
+Stavanger & Afrika & mann & mellom 40 og 50 & modell ---> FALSE
+Stavanger & mellom 30 og 40 & kvinne ---> FALSE
+Sør Amerika & mann & modell ---> FALSE
+Tromsø & Sør Amerika & kvinne & eldre enn 60 ---> FALSE
+Trondheim & Asia ---> FALSE
+Trondheim & mann & modell ---> FALSE
+Trondheim & mellom 30 og 40 & Afrika & kvinne ---> FALSE
+forfatter & kvinne ---> FALSE
+fotograf & kvinne ---> FALSE
+frisør & Afrika & mann ---> FALSE
+frisør & Australia & mann ---> FALSE
+frisør & Europa & mann ---> FALSE
+frisør & Nord Amerika & mann ---> FALSE
+frisør & Sør Amerika & mann ---> FALSE
+kvinne & advokat ---> FALSE
+kvinne & elektriker ---> FALSE
+kvinne & rørlegger ---> FALSE
+mellom 20 og 30 & Australia & mann & modell ---> FALSE
+sykepleier & mann & mellom 40 og 50 ---> FALSE
+yngre enn 20 & Kristiansand ---> FALSE
+Ålesund & Afrika & kvinne & eldre enn 60 ---> FALSE

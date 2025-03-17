@@ -1,0 +1,43 @@
+COUNT;HORN RULES (filtered)
+2/3;kvinne & elektriker ---> FALSE
+1/3;Asia ---> mann
+1/3;Bodø & kvinne ---> frisør
+1/3;Bodø & kvinne ---> mellom 20 og 30
+1/3;yngre enn 20 & kvinne ---> Sør Amerika
+1/3;yngre enn 20 & kvinne ---> sykepleier
+1/3;yngre enn 20 & kvinne ---> Ålesund
+1/3;Bergen & kvinne ---> FALSE
+1/3;Tromsø & Australia & kvinne & mellom 40 og 50 & rørlegger ---> FALSE
+1/3;Trondheim & mellom 40 og 50 ---> FALSE
+1/3;fotograf & Nord Amerika & mann ---> FALSE
+1/3;frisør & Stavanger & Sør Amerika & mann ---> FALSE
+1/3;mellom 20 og 30 & sykepleier & Ålesund & Europa & mann ---> FALSE
+1/3;Bergen & kvinne ---> Asia
+1/3;Bergen & kvinne ---> sykepleier
+1/3;Kristiansand & kvinne ---> Sør Amerika
+1/3;Kristiansand & kvinne ---> elektriker
+1/3;Kristiansand & kvinne ---> mellom 30 og 40
+1/3;kvinne & elektriker ---> Kristiansand
+1/3;kvinne & elektriker ---> Sør Amerika
+1/3;kvinne & elektriker ---> mellom 30 og 40
+1/3;kvinne & mellom 50 og 60 ---> Australia
+1/3;kvinne & mellom 50 og 60 ---> Oslo
+1/3;kvinne & mellom 50 og 60 ---> sykepleier
+1/3;kvinne & rørlegger ---> Nord Amerika
+1/3;kvinne & rørlegger ---> Stavanger
+1/3;kvinne & rørlegger ---> mellom 40 og 50
+1/3;sykepleier & mann ---> Nord Amerika
+1/3;Ålesund ---> mann
+1/3;Oslo & mellom 30 og 40 & Nord Amerika & kvinne & advokat ---> FALSE
+1/3;frisør & Kristiansand & mann & mellom 50 og 60 ---> FALSE
+1/3;kvinne & modell ---> FALSE
+1/3;advokat ---> mann
+1/3;mellom 30 og 40 & kvinne ---> forfatter
+1/3;Australia & kvinne & eldre enn 60 & rørlegger ---> FALSE
+1/3;Bergen & Sør Amerika & kvinne & mellom 40 og 50 ---> FALSE
+1/3;Kristiansand & Asia & kvinne & modell ---> FALSE
+1/3;forfatter & Stavanger & mann ---> FALSE
+1/3;forfatter & Trondheim & mann ---> FALSE
+1/3;fotograf & Stavanger & Australia & mann & mellom 50 og 60 ---> FALSE
+1/3;mellom 20 og 30 & Trondheim & kvinne ---> FALSE
+1/3;sykepleier & Ålesund & Nord Amerika & mann & mellom 40 og 50 ---> FALSE
