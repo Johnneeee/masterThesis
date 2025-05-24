@@ -29,8 +29,8 @@ def probeOcc(names, templates, maskTag, lm): #-> {occ: [count, pGender]}
                     probedAttributes[token] = [1,res["score"]]
 
     for att in probedAttributes: # -> averaging
-        ppbs = round(probedAttributes[att][1]/probedAttributes[att][0], 3)
-        probedAttributes[att][1] = ppbs
+        prob = round(probedAttributes[att][1]/probedAttributes[att][0], 3)
+        probedAttributes[att][1] = prob
 
     return probedAttributes
 
