@@ -1,0 +1,56 @@
+COUNT;HORN RULES (filtered)
+2/2;kvinne & elektriker ---> FALSE
+2/2;kvinne & rørlegger ---> FALSE
+2/2;mann & modell ---> FALSE
+2/2;sykepleier & mann ---> FALSE
+1/2;Asia & kvinne & eldre enn 60 ---> Ålesund
+1/2;Bodø & Asia & mann ---> fotograf
+1/2;Bodø & Asia & mann ---> mellom 50 og 60
+1/2;Bodø & advokat ---> Afrika
+1/2;Bodø & advokat ---> mann
+1/2;Nord Amerika & mellom 40 og 50 ---> mann
+1/2;Stavanger & kvinne & mellom 40 og 50 ---> Asia
+1/2;Stavanger & kvinne & mellom 40 og 50 ---> frisør
+1/2;fotograf & Sør Amerika ---> mann
+1/2;kvinne & advokat ---> Bergen
+1/2;kvinne & advokat ---> Europa
+1/2;kvinne & mellom 50 og 60 ---> Nord Amerika
+1/2;kvinne & mellom 50 og 60 ---> modell
+1/2;kvinne & mellom 50 og 60 ---> Ålesund
+1/2;Ålesund & Australia ---> forfatter
+1/2;Ålesund & Australia ---> kvinne
+1/2;Ålesund & Australia ---> yngre enn 20
+1/2;Trondheim & Europa & mann ---> FALSE
+1/2;Trondheim & Nord Amerika & mann & eldre enn 60 ---> FALSE
+1/2;forfatter & mann & eldre enn 60 ---> FALSE
+1/2;fotograf & Tromsø & kvinne & mellom 40 og 50 ---> FALSE
+1/2;fotograf & eldre enn 60 ---> FALSE
+1/2;frisør & Bergen & Nord Amerika & mann & mellom 50 og 60 ---> FALSE
+1/2;frisør & Europa & mann ---> FALSE
+1/2;frisør & Trondheim & Asia & mann ---> FALSE
+1/2;frisør & Ålesund & mann ---> FALSE
+1/2;yngre enn 20 & Kristiansand & Australia & mann ---> FALSE
+1/2;yngre enn 20 & Kristiansand & Nord Amerika & mann ---> FALSE
+1/2;yngre enn 20 & forfatter & mann ---> FALSE
+1/2;fotograf & kvinne ---> yngre enn 20
+1/2;frisør ---> kvinne
+1/2;mellom 20 og 30 & Sør Amerika & kvinne ---> modell
+1/2;mellom 20 og 30 & Sør Amerika & kvinne ---> Ålesund
+1/2;mellom 20 og 30 & forfatter ---> kvinne
+1/2;yngre enn 20 & Bergen ---> kvinne
+1/2;Afrika & kvinne & advokat ---> FALSE
+1/2;Asia & mellom 50 og 60 ---> FALSE
+1/2;Bergen & eldre enn 60 & advokat ---> FALSE
+1/2;Kristiansand & Australia & kvinne & advokat ---> FALSE
+1/2;Nord Amerika & kvinne & mellom 50 og 60 ---> FALSE
+1/2;forfatter & Bergen & mann ---> FALSE
+1/2;forfatter & Oslo & Australia & mann & eldre enn 60 ---> FALSE
+1/2;forfatter & Sør Amerika & kvinne ---> FALSE
+1/2;forfatter & mellom 30 og 40 & mann ---> FALSE
+1/2;fotograf & Bergen & Australia & mann ---> FALSE
+1/2;fotograf & Kristiansand & Europa & mann & eldre enn 60 ---> FALSE
+1/2;fotograf & Oslo & Asia & mann & mellom 40 og 50 ---> FALSE
+1/2;mellom 20 og 30 & Bodø & Nord Amerika & kvinne ---> FALSE
+1/2;mellom 30 og 40 & kvinne & advokat ---> FALSE
+1/2;yngre enn 20 & fotograf & Bodø & Asia & mann ---> FALSE
+1/2;yngre enn 20 & fotograf & Trondheim & Asia & mann ---> FALSE
