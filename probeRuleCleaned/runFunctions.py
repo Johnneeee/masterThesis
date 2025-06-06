@@ -3,41 +3,8 @@ from itertools import combinations
 from sympy import symbols
 import csv
 
-# pre Horn Algorithm methods
-def define_variables(number):
-    s = "".join(['v'+str(i)+',' for i in range(number)])
-    V = [e for e in symbols(s)]
-    return V
-
-def generateBackground(V, attLengths):
-    # two values from the same attrutube dimention cant be true simultaneously
-    splitIndexes = []
-    i = 0
-    for x in attLengths:
-        i += x
-        splitIndexes.append(i)
-    splitted = np.split(V, splitIndexes)
-    background = set()
-
-    for x in splitted:
-        background.update(set(combinations(x, 2)))
-
-    background = set(map(lambda x: ~(x[0] & x[1]),background))
-
-    #storing background
-    return background
-
-def storeBackground(background, lookupTable):
-    # strBackground = list(map(lambda x: str(x),background))
-    backgroundSentences = rulesToSentences(background,lookupTable)
-    with open('input_data/backgroundRules.csv', 'w', newline = '', encoding="UTF-8") as csvfile:
-        writer = csv.writer(csvfile)
-        writer.writerows([["BACKGROUND"]])
-
-        writer.writerows(backgroundSentences)
-
-# post Horn Algorithm methods
 def rulesToSentences(rules, lookupTable):
+    lookupTable = sum([x[0] for x in lookupTable.values()],[]) # removing excess metadata from the full lookuptable
     strRules = list(map(lambda x: str(x),rules)) # symbol rules to string rules
     ruleSentences = []
     for rule in strRules:
@@ -69,6 +36,39 @@ def rulesToSentences(rules, lookupTable):
     ruleSentences.sort(key=lambda x: x[0])# sorting
     return ruleSentences
 
+# pre Horn Algorithm functions ########################################################################
+def define_variables(number):
+    s = "".join(['v'+str(i)+',' for i in range(number)])
+    V = [e for e in symbols(s)]
+    return V
+
+def generateBackground(V, attLengths):
+    # two values from the same attrutube dimention cant be true simultaneously
+    splitIndexes = []
+    i = 0
+    for x in attLengths:
+        i += x
+        splitIndexes.append(i)
+    splitted = np.split(V, splitIndexes)
+    background = set()
+
+    for x in splitted:
+        background.update(set(combinations(x, 2)))
+
+    background = set(map(lambda x: ~(x[0] & x[1]),background))
+
+    #storing background
+    return background
+
+def storeBackground(background, lookupTable):
+    # strBackground = list(map(lambda x: str(x),background))
+    backgroundSentences = rulesToSentences(background,lookupTable)
+    with open('output_data/backgroundRules/backgroundRules.csv', 'w', newline = '', encoding="UTF-8") as csvfile:
+        writer = csv.writer(csvfile)
+        writer.writerows([["BACKGROUND"]])
+        writer.writerows(backgroundSentences)
+
+# post Horn Algorithm functions #######################################################################
 def storeMetadata(writeTo, metadata):
     with open(f"output_data/metadataRaw/{writeTo}.csv", 'w', newline='') as csvfile:
         writer = csv.writer(csvfile, delimiter=";")

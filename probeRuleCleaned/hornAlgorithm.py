@@ -55,7 +55,7 @@ class HornAlgorithm():
         return [0,0]
 
     def generate_sample(self):
-        vec = sum([getRandomValue(self.intepretor.lengths[att], True) for att in self.intepretor.attributes],[]) # generating random vector
+        vec = sum([getRandomValue(self.intepretor.lengths[att], True) for att in self.intepretor.attributes[:-1]],[]) # generating random vector
         genderVec = getRandomValue(2, False)
         vec += genderVec # random vector + random gender
         predGenderVec = self.probe(self.intepretor.binaryToSentence(vec))

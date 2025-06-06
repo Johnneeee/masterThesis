@@ -7,25 +7,26 @@ age_file = "input_data/ageValues.csv"
 occ_file = "input_data/occupationValues.csv"
 livingLoc_file = "input_data/livingLocValues.csv"
 ethnicity_file = "input_data/ethnicityValues.csv"
+gender_file = "input_data/genderValues.csv"
 
-# init variables
-filePaths = [age_file, occ_file, livingLoc_file, ethnicity_file]
-attributes = ["age", "occupation", "livingLoc", "ethnicity"]
-neutralCases = ["mellom 0 og 100", "person", "en ukjent by", "et ukjent sted"]
+# init sentence template and its variables
+template = "____ er [AGES] år og er en [OCCUPATIONS] fra [LIVINGLOCATIONS] med bakgrunn fra [ETHNICITIES]." # placeholders has to match the header in the input files
+filePaths = [age_file, occ_file, livingLoc_file, ethnicity_file, gender_file]
 
-template = "____ er [age] år og er en [occupation] fra [livingLoc] med bakgrunn fra [ethnicity]."
-triggerTokens = [["hun", "ho", "henne", "kvinnen"],["han", "mannen"]] # [[female],[male]]
-intepretor = Intepretor(attributes, filePaths, neutralCases, template)
-lookupTableValues = intepretor.lookupTableValues + ["kvinne","mann"] #the lookuptable flattened + kvinne and mann at end
-
-# common values for all lm's
-V = runFunctions.define_variables(sum(intepretor.lengths.values()) + 2)
-background = runFunctions.generateBackground(V, intepretor.lengths.values())
-runFunctions.storeBackground(background, lookupTableValues)
+# defining catch cases for each gender
+catchCases = [["hun", "ho", "henne", "kvinnen"], ["han", "mannen"]] # [[female],[male]]
 
 # init two intepretor variants
-intepretorBERT = Intepretor(attributes, filePaths, neutralCases, template.replace("____", "[MASK]")) # BERT models uses [MASK]
-intepretorROBERTA = Intepretor(attributes, filePaths, neutralCases, template.replace("____", "<mask>")) # RoBERTa models uses <mask>
+intepretorBERT = Intepretor(filePaths, template.replace("____", "[MASK]")) # BERT models uses [MASK]
+# intepretorROBERTA = Intepretor(attributes, filePaths, neutralCases, template.replace("____", "<mask>")) # RoBERTa models uses <mask>
+
+# getting the lookuptable 
+lookupTable = intepretorBERT.lookupTable # intepretorBERT and intepretorROBERT has the same lookuptable 
+
+# init vocabulary and background
+V = runFunctions.define_variables(sum(intepretorBERT.lengths.values()))
+background = runFunctions.generateBackground(V, intepretorBERT.lengths.values())
+runFunctions.storeBackground(background, lookupTable)
 
 ##########
 def run(writeTo, lm, intepretor, run, iterations):
@@ -36,14 +37,14 @@ def run(writeTo, lm, intepretor, run, iterations):
         run         : run number indication tagged on the output filename
         iterations  : iteration cap for the horn algorithm. This is also tagged on the output filename
     """
-    hornAlgorithm = HornAlgorithm(intepretor, V, triggerTokens, lm) #init horn algorithm
-    metadata, h, i = hornAlgorithm.learn(iterations, background) # running the horn algorithm
-    path = f"{writeTo}_i{i}_r{run}" # making the file name
+    hornAlgorithm = HornAlgorithm(intepretor, V, catchCases, lm) #init horn algorithm
+    metadata, hornRules, iterations = hornAlgorithm.learn(iterations, background) # running the horn algorithm
+    path = f"{writeTo}_i{iterations}_r{run}" # making the file name
     runFunctions.storeMetadata(path,metadata) # store metadata
-    runFunctions.storeHornRules(path, h, lookupTableValues) # store horn rules
+    runFunctions.storeHornRules(path, hornRules, lookupTable) # store horn rules
 
 
-# run("test", "ltg/norbert", intepretorBERT, run=0, iterations=10) #test
+run("test", "ltg/norbert", intepretorBERT, run=0, iterations=10) #test
 
 # e.g.
 # run("nbBertBase", "NbAiLab/nb-bert-base", intepretorBERT, run=0, iterations=100)
