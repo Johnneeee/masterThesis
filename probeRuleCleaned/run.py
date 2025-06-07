@@ -18,7 +18,7 @@ catchCases = [["hun", "ho", "henne", "kvinnen"], ["han", "mannen"]] # [[female],
 
 # init two intepretor variants
 intepretorBERT = Intepretor(filePaths, template.replace("____", "[MASK]")) # BERT models uses [MASK]
-# intepretorROBERTA = Intepretor(attributes, filePaths, neutralCases, template.replace("____", "<mask>")) # RoBERTa models uses <mask>
+intepretorROBERTA = Intepretor(filePaths, template.replace("____", "<mask>")) # RoBERTa models uses <mask>
 
 # getting the lookuptable 
 lookupTable = intepretorBERT.lookupTable # intepretorBERT and intepretorROBERT has the same lookuptable 
@@ -44,14 +44,12 @@ def run(writeTo, lm, intepretor, run, iterations):
     runFunctions.storeHornRules(path, hornRules, lookupTable) # store horn rules
 
 
-run("test", "ltg/norbert", intepretorBERT, run=0, iterations=10) #test
-
-# e.g.
-# run("nbBertBase", "NbAiLab/nb-bert-base", intepretorBERT, run=0, iterations=100)
-# run("nbBertBase", "NbAiLab/nb-bert-base", intepretorBERT, run=1, iterations=100)
-# run("nbBertBase", "NbAiLab/nb-bert-base", intepretorBERT, run=2, iterations=100)
-# run("nbBertBase", "NbAiLab/nb-bert-base", intepretorBERT, run=0, iterations=200)
-# run("nbBertBase", "NbAiLab/nb-bert-base", intepretorBERT, run=1, iterations=200)
-# run("nbBertBase", "NbAiLab/nb-bert-base", intepretorBERT, run=0, iterations=300)
-# run("nbBertBase", "NbAiLab/nb-bert-base", intepretorBERT, run=1, iterations=300)
-# run("nbBertBase", "NbAiLab/nb-bert-base", intepretorBERT, run=2, iterations=300)
+if __name__ == "__main__":
+        
+    # e.g.
+    run("xlmRBase", "FacebookAI/xlm-roberta-base", intepretorROBERTA, run=0, iterations=5)
+    # run("xlmRBase", "FacebookAI/xlm-roberta-base", intepretorROBERTA, run=1, iterations=5)
+    # run("xlmRBase", "FacebookAI/xlm-roberta-base", intepretorROBERTA, run=0, iterations=10)
+    # run("mBertUncased", "google-bert/bert-base-multilingual-uncased", intepretorBERT, run=0, iterations=5)
+    # run("mBertUncased", "google-bert/bert-base-multilingual-uncased", intepretorBERT, run=1, iterations=5)
+    # run("mBertUncased", "google-bert/bert-base-multilingual-uncased", intepretorBERT, run=0, iterations=10)

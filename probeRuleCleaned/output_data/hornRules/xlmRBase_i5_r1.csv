@@ -3,13 +3,13 @@ Afrika & Australia ---> FALSE
 Afrika & Europa ---> FALSE
 Afrika & Nord Amerika ---> FALSE
 Afrika & Sør Amerika ---> FALSE
+Asia
 Asia & Afrika ---> FALSE
 Asia & Australia ---> FALSE
 Asia & Europa ---> FALSE
 Asia & Nord Amerika ---> FALSE
 Asia & Sør Amerika ---> FALSE
 Bergen & Bodø ---> FALSE
-Bergen & Nord Amerika & mann & mellom 50 og 60 & modell ---> FALSE
 Bergen & Tromsø ---> FALSE
 Bergen & Trondheim ---> FALSE
 Bergen & Ålesund ---> FALSE
@@ -61,9 +61,6 @@ frisør & fotograf ---> FALSE
 frisør & modell ---> FALSE
 frisør & rørlegger ---> FALSE
 kvinne & mann ---> FALSE
-kvinne ---> Bergen
-kvinne ---> Sør Amerika
-kvinne ---> eldre enn 60
 mellom 20 og 30 & eldre enn 60 ---> FALSE
 mellom 20 og 30 & mellom 30 og 40 ---> FALSE
 mellom 20 og 30 & mellom 40 og 50 ---> FALSE

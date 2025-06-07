@@ -2,6 +2,8 @@ import numpy as np
 from itertools import combinations
 from sympy import symbols
 import csv
+import datetime
+
 
 def rulesToSentences(rules, lookupTable):
     lookupTable = sum([x[0] for x in lookupTable.values()],[]) # removing excess metadata from the full lookuptable
@@ -70,14 +72,22 @@ def storeBackground(background, lookupTable):
 
 # post Horn Algorithm functions #######################################################################
 def storeMetadata(writeTo, metadata):
-    with open(f"output_data/metadataRaw/{writeTo}.csv", 'w', newline='') as csvfile:
+    newMetadata = [] # adding total time to metadata
+
+    totalRuntime = 0
+    for x in metadata:
+        totalRuntime += x[-1]
+        newMetadata.append(x + [float(f"{totalRuntime:.3}")] + [str(datetime.timedelta(seconds=int(totalRuntime)))])
+
+    with open(f"output_data/metadata/{writeTo}.csv", 'w', newline='') as csvfile:
         writer = csv.writer(csvfile, delimiter=";")
-        writer.writerows([["ITERATION", "LEN(HYP)", "SAMPLENR", "RUNTIME(sample)"]]) #header
-        writer.writerows(metadata)
+        writer.writerows([["ITERATION", "LEN(HYP)", "SAMPLENR", "RUNTIME(sample)", "TOTALRUNTIME(seconds)","TOTALRUNTIME(time)"]]) #header
+        writer.writerows(newMetadata)
+
 
 def storeHornRules(writeTo, h, lookupTable):
     hornRuleSentences = rulesToSentences(h,lookupTable)
-    with open(f"output_data/runsRaw/{writeTo}.csv", 'w', newline='',encoding="UTF-8") as csvfile:
+    with open(f"output_data/hornRules/{writeTo}.csv", 'w', newline='',encoding="UTF-8") as csvfile:
         writer = csv.writer(csvfile)
         writer.writerow(["EXTRACTED HORN RULES"])
         writer.writerows(hornRuleSentences)

@@ -129,7 +129,7 @@ class HornAlgorithm():
             (counterEx,sampleNr) = self.EQ(H)
 
             if counterEx == True: #if (eq -> True)
-                metadata.append([iteration, len(H), "TRUE", f"{timeit.default_timer()-start:.3f}"]) # logging metadata
+                metadata.append([iteration, len(H), "TRUE", float(f"{timeit.default_timer()-start:.3f}")]) # logging metadata
                 return (metadata, H, iteration)
 
             pos_ex=False # posEx/negEx lock
@@ -163,7 +163,7 @@ class HornAlgorithm():
                 H = set(filter(lambda x: all(self.evalFormula(x, vec) for vec in posCounterEx), H.copy())) # refining H: drops h in H where exsists p in P s.t. p falsifies h
 
             self.find_bad_nc(H,S)
-            metadata.append([iteration, len(H), sampleNr, f"{timeit.default_timer()-start:.3f}"]) # logging metadata
+            metadata.append([iteration, len(H), sampleNr, float(f"{timeit.default_timer()-start:.3f}")]) # logging metadata
         return (metadata, H, iteration)
         # except: # save current data in case user decides to interupt the run
         #     return (metadata, H, iteration-1) # -1 to match the counting bar which starts at 0

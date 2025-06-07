@@ -1,39 +1,52 @@
 import csv
 
 #getting available filenames
-lms = ["xlmRBase", "xlmRLarge", "mBertUncased", "mBertCased", "nbBertBase", "nbBertLarge", "norbert", "norbert2"]
-tags = ["i100_r0","i100_r1","i100_r2","i200_r0","i200_r1","i300_r0"]
-allFiles = []
+# lms = ["xlmRBase", "xlmRLarge", "mBertUncased", "mBertCased", "nbBertBase", "nbBertLarge", "norbert", "norbert2"]
+# tags = ["i100_r0","i100_r1","i100_r2","i200_r0","i200_r1","i300_r0"]
 
-for lm in lms:
-    for tag in tags:
-        allFiles.append(f"{lm}_{tag}")
+allFiles = [
+    "xlmRBase_i5_r0",
+    "xlmRBase_i5_r1",
+    "xlmRBase_i10_r0",
+    "mBertUnCased_i5_r0",
+    "mBertUnCased_i5_r1",
+    "mBertUnCased_i10_r0",
+]
+
+# for lm in lms:
+#     for tag in tags:
+#         allFiles.append(f"{lm}_{tag}")
 
 #####################################################################################################################
 # Filter Runs
 def filterHornRules(filterFile):
-    with open(f"input_data/backgroundRules.csv", mode = "r",encoding="UTF-8") as file:
+    with open(f"output_data/backgroundRules/backgroundRules.csv", mode = "r",encoding="UTF-8") as file:
         csvFile = csv.reader(file, delimiter=";")
         next(csvFile)
         background = [x for x in csvFile]
     
-    with open(f"output_data/runsRaw/{filterFile}.csv", mode = "r",encoding="UTF-8") as file:
+    with open(f"output_data/hornRules/{filterFile}.csv", mode = "r",encoding="UTF-8") as file:
         csvFile = csv.reader(file, delimiter=";")
         next(csvFile)
         hornRules = [x for x in csvFile]
 
     hornRules = [x for x in hornRules if x not in background]
 
-    falseRules = [x for x in hornRules if x[0].split(" ---> ")[1] == "FALSE"]
+    falseRules = []
+    for x in hornRules:
+        if len(x[0].split(" ---> ")) != 1:
+            if x[0].split(" ---> ")[1] == "FALSE":
+                falseRules.append(x)
+
     hornRules = [x for x in hornRules if [f"{x[0].split(' ---> ')[0]} ---> FALSE"] not in falseRules] + falseRules
 
-    with open(f"output_data/runsFiltered/{filterFile}.csv", 'w', newline='',encoding="UTF-8") as csvfile:
+    with open(f"output_data/hornRulesFiltered/{filterFile}.csv", 'w', newline='',encoding="UTF-8") as csvfile:
         writer = csv.writer(csvfile)
         writer.writerow(["HORN RULES (filtered)"])
         writer.writerows(hornRules)
 
-# for file in allFiles:
-#     filterHornRules(file)
+for file in allFiles:
+    filterHornRules(file)
 
 #####################################################################################################################
 # adding guiding comments
