@@ -84,11 +84,11 @@ def addGuide(dataFile):
 #     addGuide(file)
 
 #####################################################################################################################
-# # Concat runs
-def countRules(writeTo, files, weights):
+# # Collect horn rules
+def collectHornRules(writeTo, files, weights):
     countRules = {}
     for i in range(len(files)):
-        with open(f"output_data/runsFiltered/{files[i]}.csv", mode = "r",encoding="UTF-8") as f:
+        with open(f"output_data/hornRulesFiltered/{files[i]}.csv", mode = "r",encoding="UTF-8") as f:
             csvFile = csv.reader(f, delimiter=";")
             next(csvFile)
             for line in csvFile:
@@ -101,7 +101,7 @@ def countRules(writeTo, files, weights):
     rules = [[f"{x[1]}/{sum(weights)}",x[0]] for x in countRules.items()]
     rules.sort(key=lambda x: int(x[0].split("/")[0]),reverse=True)
 
-    with open(f"output_data/runsFilteredTotal/{writeTo}.csv", 'w', newline='',encoding="UTF-8") as csvfile:
+    with open(f"output_data/hornRulesFilteredCollected/{writeTo}.csv", 'w', newline='',encoding="UTF-8") as csvfile:
         writer = csv.writer(csvfile, delimiter=";")
         writer.writerow(["COUNT","HORN RULES (filtered)"])
         writer.writerows(rules)
@@ -110,9 +110,11 @@ eq100 = ["i100_r0","i100_r1","i100_r2"]
 eq200 = ["i200_r0","i200_r1"]
 eq300 = ["i300_r0"]
 
+collectHornRules("xlmRBase_i5", ["xlmRBase_i5_r0","xlmRBase_i5_r1"], [1,1])
+collectHornRules("mBertUncased_i5", ["mBertUncased_i5_r0","mBertUncased_i5_r1"], [1,1])
 # for lm in lms:
-#     countRules(f"{lm}_i100", [f"{lm}_{x}" for x in eq100], [1,1,1])
-#     countRules(f"{lm}_i200", [f"{lm}_{x}" for x in eq200], [1,1])
-#     countRules(f"{lm}_i300", [f"{lm}_{x}" for x in eq300], [1])
-#     countRules(f"{lm}_iAll(weighted)", [f"{lm}_{x}" for x in eq100 + eq200 + eq300], [1,1,1,2,2,3])
-#     countRules(f"{lm}_iAll", [f"{lm}_{x}" for x in eq100 + eq200 + eq300], [1,1,1,1,1,1])
+#     collectHornRules(f"{lm}_i100", [f"{lm}_{x}" for x in eq100], [1,1,1])
+#     collectHornRules(f"{lm}_i200", [f"{lm}_{x}" for x in eq200], [1,1])
+#     collectHornRules(f"{lm}_i300", [f"{lm}_{x}" for x in eq300], [1])
+#     collectHornRules(f"{lm}_iAll(weighted)", [f"{lm}_{x}" for x in eq100 + eq200 + eq300], [1,1,1,2,2,3])
+#     collectHornRules(f"{lm}_iAll", [f"{lm}_{x}" for x in eq100 + eq200 + eq300], [1,1,1,1,1,1])
