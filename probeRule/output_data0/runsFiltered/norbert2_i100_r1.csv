@@ -1,0 +1,13 @@
+HORN RULES (filtered)
+mellom 20 og 30 & kvinne ---> Europa
+mellom 20 og 30 & kvinne ---> modell
+sykepleier & eldre enn 60 ---> mann
+Bodø & Afrika & kvinne ---> FALSE
+kvinne & advokat ---> FALSE
+kvinne & elektriker ---> FALSE
+kvinne & rørlegger ---> FALSE
+mann & modell ---> FALSE
+musiker & kvinne ---> FALSE
+psykolog & kvinne ---> FALSE
+sykepleier & Kristiansand & kvinne & mellom 50 og 60 ---> FALSE
+sykepleier & mann & mellom 40 og 50 ---> FALSE

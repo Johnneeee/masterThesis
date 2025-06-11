@@ -1,0 +1,51 @@
+HORN RULES (filtered)
+Asia & mellom 50 og 60 ---> Kristiansand
+Asia & mellom 50 og 60 ---> mann
+Asia & mellom 50 og 60 ---> sykepleier
+Australia & kvinne & mellom 50 og 60 ---> modell
+Bergen & Afrika & kvinne ---> mellom 50 og 60
+Bergen & Afrika & kvinne ---> modell
+Bergen & modell ---> kvinne
+Bodø & Sør Amerika ---> kvinne
+Bodø & Sør Amerika ---> modell
+Nord Amerika & kvinne & mellom 40 og 50 ---> sykepleier
+Nord Amerika & mellom 50 og 60 ---> kvinne
+Oslo & Nord Amerika & kvinne ---> mellom 30 og 40
+Oslo & Nord Amerika & kvinne ---> modell
+Oslo & Sør Amerika & kvinne ---> sykepleier
+Oslo & mellom 50 og 60 ---> Europa
+Oslo & mellom 50 og 60 ---> mann
+Oslo & mellom 50 og 60 ---> modell
+Tromsø & kvinne & eldre enn 60 ---> Afrika
+Trondheim & kvinne & mellom 50 og 60 ---> Sør Amerika
+Trondheim & kvinne & mellom 50 og 60 ---> modell
+Trondheim & mellom 30 og 40 ---> mann
+Trondheim & modell ---> kvinne
+forfatter & Bodø ---> mann
+forfatter & Kristiansand & Sør Amerika & mann ---> eldre enn 60
+forfatter & Ålesund & kvinne ---> Afrika
+fotograf ---> mann
+mellom 20 og 30 & Asia & kvinne ---> modell
+mellom 30 og 40 & Europa ---> mann
+sykepleier & Kristiansand ---> mann
+sykepleier & kvinne & mellom 40 og 50 ---> Nord Amerika
+sykepleier & mellom 30 og 40 & kvinne ---> Afrika
+Asia & kvinne & mellom 40 og 50 ---> FALSE
+Oslo & kvinne & mellom 40 og 50 ---> FALSE
+Stavanger & kvinne & mellom 40 og 50 ---> FALSE
+Tromsø & kvinne & mellom 40 og 50 ---> FALSE
+forfatter & Nord Amerika & kvinne ---> FALSE
+forfatter & Trondheim & Australia & mann ---> FALSE
+frisør & kvinne ---> FALSE
+kvinne & advokat ---> FALSE
+kvinne & elektriker ---> FALSE
+kvinne & rørlegger ---> FALSE
+mellom 20 og 30 & Tromsø & kvinne ---> FALSE
+sykepleier & Stavanger & kvinne ---> FALSE
+sykepleier & Trondheim & Nord Amerika & mann ---> FALSE
+sykepleier & Ålesund & kvinne ---> FALSE
+yngre enn 20 & Bodø & Europa & mann & modell ---> FALSE
+yngre enn 20 & Oslo & Asia & kvinne ---> FALSE
+yngre enn 20 & sykepleier & Trondheim & Afrika & mann ---> FALSE
+Ålesund & Nord Amerika & kvinne ---> FALSE
+Ålesund & kvinne & mellom 50 og 60 ---> FALSE

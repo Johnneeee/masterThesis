@@ -1,0 +1,40 @@
+COUNT;HORN RULES (filtered)
+1/1;Australia & kvinne & eldre enn 60 ---> modell
+1/1;Bergen & Asia & kvinne ---> modell
+1/1;Bergen & Europa & kvinne & mellom 50 og 60 ---> sykepleier
+1/1;Bodø & Sør Amerika ---> kvinne
+1/1;Kristiansand & Asia & kvinne ---> sykepleier
+1/1;Kristiansand & mellom 30 og 40 & kvinne ---> Afrika
+1/1;Nord Amerika & kvinne & mellom 50 og 60 ---> sykepleier
+1/1;Oslo & kvinne & eldre enn 60 ---> modell
+1/1;Trondheim & Sør Amerika & kvinne ---> mellom 30 og 40
+1/1;forfatter & Nord Amerika & kvinne ---> yngre enn 20
+1/1;forfatter & Trondheim & mann & mellom 40 og 50 ---> Nord Amerika
+1/1;mellom 20 og 30 & Kristiansand & kvinne ---> Nord Amerika
+1/1;mellom 20 og 30 & Kristiansand & kvinne ---> sykepleier
+1/1;mellom 20 og 30 & forfatter & kvinne ---> Afrika
+1/1;mellom 20 og 30 & forfatter & kvinne ---> Oslo
+1/1;yngre enn 20 & Europa ---> kvinne
+1/1;Ålesund & Nord Amerika & kvinne ---> eldre enn 60
+1/1;Ålesund & Nord Amerika & kvinne ---> modell
+1/1;Asia & kvinne & mellom 40 og 50 & advokat ---> FALSE
+1/1;Bergen & Afrika & mann & mellom 40 og 50 ---> FALSE
+1/1;Bergen & mellom 30 og 40 & Afrika & mann ---> FALSE
+1/1;Kristiansand & kvinne & eldre enn 60 ---> FALSE
+1/1;Tromsø & Asia & kvinne & eldre enn 60 ---> FALSE
+1/1;Tromsø & Nord Amerika & kvinne & eldre enn 60 ---> FALSE
+1/1;forfatter & Bodø & Europa & kvinne ---> FALSE
+1/1;forfatter & Tromsø & kvinne ---> FALSE
+1/1;forfatter & kvinne & eldre enn 60 ---> FALSE
+1/1;forfatter & Ålesund ---> FALSE
+1/1;fotograf & kvinne ---> FALSE
+1/1;frisør & mann ---> FALSE
+1/1;kvinne & elektriker ---> FALSE
+1/1;kvinne & rørlegger ---> FALSE
+1/1;mann & modell ---> FALSE
+1/1;sykepleier & mann ---> FALSE
+1/1;yngre enn 20 & Bergen & kvinne ---> FALSE
+1/1;yngre enn 20 & Tromsø & kvinne ---> FALSE
+1/1;yngre enn 20 & Ålesund & Asia & kvinne ---> FALSE
+1/1;Ålesund & Afrika & kvinne & mellom 50 og 60 ---> FALSE
+1/1;Ålesund & mellom 30 og 40 & Australia & kvinne ---> FALSE

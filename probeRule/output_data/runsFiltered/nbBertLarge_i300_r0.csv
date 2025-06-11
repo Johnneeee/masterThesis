@@ -1,0 +1,61 @@
+HORN RULES (filtered)
+Australia & mellom 50 og 60 ---> Bodø
+Australia & mellom 50 og 60 ---> advokat
+Australia & mellom 50 og 60 ---> mann
+Oslo & eldre enn 60 ---> Asia
+Oslo & eldre enn 60 ---> mann
+Oslo & eldre enn 60 ---> rørlegger
+Tromsø & mellom 40 og 50 ---> mann
+Trondheim & Europa & mann ---> fotograf
+Trondheim & Europa & mann ---> mellom 30 og 40
+Trondheim & mellom 40 og 50 ---> Australia
+Trondheim & mellom 40 og 50 ---> frisør
+Trondheim & mellom 40 og 50 ---> kvinne
+fotograf & Afrika ---> mann
+frisør & Asia & mann ---> Tromsø
+frisør & Asia & mann ---> yngre enn 20
+mellom 20 og 30 & Stavanger ---> Sør Amerika
+mellom 20 og 30 & Stavanger ---> frisør
+mellom 20 og 30 & Stavanger ---> kvinne
+mellom 30 og 40 & Asia & kvinne ---> Tromsø
+mellom 30 og 40 & Asia & kvinne ---> modell
+mellom 30 og 40 & Nord Amerika ---> mann
+mellom 30 og 40 & Sør Amerika & kvinne ---> Oslo
+mellom 30 og 40 & Sør Amerika & kvinne ---> frisør
+yngre enn 20 & Kristiansand ---> mann
+yngre enn 20 & Stavanger ---> kvinne
+Afrika & kvinne & mellom 40 og 50 ---> FALSE
+Australia & kvinne & rørlegger ---> FALSE
+Bergen & kvinne & elektriker ---> FALSE
+Bergen & kvinne & rørlegger ---> FALSE
+Bodø & kvinne & rørlegger ---> FALSE
+Europa & kvinne & eldre enn 60 & elektriker ---> FALSE
+Kristiansand & Asia & mann & mellom 40 og 50 & modell ---> FALSE
+Oslo & Afrika & kvinne & mellom 50 og 60 & rørlegger ---> FALSE
+Oslo & kvinne & elektriker ---> FALSE
+Stavanger & kvinne & elektriker ---> FALSE
+Sør Amerika & kvinne & elektriker ---> FALSE
+Tromsø & kvinne & mellom 50 og 60 & elektriker ---> FALSE
+Tromsø & kvinne & rørlegger ---> FALSE
+forfatter & mann ---> FALSE
+fotograf & Oslo & mann ---> FALSE
+fotograf & Stavanger & Europa & kvinne & mellom 40 og 50 ---> FALSE
+fotograf & kvinne & eldre enn 60 ---> FALSE
+fotograf & kvinne & mellom 50 og 60 ---> FALSE
+fotograf & mellom 30 og 40 & Europa & kvinne ---> FALSE
+frisør & mann & eldre enn 60 ---> FALSE
+kvinne & eldre enn 60 & advokat ---> FALSE
+kvinne & mellom 40 og 50 & advokat ---> FALSE
+kvinne & mellom 40 og 50 & elektriker ---> FALSE
+kvinne & mellom 40 og 50 & rørlegger ---> FALSE
+mellom 20 og 30 & Bodø & kvinne ---> FALSE
+mellom 20 og 30 & fotograf & kvinne ---> FALSE
+mellom 20 og 30 & kvinne & advokat ---> FALSE
+mellom 20 og 30 & Ålesund & kvinne & elektriker ---> FALSE
+mellom 30 og 40 & kvinne & advokat ---> FALSE
+sykepleier & mann ---> FALSE
+yngre enn 20 & Bergen & Europa & mann ---> FALSE
+yngre enn 20 & fotograf & kvinne ---> FALSE
+yngre enn 20 & kvinne & advokat ---> FALSE
+yngre enn 20 & kvinne & elektriker ---> FALSE
+Ålesund & Sør Amerika & kvinne & rørlegger ---> FALSE

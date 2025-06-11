@@ -1,0 +1,52 @@
+COUNT;HORN RULES (filtered)
+1/1;Kristiansand & Sør Amerika & mann & rørlegger ---> mellom 30 og 40
+1/1;Stavanger & Australia ---> mann
+1/1;Tromsø & kvinne ---> sykepleier
+1/1;forfatter & Asia ---> mann
+1/1;forfatter & Australia & mann ---> Bodø
+1/1;forfatter & Australia & mann ---> mellom 40 og 50
+1/1;forfatter & Stavanger ---> kvinne
+1/1;frisør & Europa ---> mann
+1/1;kvinne & eldre enn 60 ---> Afrika
+1/1;kvinne & eldre enn 60 ---> Stavanger
+1/1;kvinne & eldre enn 60 ---> sykepleier
+1/1;kvinne & rørlegger ---> Afrika
+1/1;kvinne & rørlegger ---> Stavanger
+1/1;mellom 20 og 30 & forfatter ---> kvinne
+1/1;mellom 20 og 30 & fotograf ---> mann
+1/1;mellom 30 og 40 & Australia & kvinne ---> modell
+1/1;mellom 30 og 40 & Australia & kvinne ---> Ålesund
+1/1;mellom 30 og 40 & Sør Amerika ---> mann
+1/1;mellom 40 og 50 & modell ---> kvinne
+1/1;mellom 50 og 60 & modell ---> Australia
+1/1;mellom 50 og 60 & modell ---> kvinne
+1/1;sykepleier & Kristiansand ---> kvinne
+1/1;sykepleier & Oslo & mann ---> Europa
+1/1;sykepleier & Oslo & mann ---> eldre enn 60
+1/1;yngre enn 20 & Sør Amerika & kvinne ---> Trondheim
+1/1;yngre enn 20 & Sør Amerika & kvinne ---> modell
+1/1;yngre enn 20 & kvinne & modell ---> Sør Amerika
+1/1;yngre enn 20 & kvinne & modell ---> Trondheim
+1/1;Kristiansand & Nord Amerika & kvinne & mellom 40 og 50 ---> FALSE
+1/1;Kristiansand & mann & modell ---> FALSE
+1/1;Kristiansand & mellom 30 og 40 & Afrika & mann & rørlegger ---> FALSE
+1/1;Oslo & Australia ---> FALSE
+1/1;Oslo & mann & modell ---> FALSE
+1/1;forfatter & Europa & mann ---> FALSE
+1/1;forfatter & Sør Amerika & mann ---> FALSE
+1/1;fotograf & Oslo & Australia & mann ---> FALSE
+1/1;fotograf & kvinne & mellom 40 og 50 ---> FALSE
+1/1;fotograf & kvinne & mellom 50 og 60 ---> FALSE
+1/1;fotograf & mellom 30 og 40 & Europa ---> FALSE
+1/1;frisør & Bodø & Sør Amerika & kvinne ---> FALSE
+1/1;frisør & Stavanger & kvinne & mellom 40 og 50 ---> FALSE
+1/1;frisør & kvinne & mellom 50 og 60 ---> FALSE
+1/1;kvinne & advokat ---> FALSE
+1/1;kvinne & elektriker ---> FALSE
+1/1;mellom 20 og 30 & sykepleier & mann ---> FALSE
+1/1;sykepleier & Trondheim & mann ---> FALSE
+1/1;sykepleier & mann & mellom 40 og 50 ---> FALSE
+1/1;sykepleier & mann & mellom 50 og 60 ---> FALSE
+1/1;yngre enn 20 & Nord Amerika & kvinne ---> FALSE
+1/1;yngre enn 20 & fotograf & kvinne ---> FALSE
+1/1;Ålesund & Afrika & mann & mellom 40 og 50 & modell ---> FALSE

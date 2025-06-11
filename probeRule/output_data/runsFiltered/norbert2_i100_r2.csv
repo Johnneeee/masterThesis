@@ -1,0 +1,11 @@
+HORN RULES (filtered)
+Stavanger & Afrika ---> kvinne
+Stavanger & Afrika ---> sykepleier
+sykepleier & mann ---> yngre enn 20
+Ålesund & kvinne ---> Sør Amerika
+Ålesund & kvinne ---> mellom 40 og 50
+Bodø & Asia & kvinne ---> FALSE
+Sør Amerika & kvinne & elektriker ---> FALSE
+fotograf & kvinne ---> FALSE
+frisør & mellom 30 og 40 & Afrika & mann ---> FALSE
+kvinne & rørlegger ---> FALSE

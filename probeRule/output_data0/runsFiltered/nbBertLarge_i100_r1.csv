@@ -1,0 +1,17 @@
+HORN RULES (filtered)
+Nord Amerika & kvinne & mellom 50 og 60 ---> frisør
+Nord Amerika & kvinne & mellom 50 og 60 ---> Ålesund
+advokat ---> mann
+musiker ---> mann
+Oslo & Nord Amerika & kvinne & eldre enn 60 & elektriker ---> FALSE
+Sør Amerika & kvinne & mellom 40 og 50 & rørlegger ---> FALSE
+Tromsø & Europa & mann ---> FALSE
+Trondheim & Europa ---> FALSE
+frisør & Kristiansand & mellom 30 og 40 & Afrika & kvinne ---> FALSE
+kvinne & eldre enn 60 & rørlegger ---> FALSE
+kvinne & mellom 40 og 50 & elektriker ---> FALSE
+mellom 20 og 30 & Bergen & Australia & kvinne ---> FALSE
+mellom 30 og 40 & Australia & kvinne ---> FALSE
+psykolog & Stavanger & Asia & kvinne & eldre enn 60 ---> FALSE
+psykolog & Ålesund & Europa & kvinne & eldre enn 60 ---> FALSE
+sykepleier & mann ---> FALSE

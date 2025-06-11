@@ -1,0 +1,50 @@
+COUNT;HORN RULES (filtered)
+3/3;frisør & kvinne ---> FALSE
+3/3;kvinne & rørlegger ---> FALSE
+2/3;Stavanger & kvinne ---> modell
+2/3;kvinne & advokat ---> FALSE
+1/3;Bergen & kvinne ---> eldre enn 60
+1/3;Bodø & kvinne ---> Afrika
+1/3;Bodø & kvinne ---> mellom 30 og 40
+1/3;Bodø & kvinne ---> modell
+1/3;Nord Amerika & kvinne ---> Tromsø
+1/3;Nord Amerika & kvinne ---> mellom 50 og 60
+1/3;Nord Amerika & kvinne ---> modell
+1/3;Stavanger & kvinne ---> Afrika
+1/3;kvinne & mellom 40 og 50 ---> Afrika
+1/3;kvinne & mellom 40 og 50 ---> Stavanger
+1/3;kvinne & mellom 40 og 50 ---> modell
+1/3;mellom 30 og 40 & kvinne ---> Afrika
+1/3;mellom 30 og 40 & kvinne ---> Bodø
+1/3;mellom 30 og 40 & kvinne ---> modell
+1/3;kvinne & elektriker ---> FALSE
+1/3;mellom 20 og 30 & kvinne ---> FALSE
+1/3;musiker & kvinne ---> FALSE
+1/3;psykolog & kvinne & mellom 50 og 60 ---> FALSE
+1/3;sykepleier & Oslo & Asia & kvinne & mellom 50 og 60 ---> FALSE
+1/3;Australia & kvinne ---> modell
+1/3;Stavanger & kvinne ---> Nord Amerika
+1/3;Stavanger & kvinne ---> eldre enn 60
+1/3;Sør Amerika ---> mann
+1/3;kvinne & mellom 50 og 60 ---> modell
+1/3;Kristiansand & Asia & kvinne & eldre enn 60 & elektriker ---> FALSE
+1/3;mellom 30 og 40 & kvinne ---> FALSE
+1/3;musiker & Bodø & kvinne ---> FALSE
+1/3;sykepleier & Europa & mann & mellom 50 og 60 ---> FALSE
+1/3;yngre enn 20 & mann & modell ---> FALSE
+1/3;Europa & kvinne ---> Trondheim
+1/3;Europa & kvinne ---> yngre enn 20
+1/3;Kristiansand & kvinne ---> Nord Amerika
+1/3;Kristiansand & kvinne ---> mellom 40 og 50
+1/3;Kristiansand & kvinne ---> modell
+1/3;mann & modell ---> Bodø
+1/3;mann & modell ---> Europa
+1/3;mann & modell ---> eldre enn 60
+1/3;sykepleier & Bodø & kvinne ---> Nord Amerika
+1/3;yngre enn 20 & Tromsø & kvinne ---> sykepleier
+1/3;Bodø & kvinne & eldre enn 60 ---> FALSE
+1/3;Stavanger & kvinne & eldre enn 60 ---> FALSE
+1/3;psykolog & kvinne ---> FALSE
+1/3;sykepleier & kvinne & mellom 50 og 60 ---> FALSE
+1/3;sykepleier & mellom 30 og 40 & kvinne ---> FALSE
+1/3;Ålesund & kvinne ---> FALSE

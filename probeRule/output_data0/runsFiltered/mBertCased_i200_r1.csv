@@ -1,0 +1,40 @@
+HORN RULES (filtered)
+Sør Amerika & advokat ---> Kristiansand
+Sør Amerika & advokat ---> mann
+Sør Amerika & advokat ---> mellom 40 og 50
+kvinne & eldre enn 60 ---> Afrika
+kvinne & eldre enn 60 ---> Trondheim
+kvinne & eldre enn 60 ---> sykepleier
+kvinne & elektriker ---> Stavanger
+kvinne & elektriker ---> Sør Amerika
+kvinne & elektriker ---> mellom 20 og 30
+mellom 20 og 30 & Bergen ---> Asia
+mellom 20 og 30 & Bergen ---> mann
+mellom 30 og 40 & Asia & kvinne ---> Stavanger
+mellom 30 og 40 & Asia & kvinne ---> psykolog
+mellom 30 og 40 & Europa ---> Bodø
+mellom 30 og 40 & Europa ---> kvinne
+mellom 30 og 40 & Europa ---> sykepleier
+mellom 30 og 40 & Nord Amerika ---> mann
+psykolog & Trondheim ---> kvinne
+Bodø & Sør Amerika ---> FALSE
+Europa & mellom 50 og 60 ---> FALSE
+frisør & Afrika ---> FALSE
+frisør & Nord Amerika & kvinne & mellom 40 og 50 ---> FALSE
+frisør & Oslo & Sør Amerika & mann ---> FALSE
+frisør & Ålesund & Asia & mann ---> FALSE
+kvinne & modell ---> FALSE
+mellom 20 og 30 & Stavanger & mann & rørlegger ---> FALSE
+mellom 20 og 30 & sykepleier & mann ---> FALSE
+mellom 30 og 40 & rørlegger ---> FALSE
+musiker & kvinne ---> FALSE
+psykolog & Bergen & mellom 30 og 40 & Sør Amerika & mann ---> FALSE
+psykolog & Kristiansand & mann ---> FALSE
+psykolog & Stavanger & mann ---> FALSE
+psykolog & Tromsø & mann ---> FALSE
+psykolog & Ålesund & mann ---> FALSE
+sykepleier & Kristiansand & mann & mellom 40 og 50 ---> FALSE
+sykepleier & Oslo & Nord Amerika & mann ---> FALSE
+sykepleier & Stavanger & mellom 30 og 40 & Australia & mann ---> FALSE
+sykepleier & Tromsø & Sør Amerika & mann ---> FALSE
+yngre enn 20 & psykolog & Bodø & Australia & kvinne ---> FALSE

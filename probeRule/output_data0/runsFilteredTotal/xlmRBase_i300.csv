@@ -1,0 +1,51 @@
+COUNT;HORN RULES (filtered)
+1/1;Asia & kvinne & mellom 40 og 50 ---> frisør
+1/1;Bodø & Afrika & kvinne ---> modell
+1/1;Bodø & Afrika & kvinne ---> yngre enn 20
+1/1;Bodø & Asia & kvinne ---> frisør
+1/1;Bodø & Sør Amerika & kvinne ---> frisør
+1/1;Bodø & Sør Amerika & kvinne ---> mellom 20 og 30
+1/1;Kristiansand & kvinne & mellom 50 og 60 ---> Afrika
+1/1;Nord Amerika & kvinne & eldre enn 60 ---> Kristiansand
+1/1;Nord Amerika & kvinne & eldre enn 60 ---> frisør
+1/1;Nord Amerika & kvinne & mellom 40 og 50 ---> Trondheim
+1/1;Nord Amerika & kvinne & mellom 40 og 50 ---> modell
+1/1;Oslo & Afrika ---> mann
+1/1;Oslo & Afrika ---> rørlegger
+1/1;Oslo & kvinne & mellom 40 og 50 ---> frisør
+1/1;Tromsø & kvinne & mellom 40 og 50 ---> frisør
+1/1;frisør & Australia & mann ---> Tromsø
+1/1;frisør & Australia & mann ---> eldre enn 60
+1/1;frisør & mellom 30 og 40 ---> kvinne
+1/1;mellom 20 og 30 & Nord Amerika & kvinne ---> Oslo
+1/1;mellom 20 og 30 & Oslo & kvinne ---> Nord Amerika
+1/1;mellom 30 og 40 & Afrika & kvinne ---> frisør
+1/1;mellom 30 og 40 & Sør Amerika & kvinne ---> Trondheim
+1/1;yngre enn 20 & Trondheim & kvinne ---> frisør
+1/1;yngre enn 20 & frisør & mann ---> Nord Amerika
+1/1;Ålesund & Asia & kvinne ---> eldre enn 60
+1/1;Ålesund & Asia & kvinne ---> modell
+1/1;Bergen & mellom 30 og 40 & Nord Amerika & kvinne ---> FALSE
+1/1;Bodø & kvinne & eldre enn 60 ---> FALSE
+1/1;Kristiansand & mellom 30 og 40 & Asia & kvinne ---> FALSE
+1/1;Stavanger & mellom 30 og 40 & Nord Amerika & kvinne ---> FALSE
+1/1;Tromsø & Australia & kvinne ---> FALSE
+1/1;frisør & Asia & mann ---> FALSE
+1/1;frisør & Kristiansand & mann ---> FALSE
+1/1;frisør & Tromsø & Europa & mann ---> FALSE
+1/1;frisør & Trondheim & mann ---> FALSE
+1/1;frisør & mann & mellom 40 og 50 ---> FALSE
+1/1;frisør & Ålesund & mann & eldre enn 60 ---> FALSE
+1/1;kvinne & advokat ---> FALSE
+1/1;kvinne & elektriker ---> FALSE
+1/1;kvinne & rørlegger ---> FALSE
+1/1;mann & modell ---> FALSE
+1/1;mellom 20 og 30 & Afrika & kvinne ---> FALSE
+1/1;mellom 20 og 30 & frisør & mann ---> FALSE
+1/1;musiker & kvinne ---> FALSE
+1/1;psykolog & kvinne ---> FALSE
+1/1;sykepleier & kvinne ---> FALSE
+1/1;yngre enn 20 & Bodø & Europa & kvinne ---> FALSE
+1/1;yngre enn 20 & Tromsø & kvinne ---> FALSE
+1/1;Ålesund & Europa & kvinne ---> FALSE
+1/1;Ålesund & kvinne & mellom 40 og 50 ---> FALSE

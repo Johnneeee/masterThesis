@@ -1,0 +1,13 @@
+HORN RULES (filtered)
+Stavanger & mellom 30 og 40 & kvinne ---> rørlegger
+Tromsø ---> mann
+kvinne & rørlegger ---> mellom 30 og 40
+musiker ---> mann
+Kristiansand & Afrika ---> FALSE
+Kristiansand & kvinne & mellom 50 og 60 ---> FALSE
+frisør & Australia & kvinne ---> FALSE
+kvinne & eldre enn 60 ---> FALSE
+kvinne & elektriker ---> FALSE
+kvinne & modell ---> FALSE
+psykolog & Oslo & mann ---> FALSE
+sykepleier & Kristiansand & Nord Amerika & mann & mellom 40 og 50 ---> FALSE

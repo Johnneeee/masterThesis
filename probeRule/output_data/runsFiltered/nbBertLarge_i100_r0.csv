@@ -1,0 +1,25 @@
+HORN RULES (filtered)
+Bergen ---> Europa
+Bergen ---> fotograf
+Bergen ---> mann
+Bergen ---> mellom 50 og 60
+Tromsø & eldre enn 60 ---> kvinne
+Tromsø & kvinne & mellom 40 og 50 ---> Asia
+Tromsø & kvinne & mellom 40 og 50 ---> modell
+Oslo & mellom 50 og 60 ---> FALSE
+Stavanger & Nord Amerika & kvinne & eldre enn 60 & advokat ---> FALSE
+Stavanger & mellom 30 og 40 & kvinne ---> FALSE
+Sør Amerika & kvinne & elektriker ---> FALSE
+fotograf & mellom 30 og 40 & kvinne ---> FALSE
+frisør & Tromsø & Europa & kvinne & mellom 50 og 60 ---> FALSE
+mellom 20 og 30 & Asia & kvinne & rørlegger ---> FALSE
+mellom 20 og 30 & fotograf & Nord Amerika & kvinne ---> FALSE
+mellom 30 og 40 & Europa & kvinne & elektriker ---> FALSE
+mellom 30 og 40 & kvinne & advokat ---> FALSE
+sykepleier & Sør Amerika & mann ---> FALSE
+yngre enn 20 & Asia ---> FALSE
+yngre enn 20 & Bodø & kvinne ---> FALSE
+yngre enn 20 & Tromsø & Sør Amerika & kvinne & advokat ---> FALSE
+yngre enn 20 & Trondheim & mann & modell ---> FALSE
+yngre enn 20 & kvinne & rørlegger ---> FALSE
+Ålesund & Afrika & kvinne & mellom 50 og 60 & elektriker ---> FALSE

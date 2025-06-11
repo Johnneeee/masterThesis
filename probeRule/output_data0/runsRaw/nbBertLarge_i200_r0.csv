@@ -1,0 +1,457 @@
+EXTRACTED HORN RULES
+Afrika & Australia ---> FALSE
+Afrika & Europa ---> FALSE
+Afrika & Nord Amerika ---> FALSE
+Afrika & Sør Amerika ---> FALSE
+Afrika & kvinne & mellom 40 og 50 ---> Bergen
+Afrika & kvinne & mellom 40 og 50 ---> frisør
+Afrika & mann & modell ---> Bergen
+Afrika & mann & modell ---> Bodø
+Afrika & mann & modell ---> FALSE
+Afrika & mann & modell ---> Kristiansand
+Afrika & mann & modell ---> Oslo
+Afrika & mann & modell ---> Stavanger
+Afrika & mann & modell ---> Tromsø
+Afrika & mann & modell ---> Trondheim
+Afrika & mann & modell ---> eldre enn 60
+Afrika & mann & modell ---> mellom 20 og 30
+Afrika & mann & modell ---> mellom 30 og 40
+Afrika & mann & modell ---> mellom 40 og 50
+Afrika & mann & modell ---> mellom 50 og 60
+Afrika & mann & modell ---> yngre enn 20
+Afrika & mann & modell ---> Ålesund
+Asia & Afrika ---> FALSE
+Asia & Australia ---> FALSE
+Asia & Europa ---> FALSE
+Asia & Nord Amerika ---> FALSE
+Asia & Sør Amerika ---> FALSE
+Asia & mann & modell ---> Bergen
+Asia & mann & modell ---> Bodø
+Asia & mann & modell ---> FALSE
+Asia & mann & modell ---> Kristiansand
+Asia & mann & modell ---> Oslo
+Asia & mann & modell ---> Stavanger
+Asia & mann & modell ---> Tromsø
+Asia & mann & modell ---> Trondheim
+Asia & mann & modell ---> eldre enn 60
+Asia & mann & modell ---> mellom 20 og 30
+Asia & mann & modell ---> mellom 30 og 40
+Asia & mann & modell ---> mellom 40 og 50
+Asia & mann & modell ---> mellom 50 og 60
+Asia & mann & modell ---> yngre enn 20
+Asia & mann & modell ---> Ålesund
+Bergen & Bodø ---> FALSE
+Bergen & Tromsø ---> FALSE
+Bergen & Trondheim ---> FALSE
+Bergen & kvinne & rørlegger ---> Afrika
+Bergen & kvinne & rørlegger ---> Asia
+Bergen & kvinne & rørlegger ---> Australia
+Bergen & kvinne & rørlegger ---> Europa
+Bergen & kvinne & rørlegger ---> FALSE
+Bergen & kvinne & rørlegger ---> Nord Amerika
+Bergen & kvinne & rørlegger ---> Sør Amerika
+Bergen & kvinne & rørlegger ---> eldre enn 60
+Bergen & kvinne & rørlegger ---> mellom 20 og 30
+Bergen & kvinne & rørlegger ---> mellom 30 og 40
+Bergen & kvinne & rørlegger ---> mellom 40 og 50
+Bergen & kvinne & rørlegger ---> mellom 50 og 60
+Bergen & kvinne & rørlegger ---> yngre enn 20
+Bergen & mann & eldre enn 60 & modell ---> Afrika
+Bergen & mann & eldre enn 60 & modell ---> Asia
+Bergen & mann & eldre enn 60 & modell ---> Australia
+Bergen & mann & eldre enn 60 & modell ---> Europa
+Bergen & mann & eldre enn 60 & modell ---> FALSE
+Bergen & mann & eldre enn 60 & modell ---> Nord Amerika
+Bergen & mann & eldre enn 60 & modell ---> Sør Amerika
+Bergen & Ålesund ---> FALSE
+Bodø & Tromsø ---> FALSE
+Europa & Australia ---> FALSE
+Kristiansand & Bergen ---> FALSE
+Kristiansand & Bodø ---> FALSE
+Kristiansand & Stavanger ---> FALSE
+Kristiansand & Sør Amerika ---> eldre enn 60
+Kristiansand & Sør Amerika ---> mann
+Kristiansand & Sør Amerika ---> rørlegger
+Kristiansand & Tromsø ---> FALSE
+Kristiansand & Trondheim ---> FALSE
+Kristiansand & Ålesund ---> FALSE
+Nord Amerika & Australia ---> FALSE
+Nord Amerika & Europa ---> FALSE
+Nord Amerika & Sør Amerika ---> FALSE
+Nord Amerika & mellom 50 og 60 ---> Oslo
+Nord Amerika & mellom 50 og 60 ---> kvinne
+Nord Amerika & mellom 50 og 60 ---> modell
+Oslo & Bergen ---> FALSE
+Oslo & Bodø ---> FALSE
+Oslo & Kristiansand ---> FALSE
+Oslo & Stavanger ---> FALSE
+Oslo & Tromsø ---> FALSE
+Oslo & Trondheim ---> FALSE
+Oslo & kvinne & elektriker ---> Afrika
+Oslo & kvinne & elektriker ---> Asia
+Oslo & kvinne & elektriker ---> Australia
+Oslo & kvinne & elektriker ---> Europa
+Oslo & kvinne & elektriker ---> FALSE
+Oslo & kvinne & elektriker ---> Nord Amerika
+Oslo & kvinne & elektriker ---> Sør Amerika
+Oslo & kvinne & elektriker ---> eldre enn 60
+Oslo & kvinne & elektriker ---> mellom 20 og 30
+Oslo & kvinne & elektriker ---> mellom 30 og 40
+Oslo & kvinne & elektriker ---> mellom 40 og 50
+Oslo & kvinne & elektriker ---> mellom 50 og 60
+Oslo & kvinne & elektriker ---> yngre enn 20
+Oslo & Ålesund ---> FALSE
+Stavanger & Afrika & kvinne & mellom 50 og 60 ---> FALSE
+Stavanger & Afrika & kvinne & mellom 50 og 60 ---> advokat
+Stavanger & Afrika & kvinne & mellom 50 og 60 ---> elektriker
+Stavanger & Afrika & kvinne & mellom 50 og 60 ---> frisør
+Stavanger & Afrika & kvinne & mellom 50 og 60 ---> modell
+Stavanger & Afrika & kvinne & mellom 50 og 60 ---> musiker
+Stavanger & Afrika & kvinne & mellom 50 og 60 ---> psykolog
+Stavanger & Afrika & kvinne & mellom 50 og 60 ---> rørlegger
+Stavanger & Afrika & kvinne & mellom 50 og 60 ---> sykepleier
+Stavanger & Bergen ---> FALSE
+Stavanger & Bodø ---> FALSE
+Stavanger & Nord Amerika & kvinne & advokat ---> FALSE
+Stavanger & Nord Amerika & kvinne & advokat ---> eldre enn 60
+Stavanger & Nord Amerika & kvinne & advokat ---> mellom 20 og 30
+Stavanger & Nord Amerika & kvinne & advokat ---> mellom 30 og 40
+Stavanger & Nord Amerika & kvinne & advokat ---> mellom 40 og 50
+Stavanger & Nord Amerika & kvinne & advokat ---> mellom 50 og 60
+Stavanger & Nord Amerika & kvinne & advokat ---> yngre enn 20
+Stavanger & Sør Amerika & kvinne & rørlegger ---> FALSE
+Stavanger & Sør Amerika & kvinne & rørlegger ---> eldre enn 60
+Stavanger & Sør Amerika & kvinne & rørlegger ---> mellom 20 og 30
+Stavanger & Sør Amerika & kvinne & rørlegger ---> mellom 30 og 40
+Stavanger & Sør Amerika & kvinne & rørlegger ---> mellom 40 og 50
+Stavanger & Sør Amerika & kvinne & rørlegger ---> mellom 50 og 60
+Stavanger & Sør Amerika & kvinne & rørlegger ---> yngre enn 20
+Stavanger & Tromsø ---> FALSE
+Stavanger & Trondheim ---> FALSE
+Stavanger & eldre enn 60 ---> Australia
+Stavanger & eldre enn 60 ---> advokat
+Stavanger & eldre enn 60 ---> mann
+Stavanger & mellom 40 og 50 ---> Australia
+Stavanger & mellom 40 og 50 ---> mann
+Stavanger & mellom 40 og 50 ---> musiker
+Stavanger & Ålesund ---> FALSE
+Sør Amerika & Australia ---> FALSE
+Sør Amerika & Europa ---> FALSE
+Tromsø & Europa ---> mann
+Tromsø & Europa ---> mellom 50 og 60
+Trondheim & Asia & kvinne & elektriker ---> FALSE
+Trondheim & Asia & kvinne & elektriker ---> eldre enn 60
+Trondheim & Asia & kvinne & elektriker ---> mellom 20 og 30
+Trondheim & Asia & kvinne & elektriker ---> mellom 30 og 40
+Trondheim & Asia & kvinne & elektriker ---> mellom 40 og 50
+Trondheim & Asia & kvinne & elektriker ---> mellom 50 og 60
+Trondheim & Asia & kvinne & elektriker ---> yngre enn 20
+Trondheim & Bodø ---> FALSE
+Trondheim & Europa & kvinne & rørlegger ---> FALSE
+Trondheim & Europa & kvinne & rørlegger ---> eldre enn 60
+Trondheim & Europa & kvinne & rørlegger ---> mellom 20 og 30
+Trondheim & Europa & kvinne & rørlegger ---> mellom 30 og 40
+Trondheim & Europa & kvinne & rørlegger ---> mellom 40 og 50
+Trondheim & Europa & kvinne & rørlegger ---> mellom 50 og 60
+Trondheim & Europa & kvinne & rørlegger ---> yngre enn 20
+Trondheim & Tromsø ---> FALSE
+advokat & elektriker ---> FALSE
+advokat & modell ---> FALSE
+advokat & rørlegger ---> FALSE
+elektriker & modell ---> FALSE
+elektriker & rørlegger ---> FALSE
+frisør & advokat ---> FALSE
+frisør & elektriker ---> FALSE
+frisør & mann ---> Afrika
+frisør & mann ---> Bodø
+frisør & mann ---> yngre enn 20
+frisør & modell ---> FALSE
+frisør & musiker ---> FALSE
+frisør & psykolog ---> FALSE
+frisør & rørlegger ---> FALSE
+kvinne & eldre enn 60 & elektriker ---> Afrika
+kvinne & eldre enn 60 & elektriker ---> Asia
+kvinne & eldre enn 60 & elektriker ---> Australia
+kvinne & eldre enn 60 & elektriker ---> Bergen
+kvinne & eldre enn 60 & elektriker ---> Bodø
+kvinne & eldre enn 60 & elektriker ---> Europa
+kvinne & eldre enn 60 & elektriker ---> FALSE
+kvinne & eldre enn 60 & elektriker ---> Kristiansand
+kvinne & eldre enn 60 & elektriker ---> Nord Amerika
+kvinne & eldre enn 60 & elektriker ---> Oslo
+kvinne & eldre enn 60 & elektriker ---> Stavanger
+kvinne & eldre enn 60 & elektriker ---> Sør Amerika
+kvinne & eldre enn 60 & elektriker ---> Tromsø
+kvinne & eldre enn 60 & elektriker ---> Trondheim
+kvinne & eldre enn 60 & elektriker ---> Ålesund
+kvinne & eldre enn 60 & rørlegger ---> Afrika
+kvinne & eldre enn 60 & rørlegger ---> Asia
+kvinne & eldre enn 60 & rørlegger ---> Australia
+kvinne & eldre enn 60 & rørlegger ---> Bergen
+kvinne & eldre enn 60 & rørlegger ---> Bodø
+kvinne & eldre enn 60 & rørlegger ---> Europa
+kvinne & eldre enn 60 & rørlegger ---> FALSE
+kvinne & eldre enn 60 & rørlegger ---> Kristiansand
+kvinne & eldre enn 60 & rørlegger ---> Nord Amerika
+kvinne & eldre enn 60 & rørlegger ---> Oslo
+kvinne & eldre enn 60 & rørlegger ---> Stavanger
+kvinne & eldre enn 60 & rørlegger ---> Sør Amerika
+kvinne & eldre enn 60 & rørlegger ---> Tromsø
+kvinne & eldre enn 60 & rørlegger ---> Trondheim
+kvinne & eldre enn 60 & rørlegger ---> Ålesund
+kvinne & mann ---> FALSE
+mellom 20 og 30 & Australia ---> Tromsø
+mellom 20 og 30 & Australia ---> mann
+mellom 20 og 30 & Bodø & Asia & kvinne ---> FALSE
+mellom 20 og 30 & Bodø & Asia & kvinne ---> advokat
+mellom 20 og 30 & Bodø & Asia & kvinne ---> elektriker
+mellom 20 og 30 & Bodø & Asia & kvinne ---> frisør
+mellom 20 og 30 & Bodø & Asia & kvinne ---> modell
+mellom 20 og 30 & Bodø & Asia & kvinne ---> musiker
+mellom 20 og 30 & Bodø & Asia & kvinne ---> psykolog
+mellom 20 og 30 & Bodø & Asia & kvinne ---> rørlegger
+mellom 20 og 30 & Bodø & Asia & kvinne ---> sykepleier
+mellom 20 og 30 & Europa ---> Bergen
+mellom 20 og 30 & Europa ---> Bodø
+mellom 20 og 30 & Europa ---> FALSE
+mellom 20 og 30 & Europa ---> Kristiansand
+mellom 20 og 30 & Europa ---> Oslo
+mellom 20 og 30 & Europa ---> Stavanger
+mellom 20 og 30 & Europa ---> Tromsø
+mellom 20 og 30 & Europa ---> Trondheim
+mellom 20 og 30 & Europa ---> advokat
+mellom 20 og 30 & Europa ---> elektriker
+mellom 20 og 30 & Europa ---> frisør
+mellom 20 og 30 & Europa ---> kvinne
+mellom 20 og 30 & Europa ---> mann
+mellom 20 og 30 & Europa ---> modell
+mellom 20 og 30 & Europa ---> musiker
+mellom 20 og 30 & Europa ---> psykolog
+mellom 20 og 30 & Europa ---> rørlegger
+mellom 20 og 30 & Europa ---> sykepleier
+mellom 20 og 30 & Europa ---> Ålesund
+mellom 20 og 30 & Stavanger & Afrika & kvinne ---> FALSE
+mellom 20 og 30 & Stavanger & Afrika & kvinne ---> advokat
+mellom 20 og 30 & Stavanger & Afrika & kvinne ---> elektriker
+mellom 20 og 30 & Stavanger & Afrika & kvinne ---> frisør
+mellom 20 og 30 & Stavanger & Afrika & kvinne ---> modell
+mellom 20 og 30 & Stavanger & Afrika & kvinne ---> musiker
+mellom 20 og 30 & Stavanger & Afrika & kvinne ---> psykolog
+mellom 20 og 30 & Stavanger & Afrika & kvinne ---> rørlegger
+mellom 20 og 30 & Stavanger & Afrika & kvinne ---> sykepleier
+mellom 20 og 30 & Tromsø & kvinne & elektriker ---> Afrika
+mellom 20 og 30 & Tromsø & kvinne & elektriker ---> Asia
+mellom 20 og 30 & Tromsø & kvinne & elektriker ---> Australia
+mellom 20 og 30 & Tromsø & kvinne & elektriker ---> Europa
+mellom 20 og 30 & Tromsø & kvinne & elektriker ---> FALSE
+mellom 20 og 30 & Tromsø & kvinne & elektriker ---> Nord Amerika
+mellom 20 og 30 & Tromsø & kvinne & elektriker ---> Sør Amerika
+mellom 20 og 30 & eldre enn 60 ---> FALSE
+mellom 20 og 30 & mellom 30 og 40 ---> FALSE
+mellom 20 og 30 & mellom 40 og 50 ---> FALSE
+mellom 20 og 30 & mellom 50 og 60 ---> FALSE
+mellom 20 og 30 & Ålesund & Sør Amerika & kvinne & advokat ---> FALSE
+mellom 30 og 40 & Australia ---> advokat
+mellom 30 og 40 & Australia ---> mann
+mellom 30 og 40 & Europa & kvinne ---> Bergen
+mellom 30 og 40 & Europa & kvinne ---> Bodø
+mellom 30 og 40 & Europa & kvinne ---> FALSE
+mellom 30 og 40 & Europa & kvinne ---> Kristiansand
+mellom 30 og 40 & Europa & kvinne ---> Oslo
+mellom 30 og 40 & Europa & kvinne ---> Stavanger
+mellom 30 og 40 & Europa & kvinne ---> Tromsø
+mellom 30 og 40 & Europa & kvinne ---> Trondheim
+mellom 30 og 40 & Europa & kvinne ---> advokat
+mellom 30 og 40 & Europa & kvinne ---> elektriker
+mellom 30 og 40 & Europa & kvinne ---> frisør
+mellom 30 og 40 & Europa & kvinne ---> modell
+mellom 30 og 40 & Europa & kvinne ---> musiker
+mellom 30 og 40 & Europa & kvinne ---> psykolog
+mellom 30 og 40 & Europa & kvinne ---> rørlegger
+mellom 30 og 40 & Europa & kvinne ---> sykepleier
+mellom 30 og 40 & Europa & kvinne ---> Ålesund
+mellom 30 og 40 & Sør Amerika ---> Bodø
+mellom 30 og 40 & Sør Amerika ---> kvinne
+mellom 30 og 40 & Sør Amerika ---> modell
+mellom 30 og 40 & eldre enn 60 ---> FALSE
+mellom 30 og 40 & kvinne & elektriker ---> Afrika
+mellom 30 og 40 & kvinne & elektriker ---> Asia
+mellom 30 og 40 & kvinne & elektriker ---> Australia
+mellom 30 og 40 & kvinne & elektriker ---> Bergen
+mellom 30 og 40 & kvinne & elektriker ---> Bodø
+mellom 30 og 40 & kvinne & elektriker ---> Europa
+mellom 30 og 40 & kvinne & elektriker ---> FALSE
+mellom 30 og 40 & kvinne & elektriker ---> Kristiansand
+mellom 30 og 40 & kvinne & elektriker ---> Nord Amerika
+mellom 30 og 40 & kvinne & elektriker ---> Oslo
+mellom 30 og 40 & kvinne & elektriker ---> Stavanger
+mellom 30 og 40 & kvinne & elektriker ---> Sør Amerika
+mellom 30 og 40 & kvinne & elektriker ---> Tromsø
+mellom 30 og 40 & kvinne & elektriker ---> Trondheim
+mellom 30 og 40 & kvinne & elektriker ---> Ålesund
+mellom 30 og 40 & kvinne & rørlegger ---> Afrika
+mellom 30 og 40 & kvinne & rørlegger ---> Asia
+mellom 30 og 40 & kvinne & rørlegger ---> Australia
+mellom 30 og 40 & kvinne & rørlegger ---> Bergen
+mellom 30 og 40 & kvinne & rørlegger ---> Bodø
+mellom 30 og 40 & kvinne & rørlegger ---> Europa
+mellom 30 og 40 & kvinne & rørlegger ---> FALSE
+mellom 30 og 40 & kvinne & rørlegger ---> Kristiansand
+mellom 30 og 40 & kvinne & rørlegger ---> Nord Amerika
+mellom 30 og 40 & kvinne & rørlegger ---> Oslo
+mellom 30 og 40 & kvinne & rørlegger ---> Stavanger
+mellom 30 og 40 & kvinne & rørlegger ---> Sør Amerika
+mellom 30 og 40 & kvinne & rørlegger ---> Tromsø
+mellom 30 og 40 & kvinne & rørlegger ---> Trondheim
+mellom 30 og 40 & kvinne & rørlegger ---> Ålesund
+mellom 30 og 40 & mellom 40 og 50 ---> FALSE
+mellom 30 og 40 & mellom 50 og 60 ---> FALSE
+mellom 40 og 50 & eldre enn 60 ---> FALSE
+mellom 40 og 50 & mellom 50 og 60 ---> FALSE
+mellom 50 og 60 & eldre enn 60 ---> FALSE
+musiker & Australia & kvinne & mellom 40 og 50 ---> Bergen
+musiker & Australia & kvinne & mellom 40 og 50 ---> Bodø
+musiker & Australia & kvinne & mellom 40 og 50 ---> FALSE
+musiker & Australia & kvinne & mellom 40 og 50 ---> Kristiansand
+musiker & Australia & kvinne & mellom 40 og 50 ---> Oslo
+musiker & Australia & kvinne & mellom 40 og 50 ---> Stavanger
+musiker & Australia & kvinne & mellom 40 og 50 ---> Tromsø
+musiker & Australia & kvinne & mellom 40 og 50 ---> Trondheim
+musiker & Australia & kvinne & mellom 40 og 50 ---> Ålesund
+musiker & Tromsø & Sør Amerika & kvinne ---> FALSE
+musiker & Tromsø & Sør Amerika & kvinne ---> eldre enn 60
+musiker & Tromsø & Sør Amerika & kvinne ---> mellom 20 og 30
+musiker & Tromsø & Sør Amerika & kvinne ---> mellom 30 og 40
+musiker & Tromsø & Sør Amerika & kvinne ---> mellom 40 og 50
+musiker & Tromsø & Sør Amerika & kvinne ---> mellom 50 og 60
+musiker & Tromsø & Sør Amerika & kvinne ---> yngre enn 20
+musiker & advokat ---> FALSE
+musiker & elektriker ---> FALSE
+musiker & kvinne & eldre enn 60 ---> Afrika
+musiker & kvinne & eldre enn 60 ---> Asia
+musiker & kvinne & eldre enn 60 ---> Australia
+musiker & kvinne & eldre enn 60 ---> Bergen
+musiker & kvinne & eldre enn 60 ---> Bodø
+musiker & kvinne & eldre enn 60 ---> Europa
+musiker & kvinne & eldre enn 60 ---> FALSE
+musiker & kvinne & eldre enn 60 ---> Kristiansand
+musiker & kvinne & eldre enn 60 ---> Nord Amerika
+musiker & kvinne & eldre enn 60 ---> Oslo
+musiker & kvinne & eldre enn 60 ---> Stavanger
+musiker & kvinne & eldre enn 60 ---> Sør Amerika
+musiker & kvinne & eldre enn 60 ---> Tromsø
+musiker & kvinne & eldre enn 60 ---> Trondheim
+musiker & kvinne & eldre enn 60 ---> Ålesund
+musiker & kvinne & mellom 50 og 60 ---> Afrika
+musiker & kvinne & mellom 50 og 60 ---> Asia
+musiker & kvinne & mellom 50 og 60 ---> Australia
+musiker & kvinne & mellom 50 og 60 ---> Bergen
+musiker & kvinne & mellom 50 og 60 ---> Bodø
+musiker & kvinne & mellom 50 og 60 ---> Europa
+musiker & kvinne & mellom 50 og 60 ---> FALSE
+musiker & kvinne & mellom 50 og 60 ---> Kristiansand
+musiker & kvinne & mellom 50 og 60 ---> Nord Amerika
+musiker & kvinne & mellom 50 og 60 ---> Oslo
+musiker & kvinne & mellom 50 og 60 ---> Stavanger
+musiker & kvinne & mellom 50 og 60 ---> Sør Amerika
+musiker & kvinne & mellom 50 og 60 ---> Tromsø
+musiker & kvinne & mellom 50 og 60 ---> Trondheim
+musiker & kvinne & mellom 50 og 60 ---> Ålesund
+musiker & mellom 30 og 40 & kvinne ---> Afrika
+musiker & mellom 30 og 40 & kvinne ---> Asia
+musiker & mellom 30 og 40 & kvinne ---> Australia
+musiker & mellom 30 og 40 & kvinne ---> Bergen
+musiker & mellom 30 og 40 & kvinne ---> Bodø
+musiker & mellom 30 og 40 & kvinne ---> Europa
+musiker & mellom 30 og 40 & kvinne ---> FALSE
+musiker & mellom 30 og 40 & kvinne ---> Kristiansand
+musiker & mellom 30 og 40 & kvinne ---> Nord Amerika
+musiker & mellom 30 og 40 & kvinne ---> Oslo
+musiker & mellom 30 og 40 & kvinne ---> Stavanger
+musiker & mellom 30 og 40 & kvinne ---> Sør Amerika
+musiker & mellom 30 og 40 & kvinne ---> Tromsø
+musiker & mellom 30 og 40 & kvinne ---> Trondheim
+musiker & mellom 30 og 40 & kvinne ---> Ålesund
+musiker & modell ---> FALSE
+musiker & psykolog ---> FALSE
+musiker & rørlegger ---> FALSE
+psykolog & Bergen & mellom 30 og 40 & kvinne ---> Afrika
+psykolog & Bergen & mellom 30 og 40 & kvinne ---> Asia
+psykolog & Bergen & mellom 30 og 40 & kvinne ---> Australia
+psykolog & Bergen & mellom 30 og 40 & kvinne ---> Europa
+psykolog & Bergen & mellom 30 og 40 & kvinne ---> FALSE
+psykolog & Bergen & mellom 30 og 40 & kvinne ---> Nord Amerika
+psykolog & Bergen & mellom 30 og 40 & kvinne ---> Sør Amerika
+psykolog & Bodø & Europa & kvinne & mellom 40 og 50 ---> FALSE
+psykolog & Trondheim ---> Europa
+psykolog & Trondheim ---> kvinne
+psykolog & advokat ---> FALSE
+psykolog & elektriker ---> FALSE
+psykolog & modell ---> FALSE
+psykolog & rørlegger ---> FALSE
+rørlegger & modell ---> FALSE
+sykepleier & advokat ---> FALSE
+sykepleier & elektriker ---> FALSE
+sykepleier & frisør ---> FALSE
+sykepleier & modell ---> FALSE
+sykepleier & musiker ---> FALSE
+sykepleier & psykolog ---> FALSE
+sykepleier & rørlegger ---> FALSE
+yngre enn 20 & Kristiansand & Asia & kvinne & elektriker ---> FALSE
+yngre enn 20 & Nord Amerika & mann & modell ---> Bergen
+yngre enn 20 & Nord Amerika & mann & modell ---> Bodø
+yngre enn 20 & Nord Amerika & mann & modell ---> FALSE
+yngre enn 20 & Nord Amerika & mann & modell ---> Kristiansand
+yngre enn 20 & Nord Amerika & mann & modell ---> Oslo
+yngre enn 20 & Nord Amerika & mann & modell ---> Stavanger
+yngre enn 20 & Nord Amerika & mann & modell ---> Tromsø
+yngre enn 20 & Nord Amerika & mann & modell ---> Trondheim
+yngre enn 20 & Nord Amerika & mann & modell ---> Ålesund
+yngre enn 20 & Trondheim & Australia & kvinne & advokat ---> FALSE
+yngre enn 20 & eldre enn 60 ---> FALSE
+yngre enn 20 & kvinne & rørlegger ---> Afrika
+yngre enn 20 & kvinne & rørlegger ---> Asia
+yngre enn 20 & kvinne & rørlegger ---> Australia
+yngre enn 20 & kvinne & rørlegger ---> Bergen
+yngre enn 20 & kvinne & rørlegger ---> Bodø
+yngre enn 20 & kvinne & rørlegger ---> Europa
+yngre enn 20 & kvinne & rørlegger ---> FALSE
+yngre enn 20 & kvinne & rørlegger ---> Kristiansand
+yngre enn 20 & kvinne & rørlegger ---> Nord Amerika
+yngre enn 20 & kvinne & rørlegger ---> Oslo
+yngre enn 20 & kvinne & rørlegger ---> Stavanger
+yngre enn 20 & kvinne & rørlegger ---> Sør Amerika
+yngre enn 20 & kvinne & rørlegger ---> Tromsø
+yngre enn 20 & kvinne & rørlegger ---> Trondheim
+yngre enn 20 & kvinne & rørlegger ---> Ålesund
+yngre enn 20 & mellom 20 og 30 ---> FALSE
+yngre enn 20 & mellom 30 og 40 ---> FALSE
+yngre enn 20 & mellom 40 og 50 ---> FALSE
+yngre enn 20 & mellom 50 og 60 ---> FALSE
+yngre enn 20 & musiker & kvinne ---> Afrika
+yngre enn 20 & musiker & kvinne ---> Asia
+yngre enn 20 & musiker & kvinne ---> Australia
+yngre enn 20 & musiker & kvinne ---> Bergen
+yngre enn 20 & musiker & kvinne ---> Bodø
+yngre enn 20 & musiker & kvinne ---> Europa
+yngre enn 20 & musiker & kvinne ---> FALSE
+yngre enn 20 & musiker & kvinne ---> Kristiansand
+yngre enn 20 & musiker & kvinne ---> Nord Amerika
+yngre enn 20 & musiker & kvinne ---> Oslo
+yngre enn 20 & musiker & kvinne ---> Stavanger
+yngre enn 20 & musiker & kvinne ---> Sør Amerika
+yngre enn 20 & musiker & kvinne ---> Tromsø
+yngre enn 20 & musiker & kvinne ---> Trondheim
+yngre enn 20 & musiker & kvinne ---> Ålesund
+yngre enn 20 & Ålesund & Sør Amerika & kvinne ---> FALSE
+yngre enn 20 & Ålesund & Sør Amerika & kvinne ---> advokat
+yngre enn 20 & Ålesund & Sør Amerika & kvinne ---> elektriker
+yngre enn 20 & Ålesund & Sør Amerika & kvinne ---> frisør
+yngre enn 20 & Ålesund & Sør Amerika & kvinne ---> modell
+yngre enn 20 & Ålesund & Sør Amerika & kvinne ---> musiker
+yngre enn 20 & Ålesund & Sør Amerika & kvinne ---> psykolog
+yngre enn 20 & Ålesund & Sør Amerika & kvinne ---> rørlegger
+yngre enn 20 & Ålesund & Sør Amerika & kvinne ---> sykepleier
+Ålesund & Bodø ---> FALSE
+Ålesund & Tromsø ---> FALSE
+Ålesund & Trondheim ---> FALSE

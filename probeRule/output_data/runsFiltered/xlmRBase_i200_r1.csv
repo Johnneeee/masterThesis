@@ -1,0 +1,33 @@
+HORN RULES (filtered)
+Australia & kvinne & mellom 40 og 50 ---> frisør
+Stavanger & mellom 30 og 40 & Europa & kvinne ---> modell
+Sør Amerika & kvinne & mellom 40 og 50 ---> frisør
+Trondheim & Nord Amerika & kvinne ---> frisør
+frisør & Australia & mann ---> mellom 50 og 60
+mellom 20 og 30 & Ålesund & kvinne ---> frisør
+mellom 30 og 40 & Tromsø & Australia & kvinne ---> modell
+yngre enn 20 & Tromsø & kvinne ---> frisør
+Ålesund & mellom 50 og 60 ---> Sør Amerika
+Ålesund & mellom 50 og 60 ---> advokat
+Ålesund & mellom 50 og 60 ---> mann
+Bergen & Afrika & kvinne ---> FALSE
+Bergen & Nord Amerika & kvinne & eldre enn 60 ---> FALSE
+Oslo & Europa & kvinne ---> FALSE
+Stavanger & Asia & kvinne ---> FALSE
+Trondheim & Europa & kvinne & mellom 50 og 60 ---> FALSE
+forfatter & kvinne ---> FALSE
+fotograf & kvinne ---> FALSE
+frisør & Afrika & mann ---> FALSE
+frisør & Bodø & mann ---> FALSE
+frisør & Europa & mann ---> FALSE
+frisør & Kristiansand & mann ---> FALSE
+frisør & Stavanger & mann ---> FALSE
+frisør & Ålesund & mellom 30 og 40 & mann ---> FALSE
+kvinne & advokat ---> FALSE
+kvinne & elektriker ---> FALSE
+kvinne & rørlegger ---> FALSE
+mann & modell ---> FALSE
+mellom 20 og 30 & Stavanger & Afrika & kvinne ---> FALSE
+sykepleier & kvinne ---> FALSE
+yngre enn 20 & Oslo & Afrika & kvinne ---> FALSE
+Ålesund & Sør Amerika & eldre enn 60 ---> FALSE

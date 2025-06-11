@@ -1,0 +1,45 @@
+HORN RULES (filtered)
+Asia & mann ---> mellom 20 og 30
+Bergen & Australia ---> kvinne
+Bergen & Australia ---> sykepleier
+Bergen & Australia ---> yngre enn 20
+frisør & Stavanger & mann ---> Afrika
+frisør & Stavanger & mann ---> mellom 30 og 40
+frisør & mellom 30 og 40 & mann ---> Afrika
+mellom 20 og 30 & Oslo & kvinne ---> Afrika
+mellom 20 og 30 & Oslo & kvinne ---> forfatter
+mellom 30 og 40 & Afrika ---> frisør
+mellom 30 og 40 & Afrika ---> mann
+modell ---> kvinne
+yngre enn 20 & frisør ---> kvinne
+Ålesund & mellom 30 og 40 & kvinne ---> Europa
+Ålesund & mellom 30 og 40 & kvinne ---> forfatter
+Kristiansand & kvinne & mellom 40 og 50 ---> FALSE
+Nord Amerika & kvinne & rørlegger ---> FALSE
+Tromsø & kvinne & mellom 40 og 50 & elektriker ---> FALSE
+Trondheim & kvinne & mellom 50 og 60 & elektriker ---> FALSE
+forfatter & mann ---> FALSE
+fotograf & Oslo & Nord Amerika & kvinne ---> FALSE
+fotograf & kvinne & eldre enn 60 ---> FALSE
+fotograf & mellom 30 og 40 & Bodø & Australia & kvinne ---> FALSE
+kvinne & eldre enn 60 & advokat ---> FALSE
+kvinne & eldre enn 60 & elektriker ---> FALSE
+kvinne & eldre enn 60 & rørlegger ---> FALSE
+kvinne & mellom 40 og 50 & advokat ---> FALSE
+kvinne & mellom 40 og 50 & rørlegger ---> FALSE
+kvinne & mellom 50 og 60 & advokat ---> FALSE
+kvinne & mellom 50 og 60 & rørlegger ---> FALSE
+mellom 20 og 30 & Sør Amerika ---> FALSE
+mellom 20 og 30 & Tromsø & kvinne ---> FALSE
+mellom 20 og 30 & fotograf & kvinne ---> FALSE
+mellom 20 og 30 & frisør & mann ---> FALSE
+mellom 20 og 30 & kvinne & advokat ---> FALSE
+mellom 20 og 30 & kvinne & elektriker ---> FALSE
+mellom 30 og 40 & Tromsø & Asia & kvinne & rørlegger ---> FALSE
+mellom 30 og 40 & kvinne & advokat ---> FALSE
+sykepleier & mann ---> FALSE
+yngre enn 20 & Kristiansand & Europa & kvinne & rørlegger ---> FALSE
+yngre enn 20 & fotograf & Tromsø & Europa & kvinne ---> FALSE
+yngre enn 20 & kvinne & advokat ---> FALSE
+yngre enn 20 & kvinne & elektriker ---> FALSE
+Ålesund & kvinne & elektriker ---> FALSE

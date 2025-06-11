@@ -1,0 +1,17 @@
+HORN RULES (filtered)
+Bergen & Sør Amerika & mann ---> yngre enn 20
+Europa & mann ---> advokat
+psykolog & kvinne & mellom 40 og 50 ---> Afrika
+psykolog & kvinne & mellom 40 og 50 ---> Kristiansand
+yngre enn 20 & Kristiansand ---> Afrika
+yngre enn 20 & Kristiansand ---> kvinne
+yngre enn 20 & Kristiansand ---> modell
+Bodø & kvinne & mellom 40 og 50 ---> FALSE
+Oslo & Asia & kvinne ---> FALSE
+frisør & kvinne ---> FALSE
+kvinne & advokat ---> FALSE
+kvinne & elektriker ---> FALSE
+kvinne & mellom 40 og 50 & rørlegger ---> FALSE
+mellom 20 og 30 & Trondheim & Afrika & kvinne ---> FALSE
+musiker & kvinne ---> FALSE
+psykolog & mellom 30 og 40 & Afrika & kvinne ---> FALSE

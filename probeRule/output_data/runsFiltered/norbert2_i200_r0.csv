@@ -1,0 +1,40 @@
+HORN RULES (filtered)
+Stavanger & kvinne & mellom 40 og 50 ---> Europa
+Stavanger & kvinne & mellom 40 og 50 ---> frisør
+frisør & Asia & mann ---> Bodø
+frisør & Asia & mann ---> eldre enn 60
+mellom 40 og 50 & modell ---> kvinne
+sykepleier & Nord Amerika ---> Tromsø
+sykepleier & Nord Amerika ---> kvinne
+sykepleier & Sør Amerika ---> Stavanger
+sykepleier & Sør Amerika ---> kvinne
+sykepleier & Sør Amerika ---> mellom 50 og 60
+sykepleier & mellom 40 og 50 ---> kvinne
+yngre enn 20 & Asia & kvinne ---> Bodø
+yngre enn 20 & Asia & kvinne ---> frisør
+yngre enn 20 & Kristiansand ---> mann
+Asia & mann & mellom 50 og 60 & modell ---> FALSE
+Australia & mann & modell ---> FALSE
+Bergen & mann & eldre enn 60 & modell ---> FALSE
+Kristiansand & mellom 30 og 40 & mann & modell ---> FALSE
+Stavanger & Afrika & kvinne ---> FALSE
+Stavanger & Asia & kvinne ---> FALSE
+Stavanger & Nord Amerika & mann & eldre enn 60 & modell ---> FALSE
+Stavanger & mellom 30 og 40 & Australia & kvinne ---> FALSE
+Trondheim & Afrika & mann & eldre enn 60 & modell ---> FALSE
+forfatter & kvinne ---> FALSE
+fotograf & kvinne ---> FALSE
+frisør & Afrika & mann ---> FALSE
+frisør & Australia & mann ---> FALSE
+frisør & Europa & mann ---> FALSE
+frisør & Nord Amerika & mann ---> FALSE
+frisør & Sør Amerika & mann ---> FALSE
+frisør & mellom 30 og 40 & Tromsø & kvinne ---> FALSE
+kvinne & advokat ---> FALSE
+kvinne & elektriker ---> FALSE
+kvinne & rørlegger ---> FALSE
+mellom 30 og 40 & Sør Amerika & kvinne ---> FALSE
+sykepleier & Afrika & mann ---> FALSE
+sykepleier & Asia & mann ---> FALSE
+sykepleier & Oslo & Europa & mann & mellom 50 og 60 ---> FALSE
+Ålesund & Asia & kvinne & eldre enn 60 ---> FALSE

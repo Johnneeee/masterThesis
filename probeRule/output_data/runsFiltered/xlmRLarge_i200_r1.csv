@@ -1,0 +1,36 @@
+HORN RULES (filtered)
+Afrika & kvinne & advokat ---> mellom 30 og 40
+Bergen & Nord Amerika & kvinne ---> frisør
+Sør Amerika & kvinne & advokat ---> mellom 30 og 40
+Sør Amerika & mellom 40 og 50 ---> Trondheim
+Sør Amerika & mellom 40 og 50 ---> kvinne
+Tromsø & kvinne ---> mellom 30 og 40
+forfatter & Nord Amerika ---> Bodø
+forfatter & Nord Amerika ---> mann
+forfatter & Nord Amerika ---> yngre enn 20
+forfatter & mellom 30 og 40 & mann ---> Asia
+forfatter & mellom 40 og 50 ---> kvinne
+Ålesund & Australia & kvinne ---> eldre enn 60
+Ålesund & Australia & kvinne ---> frisør
+Ålesund & mellom 30 og 40 & kvinne ---> forfatter
+Bergen & Australia & kvinne ---> FALSE
+Bergen & kvinne & advokat ---> FALSE
+Kristiansand & Australia & kvinne & mellom 40 og 50 ---> FALSE
+Kristiansand & Europa & kvinne & advokat ---> FALSE
+Oslo & Sør Amerika & kvinne ---> FALSE
+Stavanger & Afrika & mann & mellom 40 og 50 ---> FALSE
+Stavanger & Asia & kvinne & mellom 50 og 60 & advokat ---> FALSE
+forfatter & Bergen & kvinne ---> FALSE
+forfatter & Kristiansand & kvinne ---> FALSE
+fotograf & kvinne ---> FALSE
+frisør & mann ---> FALSE
+kvinne & elektriker ---> FALSE
+kvinne & rørlegger ---> FALSE
+mann & modell ---> FALSE
+mellom 20 og 30 & Bergen & Sør Amerika & kvinne ---> FALSE
+mellom 20 og 30 & Oslo & kvinne ---> FALSE
+mellom 20 og 30 & Stavanger & Europa & kvinne ---> FALSE
+sykepleier & mann ---> FALSE
+yngre enn 20 & Oslo & kvinne ---> FALSE
+yngre enn 20 & Ålesund & Afrika & kvinne ---> FALSE
+Ålesund & Nord Amerika & kvinne & mellom 40 og 50 & advokat ---> FALSE

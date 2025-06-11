@@ -1,0 +1,66 @@
+COUNT;HORN RULES (filtered)
+1/3;Bergen ---> Europa
+1/3;Bergen ---> fotograf
+1/3;Bergen ---> mann
+1/3;Bergen ---> mellom 50 og 60
+1/3;Tromsø & eldre enn 60 ---> kvinne
+1/3;Tromsø & kvinne & mellom 40 og 50 ---> Asia
+1/3;Tromsø & kvinne & mellom 40 og 50 ---> modell
+1/3;Oslo & mellom 50 og 60 ---> FALSE
+1/3;Stavanger & Nord Amerika & kvinne & eldre enn 60 & advokat ---> FALSE
+1/3;Stavanger & mellom 30 og 40 & kvinne ---> FALSE
+1/3;Sør Amerika & kvinne & elektriker ---> FALSE
+1/3;fotograf & mellom 30 og 40 & kvinne ---> FALSE
+1/3;frisør & Tromsø & Europa & kvinne & mellom 50 og 60 ---> FALSE
+1/3;mellom 20 og 30 & Asia & kvinne & rørlegger ---> FALSE
+1/3;mellom 20 og 30 & fotograf & Nord Amerika & kvinne ---> FALSE
+1/3;mellom 30 og 40 & Europa & kvinne & elektriker ---> FALSE
+1/3;mellom 30 og 40 & kvinne & advokat ---> FALSE
+1/3;sykepleier & Sør Amerika & mann ---> FALSE
+1/3;yngre enn 20 & Asia ---> FALSE
+1/3;yngre enn 20 & Bodø & kvinne ---> FALSE
+1/3;yngre enn 20 & Tromsø & Sør Amerika & kvinne & advokat ---> FALSE
+1/3;yngre enn 20 & Trondheim & mann & modell ---> FALSE
+1/3;yngre enn 20 & kvinne & rørlegger ---> FALSE
+1/3;Ålesund & Afrika & kvinne & mellom 50 og 60 & elektriker ---> FALSE
+1/3;Europa & mellom 50 og 60 ---> Kristiansand
+1/3;Europa & mellom 50 og 60 ---> kvinne
+1/3;Europa & mellom 50 og 60 ---> sykepleier
+1/3;Oslo ---> Asia
+1/3;Oslo ---> forfatter
+1/3;Oslo ---> kvinne
+1/3;Oslo ---> yngre enn 20
+1/3;advokat ---> mann
+1/3;advokat ---> mellom 40 og 50
+1/3;Asia & kvinne & mellom 40 og 50 & rørlegger ---> FALSE
+1/3;Bodø & Nord Amerika & kvinne & advokat ---> FALSE
+1/3;Kristiansand & Afrika & kvinne & eldre enn 60 & elektriker ---> FALSE
+1/3;Kristiansand & mellom 30 og 40 & kvinne ---> FALSE
+1/3;forfatter & mann ---> FALSE
+1/3;fotograf & kvinne & eldre enn 60 ---> FALSE
+1/3;fotograf & kvinne & mellom 40 og 50 ---> FALSE
+1/3;kvinne & eldre enn 60 & rørlegger ---> FALSE
+1/3;mann & mellom 50 og 60 ---> FALSE
+1/3;mellom 20 og 30 & Asia & kvinne ---> FALSE
+1/3;mellom 30 og 40 & Bodø & Asia & kvinne ---> FALSE
+1/3;mellom 30 og 40 & Tromsø & kvinne ---> FALSE
+1/3;yngre enn 20 & Tromsø & Afrika & kvinne & rørlegger ---> FALSE
+1/3;Ålesund & Sør Amerika & mann & mellom 40 og 50 & modell ---> FALSE
+1/3;Bodø & mann ---> rørlegger
+1/3;frisør & mann ---> Sør Amerika
+1/3;frisør & mann ---> yngre enn 20
+1/3;frisør & mann ---> Ålesund
+1/3;Bergen & kvinne & mellom 50 og 60 ---> FALSE
+1/3;Kristiansand & Nord Amerika & kvinne & eldre enn 60 & elektriker ---> FALSE
+1/3;Oslo & Asia & kvinne & eldre enn 60 & advokat ---> FALSE
+1/3;Stavanger & Europa & kvinne & mellom 50 og 60 & rørlegger ---> FALSE
+1/3;Trondheim & Sør Amerika & kvinne & mellom 40 og 50 & advokat ---> FALSE
+1/3;forfatter & Afrika & mann ---> FALSE
+1/3;fotograf & Bergen & mellom 30 og 40 & Europa & kvinne ---> FALSE
+1/3;kvinne & mellom 40 og 50 & rørlegger ---> FALSE
+1/3;mellom 20 og 30 & Bodø & Sør Amerika & kvinne & elektriker ---> FALSE
+1/3;mellom 20 og 30 & fotograf & kvinne ---> FALSE
+1/3;sykepleier & mann ---> FALSE
+1/3;yngre enn 20 & Kristiansand & Australia & kvinne & advokat ---> FALSE
+1/3;yngre enn 20 & Tromsø & Australia & kvinne & elektriker ---> FALSE
+1/3;Ålesund & mann & mellom 50 og 60 & modell ---> FALSE

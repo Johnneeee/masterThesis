@@ -1,0 +1,26 @@
+HORN RULES (filtered)
+Bergen ---> kvinne
+mellom 30 og 40 & Australia & kvinne ---> modell
+Bergen & Sør Amerika & kvinne & advokat ---> FALSE
+Kristiansand & Afrika & kvinne & rørlegger ---> FALSE
+Oslo & kvinne & mellom 40 og 50 ---> FALSE
+Oslo & mellom 30 og 40 & kvinne & rørlegger ---> FALSE
+Stavanger & kvinne & elektriker ---> FALSE
+Tromsø & Asia & kvinne & eldre enn 60 & rørlegger ---> FALSE
+Tromsø & kvinne & mellom 40 og 50 ---> FALSE
+Trondheim & Australia & kvinne & mellom 50 og 60 ---> FALSE
+Trondheim & mellom 30 og 40 & kvinne & elektriker ---> FALSE
+frisør & Trondheim & Afrika & kvinne & mellom 40 og 50 ---> FALSE
+mellom 20 og 30 & kvinne & elektriker ---> FALSE
+mellom 20 og 30 & kvinne & rørlegger ---> FALSE
+mellom 20 og 30 & musiker & Tromsø & Nord Amerika & kvinne ---> FALSE
+mellom 20 og 30 & psykolog & Bergen & kvinne ---> FALSE
+mellom 20 og 30 & Ålesund & kvinne ---> FALSE
+psykolog & Bodø & kvinne & mellom 40 og 50 ---> FALSE
+psykolog & Kristiansand & mellom 30 og 40 & Asia & kvinne ---> FALSE
+sykepleier & mann ---> FALSE
+yngre enn 20 & Kristiansand & kvinne & advokat ---> FALSE
+yngre enn 20 & Oslo & kvinne & elektriker ---> FALSE
+yngre enn 20 & Sør Amerika & kvinne & rørlegger ---> FALSE
+yngre enn 20 & psykolog & Kristiansand & Afrika & kvinne ---> FALSE
+Ålesund & Sør Amerika ---> FALSE

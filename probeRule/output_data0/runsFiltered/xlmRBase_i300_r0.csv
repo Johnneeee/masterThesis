@@ -1,0 +1,51 @@
+HORN RULES (filtered)
+Asia & kvinne & mellom 40 og 50 ---> frisør
+Bodø & Afrika & kvinne ---> modell
+Bodø & Afrika & kvinne ---> yngre enn 20
+Bodø & Asia & kvinne ---> frisør
+Bodø & Sør Amerika & kvinne ---> frisør
+Bodø & Sør Amerika & kvinne ---> mellom 20 og 30
+Kristiansand & kvinne & mellom 50 og 60 ---> Afrika
+Nord Amerika & kvinne & eldre enn 60 ---> Kristiansand
+Nord Amerika & kvinne & eldre enn 60 ---> frisør
+Nord Amerika & kvinne & mellom 40 og 50 ---> Trondheim
+Nord Amerika & kvinne & mellom 40 og 50 ---> modell
+Oslo & Afrika ---> mann
+Oslo & Afrika ---> rørlegger
+Oslo & kvinne & mellom 40 og 50 ---> frisør
+Tromsø & kvinne & mellom 40 og 50 ---> frisør
+frisør & Australia & mann ---> Tromsø
+frisør & Australia & mann ---> eldre enn 60
+frisør & mellom 30 og 40 ---> kvinne
+mellom 20 og 30 & Nord Amerika & kvinne ---> Oslo
+mellom 20 og 30 & Oslo & kvinne ---> Nord Amerika
+mellom 30 og 40 & Afrika & kvinne ---> frisør
+mellom 30 og 40 & Sør Amerika & kvinne ---> Trondheim
+yngre enn 20 & Trondheim & kvinne ---> frisør
+yngre enn 20 & frisør & mann ---> Nord Amerika
+Ålesund & Asia & kvinne ---> eldre enn 60
+Ålesund & Asia & kvinne ---> modell
+Bergen & mellom 30 og 40 & Nord Amerika & kvinne ---> FALSE
+Bodø & kvinne & eldre enn 60 ---> FALSE
+Kristiansand & mellom 30 og 40 & Asia & kvinne ---> FALSE
+Stavanger & mellom 30 og 40 & Nord Amerika & kvinne ---> FALSE
+Tromsø & Australia & kvinne ---> FALSE
+frisør & Asia & mann ---> FALSE
+frisør & Kristiansand & mann ---> FALSE
+frisør & Tromsø & Europa & mann ---> FALSE
+frisør & Trondheim & mann ---> FALSE
+frisør & mann & mellom 40 og 50 ---> FALSE
+frisør & Ålesund & mann & eldre enn 60 ---> FALSE
+kvinne & advokat ---> FALSE
+kvinne & elektriker ---> FALSE
+kvinne & rørlegger ---> FALSE
+mann & modell ---> FALSE
+mellom 20 og 30 & Afrika & kvinne ---> FALSE
+mellom 20 og 30 & frisør & mann ---> FALSE
+musiker & kvinne ---> FALSE
+psykolog & kvinne ---> FALSE
+sykepleier & kvinne ---> FALSE
+yngre enn 20 & Bodø & Europa & kvinne ---> FALSE
+yngre enn 20 & Tromsø & kvinne ---> FALSE
+Ålesund & Europa & kvinne ---> FALSE
+Ålesund & kvinne & mellom 40 og 50 ---> FALSE

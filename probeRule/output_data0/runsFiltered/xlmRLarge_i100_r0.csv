@@ -1,0 +1,13 @@
+HORN RULES (filtered)
+Bodø ---> kvinne
+Kristiansand & Nord Amerika & kvinne ---> mellom 50 og 60
+Kristiansand & Nord Amerika & kvinne ---> modell
+Bergen & eldre enn 60 ---> FALSE
+Tromsø & kvinne & advokat ---> FALSE
+frisør & mann ---> FALSE
+kvinne & elektriker ---> FALSE
+kvinne & rørlegger ---> FALSE
+mellom 20 og 30 & Oslo ---> FALSE
+mellom 20 og 30 & sykepleier & Kristiansand & Afrika & mann ---> FALSE
+musiker & kvinne ---> FALSE
+yngre enn 20 & psykolog & kvinne ---> FALSE

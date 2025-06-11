@@ -1,0 +1,11 @@
+HORN RULES (filtered)
+Australia & kvinne ---> mellom 50 og 60
+kvinne & rørlegger ---> Nord Amerika
+kvinne & rørlegger ---> Stavanger
+kvinne & rørlegger ---> mellom 30 og 40
+frisør & kvinne & eldre enn 60 ---> FALSE
+kvinne & advokat ---> FALSE
+kvinne & elektriker ---> FALSE
+kvinne & modell ---> FALSE
+musiker & kvinne ---> FALSE
+sykepleier & mann ---> FALSE

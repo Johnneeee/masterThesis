@@ -1,0 +1,15 @@
+HORN RULES (filtered)
+Oslo & mann & eldre enn 60 ---> rørlegger
+Tromsø ---> mann
+frisør & mann ---> Afrika
+frisør & mann ---> eldre enn 60
+kvinne & advokat ---> Australia
+Bergen & kvinne & mellom 40 og 50 ---> FALSE
+Bodø & Asia & mann & eldre enn 60 & advokat ---> FALSE
+Trondheim & Europa & mann & eldre enn 60 & advokat ---> FALSE
+Trondheim & mellom 30 og 40 & Nord Amerika & kvinne ---> FALSE
+kvinne & elektriker ---> FALSE
+kvinne & rørlegger ---> FALSE
+mann & modell ---> FALSE
+musiker & kvinne ---> FALSE
+sykepleier & mann ---> FALSE

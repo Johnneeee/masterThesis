@@ -1,0 +1,41 @@
+HORN RULES (filtered)
+Afrika & kvinne & advokat ---> mellom 40 og 50
+Asia & kvinne & eldre enn 60 ---> sykepleier
+Asia & kvinne & eldre enn 60 ---> Ålesund
+Bodø & Europa & mann & mellom 40 og 50 ---> rørlegger
+Europa & mellom 50 og 60 ---> advokat
+Europa & mellom 50 og 60 ---> mann
+Europa & mellom 50 og 60 ---> Ålesund
+Kristiansand & Asia & kvinne ---> sykepleier
+Kristiansand & Asia & kvinne ---> yngre enn 20
+Tromsø & Afrika ---> eldre enn 60
+Trondheim & Nord Amerika & kvinne ---> eldre enn 60
+Trondheim & Nord Amerika & kvinne ---> psykolog
+frisør ---> kvinne
+mellom 30 og 40 & Sør Amerika ---> mann
+psykolog & Stavanger ---> kvinne
+yngre enn 20 & Oslo & kvinne ---> Nord Amerika
+yngre enn 20 & Oslo & kvinne ---> modell
+yngre enn 20 & Ålesund & kvinne ---> Afrika
+Asia & mann & mellom 40 og 50 ---> FALSE
+Bergen & Sør Amerika & kvinne & mellom 50 og 60 ---> FALSE
+Bodø & kvinne & advokat ---> FALSE
+Bodø & kvinne & eldre enn 60 ---> FALSE
+Europa & kvinne & advokat ---> FALSE
+Tromsø & Europa ---> FALSE
+Tromsø & Nord Amerika & kvinne ---> FALSE
+kvinne & elektriker ---> FALSE
+kvinne & mellom 50 og 60 & advokat ---> FALSE
+kvinne & rørlegger ---> FALSE
+mann & modell ---> FALSE
+mellom 20 og 30 & kvinne & advokat ---> FALSE
+mellom 20 og 30 & psykolog & Trondheim & Afrika & mann ---> FALSE
+mellom 30 og 40 & Nord Amerika & mann ---> FALSE
+musiker & kvinne ---> FALSE
+psykolog & Kristiansand & mann & mellom 40 og 50 ---> FALSE
+psykolog & mann & mellom 50 og 60 ---> FALSE
+psykolog & mellom 30 og 40 & mann ---> FALSE
+psykolog & Ålesund & mann ---> FALSE
+sykepleier & mann ---> FALSE
+yngre enn 20 & Bodø & Sør Amerika & kvinne ---> FALSE
+yngre enn 20 & Stavanger & kvinne & advokat ---> FALSE

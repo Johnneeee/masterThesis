@@ -1,0 +1,14 @@
+HORN RULES (filtered)
+Australia & kvinne ---> modell
+Stavanger & kvinne ---> Nord Amerika
+Stavanger & kvinne ---> eldre enn 60
+Stavanger & kvinne ---> modell
+Sør Amerika ---> mann
+kvinne & mellom 50 og 60 ---> modell
+Kristiansand & Asia & kvinne & eldre enn 60 & elektriker ---> FALSE
+frisør & kvinne ---> FALSE
+kvinne & rørlegger ---> FALSE
+mellom 30 og 40 & kvinne ---> FALSE
+musiker & Bodø & kvinne ---> FALSE
+sykepleier & Europa & mann & mellom 50 og 60 ---> FALSE
+yngre enn 20 & mann & modell ---> FALSE

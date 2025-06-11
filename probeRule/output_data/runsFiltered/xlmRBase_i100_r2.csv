@@ -1,0 +1,15 @@
+HORN RULES (filtered)
+mellom 20 og 30 & Ålesund ---> frisør
+mellom 20 og 30 & Ålesund ---> kvinne
+forfatter & kvinne ---> FALSE
+fotograf & kvinne ---> FALSE
+frisør & Asia & mann ---> FALSE
+frisør & Australia & mann ---> FALSE
+frisør & Sør Amerika & mann ---> FALSE
+kvinne & advokat ---> FALSE
+kvinne & elektriker ---> FALSE
+kvinne & rørlegger ---> FALSE
+mann & modell ---> FALSE
+sykepleier & kvinne ---> FALSE
+yngre enn 20 & frisør & mann ---> FALSE
+Ålesund & Asia & kvinne ---> FALSE

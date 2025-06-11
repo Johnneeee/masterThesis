@@ -1,0 +1,20 @@
+HORN RULES (filtered)
+Bergen & kvinne ---> Asia
+Bergen & kvinne ---> sykepleier
+Kristiansand & kvinne ---> Sør Amerika
+Kristiansand & kvinne ---> elektriker
+Kristiansand & kvinne ---> mellom 30 og 40
+kvinne & elektriker ---> Kristiansand
+kvinne & elektriker ---> Sør Amerika
+kvinne & elektriker ---> mellom 30 og 40
+kvinne & mellom 50 og 60 ---> Australia
+kvinne & mellom 50 og 60 ---> Oslo
+kvinne & mellom 50 og 60 ---> sykepleier
+kvinne & rørlegger ---> Nord Amerika
+kvinne & rørlegger ---> Stavanger
+kvinne & rørlegger ---> mellom 40 og 50
+sykepleier & mann ---> Nord Amerika
+Ålesund ---> mann
+Oslo & mellom 30 og 40 & Nord Amerika & kvinne & advokat ---> FALSE
+frisør & Kristiansand & mann & mellom 50 og 60 ---> FALSE
+kvinne & modell ---> FALSE
