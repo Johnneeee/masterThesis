@@ -1,0 +1,38 @@
+HORN RULES (filtered)
+Australia & eldre enn 60 ---> Trondheim
+Australia & eldre enn 60 ---> mann
+Australia & eldre enn 60 ---> rørlegger
+Australia & mellom 50 og 60 ---> kvinne
+Tromsø & Australia ---> mann
+Tromsø & Australia ---> mellom 20 og 30
+Tromsø & Australia ---> rørlegger
+mellom 30 og 40 & Europa ---> mann
+mellom 30 og 40 & Europa ---> rørlegger
+mellom 30 og 40 & Europa ---> Ålesund
+mellom 30 og 40 & Tromsø ---> Afrika
+mellom 30 og 40 & Tromsø ---> kvinne
+mellom 30 og 40 & Tromsø ---> sykepleier
+Afrika & mann & modell ---> FALSE
+Kristiansand & mann & mellom 40 og 50 & modell ---> FALSE
+Stavanger & Nord Amerika & kvinne & mellom 50 og 60 ---> FALSE
+Sør Amerika & kvinne & rørlegger ---> FALSE
+Tromsø & Afrika & kvinne & mellom 40 og 50 & advokat ---> FALSE
+Tromsø & Sør Amerika & kvinne & advokat ---> FALSE
+Trondheim & Sør Amerika ---> FALSE
+Trondheim & kvinne & elektriker ---> FALSE
+forfatter & mann ---> FALSE
+fotograf & Trondheim & Europa & kvinne & mellom 50 og 60 ---> FALSE
+fotograf & kvinne & mellom 40 og 50 ---> FALSE
+fotograf & mellom 30 og 40 & Afrika & kvinne ---> FALSE
+frisør & Asia & mann ---> FALSE
+kvinne & mellom 50 og 60 & elektriker ---> FALSE
+mellom 20 og 30 & Stavanger & Australia & kvinne ---> FALSE
+mellom 20 og 30 & Sør Amerika & kvinne ---> FALSE
+mellom 20 og 30 & fotograf & Kristiansand & kvinne ---> FALSE
+mellom 30 og 40 & kvinne & rørlegger ---> FALSE
+sykepleier & mann ---> FALSE
+yngre enn 20 & Oslo & Europa & mann ---> FALSE
+yngre enn 20 & fotograf & kvinne ---> FALSE
+yngre enn 20 & kvinne & elektriker ---> FALSE
+yngre enn 20 & kvinne & rørlegger ---> FALSE
+Ålesund & mellom 30 og 40 & Sør Amerika & kvinne & elektriker ---> FALSE

@@ -1,0 +1,49 @@
+HORN RULES (filtered)
+Afrika & kvinne & mellom 40 og 50 ---> modell
+Bergen & Australia & mann ---> mellom 50 og 60
+Bergen & Australia & mann ---> rørlegger
+Europa & mellom 50 og 60 ---> kvinne
+Kristiansand & mann ---> mellom 40 og 50
+forfatter & Sør Amerika & kvinne ---> yngre enn 20
+forfatter & Ålesund & Afrika & kvinne ---> mellom 20 og 30
+fotograf & Afrika & kvinne ---> yngre enn 20
+fotograf & kvinne & mellom 50 og 60 ---> Asia
+fotograf & kvinne & mellom 50 og 60 ---> Trondheim
+frisør & mann ---> Afrika
+frisør & mann ---> mellom 50 og 60
+mellom 20 og 30 & Europa & kvinne ---> Bodø
+mellom 20 og 30 & Stavanger & kvinne ---> Australia
+mellom 20 og 30 & Stavanger & kvinne ---> forfatter
+mellom 20 og 30 & forfatter ---> kvinne
+mellom 30 og 40 & Nord Amerika & kvinne ---> Bergen
+mellom 30 og 40 & Nord Amerika & kvinne ---> forfatter
+yngre enn 20 & Stavanger ---> kvinne
+yngre enn 20 & Trondheim & Europa & mann ---> rørlegger
+yngre enn 20 & fotograf ---> kvinne
+Bergen & Afrika & mann ---> FALSE
+Bergen & Europa & mann & eldre enn 60 ---> FALSE
+Bergen & Sør Amerika & mann ---> FALSE
+Bergen & mellom 30 og 40 & Asia & mann ---> FALSE
+Bodø & kvinne & mellom 50 og 60 & advokat ---> FALSE
+Europa & kvinne & advokat ---> FALSE
+Kristiansand & kvinne & mellom 40 og 50 ---> FALSE
+Oslo & Australia & mann ---> FALSE
+Oslo & Nord Amerika & kvinne & mellom 50 og 60 ---> FALSE
+Stavanger & Asia & kvinne & mellom 50 og 60 ---> FALSE
+Stavanger & Nord Amerika & kvinne & eldre enn 60 ---> FALSE
+Sør Amerika & kvinne & advokat ---> FALSE
+forfatter & Kristiansand & Australia & kvinne & mellom 50 og 60 ---> FALSE
+forfatter & mann & eldre enn 60 ---> FALSE
+forfatter & mellom 30 og 40 & mann ---> FALSE
+forfatter & Ålesund & kvinne & mellom 50 og 60 ---> FALSE
+fotograf & Stavanger & Australia & kvinne ---> FALSE
+fotograf & Trondheim & kvinne & eldre enn 60 ---> FALSE
+fotograf & kvinne & mellom 40 og 50 ---> FALSE
+fotograf & mellom 30 og 40 & Sør Amerika & kvinne ---> FALSE
+kvinne & elektriker ---> FALSE
+kvinne & rørlegger ---> FALSE
+mann & modell ---> FALSE
+mellom 20 og 30 & kvinne & advokat ---> FALSE
+mellom 30 og 40 & kvinne & advokat ---> FALSE
+sykepleier & mann ---> FALSE
+yngre enn 20 & forfatter & mann ---> FALSE

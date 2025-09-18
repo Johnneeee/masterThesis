@@ -2,7 +2,7 @@ import csv
 
 #getting available filenames
 lms = ["xlmRBase", "xlmRLarge", "mBertUncased", "mBertCased", "nbBertBase", "nbBertLarge", "norbert", "norbert2"]
-tags = ["i100_r0","i100_r1","i100_r2","i200_r0","i200_r1","i300_r0"]
+tags = ["i100_r0","i100_r1","i100_r2","i200_r0","i200_r1","i200_r2","i300_r0","i300_r1","i300_r2"]
 allFiles = []
 
 for lm in lms:
@@ -94,12 +94,12 @@ def countRules(writeTo, files, weights):
         writer.writerows(rules)
 
 eq100 = ["i100_r0","i100_r1","i100_r2"]
-eq200 = ["i200_r0","i200_r1"]
-eq300 = ["i300_r0"]
+eq200 = ["i200_r0","i200_r1","i200_r2"]
+eq300 = ["i300_r0","i300_r1","i300_r2"]
 
-# for lm in lms:
-#     countRules(f"{lm}_i100", [f"{lm}_{x}" for x in eq100], [1,1,1])
-#     countRules(f"{lm}_i200", [f"{lm}_{x}" for x in eq200], [1,1])
-#     countRules(f"{lm}_i300", [f"{lm}_{x}" for x in eq300], [1])
+for lm in lms:
+    countRules(f"{lm}_i100", [f"{lm}_{x}" for x in eq100], [1,1,1])
+    countRules(f"{lm}_i200", [f"{lm}_{x}" for x in eq200], [1,1,1])
+    countRules(f"{lm}_i300", [f"{lm}_{x}" for x in eq300], [1,1,1])
 #     countRules(f"{lm}_iAll(weighted)", [f"{lm}_{x}" for x in eq100 + eq200 + eq300], [1,1,1,2,2,3])
-#     countRules(f"{lm}_iAll", [f"{lm}_{x}" for x in eq100 + eq200 + eq300], [1,1,1,1,1,1])
+    countRules(f"{lm}_iAll", [f"{lm}_{x}" for x in eq100 + eq200 + eq300], [1,1,1,1,1,1,1,1,1])

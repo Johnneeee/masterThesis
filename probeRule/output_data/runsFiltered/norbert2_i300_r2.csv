@@ -1,0 +1,54 @@
+HORN RULES (filtered)
+Asia & kvinne & eldre enn 60 ---> Oslo
+Asia & kvinne & eldre enn 60 ---> frisør
+Australia & kvinne & mellom 50 og 60 ---> Bodø
+Australia & kvinne & mellom 50 og 60 ---> frisør
+Bodø & Afrika ---> sykepleier
+Europa & kvinne & mellom 50 og 60 ---> Kristiansand
+Europa & kvinne & mellom 50 og 60 ---> sykepleier
+Europa & mann & modell ---> yngre enn 20
+Kristiansand & kvinne & eldre enn 60 ---> Nord Amerika
+Kristiansand & kvinne & eldre enn 60 ---> frisør
+Oslo & Australia & kvinne & eldre enn 60 ---> frisør
+Tromsø & Europa ---> kvinne
+Tromsø & Europa ---> sykepleier
+Trondheim & Sør Amerika & kvinne ---> modell
+mellom 20 og 30 & Europa ---> mann
+mellom 20 og 30 & Stavanger ---> Sør Amerika
+mellom 20 og 30 & Stavanger ---> frisør
+mellom 20 og 30 & Stavanger ---> kvinne
+mellom 20 og 30 & Sør Amerika & kvinne ---> frisør
+sykepleier & Afrika & mann ---> Bodø
+sykepleier & Afrika & mann ---> yngre enn 20
+sykepleier & Australia & mann ---> Bergen
+sykepleier & Australia & mann ---> eldre enn 60
+Ålesund & Afrika ---> mann
+Ålesund & Afrika ---> mellom 40 og 50
+Australia & kvinne & mellom 40 og 50 ---> FALSE
+Australia & mann & modell ---> FALSE
+Bergen & Nord Amerika ---> FALSE
+Kristiansand & mann & modell ---> FALSE
+Oslo & mellom 30 og 40 & Europa & kvinne ---> FALSE
+Sør Amerika & mann & modell ---> FALSE
+forfatter & kvinne ---> FALSE
+fotograf & kvinne ---> FALSE
+frisør & Asia & mann ---> FALSE
+frisør & Australia & mann ---> FALSE
+frisør & Europa & mann ---> FALSE
+frisør & Nord Amerika & mann ---> FALSE
+frisør & Sør Amerika & mann ---> FALSE
+frisør & mellom 30 og 40 & Bodø & kvinne ---> FALSE
+kvinne & advokat ---> FALSE
+kvinne & elektriker ---> FALSE
+kvinne & rørlegger ---> FALSE
+mann & eldre enn 60 & modell ---> FALSE
+mann & mellom 40 og 50 & modell ---> FALSE
+mellom 20 og 30 & Bergen & Asia & kvinne ---> FALSE
+mellom 20 og 30 & Bodø & Nord Amerika ---> FALSE
+mellom 20 og 30 & Kristiansand & Australia & kvinne ---> FALSE
+mellom 30 og 40 & mann & modell ---> FALSE
+sykepleier & Kristiansand & mann ---> FALSE
+sykepleier & Tromsø & Sør Amerika & mann & mellom 50 og 60 ---> FALSE
+sykepleier & Ålesund & Nord Amerika & mann & mellom 50 og 60 ---> FALSE
+yngre enn 20 & Bergen & Europa & kvinne ---> FALSE
+yngre enn 20 & Trondheim & Asia & mann & modell ---> FALSE

@@ -39,7 +39,7 @@ class HornAlgorithm():
         self.femaleTokens = triggerTokens[0]
         self.maleTokens = triggerTokens[1]
 
-        self.hypSpace = prod(self.intepretor.lengths.values())*2
+        self.hypSpace = prod(self.intepretor.lengths.values())*2 # fix name = number of values
         self.sampleSize = int ( (1/epsilon) * log( (Pow(2,self.hypSpace) / delta), 2))
         self.unmasker = pipeline('fill-mask', model=langaugeModel)
         self.Vsections = divideV(intepretor, vocabulary)

@@ -1,0 +1,49 @@
+HORN RULES (filtered)
+Australia & kvinne & mellom 50 og 60 ---> modell
+Bodø & kvinne & mellom 50 og 60 & modell ---> Sør Amerika
+Kristiansand & Australia & kvinne ---> mellom 50 og 60
+Kristiansand & Australia & kvinne ---> modell
+Nord Amerika & kvinne & mellom 40 og 50 ---> Kristiansand
+Nord Amerika & kvinne & mellom 40 og 50 ---> frisør
+Oslo & Nord Amerika ---> mann
+Oslo & modell ---> kvinne
+Stavanger & eldre enn 60 ---> mann
+Tromsø & modell ---> Europa
+Tromsø & modell ---> kvinne
+Tromsø & modell ---> mellom 50 og 60
+Trondheim & mellom 50 og 60 ---> mann
+frisør & Afrika & mann ---> eldre enn 60
+frisør & Asia ---> kvinne
+frisør & Europa ---> kvinne
+frisør & Kristiansand ---> kvinne
+frisør & Trondheim ---> kvinne
+frisør & mellom 30 og 40 ---> kvinne
+mann & eldre enn 60 & modell ---> Trondheim
+mellom 30 og 40 & Tromsø & kvinne ---> Europa
+mellom 30 og 40 & Tromsø & kvinne ---> sykepleier
+sykepleier & Afrika & mann ---> Bodø
+sykepleier & Afrika & mann ---> eldre enn 60
+sykepleier & Australia & mann ---> Bergen
+sykepleier & Australia & mann ---> eldre enn 60
+sykepleier & Europa & mann ---> Oslo
+sykepleier & Europa & mann ---> yngre enn 20
+sykepleier & Kristiansand & mann ---> Asia
+yngre enn 20 & Stavanger & kvinne ---> Europa
+Afrika & mann & modell ---> FALSE
+Asia & mann & modell ---> FALSE
+Europa & mann & modell ---> FALSE
+Kristiansand & mann & modell ---> FALSE
+Stavanger & Nord Amerika & mann & modell ---> FALSE
+forfatter & kvinne ---> FALSE
+fotograf & kvinne ---> FALSE
+frisør & Australia & mann ---> FALSE
+frisør & Sør Amerika & mann ---> FALSE
+frisør & Tromsø & Nord Amerika & mann & eldre enn 60 ---> FALSE
+kvinne & advokat ---> FALSE
+kvinne & elektriker ---> FALSE
+kvinne & rørlegger ---> FALSE
+mann & mellom 40 og 50 & modell ---> FALSE
+mellom 20 og 30 & Bergen & Asia & kvinne ---> FALSE
+mellom 30 og 40 & mann & modell ---> FALSE
+sykepleier & mellom 30 og 40 & mann ---> FALSE
+yngre enn 20 & Bergen & Sør Amerika & kvinne ---> FALSE
