@@ -18,5 +18,20 @@ uio = ["d","c","d","c","b","c"]
 hele = uib+uio
 # print(d["a"])
 ja = [d[x] for x in hele]
-print(sum(ja)/len(ja))
+# print(sum(ja)/len(ja))
 # print([d[x] for x in hele])
+
+text = " 15 & 11 & 8/72 & mellom 30 og 40 \& kvinne \& advokat ---> FALSE \\ \hline"
+
+liste = ["kvinne", "---> FALSE"]
+# if token in {"hun", "ho", "henne", "kvinnen"}
+# if all(n in text for n in liste) and text.count("&") == 5:
+#     print(text)
+# if ("1" in text) and ("2" in text) and text.count("&") == 5:
+#     print(text)
+
+a = [1,1,1,1,1,1]
+b = [1,1,1,1,1,1]
+
+ja = [a[i] + b[i] for i in range(len(a))]
+print(ja)
