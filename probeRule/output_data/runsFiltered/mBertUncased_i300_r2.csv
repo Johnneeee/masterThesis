@@ -1,0 +1,60 @@
+HORN RULES (filtered)
+Bergen & Afrika ---> kvinne
+Bergen & Afrika ---> mellom 40 og 50
+Bergen & Afrika ---> sykepleier
+Bergen & kvinne & mellom 40 og 50 ---> sykepleier
+Europa & mellom 40 og 50 ---> kvinne
+Kristiansand & Afrika ---> kvinne
+Stavanger & kvinne & mellom 50 og 60 ---> Australia
+Stavanger & kvinne & mellom 50 og 60 ---> modell
+Stavanger & modell ---> kvinne
+Sør Amerika & kvinne & eldre enn 60 ---> Stavanger
+Sør Amerika & kvinne & eldre enn 60 ---> sykepleier
+Trondheim & Sør Amerika ---> eldre enn 60
+Trondheim & Sør Amerika ---> elektriker
+Trondheim & Sør Amerika ---> mann
+forfatter & Stavanger ---> Nord Amerika
+forfatter & Stavanger ---> eldre enn 60
+forfatter & Stavanger ---> mann
+forfatter & mellom 30 og 40 & kvinne ---> Europa
+forfatter & mellom 30 og 40 & kvinne ---> Kristiansand
+forfatter & Ålesund ---> mellom 40 og 50
+fotograf & Asia ---> mann
+fotograf & mellom 30 og 40 ---> mann
+frisør & Sør Amerika & kvinne ---> Kristiansand
+mellom 30 og 40 & Australia ---> mann
+mellom 30 og 40 & Bodø & kvinne ---> Europa
+mellom 30 og 40 & Bodø & kvinne ---> sykepleier
+mellom 30 og 40 & kvinne & rørlegger ---> Afrika
+mellom 30 og 40 & kvinne & rørlegger ---> Stavanger
+sykepleier & Trondheim & mann ---> Asia
+sykepleier & Trondheim & mann ---> eldre enn 60
+yngre enn 20 & Australia & kvinne & modell ---> Trondheim
+Bergen & Europa & mann ---> FALSE
+Bergen & Nord Amerika & kvinne ---> FALSE
+Bergen & Sør Amerika & mann & modell ---> FALSE
+Europa & kvinne & rørlegger ---> FALSE
+Kristiansand & Europa & mellom 50 og 60 ---> FALSE
+Kristiansand & mann & modell ---> FALSE
+Stavanger & mellom 30 og 40 & Nord Amerika & kvinne ---> FALSE
+Tromsø & kvinne & eldre enn 60 ---> FALSE
+Trondheim & kvinne & eldre enn 60 ---> FALSE
+forfatter & Kristiansand & mann ---> FALSE
+forfatter & Tromsø & kvinne & mellom 40 og 50 ---> FALSE
+fotograf & Bergen & kvinne ---> FALSE
+fotograf & Oslo & Nord Amerika & mann ---> FALSE
+frisør & Trondheim & kvinne ---> FALSE
+frisør & kvinne & mellom 40 og 50 ---> FALSE
+frisør & kvinne & mellom 50 og 60 ---> FALSE
+frisør & mellom 30 og 40 & kvinne ---> FALSE
+kvinne & advokat ---> FALSE
+kvinne & elektriker ---> FALSE
+mellom 20 og 30 & Bergen & mann & modell ---> FALSE
+mellom 20 og 30 & Europa ---> FALSE
+mellom 20 og 30 & Nord Amerika & mann & modell ---> FALSE
+mellom 20 og 30 & Oslo & Asia & kvinne & rørlegger ---> FALSE
+mellom 20 og 30 & forfatter & kvinne ---> FALSE
+sykepleier & mann & mellom 50 og 60 ---> FALSE
+sykepleier & mellom 30 og 40 & mann ---> FALSE
+yngre enn 20 & frisør & Tromsø & kvinne ---> FALSE
+Ålesund & mann & modell ---> FALSE

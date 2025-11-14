@@ -1,0 +1,52 @@
+HORN RULES (filtered)
+Afrika & mann & modell ---> mellom 40 og 50
+Afrika & mann & modell ---> Ålesund
+Asia & mellom 40 og 50 ---> Bodø
+Asia & mellom 40 og 50 ---> mann
+Bergen & Europa ---> mann
+Bergen & Europa ---> sykepleier
+Bergen & mann & modell ---> mellom 30 og 40
+Kristiansand & Asia & kvinne ---> sykepleier
+Kristiansand & Asia & kvinne ---> yngre enn 20
+Kristiansand & Europa & kvinne ---> modell
+Kristiansand & Europa & kvinne ---> yngre enn 20
+Nord Amerika & mann & modell ---> mellom 20 og 30
+Nord Amerika & mann & modell ---> Ålesund
+Tromsø & Asia ---> mann
+Tromsø & Asia ---> mellom 20 og 30
+Tromsø & Asia ---> sykepleier
+Trondheim & mellom 30 og 40 & kvinne ---> Afrika
+Trondheim & mellom 30 og 40 & kvinne ---> forfatter
+forfatter & Australia & mann ---> Tromsø
+forfatter & Australia & mann ---> mellom 40 og 50
+forfatter & Sør Amerika ---> mann
+kvinne & mellom 50 og 60 ---> modell
+mellom 20 og 30 & Asia ---> mann
+mellom 20 og 30 & forfatter & kvinne ---> Afrika
+mellom 20 og 30 & forfatter & kvinne ---> Bergen
+mellom 30 og 40 & Australia & kvinne ---> Bergen
+mellom 30 og 40 & Australia & kvinne ---> modell
+mellom 30 og 40 & Nord Amerika & kvinne ---> Tromsø
+mellom 30 og 40 & Nord Amerika & kvinne ---> modell
+mellom 30 og 40 & Tromsø & kvinne & modell ---> Nord Amerika
+sykepleier & mellom 30 og 40 ---> mann
+yngre enn 20 & sykepleier ---> kvinne
+Ålesund & kvinne ---> Australia
+Ålesund & kvinne ---> modell
+Afrika & kvinne & eldre enn 60 ---> FALSE
+Australia & mann & modell ---> FALSE
+Stavanger & mellom 30 og 40 & kvinne ---> FALSE
+forfatter & Asia ---> FALSE
+fotograf & Australia & kvinne ---> FALSE
+fotograf & kvinne & eldre enn 60 ---> FALSE
+frisør & kvinne ---> FALSE
+kvinne & advokat ---> FALSE
+kvinne & elektriker ---> FALSE
+kvinne & rørlegger ---> FALSE
+mellom 20 og 30 & Europa & kvinne ---> FALSE
+mellom 20 og 30 & Stavanger & kvinne & modell ---> FALSE
+mellom 20 og 30 & fotograf & Bodø & Nord Amerika & kvinne ---> FALSE
+mellom 20 og 30 & sykepleier & Kristiansand & Australia & kvinne ---> FALSE
+yngre enn 20 & Trondheim & Nord Amerika & kvinne ---> FALSE
+yngre enn 20 & fotograf & kvinne ---> FALSE
+yngre enn 20 & mann & modell ---> FALSE

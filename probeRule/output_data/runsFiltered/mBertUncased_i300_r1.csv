@@ -1,0 +1,57 @@
+HORN RULES (filtered)
+Australia & mann & modell ---> Bodø
+Australia & mann & modell ---> eldre enn 60
+Bergen & Sør Amerika ---> mann
+Bergen & kvinne ---> mellom 30 og 40
+Oslo & Nord Amerika ---> mann
+Stavanger & mann & modell ---> Sør Amerika
+Stavanger & mann & modell ---> eldre enn 60
+Sør Amerika & mann & modell ---> eldre enn 60
+Tromsø & Asia & mellom 50 og 60 ---> kvinne
+Tromsø & Asia & mellom 50 og 60 ---> sykepleier
+Tromsø & mellom 40 og 50 ---> Asia
+Tromsø & mellom 40 og 50 ---> mann
+Tromsø & mellom 40 og 50 ---> rørlegger
+forfatter & Australia & mann ---> Bodø
+forfatter & Australia & mann ---> mellom 50 og 60
+fotograf & Nord Amerika ---> Stavanger
+fotograf & Nord Amerika ---> mann
+fotograf & Nord Amerika ---> mellom 50 og 60
+frisør & kvinne ---> Europa
+frisør & kvinne ---> Oslo
+mellom 20 og 30 & Oslo ---> Afrika
+mellom 20 og 30 & Oslo ---> forfatter
+mellom 20 og 30 & Oslo ---> kvinne
+mellom 30 og 40 & Asia ---> mann
+mellom 30 og 40 & Australia & kvinne ---> Bergen
+mellom 30 og 40 & Australia & kvinne ---> modell
+mellom 30 og 40 & Europa & kvinne ---> Tromsø
+mellom 30 og 40 & Europa & kvinne ---> modell
+mellom 30 og 40 & Tromsø & kvinne ---> Europa
+mellom 30 og 40 & Tromsø & kvinne ---> modell
+sykepleier & Sør Amerika ---> kvinne
+sykepleier & Tromsø & mann ---> Asia
+sykepleier & Tromsø & mann ---> eldre enn 60
+yngre enn 20 & Asia & kvinne ---> modell
+yngre enn 20 & Europa ---> kvinne
+yngre enn 20 & Europa ---> sykepleier
+Ålesund & kvinne & mellom 50 og 60 ---> Sør Amerika
+Ålesund & kvinne & mellom 50 og 60 ---> sykepleier
+Bodø & kvinne & eldre enn 60 ---> FALSE
+Kristiansand & mann & modell ---> FALSE
+Nord Amerika & mellom 40 og 50 ---> FALSE
+Stavanger & Afrika & mann ---> FALSE
+forfatter & Oslo & Afrika & mann & mellom 50 og 60 ---> FALSE
+forfatter & Stavanger & Europa & kvinne & eldre enn 60 ---> FALSE
+forfatter & Tromsø & mann ---> FALSE
+fotograf & Australia & kvinne & eldre enn 60 ---> FALSE
+fotograf & kvinne & mellom 50 og 60 ---> FALSE
+fotograf & mellom 30 og 40 & kvinne ---> FALSE
+kvinne & advokat ---> FALSE
+kvinne & elektriker ---> FALSE
+mellom 20 og 30 & fotograf & Kristiansand & Asia & mann ---> FALSE
+mellom 20 og 30 & sykepleier & mann ---> FALSE
+sykepleier & Stavanger & mann ---> FALSE
+sykepleier & mann & mellom 50 og 60 ---> FALSE
+sykepleier & mellom 30 og 40 & mann ---> FALSE
+yngre enn 20 & Australia & kvinne ---> FALSE

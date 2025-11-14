@@ -1,0 +1,49 @@
+HORN RULES (filtered)
+Afrika & kvinne & mellom 40 og 50 ---> Tromsø
+Afrika & kvinne & mellom 40 og 50 ---> sykepleier
+Bodø & kvinne & mellom 50 og 60 ---> Sør Amerika
+Bodø & kvinne & mellom 50 og 60 ---> modell
+Bodø & mellom 40 og 50 ---> mann
+Europa & modell ---> kvinne
+Kristiansand & Sør Amerika ---> eldre enn 60
+Kristiansand & Sør Amerika ---> kvinne
+Kristiansand & Sør Amerika ---> modell
+Kristiansand & kvinne & mellom 50 og 60 ---> Asia
+Kristiansand & kvinne & mellom 50 og 60 ---> sykepleier
+Oslo & mann & eldre enn 60 ---> rørlegger
+Trondheim & Afrika ---> kvinne
+Trondheim & Afrika ---> mellom 50 og 60
+Trondheim & kvinne & mellom 50 og 60 ---> Afrika
+elektriker ---> mann
+yngre enn 20 & Trondheim & Asia & mann ---> fotograf
+Afrika & mann & modell ---> FALSE
+Asia & mann & rørlegger ---> FALSE
+Bergen & mellom 30 og 40 ---> FALSE
+Bodø & Nord Amerika & kvinne & advokat ---> FALSE
+Kristiansand & kvinne & eldre enn 60 & elektriker ---> FALSE
+Nord Amerika & mann & eldre enn 60 & modell ---> FALSE
+Oslo & Australia & kvinne & mellom 50 og 60 ---> FALSE
+Tromsø & kvinne & rørlegger ---> FALSE
+Trondheim & mann & modell ---> FALSE
+forfatter & mann ---> FALSE
+fotograf & kvinne & eldre enn 60 ---> FALSE
+fotograf & kvinne & mellom 40 og 50 ---> FALSE
+fotograf & mellom 30 og 40 & kvinne ---> FALSE
+frisør & Stavanger & Europa & kvinne & mellom 40 og 50 ---> FALSE
+kvinne & eldre enn 60 & advokat ---> FALSE
+kvinne & mellom 40 og 50 & advokat ---> FALSE
+kvinne & mellom 50 og 60 & advokat ---> FALSE
+kvinne & mellom 50 og 60 & rørlegger ---> FALSE
+mann & mellom 40 og 50 & modell ---> FALSE
+mellom 20 og 30 & Bergen & Europa & kvinne ---> FALSE
+mellom 20 og 30 & fotograf & kvinne ---> FALSE
+mellom 20 og 30 & frisør & Oslo & Asia & mann ---> FALSE
+mellom 20 og 30 & kvinne & advokat ---> FALSE
+mellom 30 og 40 & Afrika & kvinne ---> FALSE
+mellom 30 og 40 & Europa & kvinne & rørlegger ---> FALSE
+mellom 30 og 40 & kvinne & advokat ---> FALSE
+sykepleier & mann ---> FALSE
+yngre enn 20 & fotograf & kvinne ---> FALSE
+yngre enn 20 & kvinne & advokat ---> FALSE
+yngre enn 20 & kvinne & elektriker ---> FALSE
+yngre enn 20 & kvinne & rørlegger ---> FALSE

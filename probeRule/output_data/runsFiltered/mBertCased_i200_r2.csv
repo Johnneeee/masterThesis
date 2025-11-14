@@ -1,0 +1,46 @@
+HORN RULES (filtered)
+Nord Amerika & kvinne & mellom 50 og 60 ---> Oslo
+Nord Amerika & kvinne & mellom 50 og 60 ---> sykepleier
+Stavanger & Asia ---> kvinne
+Tromsø & Nord Amerika & mann & advokat ---> eldre enn 60
+forfatter & Bodø & mann ---> Europa
+forfatter & Bodø & mann ---> mellom 50 og 60
+forfatter & Kristiansand ---> Nord Amerika
+forfatter & Kristiansand ---> mann
+forfatter & Kristiansand ---> yngre enn 20
+fotograf & Ålesund ---> kvinne
+frisør & Bergen ---> Australia
+frisør & Bergen ---> kvinne
+frisør & Bergen ---> mellom 20 og 30
+frisør & mellom 30 og 40 ---> kvinne
+kvinne & rørlegger ---> Australia
+kvinne & rørlegger ---> Kristiansand
+kvinne & rørlegger ---> mellom 50 og 60
+sykepleier & mellom 30 og 40 ---> Sør Amerika
+sykepleier & mellom 30 og 40 ---> mann
+sykepleier & mellom 40 og 50 ---> Tromsø
+sykepleier & mellom 40 og 50 ---> kvinne
+Bodø & Sør Amerika & kvinne ---> FALSE
+Europa & kvinne & elektriker ---> FALSE
+Kristiansand & Afrika & mann & mellom 50 og 60 & rørlegger ---> FALSE
+Kristiansand & kvinne & mellom 40 og 50 ---> FALSE
+Kristiansand & mann & advokat ---> FALSE
+Stavanger & Europa ---> FALSE
+Stavanger & mellom 30 og 40 & Sør Amerika & mann & modell ---> FALSE
+Trondheim & Nord Amerika & mann & advokat ---> FALSE
+forfatter & Asia & kvinne & mellom 50 og 60 ---> FALSE
+forfatter & Bergen & mann ---> FALSE
+forfatter & Stavanger & Nord Amerika & mann ---> FALSE
+forfatter & Trondheim & Nord Amerika & mann ---> FALSE
+forfatter & mellom 30 og 40 & Tromsø & Australia & mann ---> FALSE
+fotograf & Bergen & Asia & mann & mellom 40 og 50 ---> FALSE
+fotograf & Nord Amerika ---> FALSE
+fotograf & Trondheim & mellom 30 og 40 & Afrika & mann ---> FALSE
+frisør & Bodø ---> FALSE
+kvinne & advokat ---> FALSE
+kvinne & modell ---> FALSE
+mellom 20 og 30 & Oslo & Afrika & mann & rørlegger ---> FALSE
+mellom 20 og 30 & fotograf & mann ---> FALSE
+mellom 20 og 30 & frisør & Tromsø & mann ---> FALSE
+mellom 20 og 30 & sykepleier & Nord Amerika & mann ---> FALSE
+sykepleier & Kristiansand & Nord Amerika & mann & eldre enn 60 ---> FALSE

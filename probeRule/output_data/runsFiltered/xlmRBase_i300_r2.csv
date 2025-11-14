@@ -1,0 +1,50 @@
+HORN RULES (filtered)
+Afrika & kvinne & mellom 50 og 60 ---> Oslo
+Afrika & kvinne & mellom 50 og 60 ---> modell
+Bergen & Nord Amerika & kvinne ---> mellom 20 og 30
+Bergen & Nord Amerika & kvinne ---> modell
+Bodø & Asia & kvinne & mellom 40 og 50 ---> modell
+Kristiansand & kvinne & mellom 40 og 50 ---> frisør
+Oslo & Europa & kvinne ---> modell
+Stavanger & Europa & kvinne ---> mellom 20 og 30
+Tromsø & Europa & kvinne ---> frisør
+Tromsø & Europa & kvinne ---> yngre enn 20
+Tromsø & kvinne & mellom 50 og 60 ---> modell
+Trondheim & kvinne & mellom 40 og 50 ---> frisør
+frisør & Bergen & kvinne & mellom 50 og 60 ---> Australia
+frisør & Nord Amerika & mann ---> yngre enn 20
+frisør & Sør Amerika ---> kvinne
+frisør & mann & mellom 40 og 50 ---> Bodø
+mellom 20 og 30 & Bodø & Sør Amerika & kvinne ---> frisør
+mellom 20 og 30 & Nord Amerika & kvinne ---> Bergen
+mellom 20 og 30 & Nord Amerika & kvinne ---> modell
+yngre enn 20 & Afrika & kvinne ---> frisør
+yngre enn 20 & Europa & kvinne ---> Tromsø
+yngre enn 20 & Europa & kvinne ---> frisør
+yngre enn 20 & Sør Amerika & kvinne ---> Trondheim
+yngre enn 20 & Sør Amerika & kvinne ---> frisør
+yngre enn 20 & frisør & mann ---> Nord Amerika
+Ålesund & Nord Amerika & kvinne & mellom 40 og 50 ---> frisør
+Ålesund & eldre enn 60 ---> kvinne
+Ålesund & kvinne & mellom 50 og 60 ---> Nord Amerika
+Ålesund & kvinne & mellom 50 og 60 ---> modell
+Bergen & mellom 30 og 40 & kvinne ---> FALSE
+Bodø & Australia & kvinne & eldre enn 60 ---> FALSE
+Kristiansand & Australia & kvinne & mellom 50 og 60 ---> FALSE
+Oslo & Sør Amerika & kvinne & mellom 40 og 50 ---> FALSE
+Tromsø & Australia & kvinne & mellom 40 og 50 ---> FALSE
+forfatter & kvinne ---> FALSE
+fotograf & kvinne ---> FALSE
+frisør & Asia & mann ---> FALSE
+frisør & Australia & mann ---> FALSE
+frisør & Europa & mann ---> FALSE
+frisør & Oslo & mann ---> FALSE
+frisør & Stavanger & mann ---> FALSE
+kvinne & advokat ---> FALSE
+kvinne & elektriker ---> FALSE
+kvinne & rørlegger ---> FALSE
+mann & modell ---> FALSE
+mellom 20 og 30 & frisør & mann ---> FALSE
+mellom 30 og 40 & Bodø & Nord Amerika & kvinne ---> FALSE
+sykepleier & kvinne ---> FALSE
+Ålesund & mellom 30 og 40 & Afrika & kvinne ---> FALSE

@@ -3,7 +3,8 @@ import datetime
 
 #getting available filenames
 lms = ["xlmRBase", "xlmRLarge", "mBertUncased", "mBertCased", "nbBertBase", "nbBertLarge", "norbert", "norbert2"]
-tags = ["i100_r0","i100_r1","i100_r2","i200_r0","i200_r1","i300_r0"]
+tags = ["i100_r0","i100_r1","i100_r2","i200_r0","i200_r1","i200_r2","i300_r0","i300_r1","i300_r2"]
+
 allFiles = []
 
 for lm in lms:
@@ -28,10 +29,9 @@ def addTotalRuntime(file):
         writer.writerow(["ITERATION","LEN(HYP)","SAMPLENR","RUNTIME(sample)","RUNTIME(total)s","RUNTIME(total)"])
         writer.writerows(newData)
 
-for file in allFiles:
-    addTotalRuntime(file)
+# for file in allFiles:
+#     addTotalRuntime(file)
 
-# addTotalRuntime("ahahhahahah_i10_r0")
 #####################################################################################################################
 #gather final runtime to one file
 def gatherMetadata(writeTo, files):
