@@ -1,37 +1,95 @@
-# from transformers import pipeline
-# unmasker = pipeline('fill-mask', model='ltg/norbert2')
+# dictionary = {}
+# with open(f"../censusData/preparedData/utdanningnoLikestilling2023_prepared.csv", mode = "r",encoding="UTF-8") as f:
+#     # OCCUPATION;p(SHE);p(HE);ppbs(gold)
+#     data = f.readlines()[1:]
+#     data = [x.split(";")[0] for x in data]
+#     data.sort()
+
+#     for i in range(len(data)):
+#         dictionary[data[i]] = i
+
+# # print(dictionary)
 
 
-# for x in unmasker("[MASK] er eldre enn 60 år og er en sykepleier fra en ukjent by med bakgrunn fra Australia."):
-#     print(x)
+# # print(list(dictionary.keys()))
+# # totalData = [[str(i)] for i in range(1,451)]
+# totalData = [[x] for x in list(dictionary.keys())]
 
-d = {
-    "a": 4,
-    "b": 3,
-    "c": 2,
-    "d": 1,
-}
 
-uib = ["c","c","c","b","c","c","c","d","d","b","d","d","b","d","b","c","c"]
-uio = ["d","c","d","c","b","c"]
+# lms = [
+#     "data/raw/xlmRBase_ppbs.csv",
+#     "data/raw/xlmRLarge_ppbs.csv",
+#     "data/raw/mBertUncased_ppbs.csv",
+#     "data/raw/mBertCased_ppbs.csv",
+#     "data/raw/nbBertBase_ppbs.csv",
+#     "data/raw/nbBertLarge_ppbs.csv",
+#     "data/raw/norbert_ppbs.csv",
+#     "data/raw/norbert2_ppbs.csv",    
+#     "data/total/total_ppbs.csv",    
+# ]
 
-hele = uib+uio
-# print(d["a"])
-ja = [d[x] for x in hele]
-# print(sum(ja)/len(ja))
-# print([d[x] for x in hele])
+# for lm in lms:
+#     with open(lm, mode = "r",encoding="UTF-8") as f:
+#         # attribute, gold, pred
+#         data = f.readlines()[1:]
+#         data = [x.split(";") for x in data]
+#         data = [[x[0],x[2][:-1]] for x in data]
+#         for x in data:
+#             totalData[dictionary[x[0]]-1].append(x[1])
 
-text = " 15 & 11 & 8/72 & mellom 30 og 40 \& kvinne \& advokat ---> FALSE \\ \hline"
 
-liste = ["kvinne", "---> FALSE"]
-# if token in {"hun", "ho", "henne", "kvinnen"}
-# if all(n in text for n in liste) and text.count("&") == 5:
-#     print(text)
-# if ("1" in text) and ("2" in text) and text.count("&") == 5:
-#     print(text)
 
-a = [1,1,1,1,1,1]
-b = [1,1,1,1,1,1]
+# with open(lm, mode = "r",encoding="UTF-8") as f:
+#     # attribute, gold, pred
+#     data = f.readlines()[1:]
+#     data = [x.split(";") for x in data]
+#     data = [[x[0],x[1]] for x in data]
+#     for x in data:
+#         totalData[dictionary[x[0]]-1].append(x[1])
 
-ja = [a[i] + b[i] for i in range(len(a))]
-print(ja)
+
+# for x in totalData:
+#     print(f'{" & ".join(x)} \\\\ \hline')
+####################################################################
+
+dictionary = {}
+
+with open(f"../probePPBS/data/total/total_ppbs.csv", mode = "r",encoding="UTF-8") as f:
+    data = f.readlines()[1:]
+    # print(data[1])
+    data = [x.split(";") for x in data]
+    for x in data:
+        dictionary[x[0]] = x[2][:-1]
+
+# print(dictionary)
+totalData = []
+with open(f"data/total/totalFiltered_occ.csv", mode = "r",encoding="UTF-8") as f:
+# with open(f"data/filtered/norbert2Filtered_occ.csv", mode = "r",encoding="UTF-8") as f:
+# with open(f"data/total/totalFiltered_occ.csv", mode = "r",encoding="UTF-8") as f:
+    data = f.readlines()[1:]
+    data = [x.split(";") for x in data]
+    totalData = [[x[0],str(int(x[1])+int(x[2]))] for x in data]
+    # totalData = [[x[0],x[1],x[2],str(int(x[1])+int(x[2])),x[3],x[4],x[5],x[6][:-1]] for x in data]
+    totalData.sort(key=lambda x: int(x[1]),reverse=True)
+    # totalData.sort(key=lambda x: float(x[-2]))
+    # print(totalData)
+    # totalData = [[x[0],str(int(x[1])+int(x[2])),dictionary[x[0]],x[5],str(round(((float(x[5])+float(dictionary[x[0]]))/2),3)),x[6][:-1]] for x in data]
+    # totalData.sort(key=lambda x: float(x[-2]))
+
+    # totalData = [[x[0],int(x[1])+int(x[2]),x[5]] for x in data]
+
+# print(totalData)
+st = totalData[:20]
+nd = totalData[20:40]
+rd = totalData[40:] + ["",""]
+
+total = []
+print(len(st))
+print(len(nd))
+print(len(rd))
+
+for i in range(20):
+    print(f"{' & '.join(st[i])} & {' & '.join(nd[i])} & {' & '.join(rd[i])} \\\\ \hline")
+
+# fsm bfl fah bjm asl krj gfg apr lps fam tff smm rpk ipr opv pek jra esd bldl
+# fsm bff
