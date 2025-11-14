@@ -1,0 +1,58 @@
+COUNT;HORN RULES (filtered)
+57/72;kvinne & elektriker ---> FALSE
+43/72;kvinne & rørlegger ---> FALSE
+31/72;kvinne & advokat ---> FALSE
+27/72;fotograf & kvinne ---> FALSE
+27/72;mann & modell ---> FALSE
+25/72;sykepleier & mann ---> FALSE
+16/72;forfatter & kvinne ---> FALSE
+10/72;frisør & Australia & mann ---> FALSE
+9/72;sykepleier & kvinne ---> FALSE
+9/72;frisør & Europa & mann ---> FALSE
+9/72;frisør & mann ---> FALSE
+8/72;frisør & kvinne ---> FALSE
+7/72;forfatter & mann ---> FALSE
+6/72;kvinne & modell ---> FALSE
+5/72;mellom 30 og 40 & kvinne & advokat ---> FALSE
+5/72;fotograf & kvinne & eldre enn 60 ---> FALSE
+5/72;mellom 20 og 30 & fotograf & kvinne ---> FALSE
+5/72;mellom 20 og 30 & kvinne & advokat ---> FALSE
+4/72;frisør & Asia & mann ---> FALSE
+4/72;forfatter & kvinne & eldre enn 60 ---> FALSE
+4/72;frisør & mann ---> Afrika
+4/72;Sør Amerika & kvinne & advokat ---> FALSE
+4/72;yngre enn 20 & kvinne & rørlegger ---> FALSE
+4/72;fotograf & kvinne & mellom 40 og 50 ---> FALSE
+4/72;kvinne & mellom 40 og 50 & rørlegger ---> FALSE
+4/72;kvinne & eldre enn 60 & advokat ---> FALSE
+4/72;frisør & Nord Amerika & mann ---> FALSE
+4/72;frisør & Sør Amerika & mann ---> FALSE
+3/72;forfatter & Bergen & kvinne ---> FALSE
+3/72;kvinne & eldre enn 60 ---> FALSE
+3/72;kvinne & rørlegger ---> Afrika
+3/72;kvinne & rørlegger ---> Kristiansand
+3/72;kvinne & eldre enn 60 ---> sykepleier
+3/72;Kristiansand & mann & modell ---> FALSE
+3/72;sykepleier & mann & mellom 50 og 60 ---> FALSE
+3/72;kvinne & rørlegger ---> Stavanger
+3/72;frisør & Tromsø & mann ---> eldre enn 60
+3/72;forfatter & mann & eldre enn 60 ---> FALSE
+3/72;mellom 20 og 30 & forfatter ---> kvinne
+3/72;mellom 20 og 30 & kvinne ---> modell
+3/72;Ålesund & kvinne ---> modell
+3/72;Australia & mann & modell ---> FALSE
+2/72;Bodø & Nord Amerika & kvinne & mellom 40 og 50 ---> FALSE
+2/72;yngre enn 20 & kvinne ---> FALSE
+2/72;mann & modell ---> Australia
+2/72;yngre enn 20 & kvinne ---> sykepleier
+2/72;kvinne & rørlegger ---> Nord Amerika
+2/72;kvinne & rørlegger ---> mellom 40 og 50
+2/72;forfatter & Stavanger & mann ---> FALSE
+2/72;forfatter & Trondheim & mann ---> FALSE
+2/72;fotograf & Nord Amerika & mann ---> Trondheim
+2/72;frisør ---> kvinne
+2/72;yngre enn 20 & Kristiansand & Australia & mann ---> FALSE
+2/72;Oslo & kvinne ---> modell
+2/72;Stavanger & kvinne ---> modell
+2/72;kvinne & mellom 50 og 60 ---> modell
+2/72;sykepleier & Tromsø ---> kvinne
