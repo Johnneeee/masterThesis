@@ -38,7 +38,7 @@ def gatherMetadata(writeTo, files):
     metadataTotal = []
 
     for file in files:
-        with open(f"output_data/metadataRaw/{file}.csv", mode = "r",encoding="UTF-8") as f:
+        with open(f"output_data/metadataTotalRuntime/{file}.csv", mode = "r",encoding="UTF-8") as f:
             runtime = f.readlines()[-1].split(";")[-1][:-1] # runtime total
             metadataTotal.append([file,runtime])
 
@@ -47,4 +47,4 @@ def gatherMetadata(writeTo, files):
         writer.writerow(["RUN","RUNTIME"])
         writer.writerows(metadataTotal)
 
-gatherMetadata("allRuntimes(all)", allFiles)
+# gatherMetadata("finalRuntimes", allFiles)
